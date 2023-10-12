@@ -1,4 +1,5 @@
 from fews_spoccer.spoc.spoccer import Spoccer
+from fews_spoccer.spoc.dtypes import Column, ID, Param  # noqa
 
 
 read_kw = {

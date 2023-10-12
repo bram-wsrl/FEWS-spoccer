@@ -1,25 +1,7 @@
 import pandas as pd
 
 from .spocfile import SpocFile
-
-
-class Column:
-    def __init__(self, name):
-        self.name = name
-
-    def __call__(self, *args, **kwargs):
-        return self.name
-
-
-class ID(Column):
-    def __init__(self, id):
-        super().__init__(id)
-
-
-class Param(Column):
-    def __init__(self, name, param):
-        super().__init__(name)
-        self.param = param
+from .dtypes import Column, ID, Param
 
 
 class HL(SpocFile):
@@ -38,7 +20,7 @@ class HL(SpocFile):
     commentaar = Column('COMMENTAAR')
     area = Column('DS_GBD')
 
-    _validation_rules = ['unique_ids']
+    _validation_rules = ['unique_ids', 'columns_exist']
 
     def __init__(self):
         self.sl = SL()
@@ -63,7 +45,7 @@ class SL(SpocFile):
     fotoid = Column('Foto_id')
     pid = Column('PARENTLOCATIONID')
     hbov = Column('HBOV')
-    hben = Column('HBEN_PS')
+    hben = Column('HBEN')
     hbovps = Column('HBOV_PS')
     hbenps = Column('HBEN_PS')
     objectbegin = Column('OBJECTBEGI')
@@ -72,6 +54,8 @@ class SL(SpocFile):
     x = Column('X')
     y = Column('Y')
     commentaar = Column('COMMENTAAR')
+
+    _validation_rules = ['unique_ids']
 
     def __init__(self):
         self.sl_tags = SL_TAGS()
@@ -101,6 +85,8 @@ class WS(SpocFile):
     commentaar = Column('COMMENTAAR')
     scx_lcode = Column('SCX_Lcode')
 
+    _validation_rules = ['unique_ids']
+
     def __init__(self):
         self.ws_tags = WS_TAGS()
         self.ws_ti_h2go_tags = WS_TI_H2GO_TAGS()
@@ -116,17 +102,17 @@ class SL_TAGS(SpocFile):
     locationid = Column('LOCATIONID')
     source = Column('SOURCE')
 
-    param_bs = Param('TAG_CGOO_BS', 'bs')
-    param_tt = Param('TAG_CGOO_TT', 'tt')
-    param_sh = Param('TAG_CGOO_SH', 'sh')
-    param_sd = Param('TAG_CGOO_SD', 'sd')
-    param_mwar = Param('TAG_CGOO_MWAR', 'mwar')
-    param_qb = Param('TAG_CGOO_Q_berekening', 'qb')
-    param_od = Param('TAG_CGOO_OPEN_DICHT', 'od')
-    param_gkz = Param('TAG_CGOO_GKZ', 'gkz')
-    param_pf = Param('TAG_CGOO_FREQ', 'pf')
-    param_a = Param('TAG_CGOO_A', 'a')
-    param_so = Param('TAG_CGOO_SO', 'so')
+    param_bs = Param('TAG_CGOO_BS', param='BB')
+    param_tt = Param('TAG_CGOO_TT', param='TT')
+    param_sh = Param('TAG_CGOO_SH', param='SH')
+    param_sd = Param('TAG_CGOO_SD', param='SD')
+    param_mwar = Param('TAG_CGOO_MWAR', param='MWAR')
+    param_qb = Param('TAG_CGOO_Q_berekening', param='QB')
+    param_od = Param('TAG_CGOO_OPEN_DICHT', param='OD')
+    param_gkz = Param('TAG_CGOO_GKZ', param='GKZ')
+    param_pf = Param('TAG_CGOO_FREQ', param='PF')
+    param_a = Param('TAG_CGOO_A', param='A')
+    param_so = Param('TAG_CGOO_SO', param='SO')
 
     tag_cgoo_q_meting = Column('TAG_CGOO_Q_meting')
     tag_cgoo_niveau_put = Column('TAG_CGOO_NIVEAU_PUT')
@@ -136,87 +122,158 @@ class SL_TAGS(SpocFile):
     tag_cgoo_bs_unit = Column('TAG_CGOO_BS_UNIT')
     tag_cgoo_q_berekening_unit = Column('TAG_CGOO_Q_berekening_UNIT')
 
+    _validation_rules = ['unique_ids']
+
     def __init__(self):
         pass
 
-    @property
-    def params(self):
-        params = {}
-        for k, v in self.__class__.__dict__.items():
-            if k.startswith('param_'):
-                param = k.split('_')[-1]
-                params.update({param: v})
-        return params
-
 
 class SL_TI_H2GO_TAGS(SpocFile):
-    id = 'SL_CODE'
-    type = 'TYPE'
-    shortname = 'SHORTNAME'
-    ti_code = 'TI_CODE'
-    h2go_locid = 'H2GO_LOCID'
+    id = ID('SL_CODE')
+    type = Column('TYPE')
+    shortname = Column('SHORTNAME')
+    ti_code = Column('TI_CODE')
+    h2go_locid = Column('H2GO_LOCID')
 
-    param_bs = 'BS_0'
-    param_tt = 'TT_0'
-    param_sh = 'SH_0'
-    param_sd = 'SD_0'
-    param_mwar = 'MWAR_0'
-    param_qb = 'Q_B_0'
-    param_od = 'OD_0'
-    param_gkz = 'GKZ_0'
-    param_pf = 'PF_0'
-    param_a = 'A_0'
-    param_so = 'SO_0'
+    param_bs = Param('BS_0', param='BS')
+    param_tt = Param('TT_0', param='TT')
+    param_sh = Param('SH_0', param='SH')
+    param_sd = Param('SD_0', param='SD')
+    param_mwar = Param('MWAR_0', param='MWAR')
+    param_qb = Param('Q_B_0', param='QB')
+    param_od = Param('OD_0', param='OD')
+    param_gkz = Param('GKZ_0', param='GKZ')
+    param_pf = Param('PF_0', param='PF')
+    param_a = Param('A_0', param='A')
+    param_so = Param('SO_0', param='SO')
 
-    handh = 'HANDH_0'
-    commentaar = '_COMMENTAAR'
-    gecontroleerd = 'GECONTROLEERD'
+    handh = Column('HANDH_0')
+    commentaar = Column('_COMMENTAAR')
+    gecontroleerd = Column('GECONTROLEERD')
+
+    _validation_rules = ['unique_ids']
 
     def __init__(self):
         pass
 
 
 class DAMO_pomp(SpocFile):
+    versie1_alb = Column('Versie1_ALB')
+    global_pomp_id = Column('GlobalpompID')
+    objectid = Column('OBJECTID')
+    id = ID('CODE')
+    naam = Column('NAAM')
+    typepomp = Column('TYPEPOMP')
+    typeformule = Column('TYPEFORMULE')
+    pompcap = Column('POMPCAP')
+    max_ampere = Column('MAX_AMPERE')
+    max_toer = Column('MAX_TOER')
+    min_toer = Column('MIN_TOER')
+    objectbegin = Column('OBJECTBEGI')
+    objecteind = Column('OBJECTEIND')
+    gecontroleerd = Column('GECONTROLEERD')
+
+    _validation_rules = []
+
     def __init__(self):
         pass
 
 
 class DAMO_stuw(SpocFile):
+    objectid = Column('OBJECTID')
+    id = ID('CODE')
+    naam = Column('NAAM')
+    type = Column('TYPE')
+    typedebiet = Column('TYPEDEBIET')
+    objectbegin = Column('OBJECTBEGI')
+    objecteind = Column('OBJECTEIND')
+    doorstroombreedte = Column('doorstroombreedte')
+    drempelhoogte = Column('drempelhoogte')
+    bovenkant_onderdoorlaat = Column('bovenkant_onderdoorlaat')
+    kleplengte = Column('kleplengte')
+    maximale_kruinhoogte = Column('maximale_kruinhoogte')
+    c_onderdoorlaat = Column('c_onderdoorlaat')
+    bodemhoogte_voor_overlaat = Column('Bodemhoogte_voor_overlaat')
+    vorm_schuif = Column('vorm_schuif')
+    type_schuifberekening = Column('Type_schuifberekening')
+    factor_weff_macht0 = Column('Factor_weff_macht0')
+    factor_weff_macht1 = Column('Factor_weff_macht1')
+    factor_weff_macht2 = Column('Factor_weff_macht2')
+    factor_well_macht3 = Column('Factor_weff_macht3')
+    gecontroleerd = Column('GECONTROLEERD')
+
+    _validation_rules = []
+
     def __init__(self):
         pass
 
 
 class WS_TAGS(SpocFile):
-    id = 'LOCATIONID'
-    source = 'SOURCE'
+    id = ID('LOCATIONID')
+    source = Column('SOURCE')
 
-    param_hm = 'TAG_CGOO_MNAP'
-    param_qm = 'TAG_CGOO_Q'
+    param_hm = Param('TAG_CGOO_MNAP', param='HM')
+    param_qm = Param('TAG_CGOO_Q', param='QM')
 
-    gecontroleerd = 'GECONTROLEERD'
+    gecontroleerd = Column('GECONTROLEERD')
+
+    _validation_rules = ['unique_ids']
 
     def __init__(self):
         pass
 
 
 class WS_TI_H2GO_TAGS(SpocFile):
-    naam = 'NAAM'
-    id = 'OW_CODE'
-    fewsparam = 'FEWS_PARAM'
-    ti_code = 'TI_CODE'
-    h2go_locid = 'H2GO_LOCID'
+    naam = Column('NAAM')
+    id = ID('OW_CODE')
+    fewsparam = Column('FEWS_PARAM')
+    ti_code = Column('TI_CODE')
+    h2go_locid = Column('H2GO_LOCID')
 
-    param_hm = 'H2GO_MEETPUNTID'
-    param_qm = 'H2GO_Q'
-    param_hmhand = 'H2GO_HANDMEETPUNTID'
+    param_hm = Param('H2GO_MEETPUNTID', param='HM')
+    param_qm = Param('H2GO_Q', param='QM')
+    param_hmhand = Param('H2GO_HANDMEETPUNTID', param='HMHAND')
 
-    comment = 'COMMENT'
-    gecontroleerd = 'GECONTROLEERD'
+    comment = Column('COMMENT')
+    gecontroleerd = Column('GECONTROLEERD')
+
+    _validation_rules = ['unique_ids']
 
     def __init__(self):
         pass
 
 
 class WS_VALIDATIE(SpocFile):
+    kw_naam = Column('KW Naam')
+    hben_hbov = Column('Hben/Hbov')
+    lcode = Column('Lcode')
+    id = ID('LOCID')
+    area = Column('gebied')
+    startdate = Column('STARTDATE')
+    enddate = Column('ENDDATE')
+    win_smax = Column('WIN_SMAX')
+    win_smin = Column('WIN_SMIN')
+    ov_max = Column('OV_SMAX')
+    ov_smin = Column('OV_SMIN')
+    zom_smax = Column('ZOM_SMAX')
+    zom_smin = Column('ZOM_SMIN')
+    hardmax = Column('HARDMAX')
+    hardmin = Column('HARDMIN')
+    ratechange = Column('RATECHANGE')
+    sr_dev = Column('SR_DEV')
+    sr_period = Column('SR_PERIOD')
+    sr0_5_dev = Column('SR0.5_DEV')
+    sr0_5_period = Column('SR0.5_PERIOD')
+    sr7_dev = Column('SR7_DEV')
+    sr7_period = Column('SR7_PERIOD')
+    ts_rate = Column('TS_RATE')
+    ts_period = Column('TS_PERIOD')
+    code = Column('code')
+    opmerking = Column('opmerking')
+    opemerking_zachte_grenzen = Column('opmerking zachte grenzen')
+    gecontroleerd = Column('GECONTROLEERD')
+
+    _validation_rules = []
+
     def __init__(self):
         pass

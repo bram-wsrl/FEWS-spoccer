@@ -19,5 +19,9 @@ class SelectorMixin:
 
 
 class ValidatorMixin:
+    def columns_exist(self):
+        assert set(self.df.columns) == set(
+            c.name for c in self.columns.values()), self
+
     def unique_ids(self):
-        assert self.column(self.id).squeeze().is_unique, 'unique_ids'
+        assert self.column(self.id).squeeze().is_unique, self
