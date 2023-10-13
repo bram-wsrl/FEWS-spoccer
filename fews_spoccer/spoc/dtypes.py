@@ -1,23 +1,25 @@
-class Column:
-    def __init__(self, name):
-        self.name = name
+class IndexCode:
+    startswith = ('HL', 'SL', 'OW')
 
-    def __call__(self, *args, **kwargs):
-        return self.name
-
-    def __repr__(self):
-        return f'{self.__class__.__name__}({self.name})'
-
-
-class ID(Column):
-    def __init__(self, name):
-        super().__init__(name)
+    def __call__(self, value):
+        if len(value) == 8:
+            if value[:2] in self.startswith:
+                if value[2:].isnumeric():
+                    return True
+        return False
 
 
-class Param(Column):
-    def __init__(self, name, param):
-        super().__init__(name)
-        self.param = param
+class HLIndex(IndexCode):
+    startswith = ('HL',)
 
-    def __repr__(self):
-        return f'{self.__class__.__name__}({self.param})'
+
+class SLIndex(IndexCode):
+    startswith = ('SL',)
+
+
+class OWIndex(IndexCode):
+    startswith = ('OW',)
+
+
+class Tag:
+    pass

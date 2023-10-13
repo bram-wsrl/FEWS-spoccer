@@ -1,5 +1,4 @@
 from fews_spoccer.spoc.spoccer import Spoccer
-from fews_spoccer.spoc.dtypes import Column, ID, Param  # noqa
 
 
 read_kw = {
@@ -20,5 +19,5 @@ dstdir = './tests/output/maplayerfiles'
 
 spoccer = Spoccer(srcdir, dstdir, read_kw, write_kw)
 spoccer.load()
-spoccer.validate()
+spoccer.validate_raising()
 spoccer.save()

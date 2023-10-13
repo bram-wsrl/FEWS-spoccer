@@ -3,15 +3,15 @@ from pathlib import Path
 
 import pandas as pd
 
-from .dtypes import Column, Param
-from .mixins import SelectorMixin, ValidatorMixin
+from .ctypes import Column, ID, Param
+from .mixins import SelectorMixin, RaisingValidatorMixin, ProcessValidatorMixin
 
 
 logger = logging.getLogger(__name__)
 
 
-class SpocFile(SelectorMixin, ValidatorMixin):
-    _validation_rules = ['columns_exist']
+class SpocFile(SelectorMixin, RaisingValidatorMixin, ProcessValidatorMixin):
+    '''Abstraction of a single maplayerfile'''
 
     def __init__(self):
         self._df = None
@@ -32,6 +32,7 @@ class SpocFile(SelectorMixin, ValidatorMixin):
 
     @classmethod
     def cls_attrs(cls, *classes):
+        '''assess class attributes conveniently'''
         if classes:
             attrs = {}
             for k, v in cls.__dict__.items():
@@ -42,24 +43,31 @@ class SpocFile(SelectorMixin, ValidatorMixin):
 
     @classmethod
     @property
-    def columns(cls):
-        return cls.cls_attrs(Column)
+    def Columns(cls):
+        return cls.cls_attrs(Column).values()
 
     @classmethod
     @property
-    def params(cls):
-        return cls.cls_attrs(Param)
+    def Ids(cls):
+        return cls.cls_attrs(ID).values()
+
+    @classmethod
+    @property
+    def Params(cls):
+        return cls.cls_attrs(Param).values()
 
     def read(self, srcpath, **read_kw):
         self._df = pd.read_csv(Path(srcpath) / self.filename, **read_kw)
+        logger.debug(self.filename)
+
+    def set_index(self):
+        self._df = self.df.set_index(self.df[self.id])
         logger.debug(self.filename)
 
     def write(self, dstpath, **write_kw):
         self.df.to_csv(Path(dstpath) / self.filename, **write_kw)
         logger.debug(self.filename)
 
-    def validate(self):
-        rules = set(self._validation_rules + SpocFile._validation_rules)
-        for rule in sorted(rules):
-            getattr(self, rule)()
-            logger.debug(f'{rule} - {self}')
+    def validate_raising(self):
+        self.run_raising_validation()
+        logger.debug(f'{self} OK')

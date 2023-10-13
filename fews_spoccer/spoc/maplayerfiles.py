@@ -1,12 +1,13 @@
 import pandas as pd
 
 from .spocfile import SpocFile
-from .dtypes import Column, ID, Param
+from .ctypes import Column, ID, Param
+from .dtypes import HLIndex, SLIndex, OWIndex
 
 
 class HL(SpocFile):
     object_id = Column('OBJECTID')
-    id = pid = ID('CODE')
+    id = pid = ID('CODE', dtypes=[str], format=HLIndex)
     naam = Column('NAAM')
     types = Column('TYPES')
     shortname = Column('SHORTNAME')
@@ -20,8 +21,6 @@ class HL(SpocFile):
     commentaar = Column('COMMENTAAR')
     area = Column('DS_GBD')
 
-    _validation_rules = ['unique_ids', 'columns_exist']
-
     def __init__(self):
         self.sl = SL()
         self.ws = WS()
@@ -29,13 +28,13 @@ class HL(SpocFile):
     def __iter__(self):
         return iter((self, self.sl, self.ws))
 
-    def sublocations(self, id: str) -> dict[str, pd.DataFrame]:
+    def sublocations(self, id: str) -> dict[str, pd.Index]:
         return {str(i): i.ids_by_pids(id) for i in self}
 
 
 class SL(SpocFile):
     objectid = Column('OBJECTID')
-    id = ID('CODE')
+    id = ID('CODE', dtypes=[str], format=SLIndex)
     name = Column('NAAM')
     type = Column('TYPE')
     area = Column('GEBIED')
@@ -43,7 +42,7 @@ class SL(SpocFile):
     icon = Column('ICON')
     tooltip = Column('TOOLTIP')
     fotoid = Column('Foto_id')
-    pid = Column('PARENTLOCATIONID')
+    pid = Column('PARENTLOCATIONID', format=HLIndex)
     hbov = Column('HBOV')
     hben = Column('HBEN')
     hbovps = Column('HBOV_PS')
@@ -54,8 +53,6 @@ class SL(SpocFile):
     x = Column('X')
     y = Column('Y')
     commentaar = Column('COMMENTAAR')
-
-    _validation_rules = ['unique_ids']
 
     def __init__(self):
         self.sl_tags = SL_TAGS()
@@ -69,7 +66,7 @@ class SL(SpocFile):
 
 
 class WS(SpocFile):
-    id = ID('ï»¿CODE')
+    id = ID('ï»¿CODE', dtypes=[str], format=OWIndex)
     naam = Column('NAAM')
     type = Column('TYPE')
     shortname = Column('SHORTNAME')
@@ -81,11 +78,9 @@ class WS(SpocFile):
     namespace = Column('NAMESPACE')
     x = Column('X')
     y = Column('Y')
-    pid = Column('PARENTLOCATIONID')
+    pid = Column('PARENTLOCATIONID', format=HLIndex)
     commentaar = Column('COMMENTAAR')
     scx_lcode = Column('SCX_Lcode')
-
-    _validation_rules = ['unique_ids']
 
     def __init__(self):
         self.ws_tags = WS_TAGS()
@@ -98,11 +93,11 @@ class WS(SpocFile):
 
 class SL_TAGS(SpocFile):
     shortname = Column('SHORTNAME')
-    id = ID('CODE')
+    id = ID('CODE', dtypes=[str], format=SLIndex)
     locationid = Column('LOCATIONID')
     source = Column('SOURCE')
 
-    param_bs = Param('TAG_CGOO_BS', param='BB')
+    param_bs = Param('TAG_CGOO_BS', param='BS')
     param_tt = Param('TAG_CGOO_TT', param='TT')
     param_sh = Param('TAG_CGOO_SH', param='SH')
     param_sd = Param('TAG_CGOO_SD', param='SD')
@@ -122,14 +117,12 @@ class SL_TAGS(SpocFile):
     tag_cgoo_bs_unit = Column('TAG_CGOO_BS_UNIT')
     tag_cgoo_q_berekening_unit = Column('TAG_CGOO_Q_berekening_UNIT')
 
-    _validation_rules = ['unique_ids']
-
     def __init__(self):
         pass
 
 
 class SL_TI_H2GO_TAGS(SpocFile):
-    id = ID('SL_CODE')
+    id = ID('SL_CODE', dtypes=[str], format=SLIndex)
     type = Column('TYPE')
     shortname = Column('SHORTNAME')
     ti_code = Column('TI_CODE')
@@ -151,8 +144,6 @@ class SL_TI_H2GO_TAGS(SpocFile):
     commentaar = Column('_COMMENTAAR')
     gecontroleerd = Column('GECONTROLEERD')
 
-    _validation_rules = ['unique_ids']
-
     def __init__(self):
         pass
 
@@ -161,7 +152,7 @@ class DAMO_pomp(SpocFile):
     versie1_alb = Column('Versie1_ALB')
     global_pomp_id = Column('GlobalpompID')
     objectid = Column('OBJECTID')
-    id = ID('CODE')
+    id = ID('CODE', unique=False, dtypes=[str], format=SLIndex)
     naam = Column('NAAM')
     typepomp = Column('TYPEPOMP')
     typeformule = Column('TYPEFORMULE')
@@ -173,15 +164,13 @@ class DAMO_pomp(SpocFile):
     objecteind = Column('OBJECTEIND')
     gecontroleerd = Column('GECONTROLEERD')
 
-    _validation_rules = []
-
     def __init__(self):
         pass
 
 
 class DAMO_stuw(SpocFile):
     objectid = Column('OBJECTID')
-    id = ID('CODE')
+    id = ID('CODE', unique=False, dtypes=[str], format=SLIndex)
     naam = Column('NAAM')
     type = Column('TYPE')
     typedebiet = Column('TYPEDEBIET')
@@ -202,14 +191,12 @@ class DAMO_stuw(SpocFile):
     factor_well_macht3 = Column('Factor_weff_macht3')
     gecontroleerd = Column('GECONTROLEERD')
 
-    _validation_rules = []
-
     def __init__(self):
         pass
 
 
 class WS_TAGS(SpocFile):
-    id = ID('LOCATIONID')
+    id = ID('LOCATIONID', dtypes=[str], format=OWIndex)
     source = Column('SOURCE')
 
     param_hm = Param('TAG_CGOO_MNAP', param='HM')
@@ -217,15 +204,13 @@ class WS_TAGS(SpocFile):
 
     gecontroleerd = Column('GECONTROLEERD')
 
-    _validation_rules = ['unique_ids']
-
     def __init__(self):
         pass
 
 
 class WS_TI_H2GO_TAGS(SpocFile):
     naam = Column('NAAM')
-    id = ID('OW_CODE')
+    id = ID('OW_CODE', dtypes=[str], format=OWIndex)
     fewsparam = Column('FEWS_PARAM')
     ti_code = Column('TI_CODE')
     h2go_locid = Column('H2GO_LOCID')
@@ -237,8 +222,6 @@ class WS_TI_H2GO_TAGS(SpocFile):
     comment = Column('COMMENT')
     gecontroleerd = Column('GECONTROLEERD')
 
-    _validation_rules = ['unique_ids']
-
     def __init__(self):
         pass
 
@@ -247,7 +230,7 @@ class WS_VALIDATIE(SpocFile):
     kw_naam = Column('KW Naam')
     hben_hbov = Column('Hben/Hbov')
     lcode = Column('Lcode')
-    id = ID('LOCID')
+    id = ID('LOCID', unique=False, dtypes=[str], format=OWIndex)
     area = Column('gebied')
     startdate = Column('STARTDATE')
     enddate = Column('ENDDATE')
@@ -272,8 +255,6 @@ class WS_VALIDATIE(SpocFile):
     opmerking = Column('opmerking')
     opemerking_zachte_grenzen = Column('opmerking zachte grenzen')
     gecontroleerd = Column('GECONTROLEERD')
-
-    _validation_rules = []
 
     def __init__(self):
         pass
