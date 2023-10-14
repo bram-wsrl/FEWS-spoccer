@@ -31,6 +31,30 @@ class HL(SpocFile):
     def sublocations(self, id: str) -> dict[str, pd.Index]:
         return {str(i): i.ids_by_pids(id) for i in self}
 
+    def param_value_matches(self, id: str, exclude_empty):
+        '''
+        Connect values that share the same parameter at HL level
+        '''
+        sublocations = self.sublocations(id)
+        matches = {}
+
+        hl = str(self)
+        matches[hl] = sublocations[hl][0]
+
+        sl = str(self.sl)
+        matches[sl] = {}
+        for sl_code in sublocations[sl]:
+            matches[sl][sl_code] = self.sl.param_value_matches(
+                sl_code, exclude_empty)
+
+        ws = str(self.ws)
+        matches[ws] = {}
+        for ow_code in sublocations[ws]:
+            matches[ws][ow_code] = self.ws.param_value_matches(
+                ow_code, exclude_empty)
+
+        return matches
+
 
 class SL(SpocFile):
     objectid = Column('OBJECTID')
@@ -64,6 +88,21 @@ class SL(SpocFile):
         return iter((self.sl_tags, self.sl_ti_h2go_tags, self.damo_pomp,
                      self.damo_pomp))
 
+    @property
+    def param_matches(self) -> dict[str, dict[str, Param]]:
+        '''
+        Connect columns that share the same parameter
+        '''
+        return super().param_matches(self.sl_tags, self.sl_ti_h2go_tags)
+
+    def param_value_matches(self, id: str, exclude_empty: bool
+                            ) -> dict[str, dict[str, str]]:
+        '''
+        Connect values that share the same parameter at SL level
+        '''
+        return super().param_value_matches(self.param_matches, id,
+                                           exclude_empty)
+
 
 class WS(SpocFile):
     id = ID('ï»¿CODE', dtypes=[str], format=OWIndex)
@@ -89,6 +128,21 @@ class WS(SpocFile):
 
     def __iter__(self):
         return iter((self.ws_tags, self.ws_ti_h2go_tags, self.ws_validatie))
+
+    @property
+    def param_matches(self) -> dict[str, dict[str, Param]]:
+        '''
+        Connect columns that share the same parameter
+        '''
+        return super().param_matches(self.ws_tags, self.ws_ti_h2go_tags)
+
+    def param_value_matches(self, id: str, exclude_empty: bool
+                            ) -> dict[str, dict[str, str]]:
+        '''
+        Connect values that share the same parameter OW level
+        '''
+        return super().param_value_matches(self.param_matches, id,
+                                           exclude_empty)
 
 
 class SL_TAGS(SpocFile):
@@ -146,6 +200,12 @@ class SL_TI_H2GO_TAGS(SpocFile):
 
     def __init__(self):
         pass
+
+    def construct_param(self, id, param):
+        param = super().construct_param(id, self.h2go_locid, param)
+        if len(param.split('_')) == 2:
+            return param
+        return ''
 
 
 class DAMO_pomp(SpocFile):
@@ -224,6 +284,12 @@ class WS_TI_H2GO_TAGS(SpocFile):
 
     def __init__(self):
         pass
+
+    def construct_param(self, id, param):
+        param = super().construct_param(id, self.h2go_locid, param)
+        if len(param.split('_')) == 2:
+            return param
+        return ''
 
 
 class WS_VALIDATIE(SpocFile):

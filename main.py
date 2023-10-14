@@ -1,3 +1,5 @@
+from pprint import pprint  # noqa
+
 from fews_spoccer.spoc.spoccer import Spoccer
 
 

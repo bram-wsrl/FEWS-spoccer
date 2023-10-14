@@ -1,3 +1,5 @@
+from typing import Self
+
 import logging
 from pathlib import Path
 
@@ -11,8 +13,12 @@ logger = logging.getLogger(__name__)
 
 
 class SpocFile(SelectorMixin, RaisingValidatorMixin, ProcessValidatorMixin):
-    '''Abstraction of a single maplayerfile'''
+    '''
+    Abstraction of a single maplayerfile
 
+    Use this class by subclassing it with
+    the exact same name as the file to be read.
+    '''
     def __init__(self):
         self._df = None
 
@@ -71,3 +77,38 @@ class SpocFile(SelectorMixin, RaisingValidatorMixin, ProcessValidatorMixin):
     def validate_raising(self):
         self.run_raising_validation()
         logger.debug(f'{self} OK')
+
+    def construct_param(self, id, *columns):
+        return self.join_fields(id, *columns)
+
+    def param_matches(self, *spocfiles: Self) -> dict[str, dict[str, Param]]:
+        '''
+        Connect columns that share the same parameter
+        '''
+        matches = {}
+        for spocfile in spocfiles:
+            for P in spocfile.Params:
+                matches.setdefault(P.param, {}).update({str(spocfile): P})
+        return matches
+
+    def param_value_matches(self,
+                            param_matches: dict[str, dict[str, Param]],
+                            id: str,
+                            exclude_empty: bool
+                            ) -> dict[str, dict[str, str]]:
+        '''
+        Connect values that share the same parameter
+        '''
+        matches = {}
+        for param_id in param_matches:
+            for spocfile in param_matches[param_id]:
+                P = param_matches[param_id][spocfile]
+                value = getattr(
+                    self, spocfile.lower()).construct_param(id, P)
+                matches.setdefault(
+                    param_id, {}).update({spocfile: value})
+
+            if exclude_empty:
+                if all(v == '' for v in matches[param_id].values()):
+                    _ = matches.pop(param_id)
+        return matches

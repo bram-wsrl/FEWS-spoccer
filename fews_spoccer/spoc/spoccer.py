@@ -7,8 +7,12 @@ logger = logging.getLogger(__name__)
 
 
 class Spoccer:
-    '''SpocFile tree manager'''
+    '''
+    SpocFile tree manager
 
+    Use the lower case class name as
+    instance attribute to include a tree relation.
+    '''
     def __init__(self, srcpath, dstpath, read_kw, write_kw):
         self.srcpath = srcpath
         self.dstpath = dstpath
@@ -16,6 +20,9 @@ class Spoccer:
         self.write_kw = write_kw
 
         self.hl = HL()
+
+    def __repr__(self):
+        return f'<{self.__class__.__name__}()>'
 
     def __iter__(self):
         '''Iterate over SpocFiles'''
