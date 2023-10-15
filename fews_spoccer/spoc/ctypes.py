@@ -1,11 +1,25 @@
-from .dtypes import IndexCode
+import logging
+
+from .etypes import (
+    NonUniqueException, InvalidPatternException, EmptyFieldException)
+
+
+logger = logging.getLogger(__name__)
 
 
 class BaseColumn:
-    '''Abstraction of a column in a SpocFile Object'''
+    '''
+    Abstraction of a column in a SpocFile Object
 
-    def __init__(self, name):
+    Methods marked with @abstractmethod have to be
+    defined at least once in the method resolution order.
+    '''
+    dtype = object
+
+    def __init__(self, name, **kwargs):
         self.name = name
+        for k, v in kwargs.items():
+            setattr(self, k, v)
 
     def __call__(self, *args, **kwargs):
         return self.name
@@ -15,55 +29,105 @@ class BaseColumn:
 
 
 class Column(BaseColumn):
-    def __init__(self, name, exists=True, unique=False, dtypes=None,
-                 format=None):
-        super().__init__(name)
-        self.exists = exists
-        self.unique = unique
-        self.dtypes = dtypes
-        self.format = format
+    unique = False
+    empty = True
+    pattern = False
 
-        if format is not None:
-            if isinstance(self.format, type):
-                self.format = self.format()
-
-    def check_exists(self, columns):
-        if self.exists:
-            return self.name in columns
-        return True
+    def __init__(self, name, **kwargs):
+        super().__init__(name, **kwargs)
 
     def check_unique(self, series):
+        if not series.is_unique:
+            raise NonUniqueException(self)
+
+        logger.debug(self)
+
+    def check_empty(self, series):
+        if any(series.eq('')):
+            raise EmptyFieldException(self)
+
+        logger.debug(self)
+
+    def check_pattern(self, series):
+        return
+
+    def validate(self, series):
         if self.unique:
-            return series.is_unique
-        return True
-
-    def check_dtypes(self, series):
-        if self.dtypes is not None:
-            for v in series:
-                return isinstance(v, tuple(self.dtypes))
-        return True
-
-    def check_format(self, series):
-        if self.format is not None:
-            for v in series:
-                return self.format(v)
-        return True
+            self.check_unique(series)
+        if not self.empty:
+            self.check_empty(series)
+        if self.pattern:
+            self.check_pattern(series)
 
 
-class ID(Column):
-    def __init__(self, name, exists=True, unique=True, dtypes=None,
-                 format=IndexCode):
-        super().__init__(name, exists, unique, dtypes, format)
+class IDColumn(Column):
+    unique = True
+    empty = False
+    pattern = True
+
+    startswith = ('HL', 'SL', 'OW')
+    length = 8
+
+    def __init__(self, name, **kwargs):
+        super().__init__(name, **kwargs)
+
+    def valid_pattern(self, value):
+        if len(value) == self.length:
+            if value[:2] in self.startswith:
+                if value[2:].isnumeric():
+                    return True
+        return False
+
+    def check_pattern(self, series):
+        if not all(series.apply(self.valid_pattern)):
+            raise InvalidPatternException(self)
+
+        logger.debug(self)
+
+
+class HLColumn(IDColumn):
+    startswith = ('HL',)
+
+    def __init__(self, name, **kwargs):
+        super().__init__(name, **kwargs)
+
+
+class SLColumn(Column):
+    startswith = ('SL',)
+
+    def __init__(self, name, **kwargs):
+        super().__init__(name, **kwargs)
+
+
+class WSColumn(Column):
+    startswith = ('OW',)
+
+    def __init__(self, name, **kwargs):
+        super().__init__(name, **kwargs)
 
 
 class Param(Column):
-    def __init__(self, name, param, exists=True, unique=False, dtypes=None,
-                 format=None):
-        super().__init__(name, exists, unique, dtypes, format)
+    def __init__(self, name, param, **kwargs):
+        super().__init__(name, **kwargs)
         self.param = param
 
     def __repr__(self):
         return f'{self.__class__.__name__}({self.param})'
 
-    def is_valid(self):
-        return True
+
+class CRSColumn(Column):
+    dtype = int
+    empty = False
+
+    def __init__(self, name, **kwargs):
+        super().__init__(name, **kwargs)
+
+
+class XColumn(CRSColumn):
+    def __init__(self, name, **kwargs):
+        super().__init__(name, **kwargs)
+
+
+class YColumn(CRSColumn):
+    def __init__(self, name, **kwargs):
+        super().__init__(name, **kwargs)

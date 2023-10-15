@@ -21,5 +21,7 @@ dstdir = './tests/output/maplayerfiles'
 
 spoccer = Spoccer(srcdir, dstdir, read_kw, write_kw)
 spoccer.load()
-spoccer.validate_raising()
+spoccer.validate()
 spoccer.save()
+
+# pprint(spoccer.hl.param_value_matches('HL000001', True))

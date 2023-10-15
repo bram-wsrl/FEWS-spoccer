@@ -1,13 +1,13 @@
 import pandas as pd
 
 from .spocfile import SpocFile
-from .ctypes import Column, ID, Param
-from .dtypes import HLIndex, SLIndex, OWIndex
+from .ctypes import (
+    Column, HLColumn, SLColumn, WSColumn, Param, XColumn, YColumn)
 
 
 class HL(SpocFile):
     object_id = Column('OBJECTID')
-    id = pid = ID('CODE', dtypes=[str], format=HLIndex)
+    id = pid = HLColumn('CODE')
     naam = Column('NAAM')
     types = Column('TYPES')
     shortname = Column('SHORTNAME')
@@ -16,8 +16,8 @@ class HL(SpocFile):
     objectbegin = Column('OBJECTBEGI')
     objecteind = Column('OBJECTEIND')
     namespace = Column('NAMESPACE')
-    x = Column('X')
-    y = Column('Y')
+    x = XColumn('X')
+    y = YColumn('Y')
     commentaar = Column('COMMENTAAR')
     area = Column('DS_GBD')
 
@@ -58,7 +58,7 @@ class HL(SpocFile):
 
 class SL(SpocFile):
     objectid = Column('OBJECTID')
-    id = ID('CODE', dtypes=[str], format=SLIndex)
+    id = SLColumn('CODE')
     name = Column('NAAM')
     type = Column('TYPE')
     area = Column('GEBIED')
@@ -66,7 +66,7 @@ class SL(SpocFile):
     icon = Column('ICON')
     tooltip = Column('TOOLTIP')
     fotoid = Column('Foto_id')
-    pid = Column('PARENTLOCATIONID', format=HLIndex)
+    pid = HLColumn('PARENTLOCATIONID', unique=False)
     hbov = Column('HBOV')
     hben = Column('HBEN')
     hbovps = Column('HBOV_PS')
@@ -74,8 +74,8 @@ class SL(SpocFile):
     objectbegin = Column('OBJECTBEGI')
     objecteind = Column('OBJECTEIND')
     namespace = Column('NAMESPACE')
-    x = Column('X')
-    y = Column('Y')
+    x = XColumn('X')
+    y = YColumn('Y')
     commentaar = Column('COMMENTAAR')
 
     def __init__(self):
@@ -100,12 +100,12 @@ class SL(SpocFile):
         '''
         Connect values that share the same parameter at SL level
         '''
-        return super().param_value_matches(self.param_matches, id,
-                                           exclude_empty)
+        return super().param_value_matches(
+            self.param_matches, id, exclude_empty)
 
 
 class WS(SpocFile):
-    id = ID('ï»¿CODE', dtypes=[str], format=OWIndex)
+    id = WSColumn('ï»¿CODE')
     naam = Column('NAAM')
     type = Column('TYPE')
     shortname = Column('SHORTNAME')
@@ -115,9 +115,9 @@ class WS(SpocFile):
     objectbegin = Column('OBJECTBEGI')
     objecteind = Column('OBJECTEIND')
     namespace = Column('NAMESPACE')
-    x = Column('X')
-    y = Column('Y')
-    pid = Column('PARENTLOCATIONID', format=HLIndex)
+    x = XColumn('X')
+    y = YColumn('Y')
+    pid = HLColumn('PARENTLOCATIONID', unique=False, empty=True, pattern=False)
     commentaar = Column('COMMENTAAR')
     scx_lcode = Column('SCX_Lcode')
 
@@ -147,7 +147,7 @@ class WS(SpocFile):
 
 class SL_TAGS(SpocFile):
     shortname = Column('SHORTNAME')
-    id = ID('CODE', dtypes=[str], format=SLIndex)
+    id = SLColumn('CODE')
     locationid = Column('LOCATIONID')
     source = Column('SOURCE')
 
@@ -176,7 +176,7 @@ class SL_TAGS(SpocFile):
 
 
 class SL_TI_H2GO_TAGS(SpocFile):
-    id = ID('SL_CODE', dtypes=[str], format=SLIndex)
+    id = SLColumn('SL_CODE')
     type = Column('TYPE')
     shortname = Column('SHORTNAME')
     ti_code = Column('TI_CODE')
@@ -212,7 +212,7 @@ class DAMO_pomp(SpocFile):
     versie1_alb = Column('Versie1_ALB')
     global_pomp_id = Column('GlobalpompID')
     objectid = Column('OBJECTID')
-    id = ID('CODE', unique=False, dtypes=[str], format=SLIndex)
+    id = SLColumn('CODE')
     naam = Column('NAAM')
     typepomp = Column('TYPEPOMP')
     typeformule = Column('TYPEFORMULE')
@@ -230,7 +230,7 @@ class DAMO_pomp(SpocFile):
 
 class DAMO_stuw(SpocFile):
     objectid = Column('OBJECTID')
-    id = ID('CODE', unique=False, dtypes=[str], format=SLIndex)
+    id = SLColumn('CODE')
     naam = Column('NAAM')
     type = Column('TYPE')
     typedebiet = Column('TYPEDEBIET')
@@ -256,7 +256,7 @@ class DAMO_stuw(SpocFile):
 
 
 class WS_TAGS(SpocFile):
-    id = ID('LOCATIONID', dtypes=[str], format=OWIndex)
+    id = WSColumn('LOCATIONID')
     source = Column('SOURCE')
 
     param_hm = Param('TAG_CGOO_MNAP', param='HM')
@@ -270,7 +270,7 @@ class WS_TAGS(SpocFile):
 
 class WS_TI_H2GO_TAGS(SpocFile):
     naam = Column('NAAM')
-    id = ID('OW_CODE', dtypes=[str], format=OWIndex)
+    id = WSColumn('OW_CODE')
     fewsparam = Column('FEWS_PARAM')
     ti_code = Column('TI_CODE')
     h2go_locid = Column('H2GO_LOCID')
@@ -296,7 +296,7 @@ class WS_VALIDATIE(SpocFile):
     kw_naam = Column('KW Naam')
     hben_hbov = Column('Hben/Hbov')
     lcode = Column('Lcode')
-    id = ID('LOCID', unique=False, dtypes=[str], format=OWIndex)
+    id = WSColumn('LOCID')
     area = Column('gebied')
     startdate = Column('STARTDATE')
     enddate = Column('ENDDATE')

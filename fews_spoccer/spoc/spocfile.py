@@ -5,14 +5,14 @@ from pathlib import Path
 
 import pandas as pd
 
-from .ctypes import Column, ID, Param
-from .mixins import SelectorMixin, RaisingValidatorMixin, ProcessValidatorMixin
+from .ctypes import Column, Param
+from .mixins import SelectorMixin
 
 
 logger = logging.getLogger(__name__)
 
 
-class SpocFile(SelectorMixin, RaisingValidatorMixin, ProcessValidatorMixin):
+class SpocFile(SelectorMixin):
     '''
     Abstraction of a single maplayerfile
 
@@ -54,11 +54,6 @@ class SpocFile(SelectorMixin, RaisingValidatorMixin, ProcessValidatorMixin):
 
     @classmethod
     @property
-    def Ids(cls):
-        return cls.cls_attrs(ID).values()
-
-    @classmethod
-    @property
     def Params(cls):
         return cls.cls_attrs(Param).values()
 
@@ -66,17 +61,26 @@ class SpocFile(SelectorMixin, RaisingValidatorMixin, ProcessValidatorMixin):
         self._df = pd.read_csv(Path(srcpath) / self.filename, **read_kw)
         logger.debug(self.filename)
 
-    def set_index(self):
-        self._df = self.df.set_index(self.df[self.id])
-        logger.debug(self.filename)
-
     def write(self, dstpath, **write_kw):
         self.df.to_csv(Path(dstpath) / self.filename, **write_kw)
         logger.debug(self.filename)
 
-    def validate_raising(self):
-        self.run_raising_validation()
-        logger.debug(f'{self} OK')
+    def set_index(self):
+        self._df = self.df.set_index(self.df[self.id])
+        logger.debug(self.filename)
+
+    def convert_dtypes(self):
+        for column in self.Columns:
+            if self.df[column].dtype != column.dtype:
+                self.df[column] = self.df[column].astype(column.dtype)
+
+                logger.debug(f'{self}@{column} to {column.dtype}')
+
+    def validate(self):
+        for column in self.Columns:
+            column.validate(self.df[column])
+
+        logger.info(f'{self} OK')
 
     def construct_param(self, id, *columns):
         return self.join_fields(id, *columns)

@@ -43,6 +43,7 @@ class Spoccer:
         for relation in self:
             relation.read(self.srcpath, **self.read_kw)
             relation.set_index()
+            relation.convert_dtypes()
 
         logger.info(self.srcpath)
 
@@ -53,9 +54,9 @@ class Spoccer:
 
         logger.info(self.dstpath)
 
-    def validate_raising(self):
+    def validate(self):
         '''Validate SpocFiles'''
         for relation in self:
-            relation.validate_raising()
+            relation.validate()
 
         logger.info('OK')
