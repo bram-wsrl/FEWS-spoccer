@@ -4,6 +4,7 @@ import logging
 from pathlib import Path
 
 import pandas as pd
+import numpy as np
 
 from .ctypes import Column, Param
 from .mixins import SelectorMixin
@@ -77,13 +78,14 @@ class SpocFile(SelectorMixin):
                 logger.debug(f'{self}@{column} to {column.dtype}')
 
     def validate(self):
+        logger.debug(f'Validating {self} ...')
         for column in self.Columns:
             column.validate(self.df[column])
 
-        logger.info(f'{self} OK')
+        logger.debug(f'{self} OK')
 
-    def construct_param(self, id, *columns):
-        return self.join_fields(id, *columns)
+    def construct_param(self, id, *columns) -> str | float:
+        return self.join_fields(id, *columns) or np.nan
 
     def param_matches(self, *spocfiles: Self) -> dict[str, dict[str, Param]]:
         '''
@@ -113,6 +115,6 @@ class SpocFile(SelectorMixin):
                     param_id, {}).update({spocfile: value})
 
             if exclude_empty:
-                if all(v == '' for v in matches[param_id].values()):
+                if all(pd.isna(v) for v in matches[param_id].values()):
                     _ = matches.pop(param_id)
         return matches

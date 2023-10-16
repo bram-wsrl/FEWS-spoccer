@@ -18,7 +18,7 @@ class SelectorMixin:
 
     def join_fields(self, id: str, *columns: str) -> str:
         fields = [self.field(id, c) for c in columns]
-        return '_'.join(str(v) for v in fields if v != '')
+        return '_'.join(str(v) for v in fields if pd.notna(v))
 
     def ids_by_pids(self, *pids: str) -> pd.Index:
         return self.df[self.df[self.pid].isin(pids)].index

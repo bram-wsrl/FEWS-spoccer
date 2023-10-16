@@ -1,8 +1,10 @@
 import pandas as pd
+import numpy as np
 
 from .spocfile import SpocFile
 from .ctypes import (
-    Column, HLColumn, SLColumn, WSColumn, Param, XColumn, YColumn)
+    Column, HLColumn, SLColumn, WSColumn, Param, TagParam, FileParam,
+    XColumn, YColumn)
 
 
 class HL(SpocFile):
@@ -151,17 +153,17 @@ class SL_TAGS(SpocFile):
     locationid = Column('LOCATIONID')
     source = Column('SOURCE')
 
-    param_bs = Param('TAG_CGOO_BS', param='BS')
-    param_tt = Param('TAG_CGOO_TT', param='TT')
-    param_sh = Param('TAG_CGOO_SH', param='SH')
-    param_sd = Param('TAG_CGOO_SD', param='SD')
-    param_mwar = Param('TAG_CGOO_MWAR', param='MWAR')
-    param_qb = Param('TAG_CGOO_Q_berekening', param='QB')
-    param_od = Param('TAG_CGOO_OPEN_DICHT', param='OD')
-    param_gkz = Param('TAG_CGOO_GKZ', param='GKZ')
-    param_pf = Param('TAG_CGOO_FREQ', param='PF')
-    param_a = Param('TAG_CGOO_A', param='A')
-    param_so = Param('TAG_CGOO_SO', param='SO')
+    param_bs = TagParam('TAG_CGOO_BS', param='BS')
+    param_tt = TagParam('TAG_CGOO_TT', param='TT')
+    param_sh = TagParam('TAG_CGOO_SH', param='SH')
+    param_sd = TagParam('TAG_CGOO_SD', param='SD')
+    param_mwar = TagParam('TAG_CGOO_MWAR', param='MWAR')
+    param_qb = TagParam('TAG_CGOO_Q_berekening', param='QB')
+    param_od = TagParam('TAG_CGOO_OPEN_DICHT', param='OD')
+    param_gkz = TagParam('TAG_CGOO_GKZ', param='GKZ')
+    param_pf = TagParam('TAG_CGOO_FREQ', param='PF')
+    param_a = TagParam('TAG_CGOO_A', param='A')
+    param_so = TagParam('TAG_CGOO_SO', param='SO')
 
     tag_cgoo_q_meting = Column('TAG_CGOO_Q_meting')
     tag_cgoo_niveau_put = Column('TAG_CGOO_NIVEAU_PUT')
@@ -182,17 +184,17 @@ class SL_TI_H2GO_TAGS(SpocFile):
     ti_code = Column('TI_CODE')
     h2go_locid = Column('H2GO_LOCID')
 
-    param_bs = Param('BS_0', param='BS')
-    param_tt = Param('TT_0', param='TT')
-    param_sh = Param('SH_0', param='SH')
-    param_sd = Param('SD_0', param='SD')
-    param_mwar = Param('MWAR_0', param='MWAR')
-    param_qb = Param('Q_B_0', param='QB')
-    param_od = Param('OD_0', param='OD')
-    param_gkz = Param('GKZ_0', param='GKZ')
-    param_pf = Param('PF_0', param='PF')
-    param_a = Param('A_0', param='A')
-    param_so = Param('SO_0', param='SO')
+    param_bs = FileParam('BS_0', param='BS')
+    param_tt = FileParam('TT_0', param='TT')
+    param_sh = FileParam('SH_0', param='SH')
+    param_sd = FileParam('SD_0', param='SD')
+    param_mwar = FileParam('MWAR_0', param='MWAR')
+    param_qb = FileParam('Q_B_0', param='QB')
+    param_od = FileParam('OD_0', param='OD')
+    param_gkz = FileParam('GKZ_0', param='GKZ')
+    param_pf = FileParam('PF_0', param='PF')
+    param_a = FileParam('A_0', param='A')
+    param_so = FileParam('SO_0', param='SO')
 
     handh = Column('HANDH_0')
     commentaar = Column('_COMMENTAAR')
@@ -201,18 +203,23 @@ class SL_TI_H2GO_TAGS(SpocFile):
     def __init__(self):
         pass
 
-    def construct_param(self, id, param):
-        param = super().construct_param(id, self.h2go_locid, param)
-        if len(param.split('_')) == 2:
-            return param
-        return ''
+    def construct_param(
+            self,
+            id: SLColumn | str,
+            param: FileParam | str
+            ) -> str | float:
+        locid = self.field(id, self.h2go_locid)
+        mptid = self.field(id, param)
+        if not any(pd.isna(v) for v in (locid, mptid)):
+            return '_'.join(str(v) for v in (locid, mptid))
+        return np.nan
 
 
 class DAMO_pomp(SpocFile):
     versie1_alb = Column('Versie1_ALB')
     global_pomp_id = Column('GlobalpompID')
     objectid = Column('OBJECTID')
-    id = SLColumn('CODE')
+    id = SLColumn('CODE', unique=False)
     naam = Column('NAAM')
     typepomp = Column('TYPEPOMP')
     typeformule = Column('TYPEFORMULE')
@@ -230,7 +237,7 @@ class DAMO_pomp(SpocFile):
 
 class DAMO_stuw(SpocFile):
     objectid = Column('OBJECTID')
-    id = SLColumn('CODE')
+    id = SLColumn('CODE', unique=False)
     naam = Column('NAAM')
     type = Column('TYPE')
     typedebiet = Column('TYPEDEBIET')
@@ -259,8 +266,8 @@ class WS_TAGS(SpocFile):
     id = WSColumn('LOCATIONID')
     source = Column('SOURCE')
 
-    param_hm = Param('TAG_CGOO_MNAP', param='HM')
-    param_qm = Param('TAG_CGOO_Q', param='QM')
+    param_hm = TagParam('TAG_CGOO_MNAP', param='HM')
+    param_qm = TagParam('TAG_CGOO_Q', param='QM')
 
     gecontroleerd = Column('GECONTROLEERD')
 
@@ -275,9 +282,9 @@ class WS_TI_H2GO_TAGS(SpocFile):
     ti_code = Column('TI_CODE')
     h2go_locid = Column('H2GO_LOCID')
 
-    param_hm = Param('H2GO_MEETPUNTID', param='HM')
-    param_qm = Param('H2GO_Q', param='QM')
-    param_hmhand = Param('H2GO_HANDMEETPUNTID', param='HMHAND')
+    param_hm = FileParam('H2GO_MEETPUNTID', param='HM')
+    param_qm = FileParam('H2GO_Q', param='QM')
+    param_hmhand = FileParam('H2GO_HANDMEETPUNTID', param='HMHAND')
 
     comment = Column('COMMENT')
     gecontroleerd = Column('GECONTROLEERD')
@@ -285,18 +292,23 @@ class WS_TI_H2GO_TAGS(SpocFile):
     def __init__(self):
         pass
 
-    def construct_param(self, id, param):
-        param = super().construct_param(id, self.h2go_locid, param)
-        if len(param.split('_')) == 2:
-            return param
-        return ''
+    def construct_param(
+            self,
+            id: WSColumn | str,
+            param: FileParam | str
+            ) -> str | float:
+        locid = self.field(id, self.h2go_locid)
+        mptid = self.field(id, param)
+        if not any(pd.isna(v) for v in (locid, mptid)):
+            return '_'.join(str(v) for v in (locid, mptid))
+        return np.nan
 
 
 class WS_VALIDATIE(SpocFile):
     kw_naam = Column('KW Naam')
     hben_hbov = Column('Hben/Hbov')
     lcode = Column('Lcode')
-    id = WSColumn('LOCID')
+    id = WSColumn('LOCID', unique=False)
     area = Column('gebied')
     startdate = Column('STARTDATE')
     enddate = Column('ENDDATE')

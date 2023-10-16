@@ -15,6 +15,9 @@ class BaseColumn:
     defined at least once in the method resolution order.
     '''
     dtype = object
+    unique = False
+    empty = True
+    pattern = r''
 
     def __init__(self, name, **kwargs):
         self.name = name
@@ -27,15 +30,6 @@ class BaseColumn:
     def __repr__(self):
         return f'{self.__class__.__name__}({self.name})'
 
-
-class Column(BaseColumn):
-    unique = False
-    empty = True
-    pattern = False
-
-    def __init__(self, name, **kwargs):
-        super().__init__(name, **kwargs)
-
     def check_unique(self, series):
         if not series.is_unique:
             raise NonUniqueException(self)
@@ -43,13 +37,16 @@ class Column(BaseColumn):
         logger.debug(self)
 
     def check_empty(self, series):
-        if any(series.eq('')):
+        if len(series.dropna()) != len(series):
             raise EmptyFieldException(self)
 
         logger.debug(self)
 
     def check_pattern(self, series):
-        return
+        if not all(series.str.fullmatch(self.pattern)):
+            raise InvalidPatternException(self)
+
+        logger.debug(self)
 
     def validate(self, series):
         if self.unique:
@@ -60,50 +57,32 @@ class Column(BaseColumn):
             self.check_pattern(series)
 
 
+class Column(BaseColumn):
+    pass
+
+
 class IDColumn(Column):
     unique = True
     empty = False
-    pattern = True
-
-    startswith = ('HL', 'SL', 'OW')
-    length = 8
-
-    def __init__(self, name, **kwargs):
-        super().__init__(name, **kwargs)
-
-    def valid_pattern(self, value):
-        if len(value) == self.length:
-            if value[:2] in self.startswith:
-                if value[2:].isnumeric():
-                    return True
-        return False
-
-    def check_pattern(self, series):
-        if not all(series.apply(self.valid_pattern)):
-            raise InvalidPatternException(self)
-
-        logger.debug(self)
+    pattern = r'((HL)|(SL)|(OW))[0-9]{6}'
 
 
-class HLColumn(IDColumn):
-    startswith = ('HL',)
-
-    def __init__(self, name, **kwargs):
-        super().__init__(name, **kwargs)
+class HLColumn(Column):
+    unique = True
+    empty = False
+    pattern = r'HL[0-9]{6}'
 
 
 class SLColumn(Column):
-    startswith = ('SL',)
-
-    def __init__(self, name, **kwargs):
-        super().__init__(name, **kwargs)
+    unique = True
+    empty = False
+    pattern = r'SL[0-9]{6}'
 
 
 class WSColumn(Column):
-    startswith = ('OW',)
-
-    def __init__(self, name, **kwargs):
-        super().__init__(name, **kwargs)
+    unique = True
+    empty = False
+    pattern = r'OW[0-9]{6}'
 
 
 class Param(Column):
@@ -115,19 +94,29 @@ class Param(Column):
         return f'{self.__class__.__name__}({self.param})'
 
 
+class TagParam(Param):
+    pattern = r'^(.*)(~SCX\..*.Historic)(.*)'
+
+    @staticmethod
+    def is_taglike(series):
+        return series[series.str.len() > 20]
+
+    def check_pattern(self, series):
+        super().check_pattern(self.is_taglike(series))
+
+
+class FileParam(Param):
+    pass
+
+
 class CRSColumn(Column):
     dtype = int
     empty = False
 
-    def __init__(self, name, **kwargs):
-        super().__init__(name, **kwargs)
-
 
 class XColumn(CRSColumn):
-    def __init__(self, name, **kwargs):
-        super().__init__(name, **kwargs)
+    pass
 
 
 class YColumn(CRSColumn):
-    def __init__(self, name, **kwargs):
-        super().__init__(name, **kwargs)
+    pass
