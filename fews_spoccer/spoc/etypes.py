@@ -1,14 +1,22 @@
-class BaseColumnException(Exception):
+class SpoccerException(Exception):
     pass
 
 
-class NonUniqueException(BaseColumnException):
+class SpoccerColumnException(SpoccerException):
     pass
 
 
-class InvalidPatternException(BaseColumnException):
+class EmptyFieldException(SpoccerColumnException):
     pass
 
 
-class EmptyFieldException(BaseColumnException):
+class NonUniqueException(SpoccerColumnException):
+    pass
+
+
+class InvalidPatternException(SpoccerColumnException):
+    pass
+
+
+class InvalidTagPatternException(InvalidPatternException):
     pass

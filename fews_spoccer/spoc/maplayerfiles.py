@@ -88,7 +88,7 @@ class SL(SpocFile):
 
     def __iter__(self):
         return iter((self.sl_tags, self.sl_ti_h2go_tags, self.damo_pomp,
-                     self.damo_pomp))
+                     self.damo_stuw))
 
     @property
     def param_matches(self) -> dict[str, dict[str, Param]]:

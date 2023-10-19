@@ -6,6 +6,7 @@ from pathlib import Path
 import pandas as pd
 import numpy as np
 
+from ..utils import log
 from .ctypes import Column, Param
 from .mixins import SelectorMixin
 
@@ -39,7 +40,9 @@ class SpocFile(SelectorMixin):
 
     @classmethod
     def cls_attrs(cls, *classes):
-        '''assess class attributes conveniently'''
+        '''
+        Assess class attributes conveniently
+        '''
         if classes:
             attrs = {}
             for k, v in cls.__dict__.items():
@@ -58,18 +61,19 @@ class SpocFile(SelectorMixin):
     def Params(cls):
         return cls.cls_attrs(Param).values()
 
+    @log(logger)
     def read(self, srcpath, **read_kw):
         self._df = pd.read_csv(Path(srcpath) / self.filename, **read_kw)
-        logger.debug(self.filename)
 
+    @log(logger)
     def write(self, dstpath, **write_kw):
         self.df.to_csv(Path(dstpath) / self.filename, **write_kw)
-        logger.debug(self.filename)
 
+    @log(logger)
     def set_index(self):
         self._df = self.df.set_index(self.df[self.id])
-        logger.debug(self.filename)
 
+    @log(logger)
     def convert_dtypes(self):
         for column in self.Columns:
             if self.df[column].dtype != column.dtype:
@@ -77,12 +81,11 @@ class SpocFile(SelectorMixin):
 
                 logger.debug(f'{self}@{column} to {column.dtype}')
 
+    @log(logger)
     def validate(self):
         logger.debug(f'Validating {self} ...')
         for column in self.Columns:
             column.validate(self.df[column])
-
-        logger.debug(f'{self} OK')
 
     def construct_param(self, id, *columns) -> str | float:
         return self.join_fields(id, *columns) or np.nan

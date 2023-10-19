@@ -1,6 +1,7 @@
 import logging
 
 from .maplayerfiles import HL
+from ..utils import log
 
 
 logger = logging.getLogger(__name__)
@@ -38,6 +39,7 @@ class Spoccer:
 
         raise AttributeError
 
+    @log(logger, logging.INFO)
     def load(self):
         '''Load SpocFiles in tree'''
         for relation in self:
@@ -45,18 +47,14 @@ class Spoccer:
             relation.set_index()
             relation.convert_dtypes()
 
-        logger.info(self.srcpath)
-
+    @log(logger, logging.INFO)
     def save(self):
         '''Save SpocFiles in tree'''
         for relation in self:
             relation.write(self.dstpath, **self.write_kw)
 
-        logger.info(self.dstpath)
-
+    @log(logger, logging.INFO)
     def validate(self):
         '''Validate SpocFiles'''
         for relation in self:
             relation.validate()
-
-        logger.info('OK')

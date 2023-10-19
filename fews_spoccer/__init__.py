@@ -15,9 +15,9 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 
 fmt_file = logging.Formatter(
-    '%(asctime)s - %(levelname)s - %(module)s - %(funcName)s - %(message)s')
+    '%(asctime)s - %(levelname)s - %(message)s')
 fmt_stream = logging.Formatter(
-    '%(levelname)s - %(module)s - %(funcName)s - %(message)s')
+    '%(levelname)s - %(message)s')
 
 add_loghandler(
     logger, logging.FileHandler, logging.DEBUG, fmt_file,

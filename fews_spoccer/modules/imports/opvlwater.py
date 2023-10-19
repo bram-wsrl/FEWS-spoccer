@@ -1,5 +1,5 @@
 from .h2go import H2GO
-from .cgoo import CGOO, Tag
+from .cgoo import CGOO  # noqa
 
 
 class OpvlWaterModule:
