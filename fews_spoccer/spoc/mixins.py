@@ -1,5 +1,7 @@
 import pandas as pd
 
+from .ctypes import Column
+
 
 class SelectorMixin:
     def row(self, *ids: str) -> pd.DataFrame:
@@ -8,8 +10,8 @@ class SelectorMixin:
     def column(self, column: str) -> pd.Series:
         return self.df[column]
 
-    def field(self, id: str, column: str) -> str:
-        return self.df.loc[id, column]
+    def field(self, id: str, column: Column) -> str:
+        return column.instance(self.df.loc[id, column])
 
     def join_fields(self, id: str, *columns: str) -> str:
         fields = [self.field(id, c) for c in columns]

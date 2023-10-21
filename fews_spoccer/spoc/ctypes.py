@@ -1,12 +1,10 @@
 import logging
-import re
 
 import pandas as pd
 
 from ..utils import catch, log
-from .dtypes import Tag
-from .etypes import (
-    NonUniqueException, EmptyFieldException, InvalidPatternException)
+from .dtypes import BaseField, IndexField, HLField, SLField, OWField, Tag
+from .etypes import (NonUniqueException, EmptyFieldException)
 
 
 logger = logging.getLogger(__name__)
@@ -17,9 +15,9 @@ class BaseColumn:
     Abstraction of a column in a SpocFile Object
     '''
     dtype = object
-    unique = False
+    instance = BaseField
     empty = True
-    pattern = False
+    unique = False
 
     def __init__(self, name, **kwargs):
         self.name = name
@@ -33,48 +31,35 @@ class BaseColumn:
         return f'{self.__class__.__name__}({self.name})'
 
     @catch(logger)
+    def _check_instance(self, v):
+        return self.instance(v)
+
+    @catch(logger)
     def _check_empty(self, v):
         if pd.isna(v):
             raise EmptyFieldException(self, v)
 
-    @catch(logger)
-    def _check_pattern_regex(self, v):
-        if not re.match(self.pattern, v):
-            raise InvalidPatternException(self, v)
-
-    @catch(logger)
-    def _check_pattern_func(self, v):
-        return self.pattern(v)
+    @log(logger)
+    def check_instance(self, series):
+        for _, v in enumerate(series):
+            self._check_instance(v)
 
     @log(logger)
-    @catch(logger)
-    def check_unique(self, series):
-        if not series.is_unique:
-            raise NonUniqueException(self)
-
-    @log(logger)
-    @catch(logger)
     def check_empty(self, series):
         for _, v in enumerate(series):
             self._check_empty(v)
 
     @log(logger)
-    def check_pattern(self, series):
-        if isinstance(self.pattern, re.Pattern):
-            for _, v in enumerate(series):
-                self._check_pattern_regex(v)
-
-        elif callable(self.pattern):
-            for _, v in enumerate(series):
-                self._check_pattern_func(v)
+    def check_unique(self, series):
+        if not series.is_unique:
+            raise NonUniqueException(self)
 
     def validate(self, series):
+        self.check_instance(series.dropna())
         if self.unique:
             self.check_unique(series.dropna())
         if not self.empty:
             self.check_empty(series)
-        if isinstance(self.pattern, re.Pattern) or callable(self.pattern):
-            self.check_pattern(series.dropna())
 
 
 class Column(BaseColumn):
@@ -82,27 +67,27 @@ class Column(BaseColumn):
 
 
 class IDColumn(Column):
-    unique = True
+    instance = IndexField
     empty = False
-    pattern = re.compile(r'((HL)|(SL)|(OW))[0-9]{6}')
+    unique = True
 
 
 class HLColumn(Column):
-    unique = True
+    instance = HLField
     empty = False
-    pattern = re.compile(r'HL[0-9]{6}')
+    unique = True
 
 
 class SLColumn(Column):
-    unique = True
+    instance = SLField
     empty = False
-    pattern = re.compile(r'SL[0-9]{6}')
+    unique = True
 
 
 class WSColumn(Column):
-    unique = True
+    instance = OWField
     empty = False
-    pattern = re.compile(r'OW[0-9]{6}')
+    unique = True
 
 
 class Param(Column):
@@ -115,10 +100,7 @@ class Param(Column):
 
 
 class TagParam(Param):
-    pattern = Tag.parse
-
-    def check_pattern(self, series):
-        super().check_pattern(series)
+    instance = Tag.parse
 
 
 class FileParam(Param):

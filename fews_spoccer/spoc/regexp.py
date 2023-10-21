@@ -5,7 +5,7 @@ iwa_tag = (
     r'''(?P<area>.*)\.'''                               # area
     r'''(?P<name>.*)\.Tags\.'''                         # object trivial name
     r'''(?P<optional>.*)NL\*09\*'''                     # optional group Tags.?
-    r'''(?P<legger_code>[0-9]{6}\s)'''                  # object's db name
+    r'''(?P<legger_code>[0-9]{6})\s'''                  # object's db name
     r'''(?P<type>.*)\.'''                               # object's type
     r'''(?P<param>.*)\.'''                              # object's identifier
     r'''(?P<suffix>Historic)'''                         # tag suffix

@@ -1,3 +1,5 @@
+import itertools as it
+
 import pandas as pd
 import numpy as np
 
@@ -38,24 +40,49 @@ class HL(SpocFile):
         Connect values that share the same parameter at HL level
         '''
         sublocations = self.sublocations(id)
-        matches = {}
+        matches = []
 
         hl = str(self)
-        matches[hl] = sublocations[hl][0]
+        hl_code = sublocations[hl][0]
 
         sl = str(self.sl)
-        matches[sl] = {}
         for sl_code in sublocations[sl]:
-            matches[sl][sl_code] = self.sl.param_value_matches(
-                sl_code, exclude_empty)
+            p_v_matches = self.sl.param_value_matches(sl_code, exclude_empty)
+            for p, p_matches in p_v_matches.items():
+                matches.append({
+                    hl: hl_code,
+                    sl: sl_code,
+                    'p': p,
+                    **p_matches
+                })
 
         ws = str(self.ws)
-        matches[ws] = {}
         for ow_code in sublocations[ws]:
-            matches[ws][ow_code] = self.ws.param_value_matches(
-                ow_code, exclude_empty)
-
+            p_v_matches = self.ws.param_value_matches(ow_code, exclude_empty)
+            for p, p_matches in p_v_matches.items():
+                matches.append({
+                    hl: hl_code,
+                    ws: ow_code,
+                    'p': p,
+                    **p_matches
+                })
         return matches
+
+    def param_value_groups(self, id, exclude_empty):
+        p_v_m = self.param_value_matches(id, exclude_empty)
+
+        def h2go_only_key(x):
+            sl_h2go_only = (self.sl.sl_tags not in x
+                            and self.sl.sl_ti_h2go_tags in x)
+            ws_h2go_only = (self.ws.ws_tags not in x
+                            and self.ws.ws_ti_h2go_tags in x)
+            return sl_h2go_only or ws_h2go_only
+
+        for h2go_only, values in it.groupby(p_v_m, h2go_only_key):
+            if h2go_only:
+                print(list(values))
+            else:
+                print('new grouping')
 
 
 class SL(SpocFile):
