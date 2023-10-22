@@ -3,21 +3,36 @@ import logging
 import pandas as pd
 
 from ..utils import catch, log
-from .dtypes import BaseField, IndexField, HLField, SLField, OWField, Tag
-from .etypes import (NonUniqueException, EmptyFieldException)
+from .etypes import NonUniqueException, EmptyFieldException
+from .dtypes import (ColumnField, IndexField, HLField, SLField, OWField,
+                     FileParamField, Tag)
 
 
 logger = logging.getLogger(__name__)
 
 
-class BaseColumn:
+class BaseDescriptor:
+    def __get__(self, obj, objtype=None):
+        self.owner_instance = obj
+        return self
+
+    def field(self, id):
+        return self.instance(self.owner_instance.df.loc[id, self])
+
+    def column(self):
+        return self.owner_instance.df[self].apply(self.instance)
+
+
+class BaseColumn(BaseDescriptor):
     '''
     Abstraction of a column in a SpocFile Object
     '''
     dtype = object
-    instance = BaseField
+    instance = ColumnField
     empty = True
     unique = False
+
+    relation = None
 
     def __init__(self, name, **kwargs):
         self.name = name
@@ -104,7 +119,7 @@ class TagParam(Param):
 
 
 class FileParam(Param):
-    pass
+    instance = FileParamField
 
 
 class CRSColumn(Column):

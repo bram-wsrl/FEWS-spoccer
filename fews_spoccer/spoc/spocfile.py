@@ -1,20 +1,16 @@
-from typing import Self
-
 import logging
 from pathlib import Path
 
 import pandas as pd
-import numpy as np
 
 from ..utils import log
 from .ctypes import Column, Param
-from .mixins import SelectorMixin
 
 
 logger = logging.getLogger(__name__)
 
 
-class SpocFile(SelectorMixin):
+class SpocFile:
     '''
     Abstraction of a single maplayerfile
 
@@ -24,8 +20,12 @@ class SpocFile(SelectorMixin):
     def __init__(self):
         self._df = None
 
+        # assign owner instance to descriptor
+        for name in self.__class__.__dict__:
+            _ = getattr(self, name)
+
     def __str__(self):
-        return self.__class__.__name__
+        return self.__class__.__name__.lower()
 
     def __repr__(self):
         return f'<{self.__class__.__name__}>'
@@ -36,7 +36,7 @@ class SpocFile(SelectorMixin):
 
     @property
     def filename(self):
-        return str(self) + '.csv'
+        return str(self).upper() + '.csv'
 
     @classmethod
     def cls_attrs(cls, *classes):
@@ -87,37 +87,28 @@ class SpocFile(SelectorMixin):
         for column in self.Columns:
             column.validate(self.df[column])
 
-    def construct_param(self, id, *columns) -> str | float:
-        return self.join_fields(id, *columns) or np.nan
+    def field(self, id, column):
+        return column.field(id)
 
-    def param_matches(self, *spocfiles: Self) -> dict[str, dict[str, Param]]:
-        '''
-        Connect columns that share the same parameter
-        '''
-        matches = {}
-        for spocfile in spocfiles:
-            for P in spocfile.Params:
-                matches.setdefault(P.param, {}).update({str(spocfile): P})
-        return matches
+    def ids_by_pids(self, *pids: str) -> pd.Index:
+        return self.df[self.df[self.pid].isin(pids)].index
 
-    def param_value_matches(self,
-                            param_matches: dict[str, dict[str, Param]],
-                            id: str,
-                            exclude_empty: bool
-                            ) -> dict[str, dict[str, str]]:
-        '''
-        Connect values that share the same parameter
-        '''
-        matches = {}
-        for param_id in param_matches:
-            for spocfile in param_matches[param_id]:
-                P = param_matches[param_id][spocfile]
-                value = getattr(
-                    self, spocfile.lower()).construct_param(id, P)
-                matches.setdefault(
-                    param_id, {}).update({spocfile: value})
+    def ids_by_area(self, *areas: str) -> pd.Index:
+        return self.df[self.df[self.area].isin(areas)].index
 
-            if exclude_empty:
-                if all(pd.isna(v) for v in matches[param_id].values()):
-                    _ = matches.pop(param_id)
+    def get_param_matches(self, spocfile, id):
+        matches = []
+        for p in spocfile.Params:
+            match = {}
+            match['id'] = id
+            match['param'] = p.param
+
+            file_value = p.owner_instance.get_param_value(id, p)
+            match[str(p.owner_instance)] = file_value
+
+            if p.relation is not None:
+                p = p.relation
+                tag_value = p.owner_instance.get_param_value(id, p)
+                match[str(p.owner_instance)] = tag_value
+            matches.append(match)
         return matches

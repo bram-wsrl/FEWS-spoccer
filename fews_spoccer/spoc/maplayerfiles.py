@@ -1,11 +1,8 @@
-import itertools as it
-
 import pandas as pd
-import numpy as np
 
 from .spocfile import SpocFile
 from .ctypes import (
-    Column, HLColumn, SLColumn, WSColumn, Param, TagParam, FileParam,
+    Column, HLColumn, SLColumn, WSColumn, TagParam, FileParam,
     XColumn, YColumn)
 
 
@@ -26,6 +23,8 @@ class HL(SpocFile):
     area = Column('DS_GBD')
 
     def __init__(self):
+        super().__init__()
+
         self.sl = SL()
         self.ws = WS()
 
@@ -33,56 +32,17 @@ class HL(SpocFile):
         return iter((self, self.sl, self.ws))
 
     def sublocations(self, id: str) -> dict[str, pd.Index]:
-        return {str(i): i.ids_by_pids(id) for i in self}
+        return {str(i).lower(): i.ids_by_pids(id) for i in self}
 
-    def param_value_matches(self, id: str, exclude_empty):
-        '''
-        Connect values that share the same parameter at HL level
-        '''
+    def get_param_matches(self, id):
         sublocations = self.sublocations(id)
+        _ = sublocations.pop(str(self))
+
         matches = []
-
-        hl = str(self)
-        hl_code = sublocations[hl][0]
-
-        sl = str(self.sl)
-        for sl_code in sublocations[sl]:
-            p_v_matches = self.sl.param_value_matches(sl_code, exclude_empty)
-            for p, p_matches in p_v_matches.items():
-                matches.append({
-                    hl: hl_code,
-                    sl: sl_code,
-                    'p': p,
-                    **p_matches
-                })
-
-        ws = str(self.ws)
-        for ow_code in sublocations[ws]:
-            p_v_matches = self.ws.param_value_matches(ow_code, exclude_empty)
-            for p, p_matches in p_v_matches.items():
-                matches.append({
-                    hl: hl_code,
-                    ws: ow_code,
-                    'p': p,
-                    **p_matches
-                })
+        for spocfile in sublocations:
+            for id in sublocations[spocfile]:
+                matches.append(getattr(self, spocfile).get_param_matches(id))
         return matches
-
-    def param_value_groups(self, id, exclude_empty):
-        p_v_m = self.param_value_matches(id, exclude_empty)
-
-        def h2go_only_key(x):
-            sl_h2go_only = (self.sl.sl_tags not in x
-                            and self.sl.sl_ti_h2go_tags in x)
-            ws_h2go_only = (self.ws.ws_tags not in x
-                            and self.ws.ws_ti_h2go_tags in x)
-            return sl_h2go_only or ws_h2go_only
-
-        for h2go_only, values in it.groupby(p_v_m, h2go_only_key):
-            if h2go_only:
-                print(list(values))
-            else:
-                print('new grouping')
 
 
 class SL(SpocFile):
@@ -108,6 +68,8 @@ class SL(SpocFile):
     commentaar = Column('COMMENTAAR')
 
     def __init__(self):
+        super().__init__()
+
         self.sl_tags = SL_TAGS()
         self.sl_ti_h2go_tags = SL_TI_H2GO_TAGS()
         self.damo_pomp = DAMO_pomp()
@@ -117,20 +79,8 @@ class SL(SpocFile):
         return iter((self.sl_tags, self.sl_ti_h2go_tags, self.damo_pomp,
                      self.damo_stuw))
 
-    @property
-    def param_matches(self) -> dict[str, dict[str, Param]]:
-        '''
-        Connect columns that share the same parameter
-        '''
-        return super().param_matches(self.sl_tags, self.sl_ti_h2go_tags)
-
-    def param_value_matches(self, id: str, exclude_empty: bool
-                            ) -> dict[str, dict[str, str]]:
-        '''
-        Connect values that share the same parameter at SL level
-        '''
-        return super().param_value_matches(
-            self.param_matches, id, exclude_empty)
+    def get_param_matches(self, id):
+        return super().get_param_matches(self.sl_ti_h2go_tags, id)
 
 
 class WS(SpocFile):
@@ -151,6 +101,8 @@ class WS(SpocFile):
     scx_lcode = Column('SCX_Lcode')
 
     def __init__(self):
+        super().__init__()
+
         self.ws_tags = WS_TAGS()
         self.ws_ti_h2go_tags = WS_TI_H2GO_TAGS()
         self.ws_validatie = WS_VALIDATIE()
@@ -158,20 +110,8 @@ class WS(SpocFile):
     def __iter__(self):
         return iter((self.ws_tags, self.ws_ti_h2go_tags, self.ws_validatie))
 
-    @property
-    def param_matches(self) -> dict[str, dict[str, Param]]:
-        '''
-        Connect columns that share the same parameter
-        '''
-        return super().param_matches(self.ws_tags, self.ws_ti_h2go_tags)
-
-    def param_value_matches(self, id: str, exclude_empty: bool
-                            ) -> dict[str, dict[str, str]]:
-        '''
-        Connect values that share the same parameter OW level
-        '''
-        return super().param_value_matches(self.param_matches, id,
-                                           exclude_empty)
+    def get_param_matches(self, id):
+        return super().get_param_matches(self.ws_ti_h2go_tags, id)
 
 
 class SL_TAGS(SpocFile):
@@ -201,7 +141,10 @@ class SL_TAGS(SpocFile):
     tag_cgoo_q_berekening_unit = Column('TAG_CGOO_Q_berekening_UNIT')
 
     def __init__(self):
-        pass
+        super().__init__()
+
+    def get_param_value(self, id, param):
+        return super().field(id, param)
 
 
 class SL_TI_H2GO_TAGS(SpocFile):
@@ -211,35 +154,28 @@ class SL_TI_H2GO_TAGS(SpocFile):
     ti_code = Column('TI_CODE')
     h2go_locid = Column('H2GO_LOCID')
 
-    param_bs = FileParam('BS_0', param='BS')
-    param_tt = FileParam('TT_0', param='TT')
-    param_sh = FileParam('SH_0', param='SH')
-    param_sd = FileParam('SD_0', param='SD')
-    param_mwar = FileParam('MWAR_0', param='MWAR')
-    param_qb = FileParam('Q_B_0', param='QB')
-    param_od = FileParam('OD_0', param='OD')
-    param_gkz = FileParam('GKZ_0', param='GKZ')
-    param_pf = FileParam('PF_0', param='PF')
-    param_a = FileParam('A_0', param='A')
-    param_so = FileParam('SO_0', param='SO')
+    param_bs = FileParam('BS_0', param='BS', relation=SL_TAGS.param_bs)
+    param_tt = FileParam('TT_0', param='TT', relation=SL_TAGS.param_tt)
+    param_sh = FileParam('SH_0', param='SH', relation=SL_TAGS.param_sh)
+    param_sd = FileParam('SD_0', param='SD', relation=SL_TAGS.param_sd)
+    param_mwar = FileParam('MWAR_0', param='MWAR', relation=SL_TAGS.param_mwar)
+    param_qb = FileParam('Q_B_0', param='QB', relation=SL_TAGS.param_qb)
+    param_od = FileParam('OD_0', param='OD', relation=SL_TAGS.param_od)
+    param_gkz = FileParam('GKZ_0', param='GKZ', relation=SL_TAGS.param_gkz)
+    param_pf = FileParam('PF_0', param='PF', relation=SL_TAGS.param_pf)
+    param_a = FileParam('A_0', param='A', relation=SL_TAGS.param_a)
+    param_so = FileParam('SO_0', param='SO', relation=SL_TAGS.param_so)
+    handh = FileParam('HANDH_0', param='HANDH')
 
-    handh = Column('HANDH_0')
     commentaar = Column('_COMMENTAAR')
     gecontroleerd = Column('GECONTROLEERD')
 
     def __init__(self):
-        pass
+        super().__init__()
 
-    def construct_param(
-            self,
-            id: SLColumn | str,
-            param: FileParam | str
-            ) -> str | float:
-        locid = self.field(id, self.h2go_locid)
-        mptid = self.field(id, param)
-        if not any(pd.isna(v) for v in (locid, mptid)):
-            return '_'.join(str(v) for v in (locid, mptid))
-        return np.nan
+    def get_param_value(self, id, param):
+        return super().field(id, self.h2go_locid).concat(
+            super().field(id, param))
 
 
 class DAMO_pomp(SpocFile):
@@ -259,7 +195,7 @@ class DAMO_pomp(SpocFile):
     gecontroleerd = Column('GECONTROLEERD')
 
     def __init__(self):
-        pass
+        super().__init__()
 
 
 class DAMO_stuw(SpocFile):
@@ -299,7 +235,10 @@ class WS_TAGS(SpocFile):
     gecontroleerd = Column('GECONTROLEERD')
 
     def __init__(self):
-        pass
+        super().__init__()
+
+    def get_param_value(self, id, param):
+        return super().field(id, param)
 
 
 class WS_TI_H2GO_TAGS(SpocFile):
@@ -309,26 +248,20 @@ class WS_TI_H2GO_TAGS(SpocFile):
     ti_code = Column('TI_CODE')
     h2go_locid = Column('H2GO_LOCID')
 
-    param_hm = FileParam('H2GO_MEETPUNTID', param='HM')
-    param_qm = FileParam('H2GO_Q', param='QM')
+    param_hm = FileParam('H2GO_MEETPUNTID', param='HM',
+                         relation=WS_TAGS.param_hm)
+    param_qm = FileParam('H2GO_Q', param='QM', relation=WS_TAGS.param_qm)
     param_hmhand = FileParam('H2GO_HANDMEETPUNTID', param='HMHAND')
 
     comment = Column('COMMENT')
     gecontroleerd = Column('GECONTROLEERD')
 
     def __init__(self):
-        pass
+        super().__init__()
 
-    def construct_param(
-            self,
-            id: WSColumn | str,
-            param: FileParam | str
-            ) -> str | float:
-        locid = self.field(id, self.h2go_locid)
-        mptid = self.field(id, param)
-        if not any(pd.isna(v) for v in (locid, mptid)):
-            return '_'.join(str(v) for v in (locid, mptid))
-        return np.nan
+    def get_param_value(self, id, param):
+        return super().field(id, self.h2go_locid).concat(
+            super().field(id, param))
 
 
 class WS_VALIDATIE(SpocFile):
@@ -362,4 +295,4 @@ class WS_VALIDATIE(SpocFile):
     gecontroleerd = Column('GECONTROLEERD')
 
     def __init__(self):
-        pass
+        super().__init__()

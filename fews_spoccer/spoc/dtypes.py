@@ -2,6 +2,7 @@ import re
 from typing import Self
 
 import numpy as np
+import pandas as pd
 
 from .etypes import InvalidPatternException, InvalidTagPatternException
 from .regexp import iwa_tag, pbh_tag, avic_tag, vaarweg_tag
@@ -26,7 +27,15 @@ class BaseField:
             raise InvalidPatternException
 
 
-class IndexField(BaseField):
+class ColumnField(BaseField):
+    def concat(self, *fields, sep='_'):
+        values = [i.value for i in (self, *fields)]
+        if not any(pd.isna(v) for v in values):
+            return sep.join(values)
+        return np.nan
+
+
+class IndexField(ColumnField):
     regexp = re.compile(r'((HL)|(SL)|(OW))[0-9]{6}')
 
 
@@ -40,6 +49,13 @@ class SLField(IndexField):
 
 class OWField(IndexField):
     regexp = re.compile(r'OW[0-9]{6}')
+
+
+class FileParamField(ColumnField):
+    def __iadd__(self, other):
+        if not any(pd.isna(i.value) for i in (self, other)):
+            return self.__class__(f'{self.value}_{other.value}')
+        return np.nan
 
 
 class Tag:
