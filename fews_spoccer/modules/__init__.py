@@ -15,14 +15,14 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 
 fmt_file = logging.Formatter(
-    '%(asctime)s - %(levelname)s - %(message)s')
+    '%(asctime)s - %(levelname)s - %(module)s - %(funcName)s - %(message)s')
 fmt_stream = logging.Formatter(
-    '%(levelname)s - %(message)s')
+    '%(levelname)s - %(module)s - %(funcName)s - %(message)s')
 
 add_loghandler(
     logger, logging.FileHandler, logging.DEBUG, fmt_file,
-    filename='./log.log', mode='w')
+    filename='./module.log', mode='w')
 add_loghandler(
     logger, logging.StreamHandler, logging.INFO, fmt_stream)
 
-logger.debug('Base logger initialized')
+logger.debug(__name__)

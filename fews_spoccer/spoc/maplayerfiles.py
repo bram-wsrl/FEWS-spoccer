@@ -41,7 +41,7 @@ class HL(SpocFile):
         matches = []
         for spocfile in sublocations:
             for id in sublocations[spocfile]:
-                matches.append(getattr(self, spocfile).get_param_matches(id))
+                matches += getattr(self, spocfile).get_param_matches(id)
         return matches
 
 

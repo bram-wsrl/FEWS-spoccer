@@ -66,12 +66,25 @@ class Tag:
         re.compile(vaarweg_tag)
     )
 
-    def __init__(self, tag: str, mapping=None):
+    def __init__(self, tag: str, map=None):
         self.tag = tag
-        self.mapping = mapping
+        self.map = map
 
     def __repr__(self):
         return f"{self.__class__.__name__}({self.tag})"
+
+    @property
+    def location(self):
+        return self.map.get('legger_code', self.map['name'])
+
+    @property
+    def is_muted(self):
+        return self.map['marker1'] != '' or self.map['marker2'] != ''
+
+    def filename(self):
+        exclude = ('marker1', 'prefix', 'tag_type', 'suffix', 'marker2')
+        stem = ''.join(v for k, v in self.map.items() if k not in exclude)
+        return ''.join(i for i in stem if i.isalnum() or i == '_') + '.csv'
 
     @staticmethod
     def is_taglike(tag: str) -> bool:
