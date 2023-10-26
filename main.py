@@ -14,6 +14,7 @@ if not load_dotenv():
 import numpy as np   # noqa
 import pandas as pd  # noqa
 
+from fews_spoccer.spoc.indexer import Indexer, Index                            # noqa
 from fews_spoccer.spoc.spoccer import Spoccer                                   # noqa
 from fews_spoccer.spoc.dtypes import Tag                                        # noqa
 from fews_spoccer.modules.imports.opvlwater import OpvlWaterModule, ParamMatch  # noqa
@@ -24,8 +25,9 @@ from fews_spoccer.modules.imports.cgoo import CGOO                              
 read_kw = {
     'sep': ';',
     'index_col': False,
-    'dtype': object,        # all data is initially read as strings
-    'na_values': '',        # empty strings are classified 'NaN'
+    'dtype': object,           # all data is initially read as strings
+    'na_values': [''],         # empty strings are classified 'NaN'
+    'keep_default_na': False,  # only empty fields are set 'NaN'
     'encoding': 'cp1252',
 }
 write_kw = {
@@ -71,19 +73,35 @@ modules = {
     }
 }
 
-param_matches = spoccer.hl.get_param_matches('HL000562')
-param_matches.append({'id': 'OW001380', 'param': 'QM',
-                      'ws_tags': np.nan, 'ws_ti_h2go_tags': '6677_46052'})
+indexer = spoccer.hl.get_param_matches('HL000562')
+
+
+indexer.ws[0].data.append({'id': 'OW001380', 'param': 'QM',
+                           'ws_tags': np.nan, 'ws_ti_h2go_tags': '6677_46052'})
 
 tag1 = Tag.parse(r'''~SCX.~Watersysteem.Objecten.De Baanbreker.Ronde Morgen.'''
                  r'''Tags.NL*09*001049 wtSTs--1001.s--1001_SD.Historic''')
 tag2 = Tag.parse(r'''~SCX.~Watersysteem.Objecten.Vijfheerenlanden.Kikkert'''
                  r''', de.Tags.NL*09*001596 wtSTLT-1002.LT-1002_SI.Historic''')
 
-'''
-param_matches.append({'id': 'OW001380', 'param': 'QM',
-                      'ws_tags': tag1, 'ws_ti_h2go_tags': np.nan})
-'''
+
+indexer.ws[0].data.append({'id': 'OW001380', 'param': 'QM',
+                           'ws_tags': tag1, 'ws_ti_h2go_tags': np.nan})
+
+
+empty = list((i, f) for i, f in indexer.fields() if i.is_empty(f))
+
+tags_only = list((i, f) for i, f in indexer.fields()
+                 if i.has_field(f, i.spocfiles[0]) and
+                 not i.has_field(f, i.spocfiles[1]))
+
+ti_only = list((i, f) for i, f in indexer.fields()
+               if i.has_field(f, i.spocfiles[1]) and
+               not i.has_field(f, i.spocfiles[0]))
+
+both = list((i, f) for i, f in indexer.fields()
+            if i.has_field(f, i.spocfiles[1]) and
+            i.has_field(f, i.spocfiles[0]))
 
 startdate = dt.datetime(2023, 1, 1)
 enddate = dt.datetime(2023, 3, 1)

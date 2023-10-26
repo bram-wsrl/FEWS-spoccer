@@ -1,6 +1,5 @@
-import pandas as pd
-
 from .spocfile import SpocFile
+from .indexer import Indexer, Index
 from .ctypes import (
     Column, HLColumn, SLColumn, WSColumn, TagParam, FileParam,
     XColumn, YColumn)
@@ -31,18 +30,18 @@ class HL(SpocFile):
     def __iter__(self):
         return iter((self, self.sl, self.ws))
 
-    def sublocations(self, id: str) -> dict[str, pd.Index]:
-        return {str(i).lower(): i.ids_by_pids(id) for i in self}
+    def sublocations(self, id: str) -> Indexer:
+        hl, sl, ws = list(self)
+        hl = Index(hl.ids_by_pids(id)[0], name=str(hl))
+        sl = [Index(i, name=str(sl)) for i in sl.ids_by_pids(id)]
+        ws = [Index(i, name=str(ws)) for i in ws.ids_by_pids(id)]
+        return Indexer(hl, sl, ws)
 
-    def get_param_matches(self, id):
-        sublocations = self.sublocations(id)
-        _ = sublocations.pop(str(self))
-
-        matches = []
-        for spocfile in sublocations:
-            for id in sublocations[spocfile]:
-                matches += getattr(self, spocfile).get_param_matches(id)
-        return matches
+    def get_param_matches(self, id: str) -> Indexer:
+        indexer = self.sublocations(id)
+        for index in indexer:
+            getattr(self, index.name).get_param_matches(index)
+        return indexer
 
 
 class SL(SpocFile):
@@ -79,8 +78,9 @@ class SL(SpocFile):
         return iter((self.sl_tags, self.sl_ti_h2go_tags, self.damo_pomp,
                      self.damo_stuw))
 
-    def get_param_matches(self, id):
-        return super().get_param_matches(self.sl_ti_h2go_tags, id)
+    def get_param_matches(self, index: Index) -> None:
+        index.data = super().get_param_matches(self.sl_ti_h2go_tags, index.id)
+        index.spocfiles = [str(self.sl_ti_h2go_tags), str(self.sl_tags)]
 
 
 class WS(SpocFile):
@@ -110,8 +110,9 @@ class WS(SpocFile):
     def __iter__(self):
         return iter((self.ws_tags, self.ws_ti_h2go_tags, self.ws_validatie))
 
-    def get_param_matches(self, id):
-        return super().get_param_matches(self.ws_ti_h2go_tags, id)
+    def get_param_matches(self, index: Index) -> None:
+        index.data = super().get_param_matches(self.ws_ti_h2go_tags, index.id)
+        index.spocfiles = [str(self.ws_ti_h2go_tags), str(self.ws_tags)]
 
 
 class SL_TAGS(SpocFile):
