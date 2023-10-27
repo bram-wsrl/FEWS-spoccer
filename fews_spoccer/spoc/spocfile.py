@@ -1,9 +1,11 @@
 import logging
+from typing import Self
 from pathlib import Path
 
 import pandas as pd
 
 from ..utils import log
+from .indexer import Index
 from .ctypes import Column, Param
 
 
@@ -96,19 +98,19 @@ class SpocFile:
     def ids_by_area(self, *areas: str) -> pd.Index:
         return self.df[self.df[self.area].isin(areas)].index
 
-    def get_param_matches(self, spocfile, id):
+    def get_param_matches(self, spocfile: Self, index: Index) -> list[dict]:
         matches = []
         for p in spocfile.Params:
             match = {}
-            match['id'] = id
+            match['id'] = index.id
             match['param'] = p.param
 
-            file_value = p.owner_instance.get_param_value(id, p)
+            file_value = p.owner_instance.get_param_value(index, p)
             match[str(p.owner_instance)] = file_value
 
             if p.relation is not None:
                 p = p.relation
-                tag_value = p.owner_instance.get_param_value(id, p)
+                tag_value = p.owner_instance.get_param_value(index, p)
                 match[str(p.owner_instance)] = tag_value
             matches.append(match)
         return matches

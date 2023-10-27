@@ -3,27 +3,36 @@ import itertools as it
 import pandas as pd
 
 
+class IndexField(dict):
+    def __init__(self, map):
+        self.update(map)
+
+    def exists(self, spocfile):
+        return not pd.isna(self.get(spocfile))
+
+    def is_empty(self, spocfiles):
+        return not any(self.exists(s) for s in spocfiles)
+
+    def exists_all(self, spocfiles):
+        return all(self.exists(s) for s in spocfiles)
+
+
 class Index:
-    def __init__(self, id, name, spocfiles=None):
+    def __init__(self, id, indexfile):
         self.id = id
-        self.name = name
-        self.spocfiles = spocfiles or []
+        self.indexfile = indexfile
 
-        # [{'id': '', 'spocfile1': '', 'spocfile2': '', ...}]
-        self.data = []
-
-    def __repr__(self):
-        return f'{self.__class__.__name__}({self.id})'
-
-    def __call__(self, *args, **kwargs):
-        return self.id
+        self._spocfiles = []
+        self._data = []
 
     def __iter__(self):
         return iter(self.data)
 
-    @property
-    def indexfile(self):
-        return self.name
+    def __call__(self, *args, **kwargs):
+        return self.id
+
+    def __repr__(self):
+        return f'{self.__class__.__name__}({self.id})'
 
     @property
     def spocfiles(self):
@@ -33,18 +42,15 @@ class Index:
     def spocfiles(self, spocfiles):
         self._spocfiles = sorted(list(spocfiles))
 
-    def is_empty(self, field):
-        return not any(self.has_field(field, s) for s in self.spocfiles)
+    @property
+    def data(self):
+        return self._data
 
-    def has_field(self, field, spocfile):
-        return not pd.isna(field.get(spocfile))
+    def set_data(self, map: list[dict]):
+        self._data = [IndexField(m) for m in map]
 
-    def has_field_all(self, field):
-        return all(self.has_field(field, s) for s in self.spocfiles)
-
-    def has_field_only(self, field, spocfile):
-        return self.has_field(field, spocfile) and\
-            not self.has_field_all(field)
+    def extend_data(self, map: list[dict]):
+        self._data.extend(IndexField(m) for m in map)
 
 
 class Indexer:
@@ -53,11 +59,11 @@ class Indexer:
         self.sl = sl
         self.ws = ws
 
-    def __repr__(self):
-        return f'{self.__class__.__name__}({self.hl.id})'
-
     def __iter__(self):
         return it.chain(self.sl, self.ws)
+
+    def __repr__(self):
+        return f'{self.__class__.__name__}({self.hl.id})'
 
     def fields(self):
         for index in self:

@@ -9,15 +9,15 @@ from pprint import pprint                                 # noqa
 from dotenv import load_dotenv                            # noqa
 
 if not load_dotenv():
-    logger.warn('Evironment variables not loaded')
+    logger.warning('Environment variables not loaded')
 
 import numpy as np   # noqa
 import pandas as pd  # noqa
 
-from fews_spoccer.spoc.indexer import Indexer, Index                            # noqa
+from fews_spoccer.spoc.indexer import Indexer, Index, IndexField                        # noqa
 from fews_spoccer.spoc.spoccer import Spoccer                                   # noqa
 from fews_spoccer.spoc.dtypes import Tag                                        # noqa
-from fews_spoccer.modules.imports.opvlwater import OpvlWaterModule, ParamMatch  # noqa
+from fews_spoccer.modules.imports.opvlwater import OpvlWaterModule             # noqa
 from fews_spoccer.modules.imports.h2go import H2GO                              # noqa
 from fews_spoccer.modules.imports.cgoo import CGOO                              # noqa
 
@@ -73,11 +73,13 @@ modules = {
     }
 }
 
-indexer = spoccer.hl.get_param_matches('HL000562')
+indexer = spoccer.hl.sublocations('HL000562')
+indexer = spoccer.hl.get_param_matches(indexer)
 
 
-indexer.ws[0].data.append({'id': 'OW001380', 'param': 'QM',
-                           'ws_tags': np.nan, 'ws_ti_h2go_tags': '6677_46052'})
+indexer.ws[0].extend_data([
+    {'id': 'OW001380', 'param': 'QM',
+     'ws_tags': np.nan, 'ws_ti_h2go_tags': '6677_46052'}])
 
 tag1 = Tag.parse(r'''~SCX.~Watersysteem.Objecten.De Baanbreker.Ronde Morgen.'''
                  r'''Tags.NL*09*001049 wtSTs--1001.s--1001_SD.Historic''')
@@ -85,10 +87,11 @@ tag2 = Tag.parse(r'''~SCX.~Watersysteem.Objecten.Vijfheerenlanden.Kikkert'''
                  r''', de.Tags.NL*09*001596 wtSTLT-1002.LT-1002_SI.Historic''')
 
 
-indexer.ws[0].data.append({'id': 'OW001380', 'param': 'QM',
-                           'ws_tags': tag1, 'ws_ti_h2go_tags': np.nan})
+indexer.ws[0].extend_data([{'id': 'OW001380', 'param': 'QM',
+                            'ws_tags': tag1, 'ws_ti_h2go_tags': np.nan}])
 
 
+"""
 empty = list((i, f) for i, f in indexer.fields() if i.is_empty(f))
 
 tags_only = list((i, f) for i, f in indexer.fields()
@@ -102,6 +105,7 @@ ti_only = list((i, f) for i, f in indexer.fields()
 both = list((i, f) for i, f in indexer.fields()
             if i.has_field(f, i.spocfiles[1]) and
             i.has_field(f, i.spocfiles[0]))
+"""
 
 startdate = dt.datetime(2023, 1, 1)
 enddate = dt.datetime(2023, 3, 1)
@@ -110,7 +114,17 @@ enddate = dt.datetime(2023, 3, 1)
 h2go_config = modules['imports']['h2go']
 cgoo_config = modules['imports']['cgoo']
 
-h2go = H2GO(**h2go_config)
-cgoo = CGOO(**cgoo_config)
+opvl_mod = OpvlWaterModule()
+# opvl_mod.validate_tags(indexer)
+# opvl_mod.validate_h2go(indexer)
 
-opvl_mod = OpvlWaterModule(h2go_config, cgoo_config)
+# h2go = H2GO(**h2go_config)
+# cgoo = CGOO(**cgoo_config)
+
+# opvl_mod = OpvlWaterModule(h2go_config, cgoo_config)
+
+
+idf = IndexField({1: 1, 2: 2})
+idf.exists(1)
+idf.is_empty([])
+idf.exists_all([])

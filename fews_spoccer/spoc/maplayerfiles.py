@@ -32,15 +32,14 @@ class HL(SpocFile):
 
     def sublocations(self, id: str) -> Indexer:
         hl, sl, ws = list(self)
-        hl = Index(hl.ids_by_pids(id)[0], name=str(hl))
-        sl = [Index(i, name=str(sl)) for i in sl.ids_by_pids(id)]
-        ws = [Index(i, name=str(ws)) for i in ws.ids_by_pids(id)]
+        hl = Index(hl.ids_by_pids(id)[0], indexfile=str(hl))
+        sl = [Index(i, indexfile=str(sl)) for i in sl.ids_by_pids(id)]
+        ws = [Index(i, indexfile=str(ws)) for i in ws.ids_by_pids(id)]
         return Indexer(hl, sl, ws)
 
-    def get_param_matches(self, id: str) -> Indexer:
-        indexer = self.sublocations(id)
+    def get_param_matches(self, indexer: Indexer) -> Indexer:
         for index in indexer:
-            getattr(self, index.name).get_param_matches(index)
+            getattr(self, index.indexfile).get_param_matches(index)
         return indexer
 
 
@@ -79,7 +78,7 @@ class SL(SpocFile):
                      self.damo_stuw))
 
     def get_param_matches(self, index: Index) -> None:
-        index.data = super().get_param_matches(self.sl_ti_h2go_tags, index.id)
+        index.set_data(super().get_param_matches(self.sl_ti_h2go_tags, index))
         index.spocfiles = [str(self.sl_ti_h2go_tags), str(self.sl_tags)]
 
 
@@ -111,7 +110,7 @@ class WS(SpocFile):
         return iter((self.ws_tags, self.ws_ti_h2go_tags, self.ws_validatie))
 
     def get_param_matches(self, index: Index) -> None:
-        index.data = super().get_param_matches(self.ws_ti_h2go_tags, index.id)
+        index.set_data(super().get_param_matches(self.ws_ti_h2go_tags, index))
         index.spocfiles = [str(self.ws_ti_h2go_tags), str(self.ws_tags)]
 
 
@@ -144,8 +143,8 @@ class SL_TAGS(SpocFile):
     def __init__(self):
         super().__init__()
 
-    def get_param_value(self, id, param):
-        return super().field(id, param)
+    def get_param_value(self, index: Index, param: TagParam):
+        return super().field(index, param)
 
 
 class SL_TI_H2GO_TAGS(SpocFile):
@@ -174,9 +173,9 @@ class SL_TI_H2GO_TAGS(SpocFile):
     def __init__(self):
         super().__init__()
 
-    def get_param_value(self, id, param):
-        return super().field(id, self.h2go_locid).concat(
-            super().field(id, param))
+    def get_param_value(self, index: Index, param: FileParam):
+        return super().field(index, self.h2go_locid).concat(
+            super().field(index, param))
 
 
 class DAMO_pomp(SpocFile):
@@ -238,8 +237,8 @@ class WS_TAGS(SpocFile):
     def __init__(self):
         super().__init__()
 
-    def get_param_value(self, id, param):
-        return super().field(id, param)
+    def get_param_value(self, index: Index, param: TagParam):
+        return super().field(index, param)
 
 
 class WS_TI_H2GO_TAGS(SpocFile):
@@ -260,9 +259,9 @@ class WS_TI_H2GO_TAGS(SpocFile):
     def __init__(self):
         super().__init__()
 
-    def get_param_value(self, id, param):
-        return super().field(id, self.h2go_locid).concat(
-            super().field(id, param))
+    def get_param_value(self, index: Index, param: FileParam):
+        return super().field(index, self.h2go_locid).concat(
+            super().field(index, param))
 
 
 class WS_VALIDATIE(SpocFile):

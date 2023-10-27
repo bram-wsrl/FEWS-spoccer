@@ -2,6 +2,7 @@ import logging
 
 import pandas as pd
 
+from .indexer import Index
 from ..utils import catch, log
 from .etypes import NonUniqueException, EmptyFieldException
 from .dtypes import (ColumnField, IndexField, HLField, SLField, OWField,
@@ -16,8 +17,8 @@ class BaseDescriptor:
         self.owner_instance = obj
         return self
 
-    def field(self, id):
-        return self.instance(self.owner_instance.df.loc[id, self])
+    def field(self, index: Index):
+        return self.instance(self.owner_instance.df.loc[index, self])
 
     def column(self):
         return self.owner_instance.df[self].apply(self.instance)
