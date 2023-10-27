@@ -4,7 +4,10 @@ import datetime as dt
 
 import pandas as pd
 
-from fews_spoccer.utils import log
+from fews_spoccer.utils import log, catch
+from ...spoc.etypes import (
+    H2GOFileNotFoundException, H2GOMultipleFilesFoundException,
+    H2GOFileContentException)
 
 
 logger = logging.getLogger(__name__)
@@ -60,22 +63,22 @@ class H2GO:
             return True
 
         elif len(filepath) == 0:
-            raise FileNotFoundError(pattern)
+            raise H2GOFileNotFoundException(pattern)
         else:
-            raise FileExistsError(filepath, pattern)
+            raise H2GOMultipleFilesFoundException(filepath, pattern)
 
     @log(logger)
     def read(self):
         self._df = pd.read_csv(self.filepath, **self.read_kw)
 
     @log(logger)
-    def validate(self):
+    def check_content(self):
         locid, mptid = self.pattern.split('_')
         if not all(self.df.LOCATIEID.astype(str) == locid):
-            raise ValueError(self.filepath, locid)
+            raise H2GOFileContentException(self.filepath, locid)
 
         if not all(self.df.MEETPUNTID.astype(str) == mptid):
-            raise ValueError(self.filepath, mptid)
+            raise H2GOFileContentException(self.filepath, mptid)
 
     @log(logger)
     def convert_tz(self, tz_in='utc', tz_out='Europe/Amsterdam'):
@@ -93,15 +96,20 @@ class H2GO:
     def write(self):
         self.df.to_csv(self.dstpath / self.filepath.name, **self.write_kw)
 
-    def load(self, pattern):
+    @catch(logger)
+    @log(logger, level=logging.INFO)
+    def validate(self, pattern):
         self.file_exists(pattern)
         self.read()
-        self.validate()
+        self.check_content()
         self.convert_tz()
 
-        logger.info(self)
-        return self
+    @classmethod
+    def load(cls, pattern, config):
+        obj = cls(**config)
+        obj.validate(pattern)
+        return obj
 
+    @log(logger, level=logging.INFO)
     def save(self):
         self.write()
-        logger.info(self)

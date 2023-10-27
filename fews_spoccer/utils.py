@@ -3,7 +3,7 @@ import logging
 import inspect
 import functools
 
-from .spoc.etypes import SpoccerColumnException
+from .spoc.etypes import SpoccerException
 
 
 def log(logger, level=logging.DEBUG):
@@ -23,7 +23,7 @@ def log(logger, level=logging.DEBUG):
     return deco
 
 
-def catch(logger, exceptions=(SpoccerColumnException,)):
+def catch(logger, exceptions=(SpoccerException,)):
     '''
     Raise or catch exceptions in the annotated function
     '''
@@ -38,6 +38,6 @@ def catch(logger, exceptions=(SpoccerColumnException,)):
                 return f(*args, **kwargs)
             except exceptions as e:
                 modulename = inspect.getmodule(f).__name__.split('.')[-1]
-                logger.error(f'{modulename} - {f.__name__} - {e}')
+                logger.error(f'{modulename} - {f.__name__} - {repr(e)}')
         return wrapper
     return deco

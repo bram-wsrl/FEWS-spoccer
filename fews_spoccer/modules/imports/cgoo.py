@@ -7,6 +7,9 @@ from pathlib import Path
 import pyodbc
 import pandas as pd
 
+from ...utils import catch, log
+from ...spoc.etypes import MutedTagException, TagNotInViewException
+
 
 logger = logging.getLogger(__name__)
 
@@ -34,23 +37,22 @@ class CGOOBase:
     def is_connected(self):
         return bool(self._connection)
 
+    @log(logger, level=logging.INFO)
     def connect(self):
         self._connection = pyodbc.connect(self.connection_string)
         self._cursor = self._connection.cursor()
 
-        logger.info('OK')
-
     def query(self, sql_statement, *args):
         self._cursor.execute(sql_statement, *args)
 
-        logger.debug(f'{", ".join(args)}')
+        logger.debug(f'cgoo - query - {", ".join(args)}')
 
 
 class CGOO(CGOOBase):
     sql_stmt_fmt = 'exec [dbo].SP_sub_Long_Hist ?, ?, ?'
     default_time_window = dt.timedelta(days=31)
     query_delay_seconds = 1
-    global_startdatetime = dt.datetime(2010, 1, 1)
+    global_startdatetime = dt.datetime(2023, 6, 1)  # test setting
 
     def __init__(self, dstpath, write_kw, credentials):
         super().__init__(credentials)
@@ -65,6 +67,14 @@ class CGOO(CGOOBase):
     @property
     def df(self):
         return self._df
+
+    @catch(logger)
+    @log(logger, level=logging.INFO)
+    def validate(self, tag):
+        if tag.is_muted:
+            raise MutedTagException(tag)
+        if tag.tag not in self.get_unique_tags(tag.location):
+            raise TagNotInViewException(tag)
 
     @staticmethod
     def dt2str(datetime, fmt="%Y-%m-%d %H:%M:%S"):

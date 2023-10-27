@@ -1,5 +1,5 @@
 import os
-os.environ['RAISE'] = "0"                                  # $env:RAISE='0'
+os.environ['RAISE'] = "0"                                 # $env:RAISE='0'
 
 import logging                                            # noqa
 logger = logging.getLogger(__name__)
@@ -17,7 +17,7 @@ import pandas as pd  # noqa
 from fews_spoccer.spoc.indexer import Indexer, Index, IndexField                        # noqa
 from fews_spoccer.spoc.spoccer import Spoccer                                   # noqa
 from fews_spoccer.spoc.dtypes import Tag                                        # noqa
-from fews_spoccer.modules.imports.opvlwater import OpvlWaterModule             # noqa
+from fews_spoccer.modules.imports.opvlwater import OpvlWaterModule              # noqa
 from fews_spoccer.modules.imports.h2go import H2GO                              # noqa
 from fews_spoccer.modules.imports.cgoo import CGOO                              # noqa
 
@@ -91,40 +91,7 @@ indexer.ws[0].extend_data([{'id': 'OW001380', 'param': 'QM',
                             'ws_tags': tag1, 'ws_ti_h2go_tags': np.nan}])
 
 
-"""
-empty = list((i, f) for i, f in indexer.fields() if i.is_empty(f))
-
-tags_only = list((i, f) for i, f in indexer.fields()
-                 if i.has_field(f, i.spocfiles[0]) and
-                 not i.has_field(f, i.spocfiles[1]))
-
-ti_only = list((i, f) for i, f in indexer.fields()
-               if i.has_field(f, i.spocfiles[1]) and
-               not i.has_field(f, i.spocfiles[0]))
-
-both = list((i, f) for i, f in indexer.fields()
-            if i.has_field(f, i.spocfiles[1]) and
-            i.has_field(f, i.spocfiles[0]))
-"""
-
-startdate = dt.datetime(2023, 1, 1)
-enddate = dt.datetime(2023, 3, 1)
-
-
 h2go_config = modules['imports']['h2go']
 cgoo_config = modules['imports']['cgoo']
 
-opvl_mod = OpvlWaterModule()
-# opvl_mod.validate_tags(indexer)
-# opvl_mod.validate_h2go(indexer)
-
-# h2go = H2GO(**h2go_config)
-# cgoo = CGOO(**cgoo_config)
-
-# opvl_mod = OpvlWaterModule(h2go_config, cgoo_config)
-
-
-idf = IndexField({1: 1, 2: 2})
-idf.exists(1)
-idf.is_empty([])
-idf.exists_all([])
+opvl_mod = OpvlWaterModule(h2go_config, cgoo_config)
