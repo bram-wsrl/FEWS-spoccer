@@ -21,8 +21,12 @@ class HL(SpocFile):
     commentaar = Column('COMMENTAAR')
     area = Column('DS_GBD')
 
-    def __init__(self):
+    oc_test = Column('OC_TEST')
+    oc_prod = Column('OC_PROD')
+
+    def __init__(self, spoccer):
         super().__init__()
+        self.spoccer = spoccer
 
         self.sl = SL()
         self.ws = WS()
@@ -32,13 +36,13 @@ class HL(SpocFile):
 
     def sublocations(self, id: str) -> Indexer:
         hl, sl, ws = list(self)
-        hl = Index(hl.ids_by_pids(id)[0], indexfile=str(hl))
+        hl = [Index(hl.ids_by_pids(id)[0], indexfile=str(hl))]
         sl = [Index(i, indexfile=str(sl)) for i in sl.ids_by_pids(id)]
         ws = [Index(i, indexfile=str(ws)) for i in ws.ids_by_pids(id)]
-        return Indexer(hl, sl, ws)
+        return Indexer(self.spoccer, hl, sl, ws)
 
     def get_param_matches(self, indexer: Indexer) -> Indexer:
-        for index in indexer:
+        for index in indexer.sublocations():
             getattr(self, index.indexfile).get_param_matches(index)
         return indexer
 
@@ -64,6 +68,9 @@ class SL(SpocFile):
     x = XColumn('X')
     y = YColumn('Y')
     commentaar = Column('COMMENTAAR')
+
+    oc_test = Column('OC_TEST')
+    oc_prod = Column('OC_PROD')
 
     def __init__(self):
         super().__init__()
@@ -98,6 +105,9 @@ class WS(SpocFile):
     pid = HLColumn('PARENTLOCATIONID', unique=False, empty=True, pattern=False)
     commentaar = Column('COMMENTAAR')
     scx_lcode = Column('SCX_Lcode')
+
+    oc_test = Column('OC_TEST')
+    oc_prod = Column('OC_PROD')
 
     def __init__(self):
         super().__init__()
@@ -140,6 +150,9 @@ class SL_TAGS(SpocFile):
     tag_cgoo_bs_unit = Column('TAG_CGOO_BS_UNIT')
     tag_cgoo_q_berekening_unit = Column('TAG_CGOO_Q_berekening_UNIT')
 
+    oc_test = Column('OC_TEST')
+    oc_prod = Column('OC_PROD')
+
     def __init__(self):
         super().__init__()
 
@@ -170,6 +183,9 @@ class SL_TI_H2GO_TAGS(SpocFile):
     commentaar = Column('_COMMENTAAR')
     gecontroleerd = Column('GECONTROLEERD')
 
+    oc_test = Column('OC_TEST')
+    oc_prod = Column('OC_PROD')
+
     def __init__(self):
         super().__init__()
 
@@ -193,6 +209,9 @@ class DAMO_pomp(SpocFile):
     objectbegin = Column('OBJECTBEGI')
     objecteind = Column('OBJECTEIND')
     gecontroleerd = Column('GECONTROLEERD')
+
+    oc_test = Column('OC_TEST')
+    oc_prod = Column('OC_PROD')
 
     def __init__(self):
         super().__init__()
@@ -221,6 +240,9 @@ class DAMO_stuw(SpocFile):
     factor_well_macht3 = Column('Factor_weff_macht3')
     gecontroleerd = Column('GECONTROLEERD')
 
+    oc_test = Column('OC_TEST')
+    oc_prod = Column('OC_PROD')
+
     def __init__(self):
         pass
 
@@ -233,6 +255,9 @@ class WS_TAGS(SpocFile):
     param_qm = TagParam('TAG_CGOO_Q', param='QM')
 
     gecontroleerd = Column('GECONTROLEERD')
+
+    oc_test = Column('OC_TEST')
+    oc_prod = Column('OC_PROD')
 
     def __init__(self):
         super().__init__()
@@ -255,6 +280,9 @@ class WS_TI_H2GO_TAGS(SpocFile):
 
     comment = Column('COMMENT')
     gecontroleerd = Column('GECONTROLEERD')
+
+    oc_test = Column('OC_TEST')
+    oc_prod = Column('OC_PROD')
 
     def __init__(self):
         super().__init__()
@@ -293,6 +321,9 @@ class WS_VALIDATIE(SpocFile):
     opmerking = Column('opmerking')
     opemerking_zachte_grenzen = Column('opmerking zachte grenzen')
     gecontroleerd = Column('GECONTROLEERD')
+
+    oc_test = Column('OC_TEST')
+    oc_prod = Column('OC_PROD')
 
     def __init__(self):
         super().__init__()

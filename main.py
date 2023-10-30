@@ -48,7 +48,7 @@ spoccer.save()
 
 modules = {
     'imports': {
-        'h2go': {
+        'h2go_config': {
             'srcpath': './tests/data/imports',
             'dstpath': './tests/output/imports',
             'read_kw': {
@@ -57,7 +57,7 @@ modules = {
                 'index': False
             },
         },
-        'cgoo': {
+        'cgoo_config': {
             'dstpath': './tests/output/imports',
             'credentials': {
                 'server': os.environ.get('DB_SERVER'),
@@ -73,6 +73,10 @@ modules = {
     }
 }
 
+spoccer.load_module(OpvlWaterModule, **modules['imports'])
+spoccer.run_module('HL000562', 'oc_test')
+
+"""
 indexer = spoccer.hl.sublocations('HL000562')
 indexer = spoccer.hl.get_param_matches(indexer)
 
@@ -91,7 +95,8 @@ indexer.ws[0].extend_data([{'id': 'OW001380', 'param': 'QM',
                             'ws_tags': tag1, 'ws_ti_h2go_tags': np.nan}])
 
 
-h2go_config = modules['imports']['h2go']
-cgoo_config = modules['imports']['cgoo']
+h2go_config = modules['imports']['h2go_config']
+cgoo_config = modules['imports']['cgoo_config']
 
 opvl_mod = OpvlWaterModule(h2go_config, cgoo_config)
+"""

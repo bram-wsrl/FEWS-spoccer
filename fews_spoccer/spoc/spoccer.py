@@ -20,7 +20,9 @@ class Spoccer:
         self.read_kw = read_kw
         self.write_kw = write_kw
 
-        self.hl = HL()
+        self.hl = HL(self)
+
+        self.module = None
 
     def __repr__(self):
         return f'<{self.__class__.__name__}()>'
@@ -58,3 +60,26 @@ class Spoccer:
         '''Validate SpocFiles'''
         for relation in self:
             relation.validate()
+
+    def pre(self, id, sync_column):
+        indexer = self.hl.sublocations(id)
+        indexer.check_sync_level(self.module.sync_level, sync_column)
+        indexer = self.module.pre(indexer)
+        return indexer
+
+    def post(self, indexer, sync_column):
+        indexer.set_sync_level(self.module.sync_level, sync_column)
+        self.save()
+
+    def load_module(self, module, **module_config):
+        self.module = module(**module_config)
+
+    def validate_module(self, id, sync_column):
+        indexer = self.pre(id, sync_column)
+        self.module.validate(indexer)
+
+    def run_module(self, id, sync_column):
+        indexer = self.pre(id, sync_column)
+        self.module.run(indexer)
+        self.post(indexer, sync_column)
+        return indexer

@@ -1,584 +1,584 @@
-OBJECTID;CODE;NAAM;TYPES;SHORTNAME;ICON;TOOLTIP;OBJECTBEGI;OBJECTEIND;NAMESPACE;X;Y;COMMENTAAR;DS_GBD
-;HL000001;Ronde Morgen;Stuw;Ronde Morgen;;;01-01-1900 00:00;31-12-2099 00:00;;150558;420087;;Bommelerwaard
-;HL000002;Achterdijk voormalig woonwagenkamp 2;Stuw;Achterdijk voormalig woonwagenkamp 2;;;01-01-1900 00:00;31-12-2099 00:00;;149183;423081;;Bommelerwaard
-;HL000003;Campina;Stuw;Campina;;;01-01-1900 00:00;31-12-2099 00:00;;146093;423510;;Bommelerwaard
-;HL000004;Alem;Gemaal;Alem;;;01-01-1900 00:00;31-12-2099 00:00;;153012;421573;Complex Alem;Bommelerwaard
-;HL000005;Oever, H. van de;Gemaal;Oever, H. van de;;;01-01-1900 00:00;31-12-2099 00:00;;152923;421389;;Bommelerwaard
-;HL000006;Meiweg 2;Stuw;Meiweg 2;;;01-01-1900 00:00;31-12-2099 00:00;;149985;422268;;Bommelerwaard
-;HL000007;Meiweg 1;Stuw;Meiweg 1;;;01-01-1900 00:00;31-12-2099 00:00;;150001;422255;Complex Meiweg;Bommelerwaard
-;HL000008;Duitse Weistraat;Stuw;Duitse Weistraat;;;01-01-1900 00:00;31-12-2099 00:00;;150603;419810;;Bommelerwaard
-;HL000009;Hedel;Gemaal;Hedel;;;01-01-1900 00:00;31-12-2099 00:00;;146657;417168;;Bommelerwaard
-;HL000010;Heinz;Stuw;Heinz;;;01-01-1900 00:00;31-12-2099 00:00;;146695;422371;;Bommelerwaard
-;HL000011;Hogeweg Rossum;Gemaal, Stuw;Hogeweg Rossum;;;01-01-1900 00:00;31-12-2099 00:00;;151142;423703;;Bommelerwaard
-;HL000012;Hurwenensestraat bij ijscoman de Groot;Stuw;Hurwenensestraat bij ijscoman de Groot;;;01-01-1900 00:00;31-12-2099 00:00;;148975;423528;;Bommelerwaard
-;HL000013;Kerkwijkse Kade;Gemaal, Stuw;Kerkwijkse Kade;;;01-01-1900 00:00;31-12-2099 00:00;;144814;420289;;Bommelerwaard
-;HL000014;Kievitsham;Gemaal;Kievitsham;;;01-01-1900 00:00;31-12-2099 00:00;;151450;419166;;Bommelerwaard
-;HL000015;Koudijs;Stuw;Koudijs;;;01-01-1900 00:00;31-12-2099 00:00;;145828;420450;;Bommelerwaard
-;HL000016;Meersloot;Gemaal;Meersloot;;;01-01-1900 00:00;31-12-2099 00:00;;142690;418564;;Bommelerwaard
-;HL000017;Oostenbroekweg;Stuw;Oostenbroekweg;;;01-01-1900 00:00;31-12-2099 00:00;;150308;419412;TI..Hooymans met leggercode 001046;Bommelerwaard
-;HL000018;Sassert, de;Stuw;Sassert, de;;;01-01-1900 00:00;31-12-2099 00:00;;147967;419543;;Bommelerwaard
-;HL000019;Steenweg;Stuw;Steenweg;;;01-01-1900 00:00;31-12-2099 00:00;;146026;421889;;Bommelerwaard
-;HL000020;Stuvers;Gemaal;Stuvers;;;01-01-1900 00:00;31-12-2099 00:00;;150486;422045;;Bommelerwaard
-;HL000021;Tennisveld Ammerzoden;Stuw;Tennisveld Ammerzoden;;;01-01-1900 00:00;31-12-2099 00:00;;144141;417910;;Bommelerwaard
-;HL000022;Teuling, Wout den 2;Stuw;Teuling, Wout den 2;;;01-01-1900 00:00;31-12-2099 00:00;;148389;422353;;Bommelerwaard
-;HL000023;Waluwe;Stuw;Waluwe;;;01-01-1900 00:00;31-12-2099 00:00;;145859;422917;;Bommelerwaard
-;HL000024;Weigraaf;Gemaal;Weigraaf;;;01-01-1900 00:00;31-12-2099 00:00;;142039;418809;;Bommelerwaard
-;HL000025;Wildeman;Stuw;Wildeman;;;01-01-1900 00:00;31-12-2099 00:00;;147090;422899;;Bommelerwaard
-;HL000026;Winkelseweg;Stuw;Winkelseweg;;;01-01-1900 00:00;31-12-2099 00:00;;146593;419907;;Bommelerwaard
-;HL000027;Woudje Dokkum;Stuw;Woudje Dokkum;;;01-01-1900 00:00;31-12-2099 00:00;;143321;420051;;Bommelerwaard
-;HL000028;Berenskamp;Gemaal;Berenskamp;;;01-01-1900 00:00;31-12-2099 00:00;;140829;422944;;Bommelerwaard
-;HL000029;Bern;Gemaal;Bern;;;01-01-1900 00:00;31-12-2099 00:00;;140910;417551;;Bommelerwaard
-;HL000030;Eendenkade;Gemaal, Stuw;Eendenkade;;;01-01-1900 00:00;31-12-2099 00:00;;137489;421695;;Bommelerwaard
-;HL000031;Heemstraweg, van;Gemaal, Stuw;Heemstraweg, van;;;01-01-1900 00:00;31-12-2099 00:00;;143340;423052;;Bommelerwaard
-;HL000032;Heemstraweg, van P-plaats;Stuw;Heemstraweg, van P-plaats;;;01-01-1900 00:00;31-12-2099 00:00;;144153;423268;;Bommelerwaard
-;HL000033;Hogeweg Satter;Stuw;Hogeweg Satter;;;01-01-1900 00:00;31-12-2099 00:00;;140042;423411;;Bommelerwaard
-;HL000034;Hogeweg van Tuil;Stuw;Hogeweg van Tuil;;;01-01-1900 00:00;31-12-2099 00:00;;140727;423975;;Bommelerwaard
-;HL000035;Parallelweg;Stuw;Parallelweg;;;01-01-1900 00:00;31-12-2099 00:00;;137737;423487;;Bommelerwaard
-;HL000036;Rietschoof, de;Gemaal;Rietschoof, de;;;01-01-1900 00:00;31-12-2099 00:00;;138020;420497;;Bommelerwaard
-;HL000037;Stuversdreef, Jan van;Stuw;Stuversdreef, Jan van;;;01-01-1900 00:00;31-12-2099 00:00;;141845;422179;;Bommelerwaard
-;HL000038;Zeedijk 1;Stuw;Zeedijk 1;;;01-01-1900 00:00;31-12-2099 00:00;;139362;421800;;Bommelerwaard
-;HL000039;Zeedijk 2;Stuw;Zeedijk 2;;;01-01-1900 00:00;31-12-2099 00:00;;139479;422913;;Bommelerwaard
-;HL000040;Dam van Brakel, Van;Gemaal, Stuw;Dam van Brakel, Van;;;01-01-1900 00:00;31-12-2099 00:00;;132288;422639;;Bommelerwaard
-;HL000041;Leuvenveldseweg;Gemaal, Stuw;Leuvenveldseweg;;;01-01-1900 00:00;31-12-2099 00:00;;133608;425260;;Bommelerwaard
-;HL000042;Molenkampseweg;Gemaal, Stuw;Molenkampseweg;;;01-01-1900 00:00;31-12-2099 00:00;;135407;424822;;Bommelerwaard
-;HL000043;Rossum, Maarten van;Gemaal, Stuw;Rossum, Maarten van;;;01-01-1900 00:00;31-12-2099 00:00;;133212;422577;;Bommelerwaard
-;HL000044;Achterdijk;Stuw;Achterdijk;;;01-01-1900 00:00;31-12-2099 00:00;;144195;419555;;Bommelerwaard
-;HL000045;Kooiheuvel;Gemaal;Kooiheuvel;;;01-01-1900 00:00;31-12-2099 00:00;;149574;418712;;Bommelerwaard
-;HL000046;Weigraaf noord;Stuw;Weigraaf noord;;;01-01-1900 00:00;31-12-2099 00:00;;142035;419109;;Bommelerwaard
-;HL000047;Zandweg Ammerzoden;Stuw;Zandweg Ammerzoden;;;01-01-1900 00:00;31-12-2099 00:00;;143864;419291;;Bommelerwaard
-;HL000048;achter Tuil, het bos van;Stuw;achter Tuil, het bos van;;;01-01-1900 00:00;31-12-2099 00:00;;143198;423445;;Bommelerwaard
-;HL000049;Rampert, de;Gemaal, Stuw;Rampert, de;;;01-01-1900 00:00;31-12-2099 00:00;;141289;421649;Complex de Rampert;Bommelerwaard
-;HL000050;Huizendijk;Gemaal;Huizendijk;;;01-01-1900 00:00;31-12-2099 00:00;;155603;425977;;Bommelerwaard
-;HL000051;Hurwenen;Gemaal;Hurwenen;;;01-01-1900 00:00;31-12-2099 00:00;;148797;425208;;Buitenpolders
-;HL000052;Jongh, H.C. de;Gemaal;Jongh, H.C. de;;;01-01-1900 00:00;31-12-2099 00:00;;136574;422961;;Bommelerwaard
-;HL000053;Knotwilgenweg;Stuw;Knotwilgenweg;;;01-01-1900 00:00;31-12-2099 00:00;;144414;418045;;Bommelerwaard
-;HL000054;Leeuw, Ben de noord;Stuw;Leeuw, Ben de noord;;;01-01-1900 00:00;31-12-2099 00:00;;147423;421999;;Bommelerwaard
-;HL000055;Maas en Waalweg;Gemaal;Maas en Waalweg;;;01-01-1900 00:00;31-12-2099 00:00;;137525;422542;;Bommelerwaard
-;HL000056;Dubbele schuif Wildeman;Stuw;Dubbele schuif Wildeman;;;01-01-1900 00:00;31-12-2099 00:00;;146976;424067;;Bommelerwaard
-;HL000057;Schuif Torenstraatje;Stuw;Schuif Torenstraatje;;;01-01-1900 00:00;31-12-2099 00:00;;146971;424092;;Bommelerwaard
-;HL000058;Stuw Torenstraatje;Stuw;Stuw Torenstraatje;;;01-01-1900 00:00;31-12-2099 00:00;;146965;424100;;Bommelerwaard
-;HL000059;Bleeke Kil;Stuw;Bleeke Kil;;;01-01-1900 00:00;31-12-2099 00:00;;121731;417969;;Oostwaard
-;HL000060;Bolink;Stuw;Bolink;;;01-01-1900 00:00;31-12-2099 00:00;;126421;423200;;Land van Heusden en Altena
-;HL000061;Borcharenweg;Stuw;Borcharenweg;;;01-01-1900 00:00;31-12-2099 00:00;;121810;423832;;Land van Heusden en Altena
-;HL000062;Sleeuwijk, van de Burg;Stuw;Sleeuwijk, van de Burg;;;01-01-1900 00:00;31-12-2099 00:00;;124208;423705;;Land van Heusden en Altena
-;HL000063;Gantel, de;Stuw;Gantel, de;;;01-01-1900 00:00;31-12-2099 00:00;;123982;423579;;Land van Heusden en Altena
-;HL000064;Ippelsepolder;Stuw;Ippelsepolder;;;01-01-1900 00:00;31-12-2099 00:00;;122691;423995;;Land van Heusden en Altena
-;HL000065;Schenkeldijk;Gemaal, Stuw;Schenkeldijk;;;01-01-1900 00:00;31-12-2099 00:00;;123355;418615;;Land van Heusden en Altena
-;HL000066;Schenkeldijk;Stuw;Schenkeldijk;;;01-01-1900 00:00;31-12-2099 00:00;;123595;418524;;Land van Heusden en Altena
-;HL000067;Vervoorne polder;Stuw;Vervoorne polder;;;01-01-1900 00:00;31-12-2099 00:00;;122576;423885;;Land van Heusden en Altena
-;HL000068;Vink, Bas;Stuw;Vink, Bas;;;01-01-1900 00:00;31-12-2099 00:00;;126760;423779;;Land van Heusden en Altena
-;HL000069;Waterschapskantoor;Stuw;Waterschapskantoor;;;01-01-1900 00:00;31-12-2099 00:00;;128001;424461;;Land van Heusden en Altena
-;HL000070;Woudrichem;Stuw;Woudrichem;;;01-01-1900 00:00;31-12-2099 00:00;;128703;425118;;Land van Heusden en Altena
-;HL000071;Wylax;Stuw;Wylax;;;01-01-1900 00:00;31-12-2099 00:00;;128503;424985;;Land van Heusden en Altena
-;HL000073;Julianastuw;Stuw;Julianastuw;;;01-01-1900 00:00;31-12-2099 00:00;;150033;433982;;Linge
-;HL000074;Linge stuw Pijpenkast;Stuw;Linge stuw Pijpenkast;;;01-01-1900 00:00;31-12-2099 00:00;;151664;431811;;Linge
-;HL000075;Thedingsweerd;Stuw;Thedingsweerd;;;01-01-1900 00:00;31-12-2099 00:00;;155776;432502;;Linge
-;HL000076;Bijsterhuizen;Stuw;Bijsterhuizen;;;01-01-1900 00:00;31-12-2099 00:00;;179470;426808;;Bloemers
-;HL000077;Bloemers;Gemaal, Stuw;Bloemers;;;01-01-1900 00:00;31-12-2099 00:00;;169078;426997;"In SCX heeft deze vrije lozing echter een aparte Technische Installatie code (in Technische Installatie niet; hebben TI aangehouden, ook conform met situatie van Citters I)";Bloemers
-;HL000078;Born;Stuw;Born;;;01-01-1900 00:00;31-12-2099 00:00;;178295;429628;;Bloemers
-;HL000079;Hernense inlaat;Stuw;Hernense inlaat;;;01-01-1900 00:00;31-12-2099 00:00;;177360;427967;Complex Stuweneiland;Bloemers
-;HL000080;Nieuwe Wetering;Stuw;Nieuwe Wetering;;;01-01-1900 00:00;31-12-2099 00:00;;177249;428005;Complex Stuweneiland;Bloemers
-;HL000081;Ewijkse inlaat;Stuw;Ewijkse inlaat;;;01-01-1900 00:00;31-12-2099 00:00;;177292;428018;Complex Stuweneiland;Bloemers
-;HL000082;Diervoort;Stuw;Diervoort;;;01-01-1900 00:00;31-12-2099 00:00;;183767;422924;;Bloemers
-;HL000083;Eendenkooi Bergharense straat;Stuw;Eendenkooi Bergharense straat;;;01-01-1900 00:00;31-12-2099 00:00;;171629;427288;;Bloemers
-;HL000084;Goudwerf;Stuw;Goudwerf;;;01-01-1900 00:00;31-12-2099 00:00;;179854;429451;;Bloemers
-;HL000085;Jonkerstraat Noord;Stuw;Jonkerstraat Noord;;;01-01-1900 00:00;31-12-2099 00:00;;183426;428799;;Bloemers
-;HL000086;Jonkerstraat Zuid;Stuw;Jonkerstraat Zuid;;;01-01-1900 00:00;31-12-2099 00:00;;182810;428307;;Bloemers
-;HL000087;Landweijer;Stuw;Landweijer;;;01-01-1900 00:00;31-12-2099 00:00;;183902;426815;;Bloemers
-;HL000088;Malden;Gemaal;Malden;;;01-01-1900 00:00;31-12-2099 00:00;;186001;422423;;Rijk van Nijmegen
-;HL000089;Neerbosch;Gemaal;Neerbosch;;;01-01-1900 00:00;31-12-2099 00:00;;184023;426840;;Rijk van Nijmegen
-;HL000090;Oude Verbinding;Stuw;Oude Verbinding;;;01-01-1900 00:00;31-12-2099 00:00;;176199;428195;;Bloemers
-;HL000091;Oude Wetering;Stuw;Oude Wetering;;;01-01-1900 00:00;31-12-2099 00:00;;177775;428743;;Bloemers
-;HL000092;Pieckenbroek;Stuw;Pieckenbroek;;;01-01-1900 00:00;31-12-2099 00:00;;176350;427831;;Bloemers
-;HL000093;Takenhofplein;Stuw;Takenhofplein;;;01-01-1900 00:00;31-12-2099 00:00;;182805;426370;;Bloemers
-;HL000094;Teersdijk Stedelijk;Stuw;Teersdijk Stedelijk;;;01-01-1900 00:00;31-12-2099 00:00;;182391;425671;;Bloemers
-;HL000095;Teersesluis;Stuw;Teersesluis;;;01-01-1900 00:00;31-12-2099 00:00;;185890;422383;;Bloemers
-;HL000096;Weurt;Stuw;Weurt;;;01-01-1900 00:00;31-12-2099 00:00;;184230;428145;;Bloemers
-;HL000097;Wezelsedijk;Stuw;Wezelsedijk;;;01-01-1900 00:00;31-12-2099 00:00;;178305;426779;;Bloemers
-;HL000098;Wijchens Ven;Stuw;Wijchens Ven;;;01-01-1900 00:00;31-12-2099 00:00;;182156;423859;;Bloemers
-;HL000099;Woezikse Leigraaf;Stuw;Woezikse Leigraaf;;;01-01-1900 00:00;31-12-2099 00:00;;179828;427418;;Bloemers
-;HL000100;Zwemsel;Stuw;Zwemsel;;;01-01-1900 00:00;31-12-2099 00:00;;174914;428322;;Bloemers
-;HL000101;de Aftakking;Stuw;de Aftakking;;;01-01-1900 00:00;31-12-2099 00:00;;175661;438531;Complex Aftakking, de;Linge
-;HL000102;Winnemuller;Stuw;Winnemuller;;;01-01-1900 00:00;31-12-2099 00:00;;175686;438515;;Over-Betuwe
-;HL000103;Muskushouw;Stuw;Muskushouw;;;01-01-1900 00:00;31-12-2099 00:00;;180793;438358;;Linge
-;HL000104;Z20;Stuw;Z20;;;01-01-1900 00:00;31-12-2099 00:00;;180812;438341;Complex Muskushouw;Over-Betuwe
-;HL000105;Opheusden;Stuw;Opheusden;;;01-01-1900 00:00;31-12-2099 00:00;;172033;437517;Complex Opheusden;Linge
-;HL000106;Dodewaard Inlaat;Stuw;Dodewaard Inlaat;;;01-01-1900 00:00;31-12-2099 00:00;;172042;437509;;Neder-Betuwe
-;HL000107;Pottum;Stuw;Pottum;;;01-01-1900 00:00;31-12-2099 00:00;;166286;436587;;Linge
-;HL000108;Echteld inlaat;Stuw;Echteld inlaat;;;01-01-1900 00:00;31-12-2099 00:00;;166277;436572;;Neder-Betuwe
-;HL000109;Walenhoek inlaat;Stuw;Walenhoek inlaat;;;01-01-1900 00:00;31-12-2099 00:00;;166302;436595;Complex Pottum;Neder-Betuwe
-;HL000110;Snelweg;Stuw;Snelweg;;;01-01-1900 00:00;31-12-2099 00:00;;188567;437829;Complex Snelweg;Linge
-;HL000111;Z41;Stuw;Z41;;;01-01-1900 00:00;31-12-2099 00:00;;188560;437808;;Over-Betuwe
-;HL000112;O42;Stuw;O42;;;01-01-1900 00:00;31-12-2099 00:00;;188564;437826;;Over-Betuwe
-;HL000113;O15;Stuw;O15;;;01-01-1900 00:00;31-12-2099 00:00;;188565;437834;;Over-Betuwe
-;HL000114;Rijkerswoerd, Inlaat;Stuw;Rijkerswoerd, Inlaat;;;01-01-1900 00:00;31-12-2099 00:00;;188572;437851;;Over-Betuwe
-;HL000115;Hollanderbroek;Stuw;Hollanderbroek;;;01-01-1900 00:00;31-12-2099 00:00;;185314;438090;;Linge
-;HL000116;Kraaienstraat Linge;Stuw;Kraaienstraat Linge;;;01-01-1900 00:00;31-12-2099 00:00;;194030;434771;;Linge
-;HL000117;Krakkedel Linge;Stuw;Krakkedel Linge;;;01-01-1900 00:00;31-12-2099 00:00;;195759;434369;;Linge
-;HL000118;Kuijk, Mr. G.J.H.;Gemaal;Kuijk, Mr. G.J.H.;;;01-01-1900 00:00;31-12-2099 00:00;;174631;440132;;Linge
-;HL000119;BRM 34-5;Stuw;BRM 34-5;;;01-01-1900 00:00;31-12-2099 00:00;;134793;428355;;Tielerwaard
-;HL000120;BRM 37-9;Stuw;BRM 37-9;;;01-01-1900 00:00;31-12-2099 00:00;;138114;428809;;Tielerwaard
-;HL000121;Gorinchem, Laagdalemseweg;Stuw;Gorinchem, Laagdalemseweg;;;01-01-1900 00:00;31-12-2099 00:00;;129678;427456;;Tielerwaard
-;HL000122;Heukelum;Gemaal;Heukelum;;;01-01-1900 00:00;31-12-2099 00:00;;133310;431092;;Tielerwaard
-;HL000123;Leuven;Stuw;Leuven;;;01-01-1900 00:00;31-12-2099 00:00;;134748;429014;;Tielerwaard
-;HL000124;Nieuwe Steeg;Stuw;Nieuwe Steeg;;;01-01-1900 00:00;31-12-2099 00:00;;137300;427217;;Tielerwaard
-;HL000125;Tus;Stuw;Tus;;;01-01-1900 00:00;31-12-2099 00:00;;138292;430902;;Tielerwaard
-;HL000126;Vuren, west;Gemaal;Vuren, west;;;01-01-1900 00:00;31-12-2099 00:00;;131184;426256;;Tielerwaard
-;HL000127;Bruinekilhaven 2;Stuw;Bruinekilhaven 2;;;01-01-1900 00:00;31-12-2099 00:00;;120247;423078;;Oostwaard
-;HL000128;Pruissen;Stuw;Pruissen;;;01-01-1900 00:00;31-12-2099 00:00;;120708;422854;;Oostwaard
-;HL000129;Citters I, van;Gemaal, Stuw;Citters I, van;;;01-01-1900 00:00;31-12-2099 00:00;;173829;424722;;Citters
-;HL000130;Citters II, van;Gemaal, Stuw;Citters II, van;;;01-01-1900 00:00;31-12-2099 00:00;;176765;422885;;Citters
-;HL000131;Fietspad Looijer, de;Stuw;Fietspad Looijer, de;;;01-01-1900 00:00;31-12-2099 00:00;;174804;424871;;Citters
-;HL000132;Rijdtsestraat;Stuw;Rijdtsestraat;;;01-01-1900 00:00;31-12-2099 00:00;;178617;422136;;Citters
-;HL000133;Wildt, de;Stuw;Wildt, de;;;01-01-1900 00:00;31-12-2099 00:00;;181571;420878;;Citters
-;HL000134;Betsy Perkweg;Stuw;Betsy Perkweg;;;01-01-1900 00:00;31-12-2099 00:00;;142716;440156;;Lek en Linge
-;HL000135;Betuwestrand;Stuw;Betuwestrand;;;01-01-1900 00:00;31-12-2099 00:00;;140863;434017;;Lek en Linge
-;HL000136;Holderweg;Stuw;Holderweg;;;01-01-1900 00:00;31-12-2099 00:00;;141105;437706;;Lek en Linge
-;HL000137;Huigenstraat 1;Stuw;Huigenstraat 1;;;01-01-1900 00:00;31-12-2099 00:00;;136870;433063;;Lek en Linge
-;HL000138;Lange Avontuurseweg;Stuw;Lange Avontuurseweg;;;01-01-1900 00:00;31-12-2099 00:00;;140456;437901;;Lek en Linge
-;HL000139;Meinte, de;Stuw;Meinte, de;;;01-01-1900 00:00;31-12-2099 00:00;;140576;434612;;Lek en Linge
-;HL000140;Nel Tegelaarpad;Stuw;Nel Tegelaarpad;;;01-01-1900 00:00;31-12-2099 00:00;;142579;439954;;Lek en Linge
-;HL000141;OVB;Stuw;OVB;;;01-01-1900 00:00;31-12-2099 00:00;;142926;436800;;Lek en Linge
-;HL000142;Paveijen;Stuw;Paveijen;;;01-01-1900 00:00;31-12-2099 00:00;;142352;438538;;Lek en Linge
-;HL000143;Reelaan-Bouwlustpad;Stuw;Reelaan-Bouwlustpad;;;01-01-1900 00:00;31-12-2099 00:00;;142713;440228;;Lek en Linge
-;HL000144;Vink;Stuw;Vink;;;01-01-1900 00:00;31-12-2099 00:00;;139610;435891;;Lek en Linge
-;HL000145;Welborn;Gemaal, Stuw;Welborn;;;01-01-1900 00:00;31-12-2099 00:00;;141359;438995;;Lek en Linge
-;HL000146;Ammanswal;Stuw;Ammanswal;;;01-01-1900 00:00;31-12-2099 00:00;;144734;427080;;Tielerwaard
-;HL000147;BRM 38-4;Stuw;BRM 38-4;;;01-01-1900 00:00;31-12-2099 00:00;;138620;428837;;Tielerwaard
-;HL000148;BRM 41-1;Stuw;BRM 41-1;;;01-01-1900 00:00;31-12-2099 00:00;;141198;428950;;Tielerwaard
-;HL000149;BRM 46-5;Stuw;BRM 46-5;;;01-01-1900 00:00;31-12-2099 00:00;;146419;430138;;Tielerwaard
-;HL000150;Bruin, T. de;Stuw;Bruin, T. de;;;01-01-1900 00:00;31-12-2099 00:00;;140802;428830;;Tielerwaard
-;HL000151;Haaften;Gemaal;Haaften;;;01-01-1900 00:00;31-12-2099 00:00;;142283;427210;;Tielerwaard
-;HL000152;Kermisgasten;Stuw;Kermisgasten;;;01-01-1900 00:00;31-12-2099 00:00;;140809;432125;;Tielerwaard
-;HL000153;Nieuwe Boutenstein;Stuw;Nieuwe Boutenstein;;;01-01-1900 00:00;31-12-2099 00:00;;141900;432163;;Tielerwaard
-;HL000154;Nieuwe Shell;Stuw;Nieuwe Shell;;;01-01-1900 00:00;31-12-2099 00:00;;141544;428805;;Tielerwaard
-;HL000155;Oude Boutenstein;Stuw;Oude Boutenstein;;;01-01-1900 00:00;31-12-2099 00:00;;141687;431870;;Tielerwaard
-;HL000156;Oude Shell;Stuw;Oude Shell;;;01-01-1900 00:00;31-12-2099 00:00;;142611;429121;;Tielerwaard
-;HL000157;Rijnsbergen;Stuw;Rijnsbergen;;;01-01-1900 00:00;31-12-2099 00:00;;143920;432679;;Tielerwaard
-;HL000159;de Vlinder;Gemaal, Stuw;de Vlinder;;;01-01-1900 00:00;31-12-2099 00:00;;143916;433200;Complex de Vlinder;Tielerwaard
-;HL000160;Waardenburgse molen;Stuw;Waardenburgse molen;;;01-01-1900 00:00;31-12-2099 00:00;;143277;428303;;Tielerwaard
-;HL000161;Zeven Kastelenlaan;Stuw;Zeven Kastelenlaan;;;01-01-1900 00:00;31-12-2099 00:00;;144742;432566;;Tielerwaard
-;HL000162;Aalsdijk;Gemaal, Stuw;Aalsdijk;;;01-01-1900 00:00;31-12-2099 00:00;;151999;437241;;Neder-Betuwe
-;HL000163;Haagse Uitweg;Stuw;Haagse Uitweg;;;01-01-1900 00:00;31-12-2099 00:00;;148024;434817;;Lek en Linge
-;HL000164;Nieuwe Brug;Gemaal, Stuw;Nieuwe Brug;;;01-01-1900 00:00;31-12-2099 00:00;;145950;438585;;Lek en Linge
-;HL000165;Voorkoop I;Gemaal;Voorkoop I;;;01-01-1900 00:00;31-12-2099 00:00;;146397;440255;;Lek en Linge
-;HL000166;Voorkoop II;Gemaal;Voorkoop II;;;01-01-1900 00:00;31-12-2099 00:00;;146509;440253;;Lek en Linge
-;HL000167;De Bruuk, Ashorst;Stuw;De Bruuk, Ashorst;;;01-01-1900 00:00;31-12-2099 00:00;;194178;419505;;Groesbeek
-;HL000168;De Bruuk, Lage Horst;Stuw;De Bruuk, Lage Horst;;;01-01-1900 00:00;31-12-2099 00:00;;195453;419515;;Groesbeek
-;HL000169;Bulk 1;Stuw;Bulk 1;;;01-01-1900 00:00;31-12-2099 00:00;;133608;418100;;Land van Heusden en Altena
-;HL000170;Genderen;Stuw;Genderen;;;01-01-1900 00:00;31-12-2099 00:00;;134697;416011;;Land van Heusden en Altena
-;HL000171;Peerenboom;Stuw;Peerenboom;;;01-01-1900 00:00;31-12-2099 00:00;;122026;414807;;Land van Heusden en Altena
-;HL000172;Rotonde Veen;Stuw;Rotonde Veen;;;01-01-1900 00:00;31-12-2099 00:00;;135377;419647;;Land van Heusden en Altena
-;HL000173;Rotonde Veen Wijk, van;Stuw;Rotonde Veen Wijk, van;;;01-01-1900 00:00;31-12-2099 00:00;;135332;419599;;Land van Heusden en Altena
-;HL000174;van Vugt;Stuw;van Vugt;;;01-01-1900 00:00;31-12-2099 00:00;;134099;420156;;Land van Heusden en Altena
-;HL000175;Achterstraat;Stuw;Achterstraat;;;01-01-1900 00:00;31-12-2099 00:00;;163177;439184;;Neder-Betuwe
-;HL000176;Beldert, de;Stuw;Beldert, de;;;01-01-1900 00:00;31-12-2099 00:00;;158303;437004;;Neder-Betuwe
-;HL000177;Bijl;Stuw;Bijl;;;01-01-1900 00:00;31-12-2099 00:00;;164841;438460;;Neder-Betuwe
-;HL000178;Blauwe Kamp, inlaat;Stuw;Blauwe Kamp, inlaat;;;01-01-1900 00:00;31-12-2099 00:00;;160020;437321;;Neder-Betuwe
-;HL000179;Medel de Haas;Stuw;Medel de Haas;;;01-01-1900 00:00;31-12-2099 00:00;;160605;435498;Complex de Diepert;Neder-Betuwe
-;HL000180;de Diepert;Stuw;de Diepert;;;01-01-1900 00:00;31-12-2099 00:00;;160620;435458;;Neder-Betuwe
-;HL000181;de Hool;Gemaal, Stuw;de Hool;;;01-01-1900 00:00;31-12-2099 00:00;;156303;440621;Complex Kribbrug de Hool;Neder-Betuwe
-;HL000182;Kribbrug;Stuw;Kribbrug;;;01-01-1900 00:00;31-12-2099 00:00;;156316;440615;;Neder-Betuwe
-;HL000183;Essenbos 10;Stuw;Essenbos 10;;;01-01-1900 00:00;31-12-2099 00:00;;156239;440640;;Neder-Betuwe
-;HL000184;Daalen, van;Stuw;Daalen, van;;;01-01-1900 00:00;31-12-2099 00:00;;163785;435557;;Neder-Betuwe
-;HL000185;Den Hevel 2;Stuw;Den Hevel 2;;;01-01-1900 00:00;31-12-2099 00:00;;159654;437613;;Neder-Betuwe
-;HL000186;Maurik, Driesweg;Stuw;Maurik, Driesweg;;;01-01-1900 00:00;31-12-2099 00:00;;158609;441115;;Neder-Betuwe
-;HL000187;Echteld, de Pijp;Stuw;Echteld, de Pijp;;;01-01-1900 00:00;31-12-2099 00:00;;162176;435418;;Neder-Betuwe
-;HL000188;Zuivering Eck en Wiel;Stuw;Zuivering Eck en Wiel;;;01-01-1900 00:00;31-12-2099 00:00;;159501;442810;;Neder-Betuwe
-;HL000189;Ewijk, Toon van;Stuw;Ewijk, Toon van;;;01-01-1900 00:00;31-12-2099 00:00;;161551;443036;;Neder-Betuwe
-;HL000190;Heus, de;Stuw;Heus, de;;;01-01-1900 00:00;31-12-2099 00:00;;157983;439139;;Neder-Betuwe
-;HL000192;Kettingweg;Stuw;Kettingweg;;;01-01-1900 00:00;31-12-2099 00:00;;160813;440899;;Neder-Betuwe
-;HL000193;Klep Rijksweg;Stuw;Klep Rijksweg;;;01-01-1900 00:00;31-12-2099 00:00;;162989;436763;;Neder-Betuwe
-;HL000194;Lammert;Stuw;Lammert;;;01-01-1900 00:00;31-12-2099 00:00;;161632;441033;;Neder-Betuwe
-;HL000195;Leeweg;Stuw;Leeweg;;;01-01-1900 00:00;31-12-2099 00:00;;164605;437643;;Neder-Betuwe
-;HL000196;Lingemeer;Stuw;Lingemeer;;;01-01-1900 00:00;31-12-2099 00:00;;162626;437198;;Neder-Betuwe
-;HL000197;Marietje;Stuw;Marietje;;;01-01-1900 00:00;31-12-2099 00:00;;162283;437999;;Neder-Betuwe
-;HL000198;Maurikse Wetering;Gemaal;Maurikse Wetering;;;01-01-1900 00:00;31-12-2099 00:00;;155185;439276;;Neder-Betuwe
-;HL000199;Medel;Stuw;Medel;;;01-01-1900 00:00;31-12-2099 00:00;;159564;437069;;Neder-Betuwe
-;HL000200;Meertenwei;Stuw;Meertenwei;;;01-01-1900 00:00;31-12-2099 00:00;;163962;438380;;Neder-Betuwe
-;HL000201;Pander, de;Gemaal;Pander, de;;;01-01-1900 00:00;31-12-2099 00:00;;163242;437397;;Neder-Betuwe
-;HL000202;Panderweg;Stuw;Panderweg;;;01-01-1900 00:00;31-12-2099 00:00;;164578;437364;;Neder-Betuwe
-;HL000203;Pottum;Gemaal;Pottum;;;01-01-1900 00:00;31-12-2099 00:00;;165801;436117;;Neder-Betuwe
-;HL000204;Reinberg, Adam;Stuw;Reinberg, Adam;;;01-01-1900 00:00;31-12-2099 00:00;;159583;440598;;Neder-Betuwe
-;HL000205;Rooyen, J. van;Stuw;Rooyen, J. van;;;01-01-1900 00:00;31-12-2099 00:00;;158593;439204;;Neder-Betuwe
-;HL000206;Schietbaan, achter;Stuw;Schietbaan, achter;;;01-01-1900 00:00;31-12-2099 00:00;;159975;438739;;Neder-Betuwe
-;HL000207;Uitlaat Beuningen;Stuw;Uitlaat Beuningen;;;01-01-1900 00:00;31-12-2099 00:00;;158558;436901;;Neder-Betuwe
-;HL000208;Visser;Stuw;Visser;;;01-01-1900 00:00;31-12-2099 00:00;;164625;435783;;Neder-Betuwe
-;HL000209;Willemspolder;Gemaal, Stuw;Willemspolder;;;01-01-1900 00:00;31-12-2099 00:00;;160023;434030;;Buitenpolders
-;HL000210;Woerd, de;Gemaal, Stuw;Woerd, de;;;01-01-1900 00:00;31-12-2099 00:00;;154502;440636;;Neder-Betuwe
-;HL000211;Blokweer;Gemaal, Stuw;Blokweer;;;01-01-1900 00:00;31-12-2099 00:00;;105787;431657;;Nederwaard
-;HL000212;Kortland;Gemaal;Kortland;;;01-01-1900 00:00;31-12-2099 00:00;;105854;431666;;Nederwaard
-;HL000213;Souburgh;Gemaal;Souburgh;;;01-01-1900 00:00;31-12-2099 00:00;;106152;430948;;Nederwaard
-;HL000214;Oud-Alblas Zuidzijde;Gemaal;Oud-Alblas Zuidzijde;;;01-01-1900 00:00;31-12-2099 00:00;;106341;430233;;Nederwaard
-;HL000215;Peilmolen;Gemaal;Peilmolen;;;01-01-1900 00:00;31-12-2099 00:00;;109704;430158;;Nederwaard
-;HL000216;Ruigenhil;Gemaal;Ruigenhil;;;01-01-1900 00:00;31-12-2099 00:00;;105070;429970;;Buitenpolders
-;HL000217;Grote Nes;Gemaal;Grote Nes;;;01-01-1900 00:00;31-12-2099 00:00;;106855;430206;;Nederwaard
-;HL000218;Oud-Alblas Noordzijde;Gemaal;Oud-Alblas Noordzijde;;;01-01-1900 00:00;31-12-2099 00:00;;107344;430777;;Nederwaard
-;HL000219;Wijngaarden;Gemaal;Wijngaarden;;;01-01-1900 00:00;31-12-2099 00:00;;110129;429463;;Nederwaard
-;HL000220;Bleskensgraaf Noordzijde;Gemaal, Stuw;Bleskensgraaf Noordzijde;;;01-01-1900 00:00;31-12-2099 00:00;;110725;430930;;Nederwaard
-;HL000221;Bleskensgraaf Zuidzijde;Gemaal;Bleskensgraaf Zuidzijde;;;01-01-1900 00:00;31-12-2099 00:00;;111033;431015;;Nederwaard
-;HL000222;Brandwijk;Gemaal;Brandwijk;;;01-01-1900 00:00;31-12-2099 00:00;;112668;431668;;Nederwaard
-;HL000223;Zuidzijde Hofwegen;Gemaal;Zuidzijde Hofwegen;;;01-01-1900 00:00;31-12-2099 00:00;;114062;431384;;Nederwaard
-;HL000224;Gijbeland;Gemaal;Gijbeland;;;01-01-1900 00:00;31-12-2099 00:00;;114540;431570;;Nederwaard
-;HL000225;Molenaarsgraaf;Gemaal;Molenaarsgraaf;;;01-01-1900 00:00;31-12-2099 00:00;;114742;430961;;Nederwaard
-;HL000226;Broek en Hei;Gemaal, Stuw;Broek en Hei;;;01-01-1900 00:00;31-12-2099 00:00;;115376;429167;Complex Klein Giessen;Nederwaard
-;HL000227;Klein Giessen;Gemaal, Stuw;Klein Giessen;;;01-01-1900 00:00;31-12-2099 00:00;;115345;429160;;Nederwaard
-;HL000228;Laag Blokland;Gemaal;Laag Blokland;;;01-01-1900 00:00;31-12-2099 00:00;;117876;433056;;Nederwaard
-;HL000229;Over 't Spoor;Stuw;Over 't Spoor;;;01-01-1900 00:00;31-12-2099 00:00;;116846;427463;;Nederwaard
-;HL000230;Papendrecht;Gemaal, Stuw;Papendrecht;;;01-01-1900 00:00;31-12-2099 00:00;;106711;428770;;Nederwaard
-;HL000231;Sliedrecht Hoog;Gemaal;Sliedrecht Hoog;;;01-01-1900 00:00;31-12-2099 00:00;;112012;426229;;Nederwaard
-;HL000232;Blommendaal;Gemaal;Blommendaal;;;01-01-1900 00:00;31-12-2099 00:00;;124789;434736;;Overwaard
-;HL000233;Botersloot;Gemaal;Botersloot;;;01-01-1900 00:00;31-12-2099 00:00;;124791;434749;Complex Blommendaal;Overwaard
-;HL000234;Middelbroek;Gemaal;Middelbroek;;;01-01-1900 00:00;31-12-2099 00:00;;125576;436249;;Overwaard
-;HL000235;Den Beemd;Gemaal;Den Beemd;;;01-01-1900 00:00;31-12-2099 00:00;;125070;432788;;Overwaard
-;HL000236;Noordzijde;Gemaal;Noordzijde;;;01-01-1900 00:00;31-12-2099 00:00;;123525;434647;;Overwaard
-;HL000237;Groote Waard, de;Gemaal;Groote Waard, de;;;01-01-1900 00:00;31-12-2099 00:00;;123747;433549;;Overwaard
-;HL000238;Lutjeswaard;Gemaal;Lutjeswaard;;;01-01-1900 00:00;31-12-2099 00:00;;122752;431422;;Overwaard
-;HL000239;Land van de Zes Molens;Gemaal;Land van de Zes Molens;;;01-01-1900 00:00;31-12-2099 00:00;;122734;431372;Complex Land van de Zes Molens;Overwaard
-;HL000240;Banne van Gorinchem, de;Gemaal;Banne van Gorinchem, de;;;01-01-1900 00:00;31-12-2099 00:00;;123634;428123;;Overwaard
-;HL000241;Giessen Nieuwkerk;Gemaal;Giessen Nieuwkerk;;;01-01-1900 00:00;31-12-2099 00:00;;121101;429218;;Overwaard
-;HL000242;Peursum;Gemaal;Peursum;;;01-01-1900 00:00;31-12-2099 00:00;;120461;429574;;Overwaard
-;HL000243;Over- en Nederslingeland;Gemaal;Over- en Nederslingeland;;;01-01-1900 00:00;31-12-2099 00:00;;121274;432346;;Overwaard
-;HL000244;Nieuw Goudriaan;Gemaal;Nieuw Goudriaan;;;01-01-1900 00:00;31-12-2099 00:00;;120824;434034;;Overwaard
-;HL000245;Oud Goudriaan;Gemaal;Oud Goudriaan;;;01-01-1900 00:00;31-12-2099 00:00;;120511;435200;;Overwaard
-;HL000246;Langerak;Gemaal;Langerak;;;01-01-1900 00:00;31-12-2099 00:00;;120162;436255;;Overwaard
-;HL000247;Giessen Oude Bovenkerk;Gemaal;Giessen Oude Bovenkerk;;;01-01-1900 00:00;31-12-2099 00:00;;120103;430757;;Overwaard
-;HL000248;Ottoland;Gemaal;Ottoland;;;01-01-1900 00:00;31-12-2099 00:00;;118787;433606;;Overwaard
-;HL000249;Liesveld Graafland;Gemaal, Stuw;Liesveld Graafland;;;01-01-1900 00:00;31-12-2099 00:00;;115995;437064;Complex Liesveld Graafland;Overwaard
-;HL000250;Gelkenes;Stuw;Gelkenes;;;01-01-1900 00:00;31-12-2099 00:00;;116060;437097;;Overwaard
-;HL000251;Streefkerk;Gemaal;Streefkerk;;;01-01-1900 00:00;31-12-2099 00:00;;112920;434002;;Overwaard
-;HL000252;Groote Haar;Gemaal;Groote Haar;;;01-01-1900 00:00;31-12-2099 00:00;;125090;429030;;Overwaard
-;HL000253;BRW 19-5;Stuw;BRW 19-5;;;01-01-1900 00:00;31-12-2099 00:00;;120422;427392;;Overwaard
-;HL000254;Langerak Noord;Gemaal, Stuw;Langerak Noord;;;01-01-1900 00:00;31-12-2099 00:00;;119679;437697;;Overwaard
-;HL000255;Puttenlanden;Gemaal;Puttenlanden;;;01-01-1900 00:00;31-12-2099 00:00;;120255;426955;;Overwaard
-;HL000256;Tiendweg-Dorpslaan;Stuw;Tiendweg-Dorpslaan;;;01-01-1900 00:00;31-12-2099 00:00;;106967;433228;;Overwaard
-;HL000257;Hevelstuw Middelkade;Stuw;Hevelstuw Middelkade;;;01-01-1900 00:00;31-12-2099 00:00;;103437;433462;;Overwaard
-;HL000258;Smit, J.U.;Gemaal;Smit, J.U.;;;01-01-1900 00:00;31-12-2099 00:00;;103343;433577;Complex Kinderdijk;Nederwaard
-;HL000259;Kok, Ir. G.N. / Overwaard;Gemaal;Kok, Ir. G.N. / Overwaard;;;01-01-1900 00:00;31-12-2099 00:00;;103433;433608;;Overwaard
-;HL000260;Derde Bemalingstrap Overwaard;Gemaal;Derde Bemalingstrap Overwaard;;;01-01-1900 00:00;31-12-2099 00:00;;103329;433723;Complex Elshoutsluis;Overwaard
-;HL000261;Elshoutsluis;Stuw;Elshoutsluis;;;01-01-1900 00:00;31-12-2099 00:00;;103322;433725;;Overwaard
-;HL000262;Giessendam, Spoorweg 1;Stuw;Giessendam, Spoorweg 1;;;01-01-1900 00:00;31-12-2099 00:00;;116059;426994;;Nederwaard
-;HL000263;Vinkenpolder 3;Stuw;Vinkenpolder 3;;;01-01-1900 00:00;31-12-2099 00:00;;105010;430455;;Nederwaard
-;HL000264;Vinkenpolder 2;Stuw;Vinkenpolder 2;;;01-01-1900 00:00;31-12-2099 00:00;;106337;430025;;Nederwaard
-;HL000265;Vinkenpolder 1 (verwijderd);Stuw;Vinkenpolder 1 (verwijderd);;;01-01-1900 00:00;31-12-2099 00:00;;106311;430214;;Nederwaard
-;HL000266;Ameide Aaksterveldsesteeg;Stuw;Ameide Aaksterveldsesteeg;;;01-01-1900 00:00;31-12-2099 00:00;;125025;440156;;Overwaard
-;HL000267;Ameide, Broekseweg;Gemaal, Stuw;Ameide, Broekseweg;;;01-01-1900 00:00;31-12-2099 00:00;;126289;440192;;Overwaard
-;HL000268;Meerkerk Broekseweg;Gemaal, Stuw;Meerkerk Broekseweg;;;01-01-1900 00:00;31-12-2099 00:00;;126620;438282;;Overwaard
-;HL000269;Gelkenes Zuid;Stuw;Gelkenes Zuid;;;01-01-1900 00:00;31-12-2099 00:00;;117502;437211;;Overwaard
-;HL000270;Gorinchem, Lingewijk;Gemaal;Gorinchem, Lingewijk;;;01-01-1900 00:00;31-12-2099 00:00;;126664;427780;;Overwaard
-;HL000271;Hardinxveld Zuid;Gemaal, Stuw;Hardinxveld Zuid;;;01-01-1900 00:00;31-12-2099 00:00;;120220;426975;;Overwaard
-;HL000272;De Zouwe Kooiplas;Gemaal, Stuw;De Zouwe Kooiplas;;;01-01-1900 00:00;31-12-2099 00:00;;126865;440688;;Overwaard
-;HL000273;Nieuwendijk Lage Boezem;Gemaal;Nieuwendijk Lage Boezem;;;01-01-1900 00:00;31-12-2099 00:00;;123972;434740;;Overwaard
-;HL000274;Oude Torenbrug (inl);Stuw;Oude Torenbrug (inl);;;01-01-1900 00:00;31-12-2099 00:00;;105633;430688;;Nederwaard
-;HL000275;Sliedrecht;Gemaal;Sliedrecht;;;01-01-1900 00:00;31-12-2099 00:00;;110114;430254;;Nederwaard
-;HL000276;Papendrecht Hoog;Gemaal, Stuw;Papendrecht Hoog;;;01-01-1900 00:00;31-12-2099 00:00;;105752;427056;;Nederwaard
-;HL000277;Schanspolder;Gemaal;Schanspolder;;;01-01-1900 00:00;31-12-2099 00:00;;103056;433617;;Nederwaard
-;HL000278;Beneden Stad, de;Gemaal;Beneden Stad, de;;;01-01-1900 00:00;31-12-2099 00:00;;126581;426575;;Overwaard
-;HL000279;BRW 22-9;Gemaal, Stuw;BRW 22-9;;;01-01-1900 00:00;31-12-2099 00:00;;123492;428140;;Overwaard
-;HL000280;Liesveld Achterland (verwijderd);Gemaal;Liesveld Achterland (verwijderd);;;01-01-1900 00:00;31-12-2099 00:00;;117289;435366;;Overwaard
-;HL000281;Peulen, de;Gemaal;Peulen, de;;;01-01-1900 00:00;31-12-2099 00:00;;116362;426011;;Overwaard
-;HL000282;Merwebolder;Gemaal;Merwebolder;;;01-01-1900 00:00;31-12-2099 00:00;;111296;426540;;Nederwaard
-;HL000283;Nieuwland Parc, Inlaat;Gemaal;Nieuwland Parc, Inlaat;;;01-01-1900 00:00;31-12-2099 00:00;;105456;428790;;Buitenpolders
-;HL000284;Nieuwland Parc, UItlaat;Gemaal;Nieuwland Parc, UItlaat;;;01-01-1900 00:00;31-12-2099 00:00;;105863;428140;;Buitenpolders
-;HL000285;Ringerstraat;Gemaal;Ringerstraat;;;01-01-1900 00:00;31-12-2099 00:00;;111365;427479;;Nederwaard
-;HL000286;Waerthove;Gemaal;Waerthove;;;01-01-1900 00:00;31-12-2099 00:00;;112175;426230;;Nederwaard
-;HL000287;Ameide;Gemaal;Ameide;;;01-01-1900 00:00;31-12-2099 00:00;;125821;441167;;Overwaard
-;HL000288;Hardinxveld Nieuweweg;Gemaal;Hardinxveld Nieuweweg;;;01-01-1900 00:00;31-12-2099 00:00;;117704;426029;;Overwaard
-;HL000289;Tiendweg-Zijdeweg;Gemaal;Tiendweg-Zijdeweg;;;01-01-1900 00:00;31-12-2099 00:00;;109641;433928;;Overwaard
-;HL000290;Kolff, Mr. Dr. G.;Gemaal, Stuw;Kolff, Mr. Dr. G.;;;01-01-1900 00:00;31-12-2099 00:00;;118553;425982;;Linge
-;HL000291;Tolsteeg Stuw;Stuw;Tolsteeg Stuw;;;01-01-1900 00:00;31-12-2099 00:00;;111689;427395;;Nederwaard
-;HL000292;Middelkade;Sluis;Middelkade;;;01-01-1900 00:00;31-12-2099 00:00;;105835;432039;;Nederwaard
-;HL000293;BRO 75-7;Stuw;BRO 75-7;;;01-01-1900 00:00;31-12-2099 00:00;;173564;436903;;Neder-Betuwe
-;HL000294;Waaij, de;Gemaal, Stuw;Waaij, de;;;01-01-1900 00:00;31-12-2099 00:00;;164473;441171;;Neder-Betuwe
-;HL000295;Wit, R. de;Stuw;Wit, R. de;;;01-01-1900 00:00;31-12-2099 00:00;;164409;441167;;Neder-Betuwe
-;HL000296;Eldik, verlengde Melkdreef;Stuw;Eldik, verlengde Melkdreef;;;01-01-1900 00:00;31-12-2099 00:00;;169778;436750;;Neder-Betuwe
-;HL000297;Hoge Stuw;Stuw;Hoge Stuw;;;01-01-1900 00:00;31-12-2099 00:00;;168074;437323;;Neder-Betuwe
-;HL000298;Hogeweg;Stuw;Hogeweg;;;01-01-1900 00:00;31-12-2099 00:00;;166603;439474;;Neder-Betuwe
-;HL000299;Kat, de;Stuw;Kat, de;;;01-01-1900 00:00;31-12-2099 00:00;;164331;441135;;Neder-Betuwe
-;HL000300;Kievitskelder;Stuw;Kievitskelder;;;01-01-1900 00:00;31-12-2099 00:00;;168029;436526;;Neder-Betuwe
-;HL000301;Lekkerdier;Stuw;Lekkerdier;;;01-01-1900 00:00;31-12-2099 00:00;;169066;438020;;Neder-Betuwe
-;HL000302;Mars, de;Gemaal;Mars, de;;;01-01-1900 00:00;31-12-2099 00:00;;166915;439624;;Neder-Betuwe
-;HL000303;Maten, de;Gemaal;Maten, de;;;01-01-1900 00:00;31-12-2099 00:00;;172561;436369;;Neder-Betuwe
-;HL000304;Nieuwe Dijk;Stuw;Nieuwe Dijk;;;01-01-1900 00:00;31-12-2099 00:00;;168079;437067;;Neder-Betuwe
-;HL000305;Ochten, Klinkerstraat;Stuw;Ochten, Klinkerstraat;;;01-01-1900 00:00;31-12-2099 00:00;;169091;436680;;Neder-Betuwe
-;HL000306;Opheusden;Gemaal;Opheusden;;;01-01-1900 00:00;31-12-2099 00:00;;172041;437553;;Neder-Betuwe
-;HL000307;Oude Rijn;Gemaal, Stuw;Oude Rijn;;;01-01-1900 00:00;31-12-2099 00:00;;167917;438797;Complex Oude Rijn;Neder-Betuwe
-;HL000308;Ruitengraaf Linge;Stuw;Ruitengraaf Linge;;;01-01-1900 00:00;31-12-2099 00:00;;171215;437315;;Neder-Betuwe
-;HL000309;Slaperdijk;Stuw;Slaperdijk;;;01-01-1900 00:00;31-12-2099 00:00;;165217;439089;;Neder-Betuwe
-;HL000310;Spoor 3;Stuw;Spoor 3;;;01-01-1900 00:00;31-12-2099 00:00;;166482;437445;;Neder-Betuwe
-;HL000311;Zwartjes;Gemaal, Stuw;Zwartjes;;;01-01-1900 00:00;31-12-2099 00:00;;174707;440022;;Neder-Betuwe
-;HL000312;achter Zuivering, de;Stuw;achter Zuivering, de;;;01-01-1900 00:00;31-12-2099 00:00;;158022;436631;;Tielerwaard
-;HL000313;BRM 59-8;Stuw;BRM 59-8;;;01-01-1900 00:00;31-12-2099 00:00;;158236;434875;;Tielerwaard
-;HL000314;Avezaath;Stuw;Avezaath;;;01-01-1900 00:00;31-12-2099 00:00;;155736;434455;;Neder-Betuwe
-;HL000315;Buren;Stuw;Buren;;;01-01-1900 00:00;31-12-2099 00:00;;151721;435992;;Neder-Betuwe
-;HL000316;Buren, Molenstraat;Stuw;Buren, Molenstraat;;;01-01-1900 00:00;31-12-2099 00:00;;155933;434766;;Neder-Betuwe
-;HL000317;Dode Linge;Stuw;Dode Linge;;;01-01-1900 00:00;31-12-2099 00:00;;157533;434785;;Tielerwaard
-;HL000318;Drumpt;Gemaal;Drumpt;;;01-01-1900 00:00;31-12-2099 00:00;;155918;434501;;Tielerwaard
-;HL000319;Erichemse Kade;Stuw;Erichemse Kade;;;01-01-1900 00:00;31-12-2099 00:00;;150284;434046;;Neder-Betuwe
-;HL000320;Inundatiedijk-noord;Stuw;Inundatiedijk-noord;;;01-01-1900 00:00;31-12-2099 00:00;;156114;431986;;Tielerwaard
-;HL000321;Rielse Sluis;Stuw;Rielse Sluis;;;01-01-1900 00:00;31-12-2099 00:00;;151571;432516;;Neder-Betuwe
-;HL000322;Rivierenlandlaan;Stuw;Rivierenlandlaan;;;01-01-1900 00:00;31-12-2099 00:00;;156554;433016;;Tielerwaard
-;HL000323;Spoorsingel Tiel;Gemaal;Spoorsingel Tiel;;;01-01-1900 00:00;31-12-2099 00:00;;158707;434578;;Tielerwaard
-;HL000324;Tiel, achter Boomgaard;Stuw;Tiel, achter Boomgaard;;;01-01-1900 00:00;31-12-2099 00:00;;157461;435832;;Tielerwaard
-;HL000325;Uiterdijk;Stuw;Uiterdijk;;;01-01-1900 00:00;31-12-2099 00:00;;157334;436424;;Neder-Betuwe
-;HL000326;Woud, van de huis;Stuw;Woud, van de huis;;;01-01-1900 00:00;31-12-2099 00:00;;152975;437704;;Neder-Betuwe
-;HL000327;Binnen Kievitswaard;Gemaal, Stuw;Binnen Kievitswaard;;;01-01-1900 00:00;31-12-2099 00:00;;116576;422761;;Buitenpolders
-;HL000328;Happenhennip;Gemaal, Stuw;Happenhennip;;;01-01-1900 00:00;31-12-2099 00:00;;114205;421519;;Buitenpolders
-;HL000329;Kleine Zalm;Gemaal, Stuw;Kleine Zalm;;;01-01-1900 00:00;31-12-2099 00:00;;115912;419364;;Buitenpolders
-;HL000330;t Kooike;Gemaal, Stuw;t Kooike;;;01-01-1900 00:00;31-12-2099 00:00;;118834;421728;;Buitenpolders
-;HL000331;Middelste Kievitswaard;Gemaal, Stuw;Middelste Kievitswaard;;;01-01-1900 00:00;31-12-2099 00:00;;114970;421914;;Buitenpolders
-;HL000332;Steenenmuur;Gemaal, Stuw;Steenenmuur;;;01-01-1900 00:00;31-12-2099 00:00;;117208;419750;;Buitenpolders
-;HL000333;Steurgat;Gemaal, Stuw;Steurgat;;;01-01-1900 00:00;31-12-2099 00:00;;119420;423502;;Noordwaard
-;HL000334;Vogelenzang;Gemaal, Stuw;Vogelenzang;;;01-01-1900 00:00;31-12-2099 00:00;;116961;420162;;Buitenpolders
-;HL000335;Zyfflich;Stuw;Zyfflich;;;01-01-1900 00:00;31-12-2099 00:00;;194725;427701;;Ooijpolder
-;HL000336;Ooijsegraaf;Stuw;Ooijsegraaf;;;01-01-1900 00:00;31-12-2099 00:00;;194711;427853;Complex Ooijsegraaf;Ooijpolder
-;HL000337;Hollandsch-Duitschgemaal, vistrap;Vistrap;Hollandsch-Duitschgemaal, vistrap;;;01-01-1900 00:00;31-12-2099 00:00;;188786;428781;;Ooijpolder
-;HL000338;Hollandsch-Duitschgemaal;Gemaal, Stuw;Hollandsch-Duitschgemaal;;;01-01-1900 00:00;31-12-2099 00:00;;188732;428808;;Ooijpolder
-;HL000339;Hubertusweg;Gemaal;Hubertusweg;;;01-01-1900 00:00;31-12-2099 00:00;;192437;428537;;Ooijpolder
-;HL000340;Arnhem-Zuid Rijkerswoerd;Stuw;Arnhem-Zuid Rijkerswoerd;;;01-01-1900 00:00;31-12-2099 00:00;;189734;438990;;Over-Betuwe
-;HL000341;Bergerden;Stuw;Bergerden;;;01-01-1900 00:00;31-12-2099 00:00;;190139;438548;;Over-Betuwe
-;HL000342;BRO 95-9;Stuw;BRO 95-9;;;01-01-1900 00:00;31-12-2099 00:00;;192832;434764;;Over-Betuwe
-;HL000343;Duisterestraat;Gemaal, Stuw;Duisterestraat;;;01-01-1900 00:00;31-12-2099 00:00;;196220;434231;;Over-Betuwe
-;HL000344;Elderveld;Stuw;Elderveld;;;01-01-1900 00:00;31-12-2099 00:00;;187263;442042;;Over-Betuwe
-;HL000345;Gelredome;Stuw;Gelredome;;;01-01-1900 00:00;31-12-2099 00:00;;189879;441858;;Over-Betuwe
-;HL000346;Haalderen;Stuw;Haalderen;;;01-01-1900 00:00;31-12-2099 00:00;;192612;434463;;Over-Betuwe
-;HL000347;Hermsen;Stuw;Hermsen;;;01-01-1900 00:00;31-12-2099 00:00;;189543;441512;;Over-Betuwe
-;HL000348;Hoge Veld;Stuw;Hoge Veld;;;01-01-1900 00:00;31-12-2099 00:00;;195217;433365;;Over-Betuwe
-;HL000349;Huissense Zeeg;Stuw;Huissense Zeeg;;;01-01-1900 00:00;31-12-2099 00:00;;189573;437579;;Over-Betuwe
-;HL000350;Klapstraat;Stuw;Klapstraat;;;01-01-1900 00:00;31-12-2099 00:00;;188687;441781;;Over-Betuwe
-;HL000351;Klein Rome;Stuw;Klein Rome;;;01-01-1900 00:00;31-12-2099 00:00;;188625;434849;;Over-Betuwe
-;HL000353;Kraaienstraat;Stuw;Kraaienstraat;;;01-01-1900 00:00;31-12-2099 00:00;;194618;435474;;Over-Betuwe
-;HL000354;Krakkedel;Gemaal;Krakkedel;;;01-01-1900 00:00;31-12-2099 00:00;;195964;434390;;Over-Betuwe
-;HL000355;Krakkedel Lingeshof;Stuw;Krakkedel Lingeshof;;;01-01-1900 00:00;31-12-2099 00:00;;195727;434414;;Over-Betuwe
-;HL000356;Kruisstraat;Stuw;Kruisstraat;;;01-01-1900 00:00;31-12-2099 00:00;;194257;432624;;Over-Betuwe
-;HL000357;Laar, de (Arnhem);Stuw;Laar, de;;;01-01-1900 00:00;31-12-2099 00:00;;187259;439579;;Over-Betuwe
-;HL000358;OBO1;Stuw;OBO1;;;01-01-1900 00:00;31-12-2099 00:00;;195980;434474;;Over-Betuwe
-;HL000359;Tuin van Elden;Gemaal;Tuin van Elden;;;01-01-1900 00:00;31-12-2099 00:00;;189012;441622;;Over-Betuwe
-;HL000360;Veld, het;Stuw;Veld, het;;;01-01-1900 00:00;31-12-2099 00:00;;194302;434806;;Over-Betuwe
-;HL000361;Waterrijk Oost, Inlaat;Stuw;Waterrijk Oost, Inlaat;;;01-01-1900 00:00;31-12-2099 00:00;;189553;437590;;Over-Betuwe
-;HL000362;Zandvoortsestraat;Stuw;Zandvoortsestraat;;;01-01-1900 00:00;31-12-2099 00:00;;193200;433553;;Over-Betuwe
-;HL000363;BRO 78-2;Stuw;BRO 78-2;;;01-01-1900 00:00;31-12-2099 00:00;;175972;436580;;Over-Betuwe
-;HL000364;BRO 80-5;Stuw;BRO 80-5;;;01-01-1900 00:00;31-12-2099 00:00;;178258;436394;;Over-Betuwe
-;HL000365;BRO 87-2;Stuw;BRO 87-2;;;01-01-1900 00:00;31-12-2099 00:00;;184395;434224;;Over-Betuwe
-;HL000366;BRO 87-3;Stuw;BRO 87-3;;;01-01-1900 00:00;31-12-2099 00:00;;184427;434075;;Over-Betuwe
-;HL000367;BRO 88-3;Stuw;BRO 88-3;;;01-01-1900 00:00;31-12-2099 00:00;;185463;434159;;Over-Betuwe
-;HL000368;BRO 89-8;Stuw;BRO 89-8;;;01-01-1900 00:00;31-12-2099 00:00;;186917;434365;;Over-Betuwe
-;HL000369;BRO 89-9;Stuw;BRO 89-9;;;01-01-1900 00:00;31-12-2099 00:00;;187034;434485;;Over-Betuwe
-;HL000370;BRO 90-0;Stuw;BRO 90-0;;;01-01-1900 00:00;31-12-2099 00:00;;187094;434523;;Over-Betuwe
-;HL000371;Burgemeester Knoppersweg;Stuw;Burgemeester Knoppersweg;;;01-01-1900 00:00;31-12-2099 00:00;;177475;439167;;Over-Betuwe
-;HL000372;Z12;Stuw;Z12;;;01-01-1900 00:00;31-12-2099 00:00;;180847;437646;Complex Z12;Over-Betuwe
-;HL000373;Z15;Stuw;Z15;;;01-01-1900 00:00;31-12-2099 00:00;;180845;437680;;Over-Betuwe
-;HL000374;de Aam;Stuw;de Aam;;;01-01-1900 00:00;31-12-2099 00:00;;188247;436304;;Over-Betuwe
-;HL000375;Gemeint, de;Stuw;Gemeint, de;;;01-01-1900 00:00;31-12-2099 00:00;;187439;438214;;Over-Betuwe
-;HL000376;Gesperdensestraat;Gemaal, Stuw;Gesperdensestraat;;;01-01-1900 00:00;31-12-2099 00:00;;174439;437915;;Over-Betuwe
-;HL000377;Hemmense Zandweg;Gemaal, Stuw;Hemmense Zandweg;;;01-01-1900 00:00;31-12-2099 00:00;;176498;438763;;Over-Betuwe
-;HL000378;Het Hout;Stuw;Het Hout;;;01-01-1900 00:00;31-12-2099 00:00;;186310;440748;;Over-Betuwe
-;HL000379;Hollanderbroeksestraat;Stuw;Hollanderbroeksestraat;;;01-01-1900 00:00;31-12-2099 00:00;;185340;438059;;Over-Betuwe
-;HL000380;Kezenhof;Stuw;Kezenhof;;;01-01-1900 00:00;31-12-2099 00:00;;183954;433311;;Over-Betuwe
-;HL000381;Knuiman;Stuw;Knuiman;;;01-01-1900 00:00;31-12-2099 00:00;;185372;440071;;Over-Betuwe
-;HL000382;Loeffen;Stuw;Loeffen;;;01-01-1900 00:00;31-12-2099 00:00;;178829;438774;;Over-Betuwe
-;HL000383;N12;Stuw;N12;;;01-01-1900 00:00;31-12-2099 00:00;;184621;439773;;Over-Betuwe
-;HL000384;N17;Stuw;N17;;;01-01-1900 00:00;31-12-2099 00:00;;187078;438275;;Over-Betuwe
-;HL000385;N06;Stuw;N06;;;01-01-1900 00:00;31-12-2099 00:00;;181350;438641;;Over-Betuwe
-;HL000386;N08;Stuw;N08;;;01-01-1900 00:00;31-12-2099 00:00;;184664;437971;;Over-Betuwe
-;HL000387;N09;Stuw;N09;;;01-01-1900 00:00;31-12-2099 00:00;;182895;440099;;Over-Betuwe
-;HL000388;Nijland;Stuw;Nijland;;;01-01-1900 00:00;31-12-2099 00:00;;186030;432861;;Over-Betuwe
-;HL000389;Olympia stuw;Stuw;Olympia stuw;;;01-01-1900 00:00;31-12-2099 00:00;;187268;435718;;Over-Betuwe
-;HL000390;Park 15;Stuw;Park 15;;;01-01-1900 00:00;31-12-2099 00:00;;185477;433736;;Over-Betuwe
-;HL000391;Circulatiegemaal Schuytgraaf;Gemaal, Stuw;Circulatiegemaal Schuytgraaf;;;01-01-1900 00:00;31-12-2099 00:00;;185969;441522;;Over-Betuwe
-;HL000392;Weerbroek;Gemaal;Weerbroek;;;01-01-1900 00:00;31-12-2099 00:00;;180206;439581;;Over-Betuwe
-;HL000393;Wolfkampseweg;Stuw;Wolfkampseweg;;;01-01-1900 00:00;31-12-2099 00:00;;175192;439326;;Over-Betuwe
-;HL000394;Z13;Stuw;Z13;;;01-01-1900 00:00;31-12-2099 00:00;;175965;436614;;Over-Betuwe
-;HL000395;Z16;Stuw;Z16;;;01-01-1900 00:00;31-12-2099 00:00;;181115;436600;;Over-Betuwe
-;HL000396;Z2;Stuw;Z2;;;01-01-1900 00:00;31-12-2099 00:00;;174814;437533;;Over-Betuwe
-;HL000397;Z30;Stuw;Z30;;;01-01-1900 00:00;31-12-2099 00:00;;184196;433873;;Over-Betuwe
-;HL000398;Z37;Stuw;Z37;;;01-01-1900 00:00;31-12-2099 00:00;;185211;433941;;Over-Betuwe
-;HL000399;Z04;Stuw;Z04;;;01-01-1900 00:00;31-12-2099 00:00;;174922;436722;;Over-Betuwe
-;HL000400;Z05;Stuw;Z05;;;01-01-1900 00:00;31-12-2099 00:00;;174896;436622;;Over-Betuwe
-;HL000401;Bulkheuvel;Gemaal;Bulkheuvel;;;01-01-1900 00:00;31-12-2099 00:00;;153789;429206;;Tielerwaard
-;HL000402;Kosterman;Stuw;Kosterman;;;01-01-1900 00:00;31-12-2099 00:00;;153144;429047;;Tielerwaard
-;HL000403;Lekkerwaardje;Stuw;Lekkerwaardje;;;01-01-1900 00:00;31-12-2099 00:00;;151130;430104;;Tielerwaard
-;HL000404;Ophemert;Gemaal, Stuw;Ophemert;;;01-01-1900 00:00;31-12-2099 00:00;;153741;428157;;Tielerwaard
-;HL000405;Pijpenkasten, Uitlaat;Stuw;Pijpenkasten, Uitlaat;;;01-01-1900 00:00;31-12-2099 00:00;;151652;431670;Complex Pijpenkasten;Tielerwaard
-;HL000407;Pippertsestraat;Stuw;Pippertsestraat;;;01-01-1900 00:00;31-12-2099 00:00;;155302;429513;;Tielerwaard
-;HL000408;Seinhuis;Stuw;Seinhuis;;;01-01-1900 00:00;31-12-2099 00:00;;154095;431076;;Tielerwaard
-;HL000409;Vuadapad;Stuw;schuif Vuadapad;;;01-01-1900 00:00;31-12-2099 00:00;;154431;430452;;Tielerwaard
-;HL000410;Wadenoijen;Gemaal, Stuw;Wadenoijen;;;01-01-1900 00:00;31-12-2099 00:00;;155217;431752;;Tielerwaard
-;HL000411;Weiweg;Gemaal;Weiweg;;;01-01-1900 00:00;31-12-2099 00:00;;153410;426273;;Tielerwaard
-;HL000412;Poppenbouwing;Stuw;Poppenbouwing;;;01-01-1900 00:00;31-12-2099 00:00;;149087;431490;;Tielerwaard
-;HL000413;Plantage;Stuw;Plantage;;;01-01-1900 00:00;31-12-2099 00:00;;149087;431488;Complex Meersteeg;Tielerwaard
-;HL000414;Estse Omloop;Stuw;Estse Omloop;;;01-01-1900 00:00;31-12-2099 00:00;;148952;427649;;Tielerwaard
-;HL000415;Neerijnen, van Doorn;Stuw;Neerijnen, van Doorn;;;01-01-1900 00:00;31-12-2099 00:00;;147709;429273;;Tielerwaard
-;HL000416;Pekdel Markkade;Stuw;Pekdel Markkade;;;01-01-1900 00:00;31-12-2099 00:00;;147090;429782;;Tielerwaard
-;HL000417;Voorvliet;Stuw;Voorvliet;;;01-01-1900 00:00;31-12-2099 00:00;;146576;432530;;Tielerwaard
-;HL000418;Alphen;Gemaal;Alphen;;;01-01-1900 00:00;31-12-2099 00:00;;160807;426101;;Quarles van Ufford
-;HL000419;Aspert, de;Gemaal;Aspert, de;;;01-01-1900 00:00;31-12-2099 00:00;;171634;428164;;Bloemers
-;HL000420;Bijnem van;Stuw;Bijnem van;;;01-01-1900 00:00;31-12-2099 00:00;;168144;430162;;Quarles van Ufford
-;HL000421;Bering, Oever van de;Stuw;Bering, Oever van de;;;01-01-1900 00:00;31-12-2099 00:00;;158508;426101;;Quarles van Ufford
-;HL000422;Betenlaan;Stuw;Betenlaan;;;01-01-1900 00:00;31-12-2099 00:00;;175478;430174;;Quarles van Ufford
-;HL000423;Blauwesluis;Stuw;Blauwesluis;;;01-01-1900 00:00;31-12-2099 00:00;;166405;428013;;Quarles van Ufford
-;HL000424;Bobbert;Stuw;Bobbert;;;01-01-1900 00:00;31-12-2099 00:00;;169731;432045;;Quarles van Ufford
-;HL000425;Buitenhof, de;Stuw;Buitenhof, de;;;01-01-1900 00:00;31-12-2099 00:00;;170313;432530;;Quarles van Ufford
-;HL000426;Hoogeveen Wely, J. van;Stuw;Hoogeveen Wely, J. van;;;01-01-1900 00:00;31-12-2099 00:00;;158819;429024;;Quarles van Ufford
-;HL000427;Wely, J. van;Gemaal, Stuw;Wely, J. van;;;01-01-1900 00:00;31-12-2099 00:00;;158772;429053;;Quarles van Ufford
-;HL000428;Coothweg;Stuw;Coothweg;;;01-01-1900 00:00;31-12-2099 00:00;;167254;429300;;Quarles van Ufford
-;HL000429;Deestersteeg;Stuw;Deestersteeg;;;01-01-1900 00:00;31-12-2099 00:00;;173735;430914;;Quarles van Ufford
-;HL000430;Druten Zuid;Stuw;Druten Zuid;;;01-01-1900 00:00;31-12-2099 00:00;;169662;433087;;Quarles van Ufford
-;HL000431;Haasje, het;Gemaal;Haasje, het;;;01-01-1900 00:00;31-12-2099 00:00;;178184;431348;;Quarles van Ufford
-;HL000432;Heppert;Stuw;Heppert;;;01-01-1900 00:00;31-12-2099 00:00;;167970;429261;;Quarles van Ufford
-;HL000433;Heuterik, de;Stuw;Heuterik, de;;;01-01-1900 00:00;31-12-2099 00:00;;164497;432252;;Quarles van Ufford
-;HL000434;Horstkamp;Stuw;Horstkamp;;;01-01-1900 00:00;31-12-2099 00:00;;163809;431817;;Quarles van Ufford
-;HL000435;Janssen, J.;Stuw;Janssen, J.;;;01-01-1900 00:00;31-12-2099 00:00;;161101;431825;;Quarles van Ufford
-;HL000436;Kapelstraat Maasbommel;Stuw;Kapelstraat Maasbommel;;;01-01-1900 00:00;31-12-2099 00:00;;164442;427074;;Quarles van Ufford
-;HL000437;Kezieweg;Stuw;Kezieweg;;;01-01-1900 00:00;31-12-2099 00:00;;162202;428251;;Quarles van Ufford
-;HL000438;Kooiweg Alphen;Stuw;Kooiweg Alphen;;;01-01-1900 00:00;31-12-2099 00:00;;159004;425667;;Quarles van Ufford
-;HL000439;Leeuwensche Veld N322;Stuw;Leeuwensche Veld N322;;;01-01-1900 00:00;31-12-2099 00:00;;164005;431418;;Quarles van Ufford
-;HL000440;Lindenlaan;Stuw;Lindenlaan;;;01-01-1900 00:00;31-12-2099 00:00;;160491;426475;;Quarles van Ufford
-;HL000441;Loman;Stuw;Loman;;;01-01-1900 00:00;31-12-2099 00:00;;161143;429799;;Quarles van Ufford
-;HL000442;Lorijn;Stuw;Lorijn;;;01-01-1900 00:00;31-12-2099 00:00;;161210;429895;;Quarles van Ufford
-;HL000443;Reefwetering;Stuw;Reefwetering;;;01-01-1900 00:00;31-12-2099 00:00;;160084;428193;;Quarles van Ufford
-;HL000444;Rijcksche Sluis;Stuw;Rijcksche Sluis;;;01-01-1900 00:00;31-12-2099 00:00;;162585;427586;;Quarles van Ufford
-;HL000445;Rossum, van Trico;Stuw;Rossum, van Trico;;;01-01-1900 00:00;31-12-2099 00:00;;161115;432178;;Quarles van Ufford
-;HL000446;De Ruivert;Gemaal;De Ruivert;;;01-01-1900 00:00;31-12-2099 00:00;;158199;426030;;Quarles van Ufford
-;HL000447;Scharenburg;Gemaal, Stuw;Scharenburg;;;01-01-1900 00:00;31-12-2099 00:00;;170390;431265;;Quarles van Ufford
-;HL000448;Schriksestraat;Stuw;Schriksestraat;;;01-01-1900 00:00;31-12-2099 00:00;;172193;431004;;Quarles van Ufford
-;HL000449;Sommeren, N. van;Stuw;Sommeren, N. van;;;01-01-1900 00:00;31-12-2099 00:00;;169115;433087;;Quarles van Ufford
-;HL000450;Vissersweg, Salet J.;Stuw;Vissersweg, Salet J.;;;01-01-1900 00:00;31-12-2099 00:00;;166891;431623;;Quarles van Ufford
-;HL000451;Waalborg;Stuw;Waalborg;;;01-01-1900 00:00;31-12-2099 00:00;;169390;433724;;Quarles van Ufford
-;HL000452;Willem Alexanderbrug;Gemaal, Stuw;Willem Alexanderbrug;;;01-01-1900 00:00;31-12-2099 00:00;;162697;431898;;Quarles van Ufford
-;HL000453;Zand, H. van de;Stuw;Zand, H. van de;;;01-01-1900 00:00;31-12-2099 00:00;;167539;432338;;Quarles van Ufford
-;HL000454;Zijveld;Stuw;Zijveld;;;01-01-1900 00:00;31-12-2099 00:00;;164265;429423;;Quarles van Ufford
-;HL000455;Zijveld Liesterstraat;Stuw;Zijveld Liesterstraat;;;01-01-1900 00:00;31-12-2099 00:00;;163707;431529;;Quarles van Ufford
-;HL000456;Zwolgen, van;Stuw;Zwolgen, van;;;01-01-1900 00:00;31-12-2099 00:00;;171273;432637;;Quarles van Ufford
-;HL000457;BRO 88-4;Stuw;BRO 88-4;;;01-01-1900 00:00;31-12-2099 00:00;;185505;434220;;Over-Betuwe
-;HL000458;Elsweg;Stuw;Elsweg;;;01-01-1900 00:00;31-12-2099 00:00;;160958;427252;;Quarles van Ufford
-;HL000459;Nieuweweg Kezieweg;Stuw;Nieuweweg Kezieweg;;;01-01-1900 00:00;31-12-2099 00:00;;162524;428893;;Quarles van Ufford
-;HL000460;Zonnepark Leeuwse Veld;Stuw;Zonnepark Leeuwse Veld;;;01-01-1900 00:00;31-12-2099 00:00;;163706;431550;;Quarles van Ufford
-;HL000461;Altena;Gemaal;Altena;;;01-01-1900 00:00;31-12-2099 00:00;;123494;426313;;Land van Heusden en Altena
-;HL000462;Bijtelskil;Stuw;Bijtelskil;;;01-01-1900 00:00;31-12-2099 00:00;;123845;423868;;Land van Heusden en Altena
-;HL000463;Gijbert, Inl;Stuw;Gijbert, Inl;;;01-01-1900 00:00;31-12-2099 00:00;;122496;418327;;Land van Heusden en Altena
-;HL000464;Beuningen, H.A. van;Gemaal;Beuningen, H.A. van;;;01-01-1900 00:00;31-12-2099 00:00;;158277;436943;;Linge
-;HL000465;Sifon;Stuw;Sifon;;;01-01-1900 00:00;31-12-2099 00:00;;158336;436880;;Linge
-;HL000467;Bruinekil;Gemaal, Stuw;Bruinekil;;;01-01-1900 00:00;31-12-2099 00:00;;118929;419707;;Oostwaard
-;HL000468;Oostkil;Gemaal, Stuw;Oostkil;;;01-01-1900 00:00;31-12-2099 00:00;;118649;416004;;Oostwaard
-;HL000469;Boogaard, K. van de;Stuw;Boogaard, K. van de;;;01-01-1900 00:00;31-12-2099 00:00;;145634;418014;;Bommelerwaard
-;HL000470;World Champ;Stuw;World Champ;;;01-01-1900 00:00;31-12-2099 00:00;;144092;418970;;Bommelerwaard
-;HL000471;Galg;Gemaal;Galg;;;01-01-1900 00:00;31-12-2099 00:00;;140467;433923;;Lek en Linge
-;HL000472;Startstraat;Gemaal, Stuw;Startstraat;;;01-01-1900 00:00;31-12-2099 00:00;;141385;423002;;Bommelerwaard
-;HL000473;Veldsestraat Zilverlandseweg;Stuw;Veldsestraat Zilverlandseweg;;;01-01-1900 00:00;31-12-2099 00:00;;165027;437669;;Neder-Betuwe
-;HL000474;Drielandenpunt;Gemaal, Stuw;Drielandenpunt;;;01-01-1900 00:00;31-12-2099 00:00;;153072;440334;Complex Drielandenpunt;Neder-Betuwe
-;HL000475;Zandberg;Stuw;Zandberg;;;01-01-1900 00:00;31-12-2099 00:00;;153048;440329;Complex  Drielandenpunt;Neder-Betuwe
-;HL000476;Nieuweweg;Stuw;Nieuweweg;;;01-01-1900 00:00;31-12-2099 00:00;;153099;440320;;Neder-Betuwe
-;HL000477;Ravenswaaij;Stuw;Ravenswaaij;;;01-01-1900 00:00;31-12-2099 00:00;;153041;440356;;Neder-Betuwe
-;HL000478;Prins Bernhardsluizen;Gemaal, Stuw;Prins Bernhardsluizen;;;01-01-1900 00:00;31-12-2099 00:00;;159608;434585;;Tielerwaard
-;HL000479;Schaarsdijkpad;Stuw;Schaarsdijkpad;;;01-01-1900 00:00;31-12-2099 00:00;;155850;432478;;Tielerwaard
-;HL000480;Tolsteeg Tunnel;Gemaal;Tolsteeg Tunnel;;;01-01-1900 00:00;31-12-2099 00:00;;111695;427412;Complex Sliedrecht;Nederwaard
-;HL000481;Uitlaat Waterrijk Oost;Stuw;Uitlaat Waterrijk Oost;;;01-01-1900 00:00;31-12-2099 00:00;;188795;437927;;Over-Betuwe
-;HL000482;Santacker;Stuw;Santacker;;;01-01-1900 00:00;31-12-2099 00:00;;186598;438409;;Over-Betuwe
-;HL000483;Timmermans;Stuw;Timmermans;;;01-01-1900 00:00;31-12-2099 00:00;;183146;437683;;Over-Betuwe
-;HL000484;Tobbenhof;Stuw;Tobbenhof;;;01-01-1900 00:00;31-12-2099 00:00;;184164;437859;;Over-Betuwe
-;HL000485;Inundatiekanaal;Gemaal;Inundatiekanaal;;;01-01-1900 00:00;31-12-2099 00:00;;156032;431972;;Tielerwaard
-;HL000486;Rooy, de;Stuw;Rooy, de;;;01-01-1900 00:00;31-12-2099 00:00;;154347;431392;;Tielerwaard
-;HL000487;Schuif Zuivellings;Stuw;Schuif Zuivellings;;;01-01-1900 00:00;31-12-2099 00:00;;154836;430001;;Tielerwaard
-;HL000488;Hondekooi;Gemaal, Stuw;Hondekooi;;;01-01-1900 00:00;31-12-2099 00:00;;134829;422805;;Bommelerwaard
-;HL000489;Huibert;Stuw;Huibert;;;01-01-1900 00:00;31-12-2099 00:00;;131433;438836;;Vijfheerenlanden
-;HL000490;Loosdorp;Gemaal, Stuw;Loosdorp;;;01-01-1900 00:00;31-12-2099 00:00;;133926;434700;;Vijfheerenlanden
-;HL000491;Oud-Schaaijk 1;Stuw;Oud-Schaaijk 1;;;01-01-1900 00:00;31-12-2099 00:00;;135098;434100;;Vijfheerenlanden
-;HL000492;Vianen Jachthaven (noodpomp);Gemaal;Vianen Jachthaven (noodpomp);;;01-01-1900 00:00;31-12-2099 00:00;;132724;444238;;Buitenpolders
-;HL000493;Bruchemse huisjes 1;Stuw;Bruchemse huisjes 1;;;01-01-1900 00:00;31-12-2099 00:00;;144043;422293;;Bommelerwaard
-;HL000494;BRO 69-2;Stuw;BRO 69-2;;;01-01-1900 00:00;31-12-2099 00:00;;167098;436838;;Neder-Betuwe
-;HL000495;BRO 69-3;Stuw;BRO 69-3;;;01-01-1900 00:00;31-12-2099 00:00;;167116;436868;;Neder-Betuwe
-;HL000496;Hagoort Lagepand;Gemaal;Hagoort Lagepand;;;01-01-1900 00:00;31-12-2099 00:00;;129097;414005;;Land van Heusden en Altena
-;HL000497;Hagoort Hogepand;Gemaal;Hagoort Hogepand;;;01-01-1900 00:00;31-12-2099 00:00;;129089;413975;Complex Hagoort;Land van Heusden en Altena
-;HL000498;Peulensluis;Sluis;Peulensluis;;;01-01-1900 00:00;31-12-2099 00:00;;116356;426035;;Overwaard
-;HL000499;Lage Boezem Overwaard;Stuw;Lage Boezem Overwaard;;;01-01-1900 00:00;31-12-2099 00:00;;103561;433487;;Overwaard
-;HL000500;Hoge Boezem MK Nederwaard;Stuw;Hoge Boezem MK Nederwaard;;;01-01-1900 00:00;31-12-2099 00:00;;103314;433607;;Nederwaard
-;HL000501;Baanhoek 1;Gemaal;Baanhoek 1;;;01-01-1900 00:00;31-12-2099 00:00;;110937;426283;;Nederwaard
-;HL000502;Baanhoek 2;Gemaal;Baanhoek 2;;;01-01-1900 00:00;31-12-2099 00:00;;111206;426294;;Nederwaard
-;HL000504;Bakkerskil;Gemaal;Bakkerskil;;;01-01-1900 00:00;31-12-2099 00:00;;118302;417517;;Oostwaard
-;HL000505;Jamin;Stuw;Jamin;;;01-01-1900 00:00;31-12-2099 00:00;;126847;422492;;Land van Heusden en Altena
-;HL000506;Uiterwaarden;Gemaal;Uiterwaarden;;;01-01-1900 00:00;31-12-2099 00:00;;129878;423804;;Land van Heusden en Altena
-;HL000507;Wijk en Aalburg;Gemaal;Wijk en Aalburg;;;01-01-1900 00:00;31-12-2099 00:00;;137549;419474;;Land van Heusden en Altena
-;HL000508;Buurmalsen;Gemaal, Stuw;Buurmalsen;;;01-01-1900 00:00;31-12-2099 00:00;;147312;433446;;Lek en Linge
-;HL000509;Bonte Morgen;Stuw;Bonte Morgen;;;01-01-1900 00:00;31-12-2099 00:00;;164336;442316;;Buitenpolders
-;HL000510;Heerenland;Stuw;Heerenland;;;01-01-1900 00:00;31-12-2099 00:00;;171057;437961;;Neder-Betuwe
-;HL000511;Stadsgracht Tiel;Gemaal;Stadsgracht Tiel;;;01-01-1900 00:00;31-12-2099 00:00;;158681;433294;;Tielerwaard
-;HL000512;Drielsche Zeeg Breekenhof 1;Stuw;Drielsche Zeeg Breekenhof 1;;;01-01-1900 00:00;31-12-2099 00:00;;184201;440517;;Over-Betuwe
-;HL000513;Circulatiegemaal Breekenhof;Gemaal;Circulatiegemaal Breekenhof;;;01-01-1900 00:00;31-12-2099 00:00;;184204;440575;;Over-Betuwe
-;HL000514;Eind A15;Stuw;Eind A15;;;01-01-1900 00:00;31-12-2099 00:00;;190937;435026;;Over-Betuwe
-;HL000515;Huyenkamp;Gemaal;Huyenkamp;;;01-01-1900 00:00;31-12-2099 00:00;;185669;436878;;Over-Betuwe
-;HL000516;Pannerling;Gemaal, Stuw;Pannerling;;;01-01-1900 00:00;31-12-2099 00:00;;198686;434245;;Linge
-;HL000517;Sillesstraat;Gemaal;Sillesstraat;;;01-01-1900 00:00;31-12-2099 00:00;;188864;437718;;Over-Betuwe
-;HL000518;Vredenburg;Gemaal;Vredenburg;;;01-01-1900 00:00;31-12-2099 00:00;;189654;440719;;Over-Betuwe
-;HL000519;Singel Eiland Laauwik;Gemaal;Singel Eiland Laauwik;;;01-01-1900 00:00;31-12-2099 00:00;;187817;431910;;Over-Betuwe
-;HL000520;K14 weefgewichtstraat;Gemaal;K14 weefgewichtstraat;;;01-01-1900 00:00;31-12-2099 00:00;;186333;431933;;Over-Betuwe
-;HL000521;Circulatie HF Westeraam;Gemaal;Circulatie HF Westeraam;;;01-01-1900 00:00;31-12-2099 00:00;;188232;437567;;Over-Betuwe
-;HL000522;Hardinxveld Noord;Gemaal;Hardinxveld Noord;;;01-01-1900 00:00;31-12-2099 00:00;;119693;427208;;Overwaard
-;HL000523;Nieuw Lekkerland;Gemaal;Nieuw Lekkerland;;;01-01-1900 00:00;31-12-2099 00:00;;107338;432602;;Overwaard
-;HL000524;Grandia aan Voorvliet;Stuw;Grandia aan Voorvliet;;;01-01-1900 00:00;31-12-2099 00:00;;146576;430721;;Tielerwaard
-;HL000525;Arkel;Gemaal;Arkel;;;01-01-1900 00:00;31-12-2099 00:00;;128192;430515;;Vijfheerenlanden
-;HL000526;Autena;Gemaal;Autena;;;01-01-1900 00:00;31-12-2099 00:00;;133443;442311;;Vijfheerenlanden
-;HL000527;Heicop;Gemaal;Heicop;;;01-01-1900 00:00;31-12-2099 00:00;;131515;439195;;Vijfheerenlanden
-;HL000528;Hoef en Haag;Gemaal;Hoef en Haag;;;01-01-1900 00:00;31-12-2099 00:00;;135147;444769;;Vijfheerenlanden
-;HL000529;Kedichem;Gemaal;Kedichem;;;01-01-1900 00:00;31-12-2099 00:00;;130208;430282;;Vijfheerenlanden
-;HL000530;Kortgerecht laag 1;Stuw;Kortgerecht laag 1;;;01-01-1900 00:00;31-12-2099 00:00;;137467;438657;;Vijfheerenlanden
-;HL000531;Middelkoop;Gemaal;Middelkoop;;;01-01-1900 00:00;31-12-2099 00:00;;130814;438329;;Vijfheerenlanden
-;HL000532;Lakerveld;Gemaal;Lakerveld;;;01-01-1900 00:00;31-12-2099 00:00;;130769;438440;;Vijfheerenlanden
-;HL000533;Boven-Huibert;Gemaal, Stuw;Boven-Huibert;;;01-01-1900 00:00;31-12-2099 00:00;;137442;438665;Complex Boven-Huibert;Vijfheerenlanden
-;HL000534;Lam, D.W. het;Gemaal;Lam, D.W. het;;;01-01-1900 00:00;31-12-2099 00:00;;132148;440718;;Vijfheerenlanden
-;HL000535;Laar, de;Gemaal;Laar, de;;;01-01-1900 00:00;31-12-2099 00:00;;137891;431581;;Tielerwaard
-;HL000536;HF Westeraam stuw A-watergang;Stuw;HF Westeraam stuw A-watergang;;;01-01-1900 00:00;31-12-2099 00:00;;188145;437922;;Over-Betuwe
-;HL000537;HF Westeraam uitlaat;Stuw;HF Westeraam uitlaat;;;01-01-1900 00:00;31-12-2099 00:00;;188248;437565;;Over-Betuwe
-;HL000538;Vlek 20 K6;Gemaal, Stuw;Vlek 20 K6;;;01-01-1900 00:00;31-12-2099 00:00;;188227;432015;;Over-Betuwe
-;HL000539;K2 Oosterhoutseplas;Gemaal, Stuw;K2 Oosterhoutseplas;;;01-01-1900 00:00;31-12-2099 00:00;;187430;432299;;Over-Betuwe
-;HL000540;Drielsedijk;Gemaal;Drielsedijk;;;01-01-1900 00:00;31-12-2099 00:00;;187293;442295;;Over-Betuwe
-;HL000541;Ufford, Quarles van;Gemaal, Stuw;Ufford, Quarles van;;;01-01-1900 00:00;31-12-2099 00:00;;157939;425857;;Quarles van Ufford
-;HL000542;Nieuwe Horn;Gemaal;Nieuwe Horn;;;01-01-1900 00:00;31-12-2099 00:00;;136281;433336;;Lek en Linge
-;HL000543;Baanbreker, de;Gemaal, Stuw;Baanbreker, de;;;01-01-1900 00:00;31-12-2099 00:00;;141061;419107;;Bommelerwaard
-;HL000544;Poortweg;Gemaal;Poortweg;;;01-01-1900 00:00;31-12-2099 00:00;;127398;421743;;Land van Heusden en Altena
-;HL000546;Oostersingel;Gemaal;Oostersingel;;;01-01-1900 00:00;31-12-2099 00:00;;144190;440657;;Lek en Linge
-;HL000547;Studentengracht;Stuw;Studentengracht;;;01-01-1900 00:00;31-12-2099 00:00;;144142;440488;;Lek en Linge
-;HL000548;Weidsteeg;Gemaal, Stuw;Weidsteeg;;;01-01-1900 00:00;31-12-2099 00:00;;144259;440559;Complex Stadsgracht;Lek en Linge
-;HL000549;Werkendam;Stuw;Werkendam;;;01-01-1900 00:00;31-12-2099 00:00;;121141;424020;;Land van Heusden en Altena
-;HL000550;Parijsch;Gemaal;Parijsch;;;01-01-1900 00:00;31-12-2099 00:00;;142060;440260;;Lek en Linge
-;HL000551;Overheicop;Stuw;Overheicop;;;01-01-1900 00:00;31-12-2099 00:00;;134784;438428;;Vijfheerenlanden
-;HL000552;Stompe Molen;Stuw;Stompe Molen;;;01-01-1900 00:00;31-12-2099 00:00;;134202;434156;;Vijfheerenlanden
-;HL000553;Schaaijk;Gemaal;Schaaijk;;;01-01-1900 00:00;31-12-2099 00:00;;134575;433463;;Vijfheerenlanden
-;HL000555;Molen ter Leede;Stuw;Molen ter Leede;;;01-01-1900 00:00;31-12-2099 00:00;;134497;433525;;Vijfheerenlanden
-;HL000556;Neust, de;Gemaal, Stuw;Neust, de;;;01-01-1900 00:00;31-12-2099 00:00;;145329;433922;handmatige vispassage;Lek en Linge
-;HL000557;Peerenboomsgat;Stuw;Peerenboomsgat;;;01-01-1900 00:00;31-12-2099 00:00;;122127;414946;;Land van Heusden en Altena
-;HL000558;Kerkverweide;Stuw;Kerkverweide;;;01-01-1900 00:00;31-12-2099 00:00;;136680;419393;;Land van Heusden en Altena
-;HL000559;Lage Biezen;Stuw;Lage Biezen;;;01-01-1900 00:00;31-12-2099 00:00;;135036;442288;;Vijfheerenlanden
-;HL000560;Vretstrooi;Gemaal;Vretstrooi;;;01-01-1900 00:00;31-12-2099 00:00;;144798;437577;;Lek en Linge
-;HL000561;Mollenvanger;Stuw;Mollenvanger;;;01-01-1900 00:00;31-12-2099 00:00;;129515;441367;;Vijfheerenlanden
-;HL000562;Kikkert, de;Stuw;Kikkert, de;;;01-01-1900 00:00;31-12-2099 00:00;;128435;440388;;Vijfheerenlanden
-;HL000563;Hoog Leerbroek;Stuw;Hoog Leerbroek;;;01-01-1900 00:00;31-12-2099 00:00;;132285;435939;;Vijfheerenlanden
-;HL000564;Kom Lekdijk;Gemaal;Kom Lekdijk;;;01-01-1900 00:00;31-12-2099 00:00;;130687;441966;;Vijfheerenlanden
-;HL000565;Bastaardkade;Stuw;Bastaardkade;;;01-01-1900 00:00;31-12-2099 00:00;;131230;440274;;Vijfheerenlanden
-;HL000566;Bloemendaal;Gemaal, Stuw;Bloemendaal;;;01-01-1900 00:00;31-12-2099 00:00;;133746;442633;;Vijfheerenlanden
-;HL000567;Jan van Toonen;Stuw;Jan van Toonen;;;01-01-1900 00:00;31-12-2099 00:00;;132513;420370;;Land van Heusden en Altena
-;HL000568;Horst;Stuw;Horst;;;01-01-1900 00:00;31-12-2099 00:00;;196146;421054;;Groesbeek
-;HL000569;Middelwaard;Stuw;Middelwaard;;;01-01-1900 00:00;31-12-2099 00:00;;119862;423427;;Oostwaard
-;HL000570;Hoogeind;Stuw;Hoogeind;;;01-01-1900 00:00;31-12-2099 00:00;;133461;437425;;Vijfheerenlanden
-;HL000571;Ashorst (verwijderd);Stuw;Ashorst (verwijderd);;;01-01-1900 00:00;31-12-2099 00:00;;194504;419617;is verwijderd 26 juli 2021, oud GRB011;Groesbeek
-;HL000572;Karbrug (verwijderd);Stuw;Karbrug (verwijderd);;;01-01-1900 00:00;31-12-2099 00:00;;191299;435910;is verwijderd 1 september 2016, oud LNG003;Linge
-;HL000573;Winssense waarden;Gemaal;Winssense waarden;;;01-01-1900 00:00;31-12-2099 00:00;;175801;433507;;Buitenpolders
-;HL000574;Broekgraaf 1;Stuw;Broekgraaf 1;;;01-01-1900 00:00;31-12-2099 00:00;;133092;433323;;Vijfheerenlanden
-;HL000576;Tricht (verwijderd);Gemaal;Tricht (verwijderd);;;01-01-1900 00:00;31-12-2099 00:00;;145324;433906;;Lek en Linge
-;HL000579;Dodewaard uitlaat;Stuw;Dodewaard uitlaat;;;01-01-1900 00:00;31-12-2099 00:00;;172008;437497;;Neder-Betuwe
-;HL000580;Doornenburg;Stuw;Doornenburg;;;01-01-1900 00:00;31-12-2099 00:00;;198611;434207;;Linge
-;HL000581;Ewijk (verwijderd);Stuw;Ewijk (verwijderd);;;01-01-1900 00:00;31-12-2099 00:00;;177711;430461;is verwijderd in 22 mei 2018;Bloemers
-;HL000583;Laag Dalem;Stuw;Laag Dalem;;;01-01-1900 00:00;31-12-2099 00:00;;127420;427845;;Tielerwaard
-;HL000584;Lage Boezem Nederwaard;Stuw;Lage Boezem Nederwaard;;;01-01-1900 00:00;31-12-2099 00:00;;103306;433483;;Nederwaard
-;HL000585;Afsluitmiddel Overwaard;Stuw;Afsluitmiddel Overwaard;;;01-01-1900 00:00;31-12-2099 00:00;;103462;433643;;Overwaard
-;HL000586;Zwanenwater (verwijderd);Gemaal;Zwanenwater (verwijderd);;;01-01-1900 00:00;31-12-2099 00:00;;192700;439563;;Over-Betuwe
-;HL000588;Drielsche Zeeg Breekenhof 2;Stuw;Drielsche Zeeg Breekenhof 2;;;01-01-1900 00:00;31-12-2099 00:00;;184545;440601;;Over-Betuwe
-;HL000589;HF Westeraam inlaat;Gemaal;HF Westeraam inlaat;;;01-01-1900 00:00;31-12-2099 00:00;;188244;437584;;Over-Betuwe
-;HL000590;HF Westeraam recirculatie;Gemaal;HF Westeraam recirculatie;;;01-01-1900 00:00;31-12-2099 00:00;;188045;437627;;Over-Betuwe
-;HL000593;Broekse Sluis, Heukelum;Gemaal;Broekse Sluis, Heukelum;;;01-01-1900 00:00;31-12-2099 00:00;;131591;429662;Complex Broekse Sluis;Tielerwaard
-;HL000595;Broekse Sluis, Spijk;Gemaal;Broekse Sluis, Spijk;;;01-01-1900 00:00;31-12-2099 00:00;;131582;429662;;Tielerwaard
-;HL000596;Tricht, achter de Werkplaats;Stuw;Tricht, achter de Werkplaats;;;01-01-1900 00:00;31-12-2099 00:00;;145532;434519;;Lek en Linge
-;HL000597;Inlaat Kok, Ir. G.N.  / Overwaard;Stuw;Inlaat Kok, Ir. G.N.  / Overwaard;;;01-01-1900 00:00;31-12-2099 00:00;;103401;433593;;Overwaard
-;HL000598;Eck, van (verwijderd);Stuw;Eck, van;;;01-01-1900 00:00;02-01-2018 00:00;;163728;427858;;Quarles van Ufford
-;HL000599;Pijpenkasten, Inlaat;Stuw;Pijpenkansten. Inlaat;;;01-01-1900 00:00;31-12-2099 00:00;;151658;431677;;Tielerwaard
-;HL000600;BRO 74-3;Stuw;BRO 74-3;;;01-01-1900 00:00;31-12-2099 00:00;;172129;437208;;Neder-Betuwe
+OBJECTID;CODE;NAAM;TYPES;SHORTNAME;ICON;TOOLTIP;OBJECTBEGI;OBJECTEIND;NAMESPACE;X;Y;COMMENTAAR;DS_GBD;OC_TEST;OC_PROD
+;HL000001;Ronde Morgen;Stuw;Ronde Morgen;;;01-01-1900 00:00;31-12-2099 00:00;;150558;420087;;Bommelerwaard;;
+;HL000002;Achterdijk voormalig woonwagenkamp 2;Stuw;Achterdijk voormalig woonwagenkamp 2;;;01-01-1900 00:00;31-12-2099 00:00;;149183;423081;;Bommelerwaard;;
+;HL000003;Campina;Stuw;Campina;;;01-01-1900 00:00;31-12-2099 00:00;;146093;423510;;Bommelerwaard;;
+;HL000004;Alem;Gemaal;Alem;;;01-01-1900 00:00;31-12-2099 00:00;;153012;421573;Complex Alem;Bommelerwaard;;
+;HL000005;Oever, H. van de;Gemaal;Oever, H. van de;;;01-01-1900 00:00;31-12-2099 00:00;;152923;421389;;Bommelerwaard;;
+;HL000006;Meiweg 2;Stuw;Meiweg 2;;;01-01-1900 00:00;31-12-2099 00:00;;149985;422268;;Bommelerwaard;;
+;HL000007;Meiweg 1;Stuw;Meiweg 1;;;01-01-1900 00:00;31-12-2099 00:00;;150001;422255;Complex Meiweg;Bommelerwaard;;
+;HL000008;Duitse Weistraat;Stuw;Duitse Weistraat;;;01-01-1900 00:00;31-12-2099 00:00;;150603;419810;;Bommelerwaard;;
+;HL000009;Hedel;Gemaal;Hedel;;;01-01-1900 00:00;31-12-2099 00:00;;146657;417168;;Bommelerwaard;;
+;HL000010;Heinz;Stuw;Heinz;;;01-01-1900 00:00;31-12-2099 00:00;;146695;422371;;Bommelerwaard;;
+;HL000011;Hogeweg Rossum;Gemaal, Stuw;Hogeweg Rossum;;;01-01-1900 00:00;31-12-2099 00:00;;151142;423703;;Bommelerwaard;;
+;HL000012;Hurwenensestraat bij ijscoman de Groot;Stuw;Hurwenensestraat bij ijscoman de Groot;;;01-01-1900 00:00;31-12-2099 00:00;;148975;423528;;Bommelerwaard;;
+;HL000013;Kerkwijkse Kade;Gemaal, Stuw;Kerkwijkse Kade;;;01-01-1900 00:00;31-12-2099 00:00;;144814;420289;;Bommelerwaard;;
+;HL000014;Kievitsham;Gemaal;Kievitsham;;;01-01-1900 00:00;31-12-2099 00:00;;151450;419166;;Bommelerwaard;;
+;HL000015;Koudijs;Stuw;Koudijs;;;01-01-1900 00:00;31-12-2099 00:00;;145828;420450;;Bommelerwaard;;
+;HL000016;Meersloot;Gemaal;Meersloot;;;01-01-1900 00:00;31-12-2099 00:00;;142690;418564;;Bommelerwaard;;
+;HL000017;Oostenbroekweg;Stuw;Oostenbroekweg;;;01-01-1900 00:00;31-12-2099 00:00;;150308;419412;TI..Hooymans met leggercode 001046;Bommelerwaard;;
+;HL000018;Sassert, de;Stuw;Sassert, de;;;01-01-1900 00:00;31-12-2099 00:00;;147967;419543;;Bommelerwaard;;
+;HL000019;Steenweg;Stuw;Steenweg;;;01-01-1900 00:00;31-12-2099 00:00;;146026;421889;;Bommelerwaard;;
+;HL000020;Stuvers;Gemaal;Stuvers;;;01-01-1900 00:00;31-12-2099 00:00;;150486;422045;;Bommelerwaard;;
+;HL000021;Tennisveld Ammerzoden;Stuw;Tennisveld Ammerzoden;;;01-01-1900 00:00;31-12-2099 00:00;;144141;417910;;Bommelerwaard;;
+;HL000022;Teuling, Wout den 2;Stuw;Teuling, Wout den 2;;;01-01-1900 00:00;31-12-2099 00:00;;148389;422353;;Bommelerwaard;;
+;HL000023;Waluwe;Stuw;Waluwe;;;01-01-1900 00:00;31-12-2099 00:00;;145859;422917;;Bommelerwaard;;
+;HL000024;Weigraaf;Gemaal;Weigraaf;;;01-01-1900 00:00;31-12-2099 00:00;;142039;418809;;Bommelerwaard;;
+;HL000025;Wildeman;Stuw;Wildeman;;;01-01-1900 00:00;31-12-2099 00:00;;147090;422899;;Bommelerwaard;;
+;HL000026;Winkelseweg;Stuw;Winkelseweg;;;01-01-1900 00:00;31-12-2099 00:00;;146593;419907;;Bommelerwaard;;
+;HL000027;Woudje Dokkum;Stuw;Woudje Dokkum;;;01-01-1900 00:00;31-12-2099 00:00;;143321;420051;;Bommelerwaard;;
+;HL000028;Berenskamp;Gemaal;Berenskamp;;;01-01-1900 00:00;31-12-2099 00:00;;140829;422944;;Bommelerwaard;;
+;HL000029;Bern;Gemaal;Bern;;;01-01-1900 00:00;31-12-2099 00:00;;140910;417551;;Bommelerwaard;;
+;HL000030;Eendenkade;Gemaal, Stuw;Eendenkade;;;01-01-1900 00:00;31-12-2099 00:00;;137489;421695;;Bommelerwaard;;
+;HL000031;Heemstraweg, van;Gemaal, Stuw;Heemstraweg, van;;;01-01-1900 00:00;31-12-2099 00:00;;143340;423052;;Bommelerwaard;;
+;HL000032;Heemstraweg, van P-plaats;Stuw;Heemstraweg, van P-plaats;;;01-01-1900 00:00;31-12-2099 00:00;;144153;423268;;Bommelerwaard;;
+;HL000033;Hogeweg Satter;Stuw;Hogeweg Satter;;;01-01-1900 00:00;31-12-2099 00:00;;140042;423411;;Bommelerwaard;;
+;HL000034;Hogeweg van Tuil;Stuw;Hogeweg van Tuil;;;01-01-1900 00:00;31-12-2099 00:00;;140727;423975;;Bommelerwaard;;
+;HL000035;Parallelweg;Stuw;Parallelweg;;;01-01-1900 00:00;31-12-2099 00:00;;137737;423487;;Bommelerwaard;;
+;HL000036;Rietschoof, de;Gemaal;Rietschoof, de;;;01-01-1900 00:00;31-12-2099 00:00;;138020;420497;;Bommelerwaard;;
+;HL000037;Stuversdreef, Jan van;Stuw;Stuversdreef, Jan van;;;01-01-1900 00:00;31-12-2099 00:00;;141845;422179;;Bommelerwaard;;
+;HL000038;Zeedijk 1;Stuw;Zeedijk 1;;;01-01-1900 00:00;31-12-2099 00:00;;139362;421800;;Bommelerwaard;;
+;HL000039;Zeedijk 2;Stuw;Zeedijk 2;;;01-01-1900 00:00;31-12-2099 00:00;;139479;422913;;Bommelerwaard;;
+;HL000040;Dam van Brakel, Van;Gemaal, Stuw;Dam van Brakel, Van;;;01-01-1900 00:00;31-12-2099 00:00;;132288;422639;;Bommelerwaard;;
+;HL000041;Leuvenveldseweg;Gemaal, Stuw;Leuvenveldseweg;;;01-01-1900 00:00;31-12-2099 00:00;;133608;425260;;Bommelerwaard;;
+;HL000042;Molenkampseweg;Gemaal, Stuw;Molenkampseweg;;;01-01-1900 00:00;31-12-2099 00:00;;135407;424822;;Bommelerwaard;;
+;HL000043;Rossum, Maarten van;Gemaal, Stuw;Rossum, Maarten van;;;01-01-1900 00:00;31-12-2099 00:00;;133212;422577;;Bommelerwaard;;
+;HL000044;Achterdijk;Stuw;Achterdijk;;;01-01-1900 00:00;31-12-2099 00:00;;144195;419555;;Bommelerwaard;;
+;HL000045;Kooiheuvel;Gemaal;Kooiheuvel;;;01-01-1900 00:00;31-12-2099 00:00;;149574;418712;;Bommelerwaard;;
+;HL000046;Weigraaf noord;Stuw;Weigraaf noord;;;01-01-1900 00:00;31-12-2099 00:00;;142035;419109;;Bommelerwaard;;
+;HL000047;Zandweg Ammerzoden;Stuw;Zandweg Ammerzoden;;;01-01-1900 00:00;31-12-2099 00:00;;143864;419291;;Bommelerwaard;;
+;HL000048;achter Tuil, het bos van;Stuw;achter Tuil, het bos van;;;01-01-1900 00:00;31-12-2099 00:00;;143198;423445;;Bommelerwaard;;
+;HL000049;Rampert, de;Gemaal, Stuw;Rampert, de;;;01-01-1900 00:00;31-12-2099 00:00;;141289;421649;Complex de Rampert;Bommelerwaard;;
+;HL000050;Huizendijk;Gemaal;Huizendijk;;;01-01-1900 00:00;31-12-2099 00:00;;155603;425977;;Bommelerwaard;;
+;HL000051;Hurwenen;Gemaal;Hurwenen;;;01-01-1900 00:00;31-12-2099 00:00;;148797;425208;;Buitenpolders;;
+;HL000052;Jongh, H.C. de;Gemaal;Jongh, H.C. de;;;01-01-1900 00:00;31-12-2099 00:00;;136574;422961;;Bommelerwaard;;
+;HL000053;Knotwilgenweg;Stuw;Knotwilgenweg;;;01-01-1900 00:00;31-12-2099 00:00;;144414;418045;;Bommelerwaard;;
+;HL000054;Leeuw, Ben de noord;Stuw;Leeuw, Ben de noord;;;01-01-1900 00:00;31-12-2099 00:00;;147423;421999;;Bommelerwaard;;
+;HL000055;Maas en Waalweg;Gemaal;Maas en Waalweg;;;01-01-1900 00:00;31-12-2099 00:00;;137525;422542;;Bommelerwaard;;
+;HL000056;Dubbele schuif Wildeman;Stuw;Dubbele schuif Wildeman;;;01-01-1900 00:00;31-12-2099 00:00;;146976;424067;;Bommelerwaard;;
+;HL000057;Schuif Torenstraatje;Stuw;Schuif Torenstraatje;;;01-01-1900 00:00;31-12-2099 00:00;;146971;424092;;Bommelerwaard;;
+;HL000058;Stuw Torenstraatje;Stuw;Stuw Torenstraatje;;;01-01-1900 00:00;31-12-2099 00:00;;146965;424100;;Bommelerwaard;;
+;HL000059;Bleeke Kil;Stuw;Bleeke Kil;;;01-01-1900 00:00;31-12-2099 00:00;;121731;417969;;Oostwaard;;
+;HL000060;Bolink;Stuw;Bolink;;;01-01-1900 00:00;31-12-2099 00:00;;126421;423200;;Land van Heusden en Altena;;
+;HL000061;Borcharenweg;Stuw;Borcharenweg;;;01-01-1900 00:00;31-12-2099 00:00;;121810;423832;;Land van Heusden en Altena;;
+;HL000062;Sleeuwijk, van de Burg;Stuw;Sleeuwijk, van de Burg;;;01-01-1900 00:00;31-12-2099 00:00;;124208;423705;;Land van Heusden en Altena;;
+;HL000063;Gantel, de;Stuw;Gantel, de;;;01-01-1900 00:00;31-12-2099 00:00;;123982;423579;;Land van Heusden en Altena;;
+;HL000064;Ippelsepolder;Stuw;Ippelsepolder;;;01-01-1900 00:00;31-12-2099 00:00;;122691;423995;;Land van Heusden en Altena;;
+;HL000065;Schenkeldijk;Gemaal, Stuw;Schenkeldijk;;;01-01-1900 00:00;31-12-2099 00:00;;123355;418615;;Land van Heusden en Altena;;
+;HL000066;Schenkeldijk;Stuw;Schenkeldijk;;;01-01-1900 00:00;31-12-2099 00:00;;123595;418524;;Land van Heusden en Altena;;
+;HL000067;Vervoorne polder;Stuw;Vervoorne polder;;;01-01-1900 00:00;31-12-2099 00:00;;122576;423885;;Land van Heusden en Altena;;
+;HL000068;Vink, Bas;Stuw;Vink, Bas;;;01-01-1900 00:00;31-12-2099 00:00;;126760;423779;;Land van Heusden en Altena;;
+;HL000069;Waterschapskantoor;Stuw;Waterschapskantoor;;;01-01-1900 00:00;31-12-2099 00:00;;128001;424461;;Land van Heusden en Altena;;
+;HL000070;Woudrichem;Stuw;Woudrichem;;;01-01-1900 00:00;31-12-2099 00:00;;128703;425118;;Land van Heusden en Altena;;
+;HL000071;Wylax;Stuw;Wylax;;;01-01-1900 00:00;31-12-2099 00:00;;128503;424985;;Land van Heusden en Altena;;
+;HL000073;Julianastuw;Stuw;Julianastuw;;;01-01-1900 00:00;31-12-2099 00:00;;150033;433982;;Linge;;
+;HL000074;Linge stuw Pijpenkast;Stuw;Linge stuw Pijpenkast;;;01-01-1900 00:00;31-12-2099 00:00;;151664;431811;;Linge;;
+;HL000075;Thedingsweerd;Stuw;Thedingsweerd;;;01-01-1900 00:00;31-12-2099 00:00;;155776;432502;;Linge;;
+;HL000076;Bijsterhuizen;Stuw;Bijsterhuizen;;;01-01-1900 00:00;31-12-2099 00:00;;179470;426808;;Bloemers;;
+;HL000077;Bloemers;Gemaal, Stuw;Bloemers;;;01-01-1900 00:00;31-12-2099 00:00;;169078;426997;"In SCX heeft deze vrije lozing echter een aparte Technische Installatie code (in Technische Installatie niet; hebben TI aangehouden, ook conform met situatie van Citters I)";Bloemers;;
+;HL000078;Born;Stuw;Born;;;01-01-1900 00:00;31-12-2099 00:00;;178295;429628;;Bloemers;;
+;HL000079;Hernense inlaat;Stuw;Hernense inlaat;;;01-01-1900 00:00;31-12-2099 00:00;;177360;427967;Complex Stuweneiland;Bloemers;;
+;HL000080;Nieuwe Wetering;Stuw;Nieuwe Wetering;;;01-01-1900 00:00;31-12-2099 00:00;;177249;428005;Complex Stuweneiland;Bloemers;;
+;HL000081;Ewijkse inlaat;Stuw;Ewijkse inlaat;;;01-01-1900 00:00;31-12-2099 00:00;;177292;428018;Complex Stuweneiland;Bloemers;;
+;HL000082;Diervoort;Stuw;Diervoort;;;01-01-1900 00:00;31-12-2099 00:00;;183767;422924;;Bloemers;;
+;HL000083;Eendenkooi Bergharense straat;Stuw;Eendenkooi Bergharense straat;;;01-01-1900 00:00;31-12-2099 00:00;;171629;427288;;Bloemers;;
+;HL000084;Goudwerf;Stuw;Goudwerf;;;01-01-1900 00:00;31-12-2099 00:00;;179854;429451;;Bloemers;;
+;HL000085;Jonkerstraat Noord;Stuw;Jonkerstraat Noord;;;01-01-1900 00:00;31-12-2099 00:00;;183426;428799;;Bloemers;;
+;HL000086;Jonkerstraat Zuid;Stuw;Jonkerstraat Zuid;;;01-01-1900 00:00;31-12-2099 00:00;;182810;428307;;Bloemers;;
+;HL000087;Landweijer;Stuw;Landweijer;;;01-01-1900 00:00;31-12-2099 00:00;;183902;426815;;Bloemers;;
+;HL000088;Malden;Gemaal;Malden;;;01-01-1900 00:00;31-12-2099 00:00;;186001;422423;;Rijk van Nijmegen;;
+;HL000089;Neerbosch;Gemaal;Neerbosch;;;01-01-1900 00:00;31-12-2099 00:00;;184023;426840;;Rijk van Nijmegen;;
+;HL000090;Oude Verbinding;Stuw;Oude Verbinding;;;01-01-1900 00:00;31-12-2099 00:00;;176199;428195;;Bloemers;;
+;HL000091;Oude Wetering;Stuw;Oude Wetering;;;01-01-1900 00:00;31-12-2099 00:00;;177775;428743;;Bloemers;;
+;HL000092;Pieckenbroek;Stuw;Pieckenbroek;;;01-01-1900 00:00;31-12-2099 00:00;;176350;427831;;Bloemers;;
+;HL000093;Takenhofplein;Stuw;Takenhofplein;;;01-01-1900 00:00;31-12-2099 00:00;;182805;426370;;Bloemers;;
+;HL000094;Teersdijk Stedelijk;Stuw;Teersdijk Stedelijk;;;01-01-1900 00:00;31-12-2099 00:00;;182391;425671;;Bloemers;;
+;HL000095;Teersesluis;Stuw;Teersesluis;;;01-01-1900 00:00;31-12-2099 00:00;;185890;422383;;Bloemers;;
+;HL000096;Weurt;Stuw;Weurt;;;01-01-1900 00:00;31-12-2099 00:00;;184230;428145;;Bloemers;;
+;HL000097;Wezelsedijk;Stuw;Wezelsedijk;;;01-01-1900 00:00;31-12-2099 00:00;;178305;426779;;Bloemers;;
+;HL000098;Wijchens Ven;Stuw;Wijchens Ven;;;01-01-1900 00:00;31-12-2099 00:00;;182156;423859;;Bloemers;;
+;HL000099;Woezikse Leigraaf;Stuw;Woezikse Leigraaf;;;01-01-1900 00:00;31-12-2099 00:00;;179828;427418;;Bloemers;;
+;HL000100;Zwemsel;Stuw;Zwemsel;;;01-01-1900 00:00;31-12-2099 00:00;;174914;428322;;Bloemers;;
+;HL000101;de Aftakking;Stuw;de Aftakking;;;01-01-1900 00:00;31-12-2099 00:00;;175661;438531;Complex Aftakking, de;Linge;;
+;HL000102;Winnemuller;Stuw;Winnemuller;;;01-01-1900 00:00;31-12-2099 00:00;;175686;438515;;Over-Betuwe;;
+;HL000103;Muskushouw;Stuw;Muskushouw;;;01-01-1900 00:00;31-12-2099 00:00;;180793;438358;;Linge;;
+;HL000104;Z20;Stuw;Z20;;;01-01-1900 00:00;31-12-2099 00:00;;180812;438341;Complex Muskushouw;Over-Betuwe;;
+;HL000105;Opheusden;Stuw;Opheusden;;;01-01-1900 00:00;31-12-2099 00:00;;172033;437517;Complex Opheusden;Linge;;
+;HL000106;Dodewaard Inlaat;Stuw;Dodewaard Inlaat;;;01-01-1900 00:00;31-12-2099 00:00;;172042;437509;;Neder-Betuwe;;
+;HL000107;Pottum;Stuw;Pottum;;;01-01-1900 00:00;31-12-2099 00:00;;166286;436587;;Linge;;
+;HL000108;Echteld inlaat;Stuw;Echteld inlaat;;;01-01-1900 00:00;31-12-2099 00:00;;166277;436572;;Neder-Betuwe;;
+;HL000109;Walenhoek inlaat;Stuw;Walenhoek inlaat;;;01-01-1900 00:00;31-12-2099 00:00;;166302;436595;Complex Pottum;Neder-Betuwe;;
+;HL000110;Snelweg;Stuw;Snelweg;;;01-01-1900 00:00;31-12-2099 00:00;;188567;437829;Complex Snelweg;Linge;;
+;HL000111;Z41;Stuw;Z41;;;01-01-1900 00:00;31-12-2099 00:00;;188560;437808;;Over-Betuwe;;
+;HL000112;O42;Stuw;O42;;;01-01-1900 00:00;31-12-2099 00:00;;188564;437826;;Over-Betuwe;;
+;HL000113;O15;Stuw;O15;;;01-01-1900 00:00;31-12-2099 00:00;;188565;437834;;Over-Betuwe;;
+;HL000114;Rijkerswoerd, Inlaat;Stuw;Rijkerswoerd, Inlaat;;;01-01-1900 00:00;31-12-2099 00:00;;188572;437851;;Over-Betuwe;;
+;HL000115;Hollanderbroek;Stuw;Hollanderbroek;;;01-01-1900 00:00;31-12-2099 00:00;;185314;438090;;Linge;;
+;HL000116;Kraaienstraat Linge;Stuw;Kraaienstraat Linge;;;01-01-1900 00:00;31-12-2099 00:00;;194030;434771;;Linge;;
+;HL000117;Krakkedel Linge;Stuw;Krakkedel Linge;;;01-01-1900 00:00;31-12-2099 00:00;;195759;434369;;Linge;;
+;HL000118;Kuijk, Mr. G.J.H.;Gemaal;Kuijk, Mr. G.J.H.;;;01-01-1900 00:00;31-12-2099 00:00;;174631;440132;;Linge;;
+;HL000119;BRM 34-5;Stuw;BRM 34-5;;;01-01-1900 00:00;31-12-2099 00:00;;134793;428355;;Tielerwaard;;
+;HL000120;BRM 37-9;Stuw;BRM 37-9;;;01-01-1900 00:00;31-12-2099 00:00;;138114;428809;;Tielerwaard;;
+;HL000121;Gorinchem, Laagdalemseweg;Stuw;Gorinchem, Laagdalemseweg;;;01-01-1900 00:00;31-12-2099 00:00;;129678;427456;;Tielerwaard;;
+;HL000122;Heukelum;Gemaal;Heukelum;;;01-01-1900 00:00;31-12-2099 00:00;;133310;431092;;Tielerwaard;;
+;HL000123;Leuven;Stuw;Leuven;;;01-01-1900 00:00;31-12-2099 00:00;;134748;429014;;Tielerwaard;;
+;HL000124;Nieuwe Steeg;Stuw;Nieuwe Steeg;;;01-01-1900 00:00;31-12-2099 00:00;;137300;427217;;Tielerwaard;;
+;HL000125;Tus;Stuw;Tus;;;01-01-1900 00:00;31-12-2099 00:00;;138292;430902;;Tielerwaard;;
+;HL000126;Vuren, west;Gemaal;Vuren, west;;;01-01-1900 00:00;31-12-2099 00:00;;131184;426256;;Tielerwaard;;
+;HL000127;Bruinekilhaven 2;Stuw;Bruinekilhaven 2;;;01-01-1900 00:00;31-12-2099 00:00;;120247;423078;;Oostwaard;;
+;HL000128;Pruissen;Stuw;Pruissen;;;01-01-1900 00:00;31-12-2099 00:00;;120708;422854;;Oostwaard;;
+;HL000129;Citters I, van;Gemaal, Stuw;Citters I, van;;;01-01-1900 00:00;31-12-2099 00:00;;173829;424722;;Citters;;
+;HL000130;Citters II, van;Gemaal, Stuw;Citters II, van;;;01-01-1900 00:00;31-12-2099 00:00;;176765;422885;;Citters;;
+;HL000131;Fietspad Looijer, de;Stuw;Fietspad Looijer, de;;;01-01-1900 00:00;31-12-2099 00:00;;174804;424871;;Citters;;
+;HL000132;Rijdtsestraat;Stuw;Rijdtsestraat;;;01-01-1900 00:00;31-12-2099 00:00;;178617;422136;;Citters;;
+;HL000133;Wildt, de;Stuw;Wildt, de;;;01-01-1900 00:00;31-12-2099 00:00;;181571;420878;;Citters;;
+;HL000134;Betsy Perkweg;Stuw;Betsy Perkweg;;;01-01-1900 00:00;31-12-2099 00:00;;142716;440156;;Lek en Linge;;
+;HL000135;Betuwestrand;Stuw;Betuwestrand;;;01-01-1900 00:00;31-12-2099 00:00;;140863;434017;;Lek en Linge;;
+;HL000136;Holderweg;Stuw;Holderweg;;;01-01-1900 00:00;31-12-2099 00:00;;141105;437706;;Lek en Linge;;
+;HL000137;Huigenstraat 1;Stuw;Huigenstraat 1;;;01-01-1900 00:00;31-12-2099 00:00;;136870;433063;;Lek en Linge;;
+;HL000138;Lange Avontuurseweg;Stuw;Lange Avontuurseweg;;;01-01-1900 00:00;31-12-2099 00:00;;140456;437901;;Lek en Linge;;
+;HL000139;Meinte, de;Stuw;Meinte, de;;;01-01-1900 00:00;31-12-2099 00:00;;140576;434612;;Lek en Linge;;
+;HL000140;Nel Tegelaarpad;Stuw;Nel Tegelaarpad;;;01-01-1900 00:00;31-12-2099 00:00;;142579;439954;;Lek en Linge;;
+;HL000141;OVB;Stuw;OVB;;;01-01-1900 00:00;31-12-2099 00:00;;142926;436800;;Lek en Linge;;
+;HL000142;Paveijen;Stuw;Paveijen;;;01-01-1900 00:00;31-12-2099 00:00;;142352;438538;;Lek en Linge;;
+;HL000143;Reelaan-Bouwlustpad;Stuw;Reelaan-Bouwlustpad;;;01-01-1900 00:00;31-12-2099 00:00;;142713;440228;;Lek en Linge;;
+;HL000144;Vink;Stuw;Vink;;;01-01-1900 00:00;31-12-2099 00:00;;139610;435891;;Lek en Linge;;
+;HL000145;Welborn;Gemaal, Stuw;Welborn;;;01-01-1900 00:00;31-12-2099 00:00;;141359;438995;;Lek en Linge;;
+;HL000146;Ammanswal;Stuw;Ammanswal;;;01-01-1900 00:00;31-12-2099 00:00;;144734;427080;;Tielerwaard;;
+;HL000147;BRM 38-4;Stuw;BRM 38-4;;;01-01-1900 00:00;31-12-2099 00:00;;138620;428837;;Tielerwaard;;
+;HL000148;BRM 41-1;Stuw;BRM 41-1;;;01-01-1900 00:00;31-12-2099 00:00;;141198;428950;;Tielerwaard;;
+;HL000149;BRM 46-5;Stuw;BRM 46-5;;;01-01-1900 00:00;31-12-2099 00:00;;146419;430138;;Tielerwaard;;
+;HL000150;Bruin, T. de;Stuw;Bruin, T. de;;;01-01-1900 00:00;31-12-2099 00:00;;140802;428830;;Tielerwaard;;
+;HL000151;Haaften;Gemaal;Haaften;;;01-01-1900 00:00;31-12-2099 00:00;;142283;427210;;Tielerwaard;;
+;HL000152;Kermisgasten;Stuw;Kermisgasten;;;01-01-1900 00:00;31-12-2099 00:00;;140809;432125;;Tielerwaard;;
+;HL000153;Nieuwe Boutenstein;Stuw;Nieuwe Boutenstein;;;01-01-1900 00:00;31-12-2099 00:00;;141900;432163;;Tielerwaard;;
+;HL000154;Nieuwe Shell;Stuw;Nieuwe Shell;;;01-01-1900 00:00;31-12-2099 00:00;;141544;428805;;Tielerwaard;;
+;HL000155;Oude Boutenstein;Stuw;Oude Boutenstein;;;01-01-1900 00:00;31-12-2099 00:00;;141687;431870;;Tielerwaard;;
+;HL000156;Oude Shell;Stuw;Oude Shell;;;01-01-1900 00:00;31-12-2099 00:00;;142611;429121;;Tielerwaard;;
+;HL000157;Rijnsbergen;Stuw;Rijnsbergen;;;01-01-1900 00:00;31-12-2099 00:00;;143920;432679;;Tielerwaard;;
+;HL000159;de Vlinder;Gemaal, Stuw;de Vlinder;;;01-01-1900 00:00;31-12-2099 00:00;;143916;433200;Complex de Vlinder;Tielerwaard;;
+;HL000160;Waardenburgse molen;Stuw;Waardenburgse molen;;;01-01-1900 00:00;31-12-2099 00:00;;143277;428303;;Tielerwaard;;
+;HL000161;Zeven Kastelenlaan;Stuw;Zeven Kastelenlaan;;;01-01-1900 00:00;31-12-2099 00:00;;144742;432566;;Tielerwaard;;
+;HL000162;Aalsdijk;Gemaal, Stuw;Aalsdijk;;;01-01-1900 00:00;31-12-2099 00:00;;151999;437241;;Neder-Betuwe;;
+;HL000163;Haagse Uitweg;Stuw;Haagse Uitweg;;;01-01-1900 00:00;31-12-2099 00:00;;148024;434817;;Lek en Linge;;
+;HL000164;Nieuwe Brug;Gemaal, Stuw;Nieuwe Brug;;;01-01-1900 00:00;31-12-2099 00:00;;145950;438585;;Lek en Linge;;
+;HL000165;Voorkoop I;Gemaal;Voorkoop I;;;01-01-1900 00:00;31-12-2099 00:00;;146397;440255;;Lek en Linge;;
+;HL000166;Voorkoop II;Gemaal;Voorkoop II;;;01-01-1900 00:00;31-12-2099 00:00;;146509;440253;;Lek en Linge;;
+;HL000167;De Bruuk, Ashorst;Stuw;De Bruuk, Ashorst;;;01-01-1900 00:00;31-12-2099 00:00;;194178;419505;;Groesbeek;;
+;HL000168;De Bruuk, Lage Horst;Stuw;De Bruuk, Lage Horst;;;01-01-1900 00:00;31-12-2099 00:00;;195453;419515;;Groesbeek;;
+;HL000169;Bulk 1;Stuw;Bulk 1;;;01-01-1900 00:00;31-12-2099 00:00;;133608;418100;;Land van Heusden en Altena;;
+;HL000170;Genderen;Stuw;Genderen;;;01-01-1900 00:00;31-12-2099 00:00;;134697;416011;;Land van Heusden en Altena;;
+;HL000171;Peerenboom;Stuw;Peerenboom;;;01-01-1900 00:00;31-12-2099 00:00;;122026;414807;;Land van Heusden en Altena;;
+;HL000172;Rotonde Veen;Stuw;Rotonde Veen;;;01-01-1900 00:00;31-12-2099 00:00;;135377;419647;;Land van Heusden en Altena;;
+;HL000173;Rotonde Veen Wijk, van;Stuw;Rotonde Veen Wijk, van;;;01-01-1900 00:00;31-12-2099 00:00;;135332;419599;;Land van Heusden en Altena;;
+;HL000174;van Vugt;Stuw;van Vugt;;;01-01-1900 00:00;31-12-2099 00:00;;134099;420156;;Land van Heusden en Altena;;
+;HL000175;Achterstraat;Stuw;Achterstraat;;;01-01-1900 00:00;31-12-2099 00:00;;163177;439184;;Neder-Betuwe;;
+;HL000176;Beldert, de;Stuw;Beldert, de;;;01-01-1900 00:00;31-12-2099 00:00;;158303;437004;;Neder-Betuwe;;
+;HL000177;Bijl;Stuw;Bijl;;;01-01-1900 00:00;31-12-2099 00:00;;164841;438460;;Neder-Betuwe;;
+;HL000178;Blauwe Kamp, inlaat;Stuw;Blauwe Kamp, inlaat;;;01-01-1900 00:00;31-12-2099 00:00;;160020;437321;;Neder-Betuwe;;
+;HL000179;Medel de Haas;Stuw;Medel de Haas;;;01-01-1900 00:00;31-12-2099 00:00;;160605;435498;Complex de Diepert;Neder-Betuwe;;
+;HL000180;de Diepert;Stuw;de Diepert;;;01-01-1900 00:00;31-12-2099 00:00;;160620;435458;;Neder-Betuwe;;
+;HL000181;de Hool;Gemaal, Stuw;de Hool;;;01-01-1900 00:00;31-12-2099 00:00;;156303;440621;Complex Kribbrug de Hool;Neder-Betuwe;;
+;HL000182;Kribbrug;Stuw;Kribbrug;;;01-01-1900 00:00;31-12-2099 00:00;;156316;440615;;Neder-Betuwe;;
+;HL000183;Essenbos 10;Stuw;Essenbos 10;;;01-01-1900 00:00;31-12-2099 00:00;;156239;440640;;Neder-Betuwe;;
+;HL000184;Daalen, van;Stuw;Daalen, van;;;01-01-1900 00:00;31-12-2099 00:00;;163785;435557;;Neder-Betuwe;;
+;HL000185;Den Hevel 2;Stuw;Den Hevel 2;;;01-01-1900 00:00;31-12-2099 00:00;;159654;437613;;Neder-Betuwe;;
+;HL000186;Maurik, Driesweg;Stuw;Maurik, Driesweg;;;01-01-1900 00:00;31-12-2099 00:00;;158609;441115;;Neder-Betuwe;;
+;HL000187;Echteld, de Pijp;Stuw;Echteld, de Pijp;;;01-01-1900 00:00;31-12-2099 00:00;;162176;435418;;Neder-Betuwe;;
+;HL000188;Zuivering Eck en Wiel;Stuw;Zuivering Eck en Wiel;;;01-01-1900 00:00;31-12-2099 00:00;;159501;442810;;Neder-Betuwe;;
+;HL000189;Ewijk, Toon van;Stuw;Ewijk, Toon van;;;01-01-1900 00:00;31-12-2099 00:00;;161551;443036;;Neder-Betuwe;;
+;HL000190;Heus, de;Stuw;Heus, de;;;01-01-1900 00:00;31-12-2099 00:00;;157983;439139;;Neder-Betuwe;;
+;HL000192;Kettingweg;Stuw;Kettingweg;;;01-01-1900 00:00;31-12-2099 00:00;;160813;440899;;Neder-Betuwe;;
+;HL000193;Klep Rijksweg;Stuw;Klep Rijksweg;;;01-01-1900 00:00;31-12-2099 00:00;;162989;436763;;Neder-Betuwe;;
+;HL000194;Lammert;Stuw;Lammert;;;01-01-1900 00:00;31-12-2099 00:00;;161632;441033;;Neder-Betuwe;;
+;HL000195;Leeweg;Stuw;Leeweg;;;01-01-1900 00:00;31-12-2099 00:00;;164605;437643;;Neder-Betuwe;;
+;HL000196;Lingemeer;Stuw;Lingemeer;;;01-01-1900 00:00;31-12-2099 00:00;;162626;437198;;Neder-Betuwe;;
+;HL000197;Marietje;Stuw;Marietje;;;01-01-1900 00:00;31-12-2099 00:00;;162283;437999;;Neder-Betuwe;;
+;HL000198;Maurikse Wetering;Gemaal;Maurikse Wetering;;;01-01-1900 00:00;31-12-2099 00:00;;155185;439276;;Neder-Betuwe;;
+;HL000199;Medel;Stuw;Medel;;;01-01-1900 00:00;31-12-2099 00:00;;159564;437069;;Neder-Betuwe;;
+;HL000200;Meertenwei;Stuw;Meertenwei;;;01-01-1900 00:00;31-12-2099 00:00;;163962;438380;;Neder-Betuwe;;
+;HL000201;Pander, de;Gemaal;Pander, de;;;01-01-1900 00:00;31-12-2099 00:00;;163242;437397;;Neder-Betuwe;;
+;HL000202;Panderweg;Stuw;Panderweg;;;01-01-1900 00:00;31-12-2099 00:00;;164578;437364;;Neder-Betuwe;;
+;HL000203;Pottum;Gemaal;Pottum;;;01-01-1900 00:00;31-12-2099 00:00;;165801;436117;;Neder-Betuwe;;
+;HL000204;Reinberg, Adam;Stuw;Reinberg, Adam;;;01-01-1900 00:00;31-12-2099 00:00;;159583;440598;;Neder-Betuwe;;
+;HL000205;Rooyen, J. van;Stuw;Rooyen, J. van;;;01-01-1900 00:00;31-12-2099 00:00;;158593;439204;;Neder-Betuwe;;
+;HL000206;Schietbaan, achter;Stuw;Schietbaan, achter;;;01-01-1900 00:00;31-12-2099 00:00;;159975;438739;;Neder-Betuwe;;
+;HL000207;Uitlaat Beuningen;Stuw;Uitlaat Beuningen;;;01-01-1900 00:00;31-12-2099 00:00;;158558;436901;;Neder-Betuwe;;
+;HL000208;Visser;Stuw;Visser;;;01-01-1900 00:00;31-12-2099 00:00;;164625;435783;;Neder-Betuwe;;
+;HL000209;Willemspolder;Gemaal, Stuw;Willemspolder;;;01-01-1900 00:00;31-12-2099 00:00;;160023;434030;;Buitenpolders;;
+;HL000210;Woerd, de;Gemaal, Stuw;Woerd, de;;;01-01-1900 00:00;31-12-2099 00:00;;154502;440636;;Neder-Betuwe;;
+;HL000211;Blokweer;Gemaal, Stuw;Blokweer;;;01-01-1900 00:00;31-12-2099 00:00;;105787;431657;;Nederwaard;;
+;HL000212;Kortland;Gemaal;Kortland;;;01-01-1900 00:00;31-12-2099 00:00;;105854;431666;;Nederwaard;;
+;HL000213;Souburgh;Gemaal;Souburgh;;;01-01-1900 00:00;31-12-2099 00:00;;106152;430948;;Nederwaard;;
+;HL000214;Oud-Alblas Zuidzijde;Gemaal;Oud-Alblas Zuidzijde;;;01-01-1900 00:00;31-12-2099 00:00;;106341;430233;;Nederwaard;;
+;HL000215;Peilmolen;Gemaal;Peilmolen;;;01-01-1900 00:00;31-12-2099 00:00;;109704;430158;;Nederwaard;;
+;HL000216;Ruigenhil;Gemaal;Ruigenhil;;;01-01-1900 00:00;31-12-2099 00:00;;105070;429970;;Buitenpolders;;
+;HL000217;Grote Nes;Gemaal;Grote Nes;;;01-01-1900 00:00;31-12-2099 00:00;;106855;430206;;Nederwaard;;
+;HL000218;Oud-Alblas Noordzijde;Gemaal;Oud-Alblas Noordzijde;;;01-01-1900 00:00;31-12-2099 00:00;;107344;430777;;Nederwaard;;
+;HL000219;Wijngaarden;Gemaal;Wijngaarden;;;01-01-1900 00:00;31-12-2099 00:00;;110129;429463;;Nederwaard;;
+;HL000220;Bleskensgraaf Noordzijde;Gemaal, Stuw;Bleskensgraaf Noordzijde;;;01-01-1900 00:00;31-12-2099 00:00;;110725;430930;;Nederwaard;;
+;HL000221;Bleskensgraaf Zuidzijde;Gemaal;Bleskensgraaf Zuidzijde;;;01-01-1900 00:00;31-12-2099 00:00;;111033;431015;;Nederwaard;;
+;HL000222;Brandwijk;Gemaal;Brandwijk;;;01-01-1900 00:00;31-12-2099 00:00;;112668;431668;;Nederwaard;;
+;HL000223;Zuidzijde Hofwegen;Gemaal;Zuidzijde Hofwegen;;;01-01-1900 00:00;31-12-2099 00:00;;114062;431384;;Nederwaard;;
+;HL000224;Gijbeland;Gemaal;Gijbeland;;;01-01-1900 00:00;31-12-2099 00:00;;114540;431570;;Nederwaard;;
+;HL000225;Molenaarsgraaf;Gemaal;Molenaarsgraaf;;;01-01-1900 00:00;31-12-2099 00:00;;114742;430961;;Nederwaard;;
+;HL000226;Broek en Hei;Gemaal, Stuw;Broek en Hei;;;01-01-1900 00:00;31-12-2099 00:00;;115376;429167;Complex Klein Giessen;Nederwaard;;
+;HL000227;Klein Giessen;Gemaal, Stuw;Klein Giessen;;;01-01-1900 00:00;31-12-2099 00:00;;115345;429160;;Nederwaard;;
+;HL000228;Laag Blokland;Gemaal;Laag Blokland;;;01-01-1900 00:00;31-12-2099 00:00;;117876;433056;;Nederwaard;;
+;HL000229;Over 't Spoor;Stuw;Over 't Spoor;;;01-01-1900 00:00;31-12-2099 00:00;;116846;427463;;Nederwaard;;
+;HL000230;Papendrecht;Gemaal, Stuw;Papendrecht;;;01-01-1900 00:00;31-12-2099 00:00;;106711;428770;;Nederwaard;;
+;HL000231;Sliedrecht Hoog;Gemaal;Sliedrecht Hoog;;;01-01-1900 00:00;31-12-2099 00:00;;112012;426229;;Nederwaard;;
+;HL000232;Blommendaal;Gemaal;Blommendaal;;;01-01-1900 00:00;31-12-2099 00:00;;124789;434736;;Overwaard;;
+;HL000233;Botersloot;Gemaal;Botersloot;;;01-01-1900 00:00;31-12-2099 00:00;;124791;434749;Complex Blommendaal;Overwaard;;
+;HL000234;Middelbroek;Gemaal;Middelbroek;;;01-01-1900 00:00;31-12-2099 00:00;;125576;436249;;Overwaard;;
+;HL000235;Den Beemd;Gemaal;Den Beemd;;;01-01-1900 00:00;31-12-2099 00:00;;125070;432788;;Overwaard;;
+;HL000236;Noordzijde;Gemaal;Noordzijde;;;01-01-1900 00:00;31-12-2099 00:00;;123525;434647;;Overwaard;;
+;HL000237;Groote Waard, de;Gemaal;Groote Waard, de;;;01-01-1900 00:00;31-12-2099 00:00;;123747;433549;;Overwaard;;
+;HL000238;Lutjeswaard;Gemaal;Lutjeswaard;;;01-01-1900 00:00;31-12-2099 00:00;;122752;431422;;Overwaard;;
+;HL000239;Land van de Zes Molens;Gemaal;Land van de Zes Molens;;;01-01-1900 00:00;31-12-2099 00:00;;122734;431372;Complex Land van de Zes Molens;Overwaard;;
+;HL000240;Banne van Gorinchem, de;Gemaal;Banne van Gorinchem, de;;;01-01-1900 00:00;31-12-2099 00:00;;123634;428123;;Overwaard;;
+;HL000241;Giessen Nieuwkerk;Gemaal;Giessen Nieuwkerk;;;01-01-1900 00:00;31-12-2099 00:00;;121101;429218;;Overwaard;;
+;HL000242;Peursum;Gemaal;Peursum;;;01-01-1900 00:00;31-12-2099 00:00;;120461;429574;;Overwaard;;
+;HL000243;Over- en Nederslingeland;Gemaal;Over- en Nederslingeland;;;01-01-1900 00:00;31-12-2099 00:00;;121274;432346;;Overwaard;;
+;HL000244;Nieuw Goudriaan;Gemaal;Nieuw Goudriaan;;;01-01-1900 00:00;31-12-2099 00:00;;120824;434034;;Overwaard;;
+;HL000245;Oud Goudriaan;Gemaal;Oud Goudriaan;;;01-01-1900 00:00;31-12-2099 00:00;;120511;435200;;Overwaard;;
+;HL000246;Langerak;Gemaal;Langerak;;;01-01-1900 00:00;31-12-2099 00:00;;120162;436255;;Overwaard;;
+;HL000247;Giessen Oude Bovenkerk;Gemaal;Giessen Oude Bovenkerk;;;01-01-1900 00:00;31-12-2099 00:00;;120103;430757;;Overwaard;;
+;HL000248;Ottoland;Gemaal;Ottoland;;;01-01-1900 00:00;31-12-2099 00:00;;118787;433606;;Overwaard;;
+;HL000249;Liesveld Graafland;Gemaal, Stuw;Liesveld Graafland;;;01-01-1900 00:00;31-12-2099 00:00;;115995;437064;Complex Liesveld Graafland;Overwaard;;
+;HL000250;Gelkenes;Stuw;Gelkenes;;;01-01-1900 00:00;31-12-2099 00:00;;116060;437097;;Overwaard;;
+;HL000251;Streefkerk;Gemaal;Streefkerk;;;01-01-1900 00:00;31-12-2099 00:00;;112920;434002;;Overwaard;;
+;HL000252;Groote Haar;Gemaal;Groote Haar;;;01-01-1900 00:00;31-12-2099 00:00;;125090;429030;;Overwaard;;
+;HL000253;BRW 19-5;Stuw;BRW 19-5;;;01-01-1900 00:00;31-12-2099 00:00;;120422;427392;;Overwaard;;
+;HL000254;Langerak Noord;Gemaal, Stuw;Langerak Noord;;;01-01-1900 00:00;31-12-2099 00:00;;119679;437697;;Overwaard;;
+;HL000255;Puttenlanden;Gemaal;Puttenlanden;;;01-01-1900 00:00;31-12-2099 00:00;;120255;426955;;Overwaard;;
+;HL000256;Tiendweg-Dorpslaan;Stuw;Tiendweg-Dorpslaan;;;01-01-1900 00:00;31-12-2099 00:00;;106967;433228;;Overwaard;;
+;HL000257;Hevelstuw Middelkade;Stuw;Hevelstuw Middelkade;;;01-01-1900 00:00;31-12-2099 00:00;;103437;433462;;Overwaard;;
+;HL000258;Smit, J.U.;Gemaal;Smit, J.U.;;;01-01-1900 00:00;31-12-2099 00:00;;103343;433577;Complex Kinderdijk;Nederwaard;;
+;HL000259;Kok, Ir. G.N. / Overwaard;Gemaal;Kok, Ir. G.N. / Overwaard;;;01-01-1900 00:00;31-12-2099 00:00;;103433;433608;;Overwaard;;
+;HL000260;Derde Bemalingstrap Overwaard;Gemaal;Derde Bemalingstrap Overwaard;;;01-01-1900 00:00;31-12-2099 00:00;;103329;433723;Complex Elshoutsluis;Overwaard;;
+;HL000261;Elshoutsluis;Stuw;Elshoutsluis;;;01-01-1900 00:00;31-12-2099 00:00;;103322;433725;;Overwaard;;
+;HL000262;Giessendam, Spoorweg 1;Stuw;Giessendam, Spoorweg 1;;;01-01-1900 00:00;31-12-2099 00:00;;116059;426994;;Nederwaard;;
+;HL000263;Vinkenpolder 3;Stuw;Vinkenpolder 3;;;01-01-1900 00:00;31-12-2099 00:00;;105010;430455;;Nederwaard;;
+;HL000264;Vinkenpolder 2;Stuw;Vinkenpolder 2;;;01-01-1900 00:00;31-12-2099 00:00;;106337;430025;;Nederwaard;;
+;HL000265;Vinkenpolder 1 (verwijderd);Stuw;Vinkenpolder 1 (verwijderd);;;01-01-1900 00:00;31-12-2099 00:00;;106311;430214;;Nederwaard;;
+;HL000266;Ameide Aaksterveldsesteeg;Stuw;Ameide Aaksterveldsesteeg;;;01-01-1900 00:00;31-12-2099 00:00;;125025;440156;;Overwaard;;
+;HL000267;Ameide, Broekseweg;Gemaal, Stuw;Ameide, Broekseweg;;;01-01-1900 00:00;31-12-2099 00:00;;126289;440192;;Overwaard;;
+;HL000268;Meerkerk Broekseweg;Gemaal, Stuw;Meerkerk Broekseweg;;;01-01-1900 00:00;31-12-2099 00:00;;126620;438282;;Overwaard;;
+;HL000269;Gelkenes Zuid;Stuw;Gelkenes Zuid;;;01-01-1900 00:00;31-12-2099 00:00;;117502;437211;;Overwaard;;
+;HL000270;Gorinchem, Lingewijk;Gemaal;Gorinchem, Lingewijk;;;01-01-1900 00:00;31-12-2099 00:00;;126664;427780;;Overwaard;;
+;HL000271;Hardinxveld Zuid;Gemaal, Stuw;Hardinxveld Zuid;;;01-01-1900 00:00;31-12-2099 00:00;;120220;426975;;Overwaard;;
+;HL000272;De Zouwe Kooiplas;Gemaal, Stuw;De Zouwe Kooiplas;;;01-01-1900 00:00;31-12-2099 00:00;;126865;440688;;Overwaard;;
+;HL000273;Nieuwendijk Lage Boezem;Gemaal;Nieuwendijk Lage Boezem;;;01-01-1900 00:00;31-12-2099 00:00;;123972;434740;;Overwaard;;
+;HL000274;Oude Torenbrug (inl);Stuw;Oude Torenbrug (inl);;;01-01-1900 00:00;31-12-2099 00:00;;105633;430688;;Nederwaard;;
+;HL000275;Sliedrecht;Gemaal;Sliedrecht;;;01-01-1900 00:00;31-12-2099 00:00;;110114;430254;;Nederwaard;;
+;HL000276;Papendrecht Hoog;Gemaal, Stuw;Papendrecht Hoog;;;01-01-1900 00:00;31-12-2099 00:00;;105752;427056;;Nederwaard;;
+;HL000277;Schanspolder;Gemaal;Schanspolder;;;01-01-1900 00:00;31-12-2099 00:00;;103056;433617;;Nederwaard;;
+;HL000278;Beneden Stad, de;Gemaal;Beneden Stad, de;;;01-01-1900 00:00;31-12-2099 00:00;;126581;426575;;Overwaard;;
+;HL000279;BRW 22-9;Gemaal, Stuw;BRW 22-9;;;01-01-1900 00:00;31-12-2099 00:00;;123492;428140;;Overwaard;;
+;HL000280;Liesveld Achterland (verwijderd);Gemaal;Liesveld Achterland (verwijderd);;;01-01-1900 00:00;31-12-2099 00:00;;117289;435366;;Overwaard;;
+;HL000281;Peulen, de;Gemaal;Peulen, de;;;01-01-1900 00:00;31-12-2099 00:00;;116362;426011;;Overwaard;;
+;HL000282;Merwebolder;Gemaal;Merwebolder;;;01-01-1900 00:00;31-12-2099 00:00;;111296;426540;;Nederwaard;;
+;HL000283;Nieuwland Parc, Inlaat;Gemaal;Nieuwland Parc, Inlaat;;;01-01-1900 00:00;31-12-2099 00:00;;105456;428790;;Buitenpolders;;
+;HL000284;Nieuwland Parc, UItlaat;Gemaal;Nieuwland Parc, UItlaat;;;01-01-1900 00:00;31-12-2099 00:00;;105863;428140;;Buitenpolders;;
+;HL000285;Ringerstraat;Gemaal;Ringerstraat;;;01-01-1900 00:00;31-12-2099 00:00;;111365;427479;;Nederwaard;;
+;HL000286;Waerthove;Gemaal;Waerthove;;;01-01-1900 00:00;31-12-2099 00:00;;112175;426230;;Nederwaard;;
+;HL000287;Ameide;Gemaal;Ameide;;;01-01-1900 00:00;31-12-2099 00:00;;125821;441167;;Overwaard;;
+;HL000288;Hardinxveld Nieuweweg;Gemaal;Hardinxveld Nieuweweg;;;01-01-1900 00:00;31-12-2099 00:00;;117704;426029;;Overwaard;;
+;HL000289;Tiendweg-Zijdeweg;Gemaal;Tiendweg-Zijdeweg;;;01-01-1900 00:00;31-12-2099 00:00;;109641;433928;;Overwaard;;
+;HL000290;Kolff, Mr. Dr. G.;Gemaal, Stuw;Kolff, Mr. Dr. G.;;;01-01-1900 00:00;31-12-2099 00:00;;118553;425982;;Linge;;
+;HL000291;Tolsteeg Stuw;Stuw;Tolsteeg Stuw;;;01-01-1900 00:00;31-12-2099 00:00;;111689;427395;;Nederwaard;;
+;HL000292;Middelkade;Sluis;Middelkade;;;01-01-1900 00:00;31-12-2099 00:00;;105835;432039;;Nederwaard;;
+;HL000293;BRO 75-7;Stuw;BRO 75-7;;;01-01-1900 00:00;31-12-2099 00:00;;173564;436903;;Neder-Betuwe;;
+;HL000294;Waaij, de;Gemaal, Stuw;Waaij, de;;;01-01-1900 00:00;31-12-2099 00:00;;164473;441171;;Neder-Betuwe;;
+;HL000295;Wit, R. de;Stuw;Wit, R. de;;;01-01-1900 00:00;31-12-2099 00:00;;164409;441167;;Neder-Betuwe;;
+;HL000296;Eldik, verlengde Melkdreef;Stuw;Eldik, verlengde Melkdreef;;;01-01-1900 00:00;31-12-2099 00:00;;169778;436750;;Neder-Betuwe;;
+;HL000297;Hoge Stuw;Stuw;Hoge Stuw;;;01-01-1900 00:00;31-12-2099 00:00;;168074;437323;;Neder-Betuwe;;
+;HL000298;Hogeweg;Stuw;Hogeweg;;;01-01-1900 00:00;31-12-2099 00:00;;166603;439474;;Neder-Betuwe;;
+;HL000299;Kat, de;Stuw;Kat, de;;;01-01-1900 00:00;31-12-2099 00:00;;164331;441135;;Neder-Betuwe;;
+;HL000300;Kievitskelder;Stuw;Kievitskelder;;;01-01-1900 00:00;31-12-2099 00:00;;168029;436526;;Neder-Betuwe;;
+;HL000301;Lekkerdier;Stuw;Lekkerdier;;;01-01-1900 00:00;31-12-2099 00:00;;169066;438020;;Neder-Betuwe;;
+;HL000302;Mars, de;Gemaal;Mars, de;;;01-01-1900 00:00;31-12-2099 00:00;;166915;439624;;Neder-Betuwe;;
+;HL000303;Maten, de;Gemaal;Maten, de;;;01-01-1900 00:00;31-12-2099 00:00;;172561;436369;;Neder-Betuwe;;
+;HL000304;Nieuwe Dijk;Stuw;Nieuwe Dijk;;;01-01-1900 00:00;31-12-2099 00:00;;168079;437067;;Neder-Betuwe;;
+;HL000305;Ochten, Klinkerstraat;Stuw;Ochten, Klinkerstraat;;;01-01-1900 00:00;31-12-2099 00:00;;169091;436680;;Neder-Betuwe;;
+;HL000306;Opheusden;Gemaal;Opheusden;;;01-01-1900 00:00;31-12-2099 00:00;;172041;437553;;Neder-Betuwe;;
+;HL000307;Oude Rijn;Gemaal, Stuw;Oude Rijn;;;01-01-1900 00:00;31-12-2099 00:00;;167917;438797;Complex Oude Rijn;Neder-Betuwe;;
+;HL000308;Ruitengraaf Linge;Stuw;Ruitengraaf Linge;;;01-01-1900 00:00;31-12-2099 00:00;;171215;437315;;Neder-Betuwe;;
+;HL000309;Slaperdijk;Stuw;Slaperdijk;;;01-01-1900 00:00;31-12-2099 00:00;;165217;439089;;Neder-Betuwe;;
+;HL000310;Spoor 3;Stuw;Spoor 3;;;01-01-1900 00:00;31-12-2099 00:00;;166482;437445;;Neder-Betuwe;;
+;HL000311;Zwartjes;Gemaal, Stuw;Zwartjes;;;01-01-1900 00:00;31-12-2099 00:00;;174707;440022;;Neder-Betuwe;;
+;HL000312;achter Zuivering, de;Stuw;achter Zuivering, de;;;01-01-1900 00:00;31-12-2099 00:00;;158022;436631;;Tielerwaard;;
+;HL000313;BRM 59-8;Stuw;BRM 59-8;;;01-01-1900 00:00;31-12-2099 00:00;;158236;434875;;Tielerwaard;;
+;HL000314;Avezaath;Stuw;Avezaath;;;01-01-1900 00:00;31-12-2099 00:00;;155736;434455;;Neder-Betuwe;;
+;HL000315;Buren;Stuw;Buren;;;01-01-1900 00:00;31-12-2099 00:00;;151721;435992;;Neder-Betuwe;;
+;HL000316;Buren, Molenstraat;Stuw;Buren, Molenstraat;;;01-01-1900 00:00;31-12-2099 00:00;;155933;434766;;Neder-Betuwe;;
+;HL000317;Dode Linge;Stuw;Dode Linge;;;01-01-1900 00:00;31-12-2099 00:00;;157533;434785;;Tielerwaard;;
+;HL000318;Drumpt;Gemaal;Drumpt;;;01-01-1900 00:00;31-12-2099 00:00;;155918;434501;;Tielerwaard;;
+;HL000319;Erichemse Kade;Stuw;Erichemse Kade;;;01-01-1900 00:00;31-12-2099 00:00;;150284;434046;;Neder-Betuwe;;
+;HL000320;Inundatiedijk-noord;Stuw;Inundatiedijk-noord;;;01-01-1900 00:00;31-12-2099 00:00;;156114;431986;;Tielerwaard;;
+;HL000321;Rielse Sluis;Stuw;Rielse Sluis;;;01-01-1900 00:00;31-12-2099 00:00;;151571;432516;;Neder-Betuwe;;
+;HL000322;Rivierenlandlaan;Stuw;Rivierenlandlaan;;;01-01-1900 00:00;31-12-2099 00:00;;156554;433016;;Tielerwaard;;
+;HL000323;Spoorsingel Tiel;Gemaal;Spoorsingel Tiel;;;01-01-1900 00:00;31-12-2099 00:00;;158707;434578;;Tielerwaard;;
+;HL000324;Tiel, achter Boomgaard;Stuw;Tiel, achter Boomgaard;;;01-01-1900 00:00;31-12-2099 00:00;;157461;435832;;Tielerwaard;;
+;HL000325;Uiterdijk;Stuw;Uiterdijk;;;01-01-1900 00:00;31-12-2099 00:00;;157334;436424;;Neder-Betuwe;;
+;HL000326;Woud, van de huis;Stuw;Woud, van de huis;;;01-01-1900 00:00;31-12-2099 00:00;;152975;437704;;Neder-Betuwe;;
+;HL000327;Binnen Kievitswaard;Gemaal, Stuw;Binnen Kievitswaard;;;01-01-1900 00:00;31-12-2099 00:00;;116576;422761;;Buitenpolders;;
+;HL000328;Happenhennip;Gemaal, Stuw;Happenhennip;;;01-01-1900 00:00;31-12-2099 00:00;;114205;421519;;Buitenpolders;;
+;HL000329;Kleine Zalm;Gemaal, Stuw;Kleine Zalm;;;01-01-1900 00:00;31-12-2099 00:00;;115912;419364;;Buitenpolders;;
+;HL000330;t Kooike;Gemaal, Stuw;t Kooike;;;01-01-1900 00:00;31-12-2099 00:00;;118834;421728;;Buitenpolders;;
+;HL000331;Middelste Kievitswaard;Gemaal, Stuw;Middelste Kievitswaard;;;01-01-1900 00:00;31-12-2099 00:00;;114970;421914;;Buitenpolders;;
+;HL000332;Steenenmuur;Gemaal, Stuw;Steenenmuur;;;01-01-1900 00:00;31-12-2099 00:00;;117208;419750;;Buitenpolders;;
+;HL000333;Steurgat;Gemaal, Stuw;Steurgat;;;01-01-1900 00:00;31-12-2099 00:00;;119420;423502;;Noordwaard;;
+;HL000334;Vogelenzang;Gemaal, Stuw;Vogelenzang;;;01-01-1900 00:00;31-12-2099 00:00;;116961;420162;;Buitenpolders;;
+;HL000335;Zyfflich;Stuw;Zyfflich;;;01-01-1900 00:00;31-12-2099 00:00;;194725;427701;;Ooijpolder;;
+;HL000336;Ooijsegraaf;Stuw;Ooijsegraaf;;;01-01-1900 00:00;31-12-2099 00:00;;194711;427853;Complex Ooijsegraaf;Ooijpolder;;
+;HL000337;Hollandsch-Duitschgemaal, vistrap;Vistrap;Hollandsch-Duitschgemaal, vistrap;;;01-01-1900 00:00;31-12-2099 00:00;;188786;428781;;Ooijpolder;;
+;HL000338;Hollandsch-Duitschgemaal;Gemaal, Stuw;Hollandsch-Duitschgemaal;;;01-01-1900 00:00;31-12-2099 00:00;;188732;428808;;Ooijpolder;;
+;HL000339;Hubertusweg;Gemaal;Hubertusweg;;;01-01-1900 00:00;31-12-2099 00:00;;192437;428537;;Ooijpolder;;
+;HL000340;Arnhem-Zuid Rijkerswoerd;Stuw;Arnhem-Zuid Rijkerswoerd;;;01-01-1900 00:00;31-12-2099 00:00;;189734;438990;;Over-Betuwe;;
+;HL000341;Bergerden;Stuw;Bergerden;;;01-01-1900 00:00;31-12-2099 00:00;;190139;438548;;Over-Betuwe;;
+;HL000342;BRO 95-9;Stuw;BRO 95-9;;;01-01-1900 00:00;31-12-2099 00:00;;192832;434764;;Over-Betuwe;;
+;HL000343;Duisterestraat;Gemaal, Stuw;Duisterestraat;;;01-01-1900 00:00;31-12-2099 00:00;;196220;434231;;Over-Betuwe;;
+;HL000344;Elderveld;Stuw;Elderveld;;;01-01-1900 00:00;31-12-2099 00:00;;187263;442042;;Over-Betuwe;;
+;HL000345;Gelredome;Stuw;Gelredome;;;01-01-1900 00:00;31-12-2099 00:00;;189879;441858;;Over-Betuwe;;
+;HL000346;Haalderen;Stuw;Haalderen;;;01-01-1900 00:00;31-12-2099 00:00;;192612;434463;;Over-Betuwe;;
+;HL000347;Hermsen;Stuw;Hermsen;;;01-01-1900 00:00;31-12-2099 00:00;;189543;441512;;Over-Betuwe;;
+;HL000348;Hoge Veld;Stuw;Hoge Veld;;;01-01-1900 00:00;31-12-2099 00:00;;195217;433365;;Over-Betuwe;;
+;HL000349;Huissense Zeeg;Stuw;Huissense Zeeg;;;01-01-1900 00:00;31-12-2099 00:00;;189573;437579;;Over-Betuwe;;
+;HL000350;Klapstraat;Stuw;Klapstraat;;;01-01-1900 00:00;31-12-2099 00:00;;188687;441781;;Over-Betuwe;;
+;HL000351;Klein Rome;Stuw;Klein Rome;;;01-01-1900 00:00;31-12-2099 00:00;;188625;434849;;Over-Betuwe;;
+;HL000353;Kraaienstraat;Stuw;Kraaienstraat;;;01-01-1900 00:00;31-12-2099 00:00;;194618;435474;;Over-Betuwe;;
+;HL000354;Krakkedel;Gemaal;Krakkedel;;;01-01-1900 00:00;31-12-2099 00:00;;195964;434390;;Over-Betuwe;;
+;HL000355;Krakkedel Lingeshof;Stuw;Krakkedel Lingeshof;;;01-01-1900 00:00;31-12-2099 00:00;;195727;434414;;Over-Betuwe;;
+;HL000356;Kruisstraat;Stuw;Kruisstraat;;;01-01-1900 00:00;31-12-2099 00:00;;194257;432624;;Over-Betuwe;;
+;HL000357;Laar, de (Arnhem);Stuw;Laar, de;;;01-01-1900 00:00;31-12-2099 00:00;;187259;439579;;Over-Betuwe;;
+;HL000358;OBO1;Stuw;OBO1;;;01-01-1900 00:00;31-12-2099 00:00;;195980;434474;;Over-Betuwe;;
+;HL000359;Tuin van Elden;Gemaal;Tuin van Elden;;;01-01-1900 00:00;31-12-2099 00:00;;189012;441622;;Over-Betuwe;;
+;HL000360;Veld, het;Stuw;Veld, het;;;01-01-1900 00:00;31-12-2099 00:00;;194302;434806;;Over-Betuwe;;
+;HL000361;Waterrijk Oost, Inlaat;Stuw;Waterrijk Oost, Inlaat;;;01-01-1900 00:00;31-12-2099 00:00;;189553;437590;;Over-Betuwe;;
+;HL000362;Zandvoortsestraat;Stuw;Zandvoortsestraat;;;01-01-1900 00:00;31-12-2099 00:00;;193200;433553;;Over-Betuwe;;
+;HL000363;BRO 78-2;Stuw;BRO 78-2;;;01-01-1900 00:00;31-12-2099 00:00;;175972;436580;;Over-Betuwe;;
+;HL000364;BRO 80-5;Stuw;BRO 80-5;;;01-01-1900 00:00;31-12-2099 00:00;;178258;436394;;Over-Betuwe;;
+;HL000365;BRO 87-2;Stuw;BRO 87-2;;;01-01-1900 00:00;31-12-2099 00:00;;184395;434224;;Over-Betuwe;;
+;HL000366;BRO 87-3;Stuw;BRO 87-3;;;01-01-1900 00:00;31-12-2099 00:00;;184427;434075;;Over-Betuwe;;
+;HL000367;BRO 88-3;Stuw;BRO 88-3;;;01-01-1900 00:00;31-12-2099 00:00;;185463;434159;;Over-Betuwe;;
+;HL000368;BRO 89-8;Stuw;BRO 89-8;;;01-01-1900 00:00;31-12-2099 00:00;;186917;434365;;Over-Betuwe;;
+;HL000369;BRO 89-9;Stuw;BRO 89-9;;;01-01-1900 00:00;31-12-2099 00:00;;187034;434485;;Over-Betuwe;;
+;HL000370;BRO 90-0;Stuw;BRO 90-0;;;01-01-1900 00:00;31-12-2099 00:00;;187094;434523;;Over-Betuwe;;
+;HL000371;Burgemeester Knoppersweg;Stuw;Burgemeester Knoppersweg;;;01-01-1900 00:00;31-12-2099 00:00;;177475;439167;;Over-Betuwe;;
+;HL000372;Z12;Stuw;Z12;;;01-01-1900 00:00;31-12-2099 00:00;;180847;437646;Complex Z12;Over-Betuwe;;
+;HL000373;Z15;Stuw;Z15;;;01-01-1900 00:00;31-12-2099 00:00;;180845;437680;;Over-Betuwe;;
+;HL000374;de Aam;Stuw;de Aam;;;01-01-1900 00:00;31-12-2099 00:00;;188247;436304;;Over-Betuwe;;
+;HL000375;Gemeint, de;Stuw;Gemeint, de;;;01-01-1900 00:00;31-12-2099 00:00;;187439;438214;;Over-Betuwe;;
+;HL000376;Gesperdensestraat;Gemaal, Stuw;Gesperdensestraat;;;01-01-1900 00:00;31-12-2099 00:00;;174439;437915;;Over-Betuwe;;
+;HL000377;Hemmense Zandweg;Gemaal, Stuw;Hemmense Zandweg;;;01-01-1900 00:00;31-12-2099 00:00;;176498;438763;;Over-Betuwe;;
+;HL000378;Het Hout;Stuw;Het Hout;;;01-01-1900 00:00;31-12-2099 00:00;;186310;440748;;Over-Betuwe;;
+;HL000379;Hollanderbroeksestraat;Stuw;Hollanderbroeksestraat;;;01-01-1900 00:00;31-12-2099 00:00;;185340;438059;;Over-Betuwe;;
+;HL000380;Kezenhof;Stuw;Kezenhof;;;01-01-1900 00:00;31-12-2099 00:00;;183954;433311;;Over-Betuwe;;
+;HL000381;Knuiman;Stuw;Knuiman;;;01-01-1900 00:00;31-12-2099 00:00;;185372;440071;;Over-Betuwe;;
+;HL000382;Loeffen;Stuw;Loeffen;;;01-01-1900 00:00;31-12-2099 00:00;;178829;438774;;Over-Betuwe;;
+;HL000383;N12;Stuw;N12;;;01-01-1900 00:00;31-12-2099 00:00;;184621;439773;;Over-Betuwe;;
+;HL000384;N17;Stuw;N17;;;01-01-1900 00:00;31-12-2099 00:00;;187078;438275;;Over-Betuwe;;
+;HL000385;N06;Stuw;N06;;;01-01-1900 00:00;31-12-2099 00:00;;181350;438641;;Over-Betuwe;;
+;HL000386;N08;Stuw;N08;;;01-01-1900 00:00;31-12-2099 00:00;;184664;437971;;Over-Betuwe;;
+;HL000387;N09;Stuw;N09;;;01-01-1900 00:00;31-12-2099 00:00;;182895;440099;;Over-Betuwe;;
+;HL000388;Nijland;Stuw;Nijland;;;01-01-1900 00:00;31-12-2099 00:00;;186030;432861;;Over-Betuwe;;
+;HL000389;Olympia stuw;Stuw;Olympia stuw;;;01-01-1900 00:00;31-12-2099 00:00;;187268;435718;;Over-Betuwe;;
+;HL000390;Park 15;Stuw;Park 15;;;01-01-1900 00:00;31-12-2099 00:00;;185477;433736;;Over-Betuwe;;
+;HL000391;Circulatiegemaal Schuytgraaf;Gemaal, Stuw;Circulatiegemaal Schuytgraaf;;;01-01-1900 00:00;31-12-2099 00:00;;185969;441522;;Over-Betuwe;;
+;HL000392;Weerbroek;Gemaal;Weerbroek;;;01-01-1900 00:00;31-12-2099 00:00;;180206;439581;;Over-Betuwe;;
+;HL000393;Wolfkampseweg;Stuw;Wolfkampseweg;;;01-01-1900 00:00;31-12-2099 00:00;;175192;439326;;Over-Betuwe;;
+;HL000394;Z13;Stuw;Z13;;;01-01-1900 00:00;31-12-2099 00:00;;175965;436614;;Over-Betuwe;;
+;HL000395;Z16;Stuw;Z16;;;01-01-1900 00:00;31-12-2099 00:00;;181115;436600;;Over-Betuwe;;
+;HL000396;Z2;Stuw;Z2;;;01-01-1900 00:00;31-12-2099 00:00;;174814;437533;;Over-Betuwe;;
+;HL000397;Z30;Stuw;Z30;;;01-01-1900 00:00;31-12-2099 00:00;;184196;433873;;Over-Betuwe;;
+;HL000398;Z37;Stuw;Z37;;;01-01-1900 00:00;31-12-2099 00:00;;185211;433941;;Over-Betuwe;;
+;HL000399;Z04;Stuw;Z04;;;01-01-1900 00:00;31-12-2099 00:00;;174922;436722;;Over-Betuwe;;
+;HL000400;Z05;Stuw;Z05;;;01-01-1900 00:00;31-12-2099 00:00;;174896;436622;;Over-Betuwe;;
+;HL000401;Bulkheuvel;Gemaal;Bulkheuvel;;;01-01-1900 00:00;31-12-2099 00:00;;153789;429206;;Tielerwaard;;
+;HL000402;Kosterman;Stuw;Kosterman;;;01-01-1900 00:00;31-12-2099 00:00;;153144;429047;;Tielerwaard;;
+;HL000403;Lekkerwaardje;Stuw;Lekkerwaardje;;;01-01-1900 00:00;31-12-2099 00:00;;151130;430104;;Tielerwaard;;
+;HL000404;Ophemert;Gemaal, Stuw;Ophemert;;;01-01-1900 00:00;31-12-2099 00:00;;153741;428157;;Tielerwaard;;
+;HL000405;Pijpenkasten, Uitlaat;Stuw;Pijpenkasten, Uitlaat;;;01-01-1900 00:00;31-12-2099 00:00;;151652;431670;Complex Pijpenkasten;Tielerwaard;;
+;HL000407;Pippertsestraat;Stuw;Pippertsestraat;;;01-01-1900 00:00;31-12-2099 00:00;;155302;429513;;Tielerwaard;;
+;HL000408;Seinhuis;Stuw;Seinhuis;;;01-01-1900 00:00;31-12-2099 00:00;;154095;431076;;Tielerwaard;;
+;HL000409;Vuadapad;Stuw;schuif Vuadapad;;;01-01-1900 00:00;31-12-2099 00:00;;154431;430452;;Tielerwaard;;
+;HL000410;Wadenoijen;Gemaal, Stuw;Wadenoijen;;;01-01-1900 00:00;31-12-2099 00:00;;155217;431752;;Tielerwaard;;
+;HL000411;Weiweg;Gemaal;Weiweg;;;01-01-1900 00:00;31-12-2099 00:00;;153410;426273;;Tielerwaard;;
+;HL000412;Poppenbouwing;Stuw;Poppenbouwing;;;01-01-1900 00:00;31-12-2099 00:00;;149087;431490;;Tielerwaard;;
+;HL000413;Plantage;Stuw;Plantage;;;01-01-1900 00:00;31-12-2099 00:00;;149087;431488;Complex Meersteeg;Tielerwaard;;
+;HL000414;Estse Omloop;Stuw;Estse Omloop;;;01-01-1900 00:00;31-12-2099 00:00;;148952;427649;;Tielerwaard;;
+;HL000415;Neerijnen, van Doorn;Stuw;Neerijnen, van Doorn;;;01-01-1900 00:00;31-12-2099 00:00;;147709;429273;;Tielerwaard;;
+;HL000416;Pekdel Markkade;Stuw;Pekdel Markkade;;;01-01-1900 00:00;31-12-2099 00:00;;147090;429782;;Tielerwaard;;
+;HL000417;Voorvliet;Stuw;Voorvliet;;;01-01-1900 00:00;31-12-2099 00:00;;146576;432530;;Tielerwaard;;
+;HL000418;Alphen;Gemaal;Alphen;;;01-01-1900 00:00;31-12-2099 00:00;;160807;426101;;Quarles van Ufford;;
+;HL000419;Aspert, de;Gemaal;Aspert, de;;;01-01-1900 00:00;31-12-2099 00:00;;171634;428164;;Bloemers;;
+;HL000420;Bijnem van;Stuw;Bijnem van;;;01-01-1900 00:00;31-12-2099 00:00;;168144;430162;;Quarles van Ufford;;
+;HL000421;Bering, Oever van de;Stuw;Bering, Oever van de;;;01-01-1900 00:00;31-12-2099 00:00;;158508;426101;;Quarles van Ufford;;
+;HL000422;Betenlaan;Stuw;Betenlaan;;;01-01-1900 00:00;31-12-2099 00:00;;175478;430174;;Quarles van Ufford;;
+;HL000423;Blauwesluis;Stuw;Blauwesluis;;;01-01-1900 00:00;31-12-2099 00:00;;166405;428013;;Quarles van Ufford;;
+;HL000424;Bobbert;Stuw;Bobbert;;;01-01-1900 00:00;31-12-2099 00:00;;169731;432045;;Quarles van Ufford;;
+;HL000425;Buitenhof, de;Stuw;Buitenhof, de;;;01-01-1900 00:00;31-12-2099 00:00;;170313;432530;;Quarles van Ufford;;
+;HL000426;Hoogeveen Wely, J. van;Stuw;Hoogeveen Wely, J. van;;;01-01-1900 00:00;31-12-2099 00:00;;158819;429024;;Quarles van Ufford;;
+;HL000427;Wely, J. van;Gemaal, Stuw;Wely, J. van;;;01-01-1900 00:00;31-12-2099 00:00;;158772;429053;;Quarles van Ufford;;
+;HL000428;Coothweg;Stuw;Coothweg;;;01-01-1900 00:00;31-12-2099 00:00;;167254;429300;;Quarles van Ufford;;
+;HL000429;Deestersteeg;Stuw;Deestersteeg;;;01-01-1900 00:00;31-12-2099 00:00;;173735;430914;;Quarles van Ufford;;
+;HL000430;Druten Zuid;Stuw;Druten Zuid;;;01-01-1900 00:00;31-12-2099 00:00;;169662;433087;;Quarles van Ufford;;
+;HL000431;Haasje, het;Gemaal;Haasje, het;;;01-01-1900 00:00;31-12-2099 00:00;;178184;431348;;Quarles van Ufford;;
+;HL000432;Heppert;Stuw;Heppert;;;01-01-1900 00:00;31-12-2099 00:00;;167970;429261;;Quarles van Ufford;;
+;HL000433;Heuterik, de;Stuw;Heuterik, de;;;01-01-1900 00:00;31-12-2099 00:00;;164497;432252;;Quarles van Ufford;;
+;HL000434;Horstkamp;Stuw;Horstkamp;;;01-01-1900 00:00;31-12-2099 00:00;;163809;431817;;Quarles van Ufford;;
+;HL000435;Janssen, J.;Stuw;Janssen, J.;;;01-01-1900 00:00;31-12-2099 00:00;;161101;431825;;Quarles van Ufford;;
+;HL000436;Kapelstraat Maasbommel;Stuw;Kapelstraat Maasbommel;;;01-01-1900 00:00;31-12-2099 00:00;;164442;427074;;Quarles van Ufford;;
+;HL000437;Kezieweg;Stuw;Kezieweg;;;01-01-1900 00:00;31-12-2099 00:00;;162202;428251;;Quarles van Ufford;;
+;HL000438;Kooiweg Alphen;Stuw;Kooiweg Alphen;;;01-01-1900 00:00;31-12-2099 00:00;;159004;425667;;Quarles van Ufford;;
+;HL000439;Leeuwensche Veld N322;Stuw;Leeuwensche Veld N322;;;01-01-1900 00:00;31-12-2099 00:00;;164005;431418;;Quarles van Ufford;;
+;HL000440;Lindenlaan;Stuw;Lindenlaan;;;01-01-1900 00:00;31-12-2099 00:00;;160491;426475;;Quarles van Ufford;;
+;HL000441;Loman;Stuw;Loman;;;01-01-1900 00:00;31-12-2099 00:00;;161143;429799;;Quarles van Ufford;;
+;HL000442;Lorijn;Stuw;Lorijn;;;01-01-1900 00:00;31-12-2099 00:00;;161210;429895;;Quarles van Ufford;;
+;HL000443;Reefwetering;Stuw;Reefwetering;;;01-01-1900 00:00;31-12-2099 00:00;;160084;428193;;Quarles van Ufford;;
+;HL000444;Rijcksche Sluis;Stuw;Rijcksche Sluis;;;01-01-1900 00:00;31-12-2099 00:00;;162585;427586;;Quarles van Ufford;;
+;HL000445;Rossum, van Trico;Stuw;Rossum, van Trico;;;01-01-1900 00:00;31-12-2099 00:00;;161115;432178;;Quarles van Ufford;;
+;HL000446;De Ruivert;Gemaal;De Ruivert;;;01-01-1900 00:00;31-12-2099 00:00;;158199;426030;;Quarles van Ufford;;
+;HL000447;Scharenburg;Gemaal, Stuw;Scharenburg;;;01-01-1900 00:00;31-12-2099 00:00;;170390;431265;;Quarles van Ufford;;
+;HL000448;Schriksestraat;Stuw;Schriksestraat;;;01-01-1900 00:00;31-12-2099 00:00;;172193;431004;;Quarles van Ufford;;
+;HL000449;Sommeren, N. van;Stuw;Sommeren, N. van;;;01-01-1900 00:00;31-12-2099 00:00;;169115;433087;;Quarles van Ufford;;
+;HL000450;Vissersweg, Salet J.;Stuw;Vissersweg, Salet J.;;;01-01-1900 00:00;31-12-2099 00:00;;166891;431623;;Quarles van Ufford;;
+;HL000451;Waalborg;Stuw;Waalborg;;;01-01-1900 00:00;31-12-2099 00:00;;169390;433724;;Quarles van Ufford;;
+;HL000452;Willem Alexanderbrug;Gemaal, Stuw;Willem Alexanderbrug;;;01-01-1900 00:00;31-12-2099 00:00;;162697;431898;;Quarles van Ufford;;
+;HL000453;Zand, H. van de;Stuw;Zand, H. van de;;;01-01-1900 00:00;31-12-2099 00:00;;167539;432338;;Quarles van Ufford;;
+;HL000454;Zijveld;Stuw;Zijveld;;;01-01-1900 00:00;31-12-2099 00:00;;164265;429423;;Quarles van Ufford;;
+;HL000455;Zijveld Liesterstraat;Stuw;Zijveld Liesterstraat;;;01-01-1900 00:00;31-12-2099 00:00;;163707;431529;;Quarles van Ufford;;
+;HL000456;Zwolgen, van;Stuw;Zwolgen, van;;;01-01-1900 00:00;31-12-2099 00:00;;171273;432637;;Quarles van Ufford;;
+;HL000457;BRO 88-4;Stuw;BRO 88-4;;;01-01-1900 00:00;31-12-2099 00:00;;185505;434220;;Over-Betuwe;;
+;HL000458;Elsweg;Stuw;Elsweg;;;01-01-1900 00:00;31-12-2099 00:00;;160958;427252;;Quarles van Ufford;;
+;HL000459;Nieuweweg Kezieweg;Stuw;Nieuweweg Kezieweg;;;01-01-1900 00:00;31-12-2099 00:00;;162524;428893;;Quarles van Ufford;;
+;HL000460;Zonnepark Leeuwse Veld;Stuw;Zonnepark Leeuwse Veld;;;01-01-1900 00:00;31-12-2099 00:00;;163706;431550;;Quarles van Ufford;;
+;HL000461;Altena;Gemaal;Altena;;;01-01-1900 00:00;31-12-2099 00:00;;123494;426313;;Land van Heusden en Altena;;
+;HL000462;Bijtelskil;Stuw;Bijtelskil;;;01-01-1900 00:00;31-12-2099 00:00;;123845;423868;;Land van Heusden en Altena;;
+;HL000463;Gijbert, Inl;Stuw;Gijbert, Inl;;;01-01-1900 00:00;31-12-2099 00:00;;122496;418327;;Land van Heusden en Altena;;
+;HL000464;Beuningen, H.A. van;Gemaal;Beuningen, H.A. van;;;01-01-1900 00:00;31-12-2099 00:00;;158277;436943;;Linge;;
+;HL000465;Sifon;Stuw;Sifon;;;01-01-1900 00:00;31-12-2099 00:00;;158336;436880;;Linge;;
+;HL000467;Bruinekil;Gemaal, Stuw;Bruinekil;;;01-01-1900 00:00;31-12-2099 00:00;;118929;419707;;Oostwaard;;
+;HL000468;Oostkil;Gemaal, Stuw;Oostkil;;;01-01-1900 00:00;31-12-2099 00:00;;118649;416004;;Oostwaard;;
+;HL000469;Boogaard, K. van de;Stuw;Boogaard, K. van de;;;01-01-1900 00:00;31-12-2099 00:00;;145634;418014;;Bommelerwaard;;
+;HL000470;World Champ;Stuw;World Champ;;;01-01-1900 00:00;31-12-2099 00:00;;144092;418970;;Bommelerwaard;;
+;HL000471;Galg;Gemaal;Galg;;;01-01-1900 00:00;31-12-2099 00:00;;140467;433923;;Lek en Linge;;
+;HL000472;Startstraat;Gemaal, Stuw;Startstraat;;;01-01-1900 00:00;31-12-2099 00:00;;141385;423002;;Bommelerwaard;;
+;HL000473;Veldsestraat Zilverlandseweg;Stuw;Veldsestraat Zilverlandseweg;;;01-01-1900 00:00;31-12-2099 00:00;;165027;437669;;Neder-Betuwe;;
+;HL000474;Drielandenpunt;Gemaal, Stuw;Drielandenpunt;;;01-01-1900 00:00;31-12-2099 00:00;;153072;440334;Complex Drielandenpunt;Neder-Betuwe;;
+;HL000475;Zandberg;Stuw;Zandberg;;;01-01-1900 00:00;31-12-2099 00:00;;153048;440329;Complex  Drielandenpunt;Neder-Betuwe;;
+;HL000476;Nieuweweg;Stuw;Nieuweweg;;;01-01-1900 00:00;31-12-2099 00:00;;153099;440320;;Neder-Betuwe;;
+;HL000477;Ravenswaaij;Stuw;Ravenswaaij;;;01-01-1900 00:00;31-12-2099 00:00;;153041;440356;;Neder-Betuwe;;
+;HL000478;Prins Bernhardsluizen;Gemaal, Stuw;Prins Bernhardsluizen;;;01-01-1900 00:00;31-12-2099 00:00;;159608;434585;;Tielerwaard;;
+;HL000479;Schaarsdijkpad;Stuw;Schaarsdijkpad;;;01-01-1900 00:00;31-12-2099 00:00;;155850;432478;;Tielerwaard;;
+;HL000480;Tolsteeg Tunnel;Gemaal;Tolsteeg Tunnel;;;01-01-1900 00:00;31-12-2099 00:00;;111695;427412;Complex Sliedrecht;Nederwaard;;
+;HL000481;Uitlaat Waterrijk Oost;Stuw;Uitlaat Waterrijk Oost;;;01-01-1900 00:00;31-12-2099 00:00;;188795;437927;;Over-Betuwe;;
+;HL000482;Santacker;Stuw;Santacker;;;01-01-1900 00:00;31-12-2099 00:00;;186598;438409;;Over-Betuwe;;
+;HL000483;Timmermans;Stuw;Timmermans;;;01-01-1900 00:00;31-12-2099 00:00;;183146;437683;;Over-Betuwe;;
+;HL000484;Tobbenhof;Stuw;Tobbenhof;;;01-01-1900 00:00;31-12-2099 00:00;;184164;437859;;Over-Betuwe;;
+;HL000485;Inundatiekanaal;Gemaal;Inundatiekanaal;;;01-01-1900 00:00;31-12-2099 00:00;;156032;431972;;Tielerwaard;;
+;HL000486;Rooy, de;Stuw;Rooy, de;;;01-01-1900 00:00;31-12-2099 00:00;;154347;431392;;Tielerwaard;;
+;HL000487;Schuif Zuivellings;Stuw;Schuif Zuivellings;;;01-01-1900 00:00;31-12-2099 00:00;;154836;430001;;Tielerwaard;;
+;HL000488;Hondekooi;Gemaal, Stuw;Hondekooi;;;01-01-1900 00:00;31-12-2099 00:00;;134829;422805;;Bommelerwaard;;
+;HL000489;Huibert;Stuw;Huibert;;;01-01-1900 00:00;31-12-2099 00:00;;131433;438836;;Vijfheerenlanden;;
+;HL000490;Loosdorp;Gemaal, Stuw;Loosdorp;;;01-01-1900 00:00;31-12-2099 00:00;;133926;434700;;Vijfheerenlanden;;
+;HL000491;Oud-Schaaijk 1;Stuw;Oud-Schaaijk 1;;;01-01-1900 00:00;31-12-2099 00:00;;135098;434100;;Vijfheerenlanden;;
+;HL000492;Vianen Jachthaven (noodpomp);Gemaal;Vianen Jachthaven (noodpomp);;;01-01-1900 00:00;31-12-2099 00:00;;132724;444238;;Buitenpolders;;
+;HL000493;Bruchemse huisjes 1;Stuw;Bruchemse huisjes 1;;;01-01-1900 00:00;31-12-2099 00:00;;144043;422293;;Bommelerwaard;;
+;HL000494;BRO 69-2;Stuw;BRO 69-2;;;01-01-1900 00:00;31-12-2099 00:00;;167098;436838;;Neder-Betuwe;;
+;HL000495;BRO 69-3;Stuw;BRO 69-3;;;01-01-1900 00:00;31-12-2099 00:00;;167116;436868;;Neder-Betuwe;;
+;HL000496;Hagoort Lagepand;Gemaal;Hagoort Lagepand;;;01-01-1900 00:00;31-12-2099 00:00;;129097;414005;;Land van Heusden en Altena;;
+;HL000497;Hagoort Hogepand;Gemaal;Hagoort Hogepand;;;01-01-1900 00:00;31-12-2099 00:00;;129089;413975;Complex Hagoort;Land van Heusden en Altena;;
+;HL000498;Peulensluis;Sluis;Peulensluis;;;01-01-1900 00:00;31-12-2099 00:00;;116356;426035;;Overwaard;;
+;HL000499;Lage Boezem Overwaard;Stuw;Lage Boezem Overwaard;;;01-01-1900 00:00;31-12-2099 00:00;;103561;433487;;Overwaard;;
+;HL000500;Hoge Boezem MK Nederwaard;Stuw;Hoge Boezem MK Nederwaard;;;01-01-1900 00:00;31-12-2099 00:00;;103314;433607;;Nederwaard;;
+;HL000501;Baanhoek 1;Gemaal;Baanhoek 1;;;01-01-1900 00:00;31-12-2099 00:00;;110937;426283;;Nederwaard;;
+;HL000502;Baanhoek 2;Gemaal;Baanhoek 2;;;01-01-1900 00:00;31-12-2099 00:00;;111206;426294;;Nederwaard;;
+;HL000504;Bakkerskil;Gemaal;Bakkerskil;;;01-01-1900 00:00;31-12-2099 00:00;;118302;417517;;Oostwaard;;
+;HL000505;Jamin;Stuw;Jamin;;;01-01-1900 00:00;31-12-2099 00:00;;126847;422492;;Land van Heusden en Altena;;
+;HL000506;Uiterwaarden;Gemaal;Uiterwaarden;;;01-01-1900 00:00;31-12-2099 00:00;;129878;423804;;Land van Heusden en Altena;;
+;HL000507;Wijk en Aalburg;Gemaal;Wijk en Aalburg;;;01-01-1900 00:00;31-12-2099 00:00;;137549;419474;;Land van Heusden en Altena;;
+;HL000508;Buurmalsen;Gemaal, Stuw;Buurmalsen;;;01-01-1900 00:00;31-12-2099 00:00;;147312;433446;;Lek en Linge;;
+;HL000509;Bonte Morgen;Stuw;Bonte Morgen;;;01-01-1900 00:00;31-12-2099 00:00;;164336;442316;;Buitenpolders;;
+;HL000510;Heerenland;Stuw;Heerenland;;;01-01-1900 00:00;31-12-2099 00:00;;171057;437961;;Neder-Betuwe;;
+;HL000511;Stadsgracht Tiel;Gemaal;Stadsgracht Tiel;;;01-01-1900 00:00;31-12-2099 00:00;;158681;433294;;Tielerwaard;;
+;HL000512;Drielsche Zeeg Breekenhof 1;Stuw;Drielsche Zeeg Breekenhof 1;;;01-01-1900 00:00;31-12-2099 00:00;;184201;440517;;Over-Betuwe;;
+;HL000513;Circulatiegemaal Breekenhof;Gemaal;Circulatiegemaal Breekenhof;;;01-01-1900 00:00;31-12-2099 00:00;;184204;440575;;Over-Betuwe;;
+;HL000514;Eind A15;Stuw;Eind A15;;;01-01-1900 00:00;31-12-2099 00:00;;190937;435026;;Over-Betuwe;;
+;HL000515;Huyenkamp;Gemaal;Huyenkamp;;;01-01-1900 00:00;31-12-2099 00:00;;185669;436878;;Over-Betuwe;;
+;HL000516;Pannerling;Gemaal, Stuw;Pannerling;;;01-01-1900 00:00;31-12-2099 00:00;;198686;434245;;Linge;;
+;HL000517;Sillesstraat;Gemaal;Sillesstraat;;;01-01-1900 00:00;31-12-2099 00:00;;188864;437718;;Over-Betuwe;;
+;HL000518;Vredenburg;Gemaal;Vredenburg;;;01-01-1900 00:00;31-12-2099 00:00;;189654;440719;;Over-Betuwe;;
+;HL000519;Singel Eiland Laauwik;Gemaal;Singel Eiland Laauwik;;;01-01-1900 00:00;31-12-2099 00:00;;187817;431910;;Over-Betuwe;;
+;HL000520;K14 weefgewichtstraat;Gemaal;K14 weefgewichtstraat;;;01-01-1900 00:00;31-12-2099 00:00;;186333;431933;;Over-Betuwe;;
+;HL000521;Circulatie HF Westeraam;Gemaal;Circulatie HF Westeraam;;;01-01-1900 00:00;31-12-2099 00:00;;188232;437567;;Over-Betuwe;;
+;HL000522;Hardinxveld Noord;Gemaal;Hardinxveld Noord;;;01-01-1900 00:00;31-12-2099 00:00;;119693;427208;;Overwaard;;
+;HL000523;Nieuw Lekkerland;Gemaal;Nieuw Lekkerland;;;01-01-1900 00:00;31-12-2099 00:00;;107338;432602;;Overwaard;;
+;HL000524;Grandia aan Voorvliet;Stuw;Grandia aan Voorvliet;;;01-01-1900 00:00;31-12-2099 00:00;;146576;430721;;Tielerwaard;;
+;HL000525;Arkel;Gemaal;Arkel;;;01-01-1900 00:00;31-12-2099 00:00;;128192;430515;;Vijfheerenlanden;;
+;HL000526;Autena;Gemaal;Autena;;;01-01-1900 00:00;31-12-2099 00:00;;133443;442311;;Vijfheerenlanden;;
+;HL000527;Heicop;Gemaal;Heicop;;;01-01-1900 00:00;31-12-2099 00:00;;131515;439195;;Vijfheerenlanden;;
+;HL000528;Hoef en Haag;Gemaal;Hoef en Haag;;;01-01-1900 00:00;31-12-2099 00:00;;135147;444769;;Vijfheerenlanden;;
+;HL000529;Kedichem;Gemaal;Kedichem;;;01-01-1900 00:00;31-12-2099 00:00;;130208;430282;;Vijfheerenlanden;;
+;HL000530;Kortgerecht laag 1;Stuw;Kortgerecht laag 1;;;01-01-1900 00:00;31-12-2099 00:00;;137467;438657;;Vijfheerenlanden;;
+;HL000531;Middelkoop;Gemaal;Middelkoop;;;01-01-1900 00:00;31-12-2099 00:00;;130814;438329;;Vijfheerenlanden;;
+;HL000532;Lakerveld;Gemaal;Lakerveld;;;01-01-1900 00:00;31-12-2099 00:00;;130769;438440;;Vijfheerenlanden;;
+;HL000533;Boven-Huibert;Gemaal, Stuw;Boven-Huibert;;;01-01-1900 00:00;31-12-2099 00:00;;137442;438665;Complex Boven-Huibert;Vijfheerenlanden;;
+;HL000534;Lam, D.W. het;Gemaal;Lam, D.W. het;;;01-01-1900 00:00;31-12-2099 00:00;;132148;440718;;Vijfheerenlanden;;
+;HL000535;Laar, de;Gemaal;Laar, de;;;01-01-1900 00:00;31-12-2099 00:00;;137891;431581;;Tielerwaard;;
+;HL000536;HF Westeraam stuw A-watergang;Stuw;HF Westeraam stuw A-watergang;;;01-01-1900 00:00;31-12-2099 00:00;;188145;437922;;Over-Betuwe;;
+;HL000537;HF Westeraam uitlaat;Stuw;HF Westeraam uitlaat;;;01-01-1900 00:00;31-12-2099 00:00;;188248;437565;;Over-Betuwe;;
+;HL000538;Vlek 20 K6;Gemaal, Stuw;Vlek 20 K6;;;01-01-1900 00:00;31-12-2099 00:00;;188227;432015;;Over-Betuwe;;
+;HL000539;K2 Oosterhoutseplas;Gemaal, Stuw;K2 Oosterhoutseplas;;;01-01-1900 00:00;31-12-2099 00:00;;187430;432299;;Over-Betuwe;;
+;HL000540;Drielsedijk;Gemaal;Drielsedijk;;;01-01-1900 00:00;31-12-2099 00:00;;187293;442295;;Over-Betuwe;;
+;HL000541;Ufford, Quarles van;Gemaal, Stuw;Ufford, Quarles van;;;01-01-1900 00:00;31-12-2099 00:00;;157939;425857;;Quarles van Ufford;;
+;HL000542;Nieuwe Horn;Gemaal;Nieuwe Horn;;;01-01-1900 00:00;31-12-2099 00:00;;136281;433336;;Lek en Linge;;
+;HL000543;Baanbreker, de;Gemaal, Stuw;Baanbreker, de;;;01-01-1900 00:00;31-12-2099 00:00;;141061;419107;;Bommelerwaard;;
+;HL000544;Poortweg;Gemaal;Poortweg;;;01-01-1900 00:00;31-12-2099 00:00;;127398;421743;;Land van Heusden en Altena;;
+;HL000546;Oostersingel;Gemaal;Oostersingel;;;01-01-1900 00:00;31-12-2099 00:00;;144190;440657;;Lek en Linge;;
+;HL000547;Studentengracht;Stuw;Studentengracht;;;01-01-1900 00:00;31-12-2099 00:00;;144142;440488;;Lek en Linge;;
+;HL000548;Weidsteeg;Gemaal, Stuw;Weidsteeg;;;01-01-1900 00:00;31-12-2099 00:00;;144259;440559;Complex Stadsgracht;Lek en Linge;;
+;HL000549;Werkendam;Stuw;Werkendam;;;01-01-1900 00:00;31-12-2099 00:00;;121141;424020;;Land van Heusden en Altena;;
+;HL000550;Parijsch;Gemaal;Parijsch;;;01-01-1900 00:00;31-12-2099 00:00;;142060;440260;;Lek en Linge;;
+;HL000551;Overheicop;Stuw;Overheicop;;;01-01-1900 00:00;31-12-2099 00:00;;134784;438428;;Vijfheerenlanden;;
+;HL000552;Stompe Molen;Stuw;Stompe Molen;;;01-01-1900 00:00;31-12-2099 00:00;;134202;434156;;Vijfheerenlanden;;
+;HL000553;Schaaijk;Gemaal;Schaaijk;;;01-01-1900 00:00;31-12-2099 00:00;;134575;433463;;Vijfheerenlanden;;
+;HL000555;Molen ter Leede;Stuw;Molen ter Leede;;;01-01-1900 00:00;31-12-2099 00:00;;134497;433525;;Vijfheerenlanden;;
+;HL000556;Neust, de;Gemaal, Stuw;Neust, de;;;01-01-1900 00:00;31-12-2099 00:00;;145329;433922;handmatige vispassage;Lek en Linge;;
+;HL000557;Peerenboomsgat;Stuw;Peerenboomsgat;;;01-01-1900 00:00;31-12-2099 00:00;;122127;414946;;Land van Heusden en Altena;;
+;HL000558;Kerkverweide;Stuw;Kerkverweide;;;01-01-1900 00:00;31-12-2099 00:00;;136680;419393;;Land van Heusden en Altena;;
+;HL000559;Lage Biezen;Stuw;Lage Biezen;;;01-01-1900 00:00;31-12-2099 00:00;;135036;442288;;Vijfheerenlanden;;
+;HL000560;Vretstrooi;Gemaal;Vretstrooi;;;01-01-1900 00:00;31-12-2099 00:00;;144798;437577;;Lek en Linge;;
+;HL000561;Mollenvanger;Stuw;Mollenvanger;;;01-01-1900 00:00;31-12-2099 00:00;;129515;441367;;Vijfheerenlanden;;
+;HL000562;Kikkert, de;Stuw;Kikkert, de;;;01-01-1900 00:00;31-12-2099 00:00;;128435;440388;;Vijfheerenlanden;;
+;HL000563;Hoog Leerbroek;Stuw;Hoog Leerbroek;;;01-01-1900 00:00;31-12-2099 00:00;;132285;435939;;Vijfheerenlanden;;
+;HL000564;Kom Lekdijk;Gemaal;Kom Lekdijk;;;01-01-1900 00:00;31-12-2099 00:00;;130687;441966;;Vijfheerenlanden;;
+;HL000565;Bastaardkade;Stuw;Bastaardkade;;;01-01-1900 00:00;31-12-2099 00:00;;131230;440274;;Vijfheerenlanden;;
+;HL000566;Bloemendaal;Gemaal, Stuw;Bloemendaal;;;01-01-1900 00:00;31-12-2099 00:00;;133746;442633;;Vijfheerenlanden;;
+;HL000567;Jan van Toonen;Stuw;Jan van Toonen;;;01-01-1900 00:00;31-12-2099 00:00;;132513;420370;;Land van Heusden en Altena;;
+;HL000568;Horst;Stuw;Horst;;;01-01-1900 00:00;31-12-2099 00:00;;196146;421054;;Groesbeek;;
+;HL000569;Middelwaard;Stuw;Middelwaard;;;01-01-1900 00:00;31-12-2099 00:00;;119862;423427;;Oostwaard;;
+;HL000570;Hoogeind;Stuw;Hoogeind;;;01-01-1900 00:00;31-12-2099 00:00;;133461;437425;;Vijfheerenlanden;;
+;HL000571;Ashorst (verwijderd);Stuw;Ashorst (verwijderd);;;01-01-1900 00:00;31-12-2099 00:00;;194504;419617;is verwijderd 26 juli 2021, oud GRB011;Groesbeek;;
+;HL000572;Karbrug (verwijderd);Stuw;Karbrug (verwijderd);;;01-01-1900 00:00;31-12-2099 00:00;;191299;435910;is verwijderd 1 september 2016, oud LNG003;Linge;;
+;HL000573;Winssense waarden;Gemaal;Winssense waarden;;;01-01-1900 00:00;31-12-2099 00:00;;175801;433507;;Buitenpolders;;
+;HL000574;Broekgraaf 1;Stuw;Broekgraaf 1;;;01-01-1900 00:00;31-12-2099 00:00;;133092;433323;;Vijfheerenlanden;;
+;HL000576;Tricht (verwijderd);Gemaal;Tricht (verwijderd);;;01-01-1900 00:00;31-12-2099 00:00;;145324;433906;;Lek en Linge;;
+;HL000579;Dodewaard uitlaat;Stuw;Dodewaard uitlaat;;;01-01-1900 00:00;31-12-2099 00:00;;172008;437497;;Neder-Betuwe;;
+;HL000580;Doornenburg;Stuw;Doornenburg;;;01-01-1900 00:00;31-12-2099 00:00;;198611;434207;;Linge;;
+;HL000581;Ewijk (verwijderd);Stuw;Ewijk (verwijderd);;;01-01-1900 00:00;31-12-2099 00:00;;177711;430461;is verwijderd in 22 mei 2018;Bloemers;;
+;HL000583;Laag Dalem;Stuw;Laag Dalem;;;01-01-1900 00:00;31-12-2099 00:00;;127420;427845;;Tielerwaard;;
+;HL000584;Lage Boezem Nederwaard;Stuw;Lage Boezem Nederwaard;;;01-01-1900 00:00;31-12-2099 00:00;;103306;433483;;Nederwaard;;
+;HL000585;Afsluitmiddel Overwaard;Stuw;Afsluitmiddel Overwaard;;;01-01-1900 00:00;31-12-2099 00:00;;103462;433643;;Overwaard;;
+;HL000586;Zwanenwater (verwijderd);Gemaal;Zwanenwater (verwijderd);;;01-01-1900 00:00;31-12-2099 00:00;;192700;439563;;Over-Betuwe;;
+;HL000588;Drielsche Zeeg Breekenhof 2;Stuw;Drielsche Zeeg Breekenhof 2;;;01-01-1900 00:00;31-12-2099 00:00;;184545;440601;;Over-Betuwe;;
+;HL000589;HF Westeraam inlaat;Gemaal;HF Westeraam inlaat;;;01-01-1900 00:00;31-12-2099 00:00;;188244;437584;;Over-Betuwe;;
+;HL000590;HF Westeraam recirculatie;Gemaal;HF Westeraam recirculatie;;;01-01-1900 00:00;31-12-2099 00:00;;188045;437627;;Over-Betuwe;;
+;HL000593;Broekse Sluis, Heukelum;Gemaal;Broekse Sluis, Heukelum;;;01-01-1900 00:00;31-12-2099 00:00;;131591;429662;Complex Broekse Sluis;Tielerwaard;;
+;HL000595;Broekse Sluis, Spijk;Gemaal;Broekse Sluis, Spijk;;;01-01-1900 00:00;31-12-2099 00:00;;131582;429662;;Tielerwaard;;
+;HL000596;Tricht, achter de Werkplaats;Stuw;Tricht, achter de Werkplaats;;;01-01-1900 00:00;31-12-2099 00:00;;145532;434519;;Lek en Linge;;
+;HL000597;Inlaat Kok, Ir. G.N.  / Overwaard;Stuw;Inlaat Kok, Ir. G.N.  / Overwaard;;;01-01-1900 00:00;31-12-2099 00:00;;103401;433593;;Overwaard;;
+;HL000598;Eck, van (verwijderd);Stuw;Eck, van;;;01-01-1900 00:00;02-01-2018 00:00;;163728;427858;;Quarles van Ufford;;
+;HL000599;Pijpenkasten, Inlaat;Stuw;Pijpenkansten. Inlaat;;;01-01-1900 00:00;31-12-2099 00:00;;151658;431677;;Tielerwaard;;
+;HL000600;BRO 74-3;Stuw;BRO 74-3;;;01-01-1900 00:00;31-12-2099 00:00;;172129;437208;;Neder-Betuwe;;

@@ -1,352 +1,352 @@
-Versie1_ALB;GlobalpompID;OBJECTID;CODE;NAAM;TYPEPOMP;TYPEFORMULE;POMPCAP;MAX_AMPERE;MAX_TOER;MIN_TOER;OBJECTBEGI;OBJECTEIND;GECONTROLEERD
-;;KGM_000920;SL000004;Alem_P1-uit;;;35;;1410;450;;;
-;;KGM_000920;SL000005;Alem_P2-in;;;6;;1410;450;;;
-;;KGM_032659;SL000006;Oever, H. van de_P3-uit;;;;;;;;;
-;;KGM_032779;SL000010;Hedel_P-in;;;70;;985;590;;;
-;;KGM_056853;SL000012;Hogeweg Rossum_P1;;;8;;970;600;;;
-;;KGM_000923;SL000015;Kerkwijkse Kade_P1;;;8;;945;567;;;
-;;KGM_000924;SL000017;Kievitsham_P;;;2;;1450;870;;;
-;;KGM_000927;SL000019;Meersloot_P;;;20;;700;420;;;
-;;KGM_000919;SL000023;Stuvers_P-in;;;100;;495;297;;;
-;;KGM_000925;SL000027;Weigraaf_P;;;20;;612;367;;;
-;;KGM_081871;SL000031;Berenskamp_P;;;;;955;910;;;
-;;KGM_032666;SL000032;Bern_P1-in-uit;;;50;;1470;177.753;;;
-;;KGM_032666;SL000033;Bern_P2-uit;;;8;;1470;177.753;;;
-;;KGM_056493;SL000034;Eendenkade_P1;;;;;;;;;
-;;KGM_000916;SL000036;Heemstraweg, van_P1;;;20;;;;;;
-;;KGM_000922;SL000042;Rietschoof, de_P-uit;;;50;;741;445;;;
-;;KGM_000918;SL000046;Dam van Brakel, Van_P1-uit;;;82.5;;;;;;
-;;KGM_000918;SL000047;Dam van Brakel, Van_P2-uit;;;82.5;;;;;;
-;;KGM_011720;SL000049;Leuvenveldseweg_P1;;;2;;920;552;;;
-;;KGM_011719;SL000051;Molenkampseweg_P1;;;5;;950;570;;;
-;;KGM_032802;SL000053;Rossum, Maarten van_P1;;;3;;920;552;;;
-;;KGM_000926;SL000056;Kooiheuvel_P;;;20;;;;;;
-;;KGM_001090;SL000060;Rampert, de_P;;;20;;;;;;
-;;KGM_032953;SL000061;Huizendijk_P;;;15.9;;;;;;
-;;KGM_047231;SL000062;Hurwenen_P-uit;;;50;;;;;;
-;;KGM_032793;SL000063;Jongh, H.C. de_P1-uit;;;200;;300;;;;
-;;KGM_032793;SL000064;Jongh, H.C. de_P2-in-uit;;;120;;413;;;;
-;;KGM_032803;SL000069;Maas en Waalweg_P;;;2.2;;1459;750;;;
-;;KGM_064468;SL000079;Schenkeldijk_P1;;;2;;;;;;
-;;KGM_024108;SL000091;Bloemers_P1-uit;;;242.7;;314;157;;;
-;;KGM_024108;SL000092;Bloemers_P2-uit;;;242.7;;314;157;;;
-;;KGM_024108;SL000093;Bloemers_P3-uit;;;242.7;;314;157;;;
-;;KGM_024108;SL000094;Bloemers_VL4-uit;;;;;;;;;
-;;KGM_024095;SL000105;Malden_P-uit;;;20;;732;366;;;
-;;KGM_032810;SL000106;Neerbosch_P-uit;;;30;;485;240;;;
-;;KGM_023208;SL000135;Kuijk, Mr. G.J.H._P1-uit;;;420;;104;53;;;
-;;KGM_023208;SL000136;Kuijk, Mr. G.J.H._P2-in-uit;;;280;;320;240;;;
-;;KGM_023208;SL000137;Kuijk, Mr. G.J.H._P3-uit;;;420;;104;53;;;
-;;KGM_000906;SL000141;Heukelum_P;;;8;;;;;;
-;;KGM_074942;SL000145;Vuren, west_P;;;;;1500;450;;;
-;;KGM_024255;SL000148;Citters I, van_P1-uit;;Toerental;113.04;;388;157;;;
-;;KGM_024255;SL000149;Citters I, van_P2-uit;;Toerental;113.04;;388;157;;;
-;;KGM_024104;SL000151;Citters II, van_P1-uit;;Toerental;125.87;;326;149;;;
-;;KGM_024104;SL000152;Citters II, van_P2-uit;;Toerental;125.87;;326;149;;;
-;;KGM_000896;SL000168;Welborn_P2;;Bedrijfsstatus;8.5;;1455;875;01-01-1900;28-07-2017;
-;;KGM_000896;SL000168;Welborn_P2;;Toerental;8.5;;1455;875;28-07-2017;31-12-2099;
-;;KGM_000909;SL000176;Haaften_P;;;23;;;;;;
-;;KGM_047689;SL000183;de Vlinder_P1-in;;;53;;480;350;;;
-;;KGM_047689;SL000184;de Vlinder_P2-in;;;53;;480;350;;;
-;;KGM_023811;SL000188;Aalsdijk_P1;;;12;;58;;;;
-;;KGM_029950;SL000191;Nieuwe Brug_P1;;Bedrijfsstatus;30;;529;;01-01-1900;05-07-2021;
-;;KGM_029950;SL000191;Nieuwe Brug_P1;;Snelheid;30;;529;;05-07-2021;31-12-2099;
-;;KGM_023808;SL000193;Voorkoop I_P;;Bedrijfsstatus;9;;;;01-01-1900;16-04-2020;
-;;KGM_023808;SL000193;Voorkoop I_P;;Snelheid;9;;;;16-04-2020;31-12-2099;
-;;KGM_068860;SL000194;Voorkoop II_P;;Snelheid;9;;;;01-01-1900;31-12-2099;
-;;KGM_040704;SL000209;de Hool_P2;;;11;;720;432;;;
-;;KGM_065447;SL000226;Maurikse Wetering_P1-uit;;;54;;245;;;;
-;;KGM_065447;SL000227;Maurikse Wetering_P2-uit;;;54;;245;;;;
-;;KGM_023194;SL000230;Pander, de_P-uit;;;8.1;;;;;;
-;;KGM_023196;SL000232;Pottum_P1;;;20.5;;;;;;
-;;KGM_023192;SL000238;Willemspolder_P1-uit;;;70;;1465;879;;;
-;;KGM_023535;SL000240;Woerd, de_P1;;;6;;965;350;;;
-Schroefcentrifugaal;;KGM_000854;SL000242;Blokweer_P1;Pompvijzel;Ampere;20;39;730;0;01-01-1900;02-04-2011;2
-Schroefcentrifugaal;;KGM_000854;SL000242;Blokweer_P1;Pompvijzel;Toerental;20;39;730;0;02-04-2011;01-06-2015;2
-Schroefcentrifugaal;;KGM_000854;SL000242;Blokweer_P1;Pompvijzel;Ampere;20;39;730;0;01-06-2015;01-10-2016;2
-Schroefcentrifugaal;;KGM_000854;SL000242;Blokweer_P1;Pompvijzel;Toerental;20;39;730;0;01-10-2016;31-12-2099;2
-Schroefcentrifugaal;;KGM_000854;SL000243;Blokweer_P2;Pompvijzel;Ampere;20;39;730;0;01-01-1900;02-06-2010;2
-Schroefcentrifugaal;;KGM_000854;SL000243;Blokweer_P2;Pompvijzel;Toerental;20;39;730;0;02-06-2010;31-12-2099;2
-1;;KGM_000855;SL000245;Kortland_P;Pompvijzel;Bedrijfsstatus;14;18.4;60;0;01-01-1900;31-12-2099;2
-1;;KGM_000856;SL000246;Souburgh_P-uit;Dompelpomp;Bedrijfsstatus;4.02;11;1470;870;01-01-1900;07-02-2018;2
-1;;KGM_000856;SL000246;Souburgh_P-uit;Dompelpomp;Snelheid;4.02;11;1470;870;07-02-2018;27-05-2021;2
-;;KGM_000856;SL000246;Souburgh_P-uit;Dompelpomp;Toerental;4.02;11;1470;870;27-05-2021;31-12-2099;2
-1;;KGM_000873;SL000247;Oud-Alblas Zuidzijde_P;Pompvijzel;Bedrijfsstatus;150;137;25;0;01-01-1900;22-02-2013;2
-1;;KGM_000873;SL000247;Oud-Alblas Zuidzijde_P;Pompvijzel;Ampere;150;137;25;0;22-02-2013;31-12-2099;2
-Centrifugaalpomp;;KGM_000875;SL000248;Peilmolen_P;Pompvijzel;Toerental;10;20.5;725;10;01-01-1900;31-12-2099;2
-;;KGM_000874;SL000249;Ruigenhil_P;Dompelpomp;Bedrijfsstatus;2;;1440;;01-01-1900;15-04-2020;2
-;;KGM_000874;SL000249;Ruigenhil_P;Dompelpomp;Snelheid;2;;1440;;15-04-2020;31-12-2099;2
-1;;KGM_000857;SL000250;Grote Nes_P;Pompvijzel;Bedrijfsstatus;8;9;59;;01-01-1900;31-12-2099;2
-1;;KGM_000858;SL000251;Oud-Alblas Noordzijde_P;Pompvijzel;Ampere;57;95;34;;01-01-1900;31-12-2099;2
-1;;KGM_000849;SL000252;Wijngaarden_P;Pompvijzel;Bedrijfsstatus;45;28.5;38.6;;01-01-1900;28-08-2012;2
-1;;KGM_000849;SL000252;Wijngaarden_P;Pompvijzel;Ampere;45;28.5;38.6;;28-08-2012;20-07-2020;2
-1;;KGM_000849;SL000252;Wijngaarden_P;Pompvijzel;Bedrijfsstatus;45;28.5;38.6;;20-07-2020;31-12-2099;2
-1;;KGM_000866;SL000253;Bleskensgraaf Noordzijde_P1;Pompvijzel;Bedrijfsstatus;40;37.5;39;0;01-01-1900;04-09-2013;2
-Centrifugaalpomp;;KGM_000866;SL000253;Bleskensgraaf Noordzijde_P1;Pompvijzel;Ampere;27.5;108;740;300;04-09-2013;16-10-2020;2
-Centrifugaalpomp;;KGM_000866;SL000253;Bleskensgraaf Noordzijde_P1;Pompvijzel;Toerental;50;108;740;300;16-10-2020;31-12-2099;2
-1;;KGM_000865;SL000255;Bleskensgraaf Zuidzijde_P;Pompvijzel;Bedrijfsstatus;40;43;39;0;01-01-1900;11-09-2013;2
-Centrifugaalpomp;;KGM_000865;SL000255;Bleskensgraaf Zuidzijde_P;Pompvijzel;Ampere;27.5;128;740;300;11-09-2013;10-04-2021;2
-Centrifugaalpomp;;KGM_000865;SL000255;Bleskensgraaf Zuidzijde_P;Pompvijzel;Toerental;50;128;740;300;10-04-2021;31-12-2099;2
-1;;KGM_000868;SL000256;Brandwijk_P;Pompvijzel;Bedrijfsstatus;81;55;29.5;;01-01-1900;08-03-2013;2
-1;;KGM_000868;SL000256;Brandwijk_P;Pompvijzel;Ampere;81;55;29.5;;08-03-2013;31-12-2099;2
-1;;KGM_000861;SL000257;Zuidzijde Hofwegen_P;Pompvijzel;Bedrijfsstatus;35;30;35;;01-01-1900;22-11-2012;2
-1;;KGM_000861;SL000257;Zuidzijde Hofwegen_P;Pompvijzel;Ampere;35;30;35;;22-11-2012;22-11-2022;2
-1;;KGM_000861;SL000257;Zuidzijde Hofwegen_P;Pompvijzel;Snelheid;35;30;35;;22-11-2022;31-12-2099;2
-1;;KGM_000862;SL000258;Gijbeland_P;Pompvijzel;Bedrijfsstatus;60;52;35;20;01-01-1900;24-01-2018;2
-1;;KGM_000862;SL000258;Gijbeland_P;Pompvijzel;Toerental;60;52;35;20;24-01-2018;31-12-2099;2
-1;;KGM_000863;SL000259;Molenaarsgraaf_P;Pompvijzel;Bedrijfsstatus;220;;40;23;01-01-1900;10-06-2016;2
-1;;KGM_000863;SL000259;Molenaarsgraaf_P;Pompvijzel;Toerental;220;;40;23;10-06-2016;31-12-2099;2
-Centrifugaalpomp;;KGM_001476;SL000260;Broek en Hei_P1;Pompvijzel;Toerental;16.8;19.8;750;350;01-01-1900;31-12-2099;2
-1;;KGM_001477;SL000262;Klein Giessen_P3;Pompvijzel;Bedrijfsstatus;2.2;3.6;1400;;01-01-1900;24-01-2023;0
-1;;KGM_001477;SL000262;Klein Giessen_P3;Pompvijzel;Snelheid;2.2;3.6;1400;;24-01-2023;31-12-2099;0
-1;;KGM_000860;SL000264;Laag Blokland_P;Pompvijzel;Bedrijfsstatus;32;30;35.4;;01-01-1900;31-12-2099;2
-;;KGM_069615;SL000266;Papendrecht_P1;Pompvijzel;Bedrijfsstatus;6.7;;720;;01-01-1900;27-07-2021;2
-;;KGM_069615;SL000266;Papendrecht_P1;Pompvijzel;Snelheid;6.7;;720;;27-07-2021;31-12-2099;2
-1;;KGM_033719;SL000268;Sliedrecht Hoog_P-uit;Dompelpomp;Bedrijfsstatus;4.3;;;;01-01-1900;02-06-2021;2
-1;;KGM_033719;SL000268;Sliedrecht Hoog_P-uit;Dompelpomp;Snelheid;4.3;;;;02-06-2021;31-12-2099;2
-1;;KGM_000830;SL000269;Blommendaal_P1;Pompvijzel;Bedrijfsstatus;30;;1450;;01-01-1900;01-04-2020;2
-1;;KGM_000830;SL000269;Blommendaal_P1;Pompvijzel;Snelheid;30;;1450;;01-04-2020;31-12-2099;2
-;;KGM_000829;SL000270;Botersloot_P3;Pompvijzel;Bedrijfsstatus;20;;1460;;01-01-1900;14-01-2017;2
-;;KGM_000829;SL000270;Botersloot_P3;Pompvijzel;Snelheid;20;;1460;;14-01-2017;31-12-2099;2
-1;;KGM_000826;SL000271;Middelbroek_P;Pompvijzel;Bedrijfsstatus;170;134;26;;01-01-1900;24-10-2012;2
-1;;KGM_000826;SL000271;Middelbroek_P;Pompvijzel;Ampere;170;134;26;;24-10-2012;31-12-2099;2
-1;;KGM_000836;SL000272;Den Beemd_P;Pompvijzel;Bedrijfsstatus;55;61;32.5;;01-01-1900;12-11-2019;2
-1;;KGM_000836;SL000272;Den Beemd_P;Pompvijzel;Snelheid;55;61;32.5;;12-11-2019;31-12-2099;2
-1;;KGM_000831;SL000273;Noordzijde_P;Pompvijzel;Bedrijfsstatus;56;48;;;01-01-1900;17-04-2013;2
-1;;KGM_000831;SL000273;Noordzijde_P;Pompvijzel;Ampere;56;48;;;17-04-2013;31-12-2099;2
-1;;KGM_000834;SL000274;Groote Waard. de_P;Pompvijzel;Bedrijfsstatus;42;43;40;24;01-01-1900;28-11-2019;2
-1;;KGM_000834;SL000274;Groote Waard. de_P;Pompvijzel;Snelheid;42;43;40;24;28-11-2019;18-01-2021;2
-1;;KGM_000834;SL000274;Groote Waard. de_P;Pompvijzel;Toerental;42;43;40;24;18-01-2021;31-12-2099;2
-Centrifugaalpomp;;KGM_032801;SL000275;Lutjeswaard_P1;Pompvijzel;Toerental;10;3.9;57;;01-01-1900;02-04-2019;2
-Centrifugaalpomp;;KGM_032801;SL000275;Lutjeswaard_P1;Pompvijzel;Snelheid;10;3.9;57;;02-04-2019;31-12-2099;2
-1;;KGM_000839;SL000276;Land van de Zes Molens_P3;Pompvijzel;Bedrijfsstatus;160;137;42.0;25.0;01-01-1900;04-03-2017;2
-1;;KGM_000839;SL000276;Land van de Zes Molens_P3;Pompvijzel;Snelheid;160;137;42.0;25.0;04-03-2017;29-01-2023;2
-1;;KGM_000839;SL000276;Land van de Zes Molens_P3;Pompvijzel;Toerental;160;137;42.0;25.0;29-01-2023;31-12-2099;2
-1;;KGM_000844;SL000277;Banne van Gorinchem. de_P;Pompvijzel;Bedrijfsstatus;65;37.5;34;;01-01-1900;31-12-2099;2
-1;;KGM_000842;SL000278;Giessen Nieuwkerk_P;Pompvijzel;Bedrijfsstatus;75;50;33.5;;01-01-1900;08-05-2012;2
-1;;KGM_000842;SL000278;Giessen Nieuwkerk_P;Pompvijzel;Ampere;75;50;33.5;;08-05-2012;31-12-2099;2
-1;;KGM_000870;SL000279;Peursum_P;Pompvijzel;Bedrijfsstatus;35;40;37;;01-01-1900;05-09-2016;2
-1;;KGM_000870;SL000279;Peursum_P;Pompvijzel;Snelheid;35;40;37;;05-09-2016;31-12-2099;2
-1;;KGM_000837;SL000280;Over- en Nederslingeland_P;Pompvijzel;Bedrijfsstatus;50;45;35;;01-01-1900;06-12-2012;2
-1;;KGM_000837;SL000280;Over- en Nederslingeland_P;Pompvijzel;Ampere;50;45;35;;06-12-2012;31-12-2099;2
-1;;KGM_000833;SL000281;Nieuw Goudriaan_P;Pompvijzel;Bedrijfsstatus;50;43;;;01-01-1900;29-11-2012;2
-1;;KGM_000833;SL000281;Nieuw Goudriaan_P;Pompvijzel;Ampere;50;43;;;29-11-2012;31-12-2099;2
-1;;KGM_000828;SL000282;Oud Goudriaan_P;Pompvijzel;Bedrijfsstatus;30;30;196;;01-01-1900;25-08-2012;2
-1;;KGM_000828;SL000282;Oud Goudriaan_P;Pompvijzel;Ampere;30;30;196;;25-08-2012;31-12-2099;2
-1;;KGM_000825;SL000283;Langerak_P;Pompvijzel;Bedrijfsstatus;110;84;27;;01-01-1900;31-12-2099;2
-1;;KGM_000871;SL000284;Giessen Oude Bovenkerk_P;Pompvijzel;Bedrijfsstatus;50;60;35;;01-01-1900;14-09-2012;2
-Centrifugaalpomp;;KGM_000871;SL000284;Giessen Oude Bovenkerk_P;Pompvijzel;Ampere;50;92.5;740;300;14-09-2012;23-09-2020;2
-Centrifugaalpomp;;KGM_000871;SL000284;Giessen Oude Bovenkerk_P;Pompvijzel;Toerental;50;92.5;740;300;23-09-2020;31-12-2099;2
-1;;KGM_000869;SL000285;Ottoland_P;Pompvijzel;Bedrijfsstatus;50;43.5;37;;01-01-1900;29-01-2023;2
-1;;KGM_000869;SL000285;Ottoland_P;Pompvijzel;Snelheid;50;43.5;37;;29-01-2023;31-12-2099;2
-1;;KGM_000852;SL000286;Liesveld Graafland_P1;Pompvijzel;Bedrijfsstatus;80;125;22;11;01-01-1900;17-02-2016;2
-1;;KGM_000852;SL000286;Liesveld Graafland_P1;Pompvijzel;Toerental;157;125;22;11;17-02-2016;31-12-2099;2
-1;;KGM_000859;SL000290;Streefkerk_P;Pompvijzel;Bedrijfsstatus;150;144;25.5;;01-01-1900;28-01-2013;2
-1;;KGM_000859;SL000290;Streefkerk_P;Pompvijzel;Ampere;150;144;25.5;;28-01-2013;31-12-2099;2
-1;;KGM_000843;SL000291;Groote Haar_P;Pompvijzel;Bedrijfsstatus;30;23;38;;01-01-1900;25-01-2023;2
-1;;KGM_000843;SL000291;Groote Haar_P;Pompvijzel;Snelheid;30;23;38;;25-01-2023;31-12-2099;2
-Centrifugaalpomp;;KGM_067360;SL000293;Langerak Noord_P1;Pompvijzel;Bedrijfsstatus;8.5;10.5;735;;01-01-1900;24-07-2021;2
-Centrifugaalpomp;;KGM_067360;SL000293;Langerak Noord_P1;Pompvijzel;Snelheid;8.5;10.5;735;;24-07-2021;31-12-2099;2
-Centrifugaalpomp;;KGM_083534;SL000295;Puttenlanden_P;Pompvijzel;Toerental;4;;725;300;01-01-1900;31-12-2099;2
-;;KGM_000848;SL000302;Smit, J.U._P1;Pompvijzel;Bedrijfsstatus;420;;;;01-01-1900;31-12-2099;
-;;KGM_000848;SL000303;Smit, J.U._P2;Pompvijzel;Bedrijfsstatus;420;;;;01-01-1900;31-12-2099;
-;;KGM_000848;SL000304;Smit, J.U._P3;Pompvijzel;Bedrijfsstatus;335;;;;01-01-1900;31-12-2099;
-;;KGM_000850;SL000305;Kok, Ir. G.N. / Overwaard_P1;Pompvijzel;Bedrijfsstatus;500;;17.7;;01-01-1900;31-12-2099;
-;;KGM_000850;SL000306;Kok, Ir. G.N. / Overwaard_P2;Pompvijzel;Bedrijfsstatus;500;;17.7;;01-01-1900;31-12-2099;
-;;KGM_000850;SL000307;Kok, Ir. G.N. / Overwaard_P3;Pompvijzel;Bedrijfsstatus;500;;17.7;;01-01-1900;31-12-2099;
-;;KGM_032759;SL000308;Derde Bemalingstrap Overwaard_P11-uit;;;250;;;;01-01-1900;31-12-2099;
-;;KGM_032759;SL000309;Derde Bemalingstrap Overwaard_P5-uit;;;250;;;;01-01-1900;31-12-2099;
-;;KGM_032759;SL000310;Derde Bemalingstrap Overwaard_P6-uit;;;250;;;;01-01-1900;31-12-2099;
-;;KGM_032759;SL000311;Derde Bemalingstrap Overwaard_P7-uit;;;250;;;;01-01-1900;31-12-2099;
-;;KGM_032759;SL000312;Derde Bemalingstrap Overwaard_P8-uit;;;250;;;;01-01-1900;31-12-2099;
-;;KGM_032759;SL000313;Derde Bemalingstrap Overwaard_P9-uit;;;250;;;;01-01-1900;31-12-2099;
-Centrifugaalpomp;;KGM_067107;SL000323;Ameide, Broekseweg_P1;Pompvijzel;Frequentie;3.6;;1459;500;01-01-1900;31-12-2099;2
-;;KGM_045206;SL000325;Meerkerk Broekseweg_P1;Dompelpomp;Frequentie;2.33;3.3;1440;700;12-03-2015;27-01-2022;2
-;;KGM_045206;SL000325;Meerkerk Broekseweg_P1;Dompelpomp;Toerental;2.33;3.3;1440;700;27-01-2022;31-12-2099;2
-1;;KGM_000846;SL000329;Hardinxveld Zuid_P1-uit;Pompvijzel;Bedrijfsstatus;30;55;980;;01-01-1900;31-12-2099;2
-;;KGM_044486;SL000331;De Zouwe Kooiplas_P2011-uit;Dompelpomp;Toerental;1;;;;01-01-1900;31-12-2099;
-;;KGM_044486;SL000332;De Zouwe Kooiplas_P2021-in;Dompelpomp;Toerental;1;;;;01-01-1900;31-12-2099;
-;;KGM_044485;SL000334;Nieuwendijk Lage Boezem_P;Dompelpomp;Ampere;22;;2785;;01-01-1900;07-07-2022;
-;;KGM_044485;SL000334;Nieuwendijk Lage Boezem_P;Dompelpomp;Snelheid;22;;2785;;07-07-2022;31-12-2099;
-1;;KGM_000867;SL000336;Sliedrecht_P;Pompvijzel;Bedrijfsstatus;170;;;;01-01-1900;31-12-2099;2
-1;;KGM_032815;SL000337;Papendrecht Hoog_P1-uit;Dompelpomp;Bedrijfsstatus;9;;;;01-01-1900;31-12-2099;
-Centrifugaalpomp;;KGM_012062;SL000339;Schanspolder_P1-uit;Pompvijzel;Bedrijfsstatus;5;;1430;900;01-01-1900;23-01-2023;
-Centrifugaalpomp;;KGM_012062;SL000339;Schanspolder_P1-uit;Pompvijzel;Toerental;5;;1430;900;23-01-2023;31-12-2099;
-;;KGM_012062;SL000340;Schanspolder_P2-in;Dompelpomp;Bedrijfsstatus;1;;;;01-01-1900;31-12-2099;
-;;KGM_032664;SL000341;Beneden Stad. de_P;Dompelpomp;Bedrijfsstatus;0.5;;;;01-01-1900;18-02-2023;
-;;KGM_032664;SL000341;Beneden Stad. de_P;Dompelpomp;Snelheid;0.5;;;;18-02-2023;31-12-2099;
-;;KGM_061728;SL000342;BRW 22-9_P1;Dompelpomp;Snelheid;1;;;;01-01-1900;31-12-2099;
-;;KGM_000851;SL000344;Liesveld Achterland (verwijderd)_P;Pompvijzel;Bedrijfsstatus;60;;;;01-01-1900;31-12-2099;
-Centrifugaalpomp;;KGM_032819;SL000345;Peulen, de_P-in;Pompvijzel;Bedrijfsstatus;70;;970;580;01-01-1900;31-12-2099;2
-Centrifugaalpomp;;KGM_055447;SL000346;Merwebolder_P;Pompvijzel;Bedrijfsstatus;5;;;;01-01-1900;03-02-2020;
-Centrifugaalpomp;;KGM_055447;SL000346;Merwebolder_P;Pompvijzel;Snelheid;5;;;;03-02-2020;31-12-2099;
-;;KGM_065219;SL000347;Nieuwland Parc, Inlaat_P-in;;;;;2905;1475;;;
-;;KGM_065220;SL000348;Nieuwland Parc, UItlaat_P-uit;;;;;;;;;2
-;;KGM_033812;SL000349;Ringerstraat_P;Dompelpomp;Bedrijfsstatus;0.5;;;;01-01-1900;05-08-2020;
-;;KGM_033812;SL000349;Ringerstraat_P;Dompelpomp;Snelheid;0.5;;;;05-08-2020;31-12-2099;
-;;KGM_055448;SL000350;Waerthove_P-uit;Dompelpomp;Bedrijfsstatus;2.33;;;;01-01-1900;05-08-2020;
-;;KGM_055448;SL000350;Waerthove_P-uit;Dompelpomp;Snelheid;2.33;;;;05-08-2020;31-12-2099;
-;;KGM_033805;SL000351;Ameide_P-in;Dompelpomp;Toerental;18;30;965;580;01-01-1900;31-12-2099;
-;;KGM_062449;SL000352;Hardinxveld Nieuweweg_P1-uit;Dompelpomp;Toerental;7.58;;965;800;01-01-1900;31-12-2099;
-;;KGM_062449;SL000353;Hardinxveld Nieuweweg_P2-uit;Dompelpomp;Toerental;7.58;;965;800;01-01-1900;31-12-2099;
-;;KGM_054544;SL000354;Tiendweg-Zijdeweg_P;Pompvijzel;Toerental;6.65;;1465;880;01-01-1900;31-12-2099;
-;;KGM_000847;SL000355;Kolff, Mr. Dr. G._P1-uit-in;;;1200;;1800;;;;
-;;KGM_000847;SL000356;Kolff, Mr. Dr. G._P2-uit;;;1200;;1800;;;;
-;;KGM_000847;SL000357;Kolff, Mr. Dr. G._P3-uit;;;1200;;1800;;;;
-;;KGM_023203;SL000364;Waaij, de_P1;;;30;;;;;;
-;;KGM_023204;SL000373;Mars, de_P;;;7.5;;;;;;
-;;KGM_023207;SL000374;Maten, de_P;;;2.5;;;;;;
-;;KGM_023206;SL000377;Opheusden_P-in;;;20.5;;32.7;;;;
-;;KGM_023205;SL000378;Oude Rijn_P1;;Ampere;20;;960;575;01-01-1900;30-08-2016;
-;;KGM_023205;SL000378;Oude Rijn_P1;;Snelheid;20;;960;575;30-08-2016;11-01-2023;
-;;KGM_023205;SL000378;Oude Rijn_P1;;Toerental;20;;960;575;11-01-2023;31-12-2099;
-;;KGM_023209;SL000383;Zwartjes_P1-in;;;5;;;;;;
-;;KGM_031884;SL000391;Drumpt_P-in;;;6;;;;;;
-fSL000275;;KGM_074516;SL000396;Spoorsingel Tiel_P;;;;;720;430;;;
-;;KGM_047074;SL000400;Binnen Kievitswaard_P1-uit;;;7.22;;1408;1014;;;
-;;KGM_047072;SL000402;Happenhennip_P1-uit;;;19.13;;735;373;;;
-;;KGM_047075;SL000404;Kleine Zalm_P1-uit;;;5.76;;885;673;;;
-;;KGM_047078;SL000406;t Kooike_P1-uit;;;8.21;;1450;845;;;
-;;KGM_047073;SL000408;Middelste Kievitswaard_P1-uit;;;18.45;;708;359;;;
-;;KGM_047077;SL000410;Steenenmuur_P1-uit;;;32.62;;580;348;;;
-;;KGM_047066;SL000412;Steurgat_P1-uit;;;13.58;;708;431;;;
-;;KGM_047076;SL000414;Vogelenzang_P1-uit;;;15.42;;697;363;;;
-;;KGM_024096;SL000419;Hollandsch-Duitschgemaal_P1-uit;;;240;;290;;;;
-;;KGM_024096;SL000420;Hollandsch-Duitschgemaal_P2-uit;;;240;;290;;;;
-;;KGM_024096;SL000421;Hollandsch-Duitschgemaal_P3-uit;;;240;;290;;;;
-;;KGM_024096;SL000422;Hollandsch-Duitschgemaal_P4-uit;;;240;;290;;;;
-;;KGM_034191;SL000424;Hubertusweg_P;;;10;;;;;;
-;;KGM_023201;SL000429;Duisterestraat_P1-in;Schroefcentrifugaal;Bedrijfsstatus;60;;526;;01-01-1900;10-03-2016;
-;;KGM_023201;SL000429;Duisterestraat_P1-in;Schroefcentrifugaal;Ampere;60;;526;;10-03-2016;31-12-2099;
-;;KGM_023200;SL000440;Krakkedel_P-in;;;60;;735;365;;;
-;;KGM_072380;SL000445;Tuin van Elden_P;;;;;;;;;
-;;KGM_023297;SL000466;Gesperdensestraat_P1-uit;;;;;730;440;;;
-;;KGM_023297;SL000467;Gesperdensestraat_P3-uit;;;;;730;440;;;
-;;KGM_023210;SL000469;Hemmense Zandweg_P1-in;;;8;;;;;;
-;;KGM_032823;SL000484;Circulatiegemaal Schuytgraaf_P1;;;;;470;282;;;
-;;KGM_023211;SL000486;Weerbroek_P;;;9;;720;350;;;
-;;KGM_032701;SL000495;Bulkheuvel_P;;;6;;1000;;;;
-;;KGM_000908;SL000498;Ophemert_P1;;;2;;;;;;
-;;KGM_023815;SL000504;Wadenoijen_P1-in;;;81;;33;15;01-01-1900;31-12-2099;
-;;KGM_000910;SL000506;Weiweg_P;;;9;;;;;;
-;;KGM_041274;SL000514;Alphen_P;;;6;;;;;;
-;;KGM_024106;SL000515;Aspert, de_P;;Bedrijfsstatus;;;575;345;01-01-1900;28-01-2016;
-;;KGM_024106;SL000515;Aspert, de_P;;Toerental;;;575;345;28-01-2016;31-12-2099;
-;;KGM_024395;SL000523;Wely, J. van_P2;;;45;;582;350;;;
-;;KGM_024105;SL000528;Haasje, het_P;;;8;;1455;870;;;
-;;KGM_024099;SL000543;De Ruivert_P;;;4;;970;580;;;
-;;KGM_024107;SL000544;Scharenburg_P;;;10;;583;350;;;
-;;KGM_024396;SL000550;Willem Alexanderbrug_P1;;;12;;;;;;
-;;KGM_000876;SL000560;Altena_P1-uit;;;320;;192;;;;
-;;KGM_000876;SL000561;Altena_P2-uit;;;320;;192;;;;
-;;KGM_000876;SL000562;Altena_P3-uit;;;320;;192;;;;
-;;KGM_032668;SL000565;Beuningen, H.A. van_P1-in;;;480;;123;74;;;
-;;KGM_032668;SL000566;Beuningen, H.A. van_P2-uit;;;480;;123;74;;;
-;;KGM_000884;SL000570;Bruinekil_P1-uit;;;52.5;;750;;;;
-;;KGM_000884;SL000571;Bruinekil_P2-uit;;;52.5;;750;;;;
-;;KGM_000891;SL000573;Oostkil_P1-uit;;;88;;281;169;;;
-;;KGM_000891;SL000574;Oostkil_P2-uit;;;88;;281;169;;;
-;;KGM_032776;SL000578;Galg_P-in;;Bedrijfsstatus;4;;;;01-01-1900;03-07-2016;
-;;KGM_032776;SL000578;Galg_P-in;;Snelheid;4;;;;03-07-2016;31-12-2099;
-;;KGM_067320;SL000579;Startstraat_P1;;;20;;;;;;
-;;KGM_032764;SL000582;Drielandenpunt_P2-uit;;;24;;;;;;
-;;KGM_032820;SL000587;Prins Bernhardsluizen_P1-in;;;10;;710;426;;;
-;;KGM_033813;SL000590;Tolsteeg Tunnel_P1;Dompelpomp;Bedrijfsstatus;0.5;;;;01-01-1900;31-12-2099;
-;;KGM_032792;SL000595;Inundatiekanaal_P-uit;;;19;;585;350;;;
-;;KGM_011717;SL000598;Hondekooi_P1;;;7.5;;720;420;;;
-;;KGM_055747;SL000601;Loosdorp_P1;;Ampere;;;;;01-01-1900;07-11-2021;2
-;;KGM_055747;SL000601;Loosdorp_P1;;Toerental;;;1459;350;07-11-2021;31-12-2099;2
-;;KGM_089912;SL000604;Vianen Jachthaven (noodpomp)_P;;;;;;;;;
-;;KGM_0113672;SL000609;Hagoort Lagepand_P1-uit;;;210;;;;;;
-;;KGM_0113672;SL000610;Hagoort Lagepand_P2-uit;;;210;;;;;;
-;;KGM_000893;SL000611;Hagoort Hogepand_P3-uit;;;260;;;;;;
-1;;KGM_040713;SL000621;Baanhoek 1_P-uit;Pompvijzel;Toerental;0.4;;734;;01-01-1900;31-12-2099;
-1;;KGM_040714;SL000622;Baanhoek 2_P-uit;Pompvijzel;Toerental;0.4;;734;;01-01-1900;31-12-2099;
-;;KGM_000878;SL000625;Uiterwaarden_P1-uit;;;9;;;;;;
-;;KGM_000878;SL000626;Uiterwaarden_P2-in;;;3;;;;;;
-;;KGM_032838;SL000627;Wijk en Aalburg_P1-in;;;25;;;;;;
-;;KGM_032838;SL000628;Wijk en Aalburg_P2-in;;;25;;;;;;
-;;KGM_000901;SL000629;Buurmalsen_P1-uit;;;46;;335;;;;
-;;KGM_000901;SL000630;Buurmalsen_P2-in;;;40;;340;;;;
-;;KGM_043818;SL000635;Stadsgracht Tiel_P-in;;;;;990;;;;
-;;KGM_043406;SL000638;Circulatiegemaal Breekenhof_P2;;;5;;1400;;01-01-1900;31-05-2023;
-;;KGM_043406;SL000638;Circulatiegemaal Breekenhof_P2;;;5;;710;430;31-05-2023;31-12-2099;
-;;KGM_032787;SL000640;Huyenkamp_P;;;24;;;;;;
-;;KGM_023202;SL000641;Pannerling_P1-in;;;240;;;;;;
-;;KGM_023202;SL000642;Pannerling_P2-in;;;240;;;;;;
-;;KGM_032828;SL000644;Sillesstraat_P;;;9;;720;;;;
-;;KGM_032835;SL000645;Vredenburg_P;;;12.4;;;;;;
-;;KGM_034439;SL000646;Singel Eiland Laauwik_P1;;;;;;;;;
-;;KGM_034439;SL000647;Singel Eiland Laauwik_P2;;;;;;;;;
-;;KGM_052692;SL000648;K14 weefgewichtstraat_P;;;;;;;;;
-;;KGM_043585;SL000649;Circulatie HF Westeraam_P;;;;;;;;;
-1;;KGM_000845;SL000650;Hardinxveld Noord_P;Pompvijzel;Bedrijfsstatus;40;;;;01-01-1900;14-12-2012;2
-1;;KGM_000845;SL000650;Hardinxveld Noord_P;Pompvijzel;Ampere;40;15;;;14-12-2012;03-10-2022;2
-1;;KGM_000845;SL000650;Hardinxveld Noord_P;Pompvijzel;Snelheid;40;;;;03-10-2022;31-12-2099;2
-1;;KGM_000853;SL000651;Nieuw Lekkerland_P;Pompvijzel;Bedrijfsstatus;85;;;;01-01-1900;24-10-2012;2
-1;;KGM_000853;SL000651;Nieuw Lekkerland_P;Pompvijzel;Ampere;85;89;;;24-10-2012;31-12-2099;2
-;;KGM_000840;SL000653;Arkel_P1-uit;;Bedrijfsstatus;125;;206;;01-01-1900;15-05-2009;
-;;KGM_000840;SL000653;Arkel_P1-uit;;Frequentie;125;;;;15-05-2009;31-12-2099;
-;;KGM_000840;SL000654;Arkel_P2-uit;;Bedrijfsstatus;125;;206;;01-01-1900;08-09-2010;
-;;KGM_000840;SL000654;Arkel_P2-uit;;Frequentie;125;;;;08-09-2010;31-12-2099;
-;;KGM_000819;SL000655;Autena_P-uit;;;70;;;;;;
-;;KGM_000823;SL000656;Heicop_P-uit;Pompvijzel;Pompsnelheid;85;;;;01-01-1900;02-03-2014;
-;;KGM_000823;SL000656;Heicop_P-uit;Pompvijzel;Pompsnelheid;85;;295;;02-03-2014;31-12-2099;
-;;KGM_024458;SL000657;Hoef en Haag_P-in;;;50;;985;200;;;
-;;KGM_000841;SL000658;Kedichem_P-uit;;;70;;;;;;
-;;KGM_012111;SL000660;Middelkoop_P1-uit;;Bedrijfsstatus;80;;;;01-01-1900;15-04-2013;
-;;KGM_012111;SL000660;Middelkoop_P1-uit;;Toerental;80;;;;15-04-2013;31-12-2099;
-;;KGM_012111;SL000661;Middelkoop_P2-uit;;Bedrijfsstatus;80;;;;01-01-1900;15-04-2013;
-;;KGM_012111;SL000661;Middelkoop_P2-uit;;Toerental;80;;;;15-04-2013;31-12-2099;
-;;KGM_012110;SL000662;Lakerveld_P1-uit;Pompvijzel;Bedrijfsstatus;95;;422;;;;
-;;KGM_012110;SL000663;Lakerveld_P2-uit;Pompvijzel;Bedrijfsstatus;95;;422;;;;
-;;KGM_012136;SL000664;Boven-Huibert_P1;;Toerental;;;;;01-01-1900;14-09-2019;
-;;KGM_012136;SL000664;Boven-Huibert_P1;;Ampere;;;;;14-09-2019;07-06-2023;
-;;KGM_012136;SL000664;Boven-Huibert_P1;;Toerental;;;;;07-06-2023;31-12-2099;
-;;KGM_000822;SL000666;Lam, D.W. het_P1-uit;;Toerental;115;;;;01-01-1900;31-12-2099;
-;;KGM_000822;SL000667;Lam, D.W. het_P2-uit;;Toerental;115;;;;01-01-1900;31-12-2099;
-;;KGM_000905;SL000668;Laar, de_P1-uit;;;155;;179;;;;
-;;KGM_000905;SL000669;Laar, de_P2-uit;;;155;;179;;;;
-;;KGM_000905;SL000670;Laar, de_P3-uit;;;155;;179;;;;
-;;KGM_034436;SL000673;Vlek 20 K6_P1;;;;;;;;;
-;;KGM_034436;SL000674;Vlek 20 K6_P2;;;;;;;;;
-;;KGM_034368;SL000676;K2 Oosterhoutseplas_P1;;;;;;;;;
-;;KGM_034368;SL000677;K2 Oosterhoutseplas_P2;;;;;;;;;
-;;KGM_023197;SL000679;Drielsedijk_P1-uit;;;240;;;;;;
-;;KGM_023197;SL000680;Drielsedijk_P2-uit;;;240;;;;;;
-;;KGM_023197;SL000681;Drielsedijk_P3-uit;;;120;;;;;;
-;;KGM_024098;SL000682;Ufford, Quarles van_P2-uit;;;356;;250;;;;
-;;KGM_024098;SL000683;Ufford, Quarles van_P3-uit;;;356;;250;;;;
-;;KGM_024098;SL000684;Ufford, Quarles van_P4-uit;;;356;;250;;;;
-;;KGM_012139;SL000687;Nieuwe Horn_P1-uit;;;236;;210;;;;
-;;KGM_012139;SL000688;Nieuwe Horn_P2-uit;;;247;;210;;;;
-;;KGM_032662;SL000689;Baanbreker, de_P1-uit;;;250;;250;;;;
-;;KGM_032662;SL000690;Baanbreker, de_P2-uit;;;250;;250;;;;
-;;KGM_000880;SL000693;Poortweg_P1-uit;;;50;;;;;;
-;;KGM_000880;SL000694;Poortweg_P2-uit;;;50;;;;;;
-;;KGM_001238;SL000695;Oostersingel_P1;;;4;;;;;;
-;;KGM_000894;SL000697;Weidsteeg_P2;;;4;;;;;;
-;;KGM_068244;SL000700;Parijsch_P;;Toerental;;;1450;870;01-01-1900;31-12-2099;
-;;KGM_000835;SL000703;Schaaijk_P-uit;;Bedrijfsstatus;80;;270;189;01-01-1900;08-03-2018;
-;;KGM_000835;SL000703;Schaaijk_P-uit;;Toerental;80;;270;189;08-03-2018;31-12-2099;
-;;KGM_069220;SL000705;Neust, de_P1-in-uit;;;118.88;;372;225;;;
-;;KGM_069220;SL000706;Neust, de_P2-uit;;;142.13;;372;225;;;
-;;KGM_069220;SL000707;Neust, de_P3-uit;;;142.13;;372;225;;;
-;;KGM_000897;SL000712;Vretstrooi_P;;;75;173;585;385;;;
-;;KGM_042745;SL000717;Kom Lekdijk_P2-uit;;Bedrijfsstatus;;;965;740;01-01-1900;23-08-2019;
-;;KGM_042745;SL000717;Kom Lekdijk_P2-uit;;Snelheid;;;965;740;23-08-2019;31-12-2099;
-;;KGM_042745;SL000718;Kom Lekdijk_P1-in;;Bedrijfsstatus;;;965;740;01-01-1900;23-08-2019;
-;;KGM_042745;SL000718;Kom Lekdijk_P1-in;;Snelheid;;;965;740;23-08-2019;02-04-2023;
-;;KGM_042745;SL000718;Kom Lekdijk_P1-in;;Toerental;;;965;740;02-04-2023;31-12-2099;
-;;KGM_000818;SL000720;Bloemendaal_P1-uit;;Bedrijfsstatus;80.96;;575;327;01-01-1900;15-12-2016;
-;;KGM_000818;SL000720;Bloemendaal_P1-uit;;Toerental;80.96;;575;327;15-12-2016;31-12-2099;
-;;KGM_063021;SL000728;Winssense waarden_P;;;;;980;588;;;
-;;KGM_000900;SL000730;Tricht (verwijderd)_P1-uit;;;109;;;;;;
-;;KGM_000900;SL000731;Tricht (verwijderd)_P2-uit;;;109;;;;;;
-;;KGM_032842;SL000745;Zwanenwater (verwijderd)_P;;;4;;;;;;
-;;KST_043586;SL000746;HF Westeraam inlaat_P;;;;;;;;;
-;;KGM_043587;SL000747;HF Westeraam recirculatie_P1;;;;;;;;;
-;;KGM_058168;SL000748;Broekse Sluis, Heukelum_P2-uit;;;180;;230;;;;
-;;KGM_058168;SL000749;Broekse Sluis, Heukelum_P3-uit;;;180;;230;;;;
-;;KGM_058169;SL000750;Broekse Sluis, Spijk_P1-uit;;;150;;215;;;;
-;;KGM_043587;SL000758;HF Westeraam recirculatie_P2;;;;;;;;;
+Versie1_ALB;GlobalpompID;OBJECTID;CODE;NAAM;TYPEPOMP;TYPEFORMULE;POMPCAP;MAX_AMPERE;MAX_TOER;MIN_TOER;OBJECTBEGI;OBJECTEIND;GECONTROLEERD;OC_TEST;OC_PROD
+;;KGM_000920;SL000004;Alem_P1-uit;;;35;;1410;450;;;;;
+;;KGM_000920;SL000005;Alem_P2-in;;;6;;1410;450;;;;;
+;;KGM_032659;SL000006;Oever, H. van de_P3-uit;;;;;;;;;;;
+;;KGM_032779;SL000010;Hedel_P-in;;;70;;985;590;;;;;
+;;KGM_056853;SL000012;Hogeweg Rossum_P1;;;8;;970;600;;;;;
+;;KGM_000923;SL000015;Kerkwijkse Kade_P1;;;8;;945;567;;;;;
+;;KGM_000924;SL000017;Kievitsham_P;;;2;;1450;870;;;;;
+;;KGM_000927;SL000019;Meersloot_P;;;20;;700;420;;;;;
+;;KGM_000919;SL000023;Stuvers_P-in;;;100;;495;297;;;;;
+;;KGM_000925;SL000027;Weigraaf_P;;;20;;612;367;;;;;
+;;KGM_081871;SL000031;Berenskamp_P;;;;;955;910;;;;;
+;;KGM_032666;SL000032;Bern_P1-in-uit;;;50;;1470;177.753;;;;;
+;;KGM_032666;SL000033;Bern_P2-uit;;;8;;1470;177.753;;;;;
+;;KGM_056493;SL000034;Eendenkade_P1;;;;;;;;;;;
+;;KGM_000916;SL000036;Heemstraweg, van_P1;;;20;;;;;;;;
+;;KGM_000922;SL000042;Rietschoof, de_P-uit;;;50;;741;445;;;;;
+;;KGM_000918;SL000046;Dam van Brakel, Van_P1-uit;;;82.5;;;;;;;;
+;;KGM_000918;SL000047;Dam van Brakel, Van_P2-uit;;;82.5;;;;;;;;
+;;KGM_011720;SL000049;Leuvenveldseweg_P1;;;2;;920;552;;;;;
+;;KGM_011719;SL000051;Molenkampseweg_P1;;;5;;950;570;;;;;
+;;KGM_032802;SL000053;Rossum, Maarten van_P1;;;3;;920;552;;;;;
+;;KGM_000926;SL000056;Kooiheuvel_P;;;20;;;;;;;;
+;;KGM_001090;SL000060;Rampert, de_P;;;20;;;;;;;;
+;;KGM_032953;SL000061;Huizendijk_P;;;15.9;;;;;;;;
+;;KGM_047231;SL000062;Hurwenen_P-uit;;;50;;;;;;;;
+;;KGM_032793;SL000063;Jongh, H.C. de_P1-uit;;;200;;300;;;;;;
+;;KGM_032793;SL000064;Jongh, H.C. de_P2-in-uit;;;120;;413;;;;;;
+;;KGM_032803;SL000069;Maas en Waalweg_P;;;2.2;;1459;750;;;;;
+;;KGM_064468;SL000079;Schenkeldijk_P1;;;2;;;;;;;;
+;;KGM_024108;SL000091;Bloemers_P1-uit;;;242.7;;314;157;;;;;
+;;KGM_024108;SL000092;Bloemers_P2-uit;;;242.7;;314;157;;;;;
+;;KGM_024108;SL000093;Bloemers_P3-uit;;;242.7;;314;157;;;;;
+;;KGM_024108;SL000094;Bloemers_VL4-uit;;;;;;;;;;;
+;;KGM_024095;SL000105;Malden_P-uit;;;20;;732;366;;;;;
+;;KGM_032810;SL000106;Neerbosch_P-uit;;;30;;485;240;;;;;
+;;KGM_023208;SL000135;Kuijk, Mr. G.J.H._P1-uit;;;420;;104;53;;;;;
+;;KGM_023208;SL000136;Kuijk, Mr. G.J.H._P2-in-uit;;;280;;320;240;;;;;
+;;KGM_023208;SL000137;Kuijk, Mr. G.J.H._P3-uit;;;420;;104;53;;;;;
+;;KGM_000906;SL000141;Heukelum_P;;;8;;;;;;;;
+;;KGM_074942;SL000145;Vuren, west_P;;;;;1500;450;;;;;
+;;KGM_024255;SL000148;Citters I, van_P1-uit;;Toerental;113.04;;388;157;;;;;
+;;KGM_024255;SL000149;Citters I, van_P2-uit;;Toerental;113.04;;388;157;;;;;
+;;KGM_024104;SL000151;Citters II, van_P1-uit;;Toerental;125.87;;326;149;;;;;
+;;KGM_024104;SL000152;Citters II, van_P2-uit;;Toerental;125.87;;326;149;;;;;
+;;KGM_000896;SL000168;Welborn_P2;;Bedrijfsstatus;8.5;;1455;875;01-01-1900;28-07-2017;;;
+;;KGM_000896;SL000168;Welborn_P2;;Toerental;8.5;;1455;875;28-07-2017;31-12-2099;;;
+;;KGM_000909;SL000176;Haaften_P;;;23;;;;;;;;
+;;KGM_047689;SL000183;de Vlinder_P1-in;;;53;;480;350;;;;;
+;;KGM_047689;SL000184;de Vlinder_P2-in;;;53;;480;350;;;;;
+;;KGM_023811;SL000188;Aalsdijk_P1;;;12;;58;;;;;;
+;;KGM_029950;SL000191;Nieuwe Brug_P1;;Bedrijfsstatus;30;;529;;01-01-1900;05-07-2021;;;
+;;KGM_029950;SL000191;Nieuwe Brug_P1;;Snelheid;30;;529;;05-07-2021;31-12-2099;;;
+;;KGM_023808;SL000193;Voorkoop I_P;;Bedrijfsstatus;9;;;;01-01-1900;16-04-2020;;;
+;;KGM_023808;SL000193;Voorkoop I_P;;Snelheid;9;;;;16-04-2020;31-12-2099;;;
+;;KGM_068860;SL000194;Voorkoop II_P;;Snelheid;9;;;;01-01-1900;31-12-2099;;;
+;;KGM_040704;SL000209;de Hool_P2;;;11;;720;432;;;;;
+;;KGM_065447;SL000226;Maurikse Wetering_P1-uit;;;54;;245;;;;;;
+;;KGM_065447;SL000227;Maurikse Wetering_P2-uit;;;54;;245;;;;;;
+;;KGM_023194;SL000230;Pander, de_P-uit;;;8.1;;;;;;;;
+;;KGM_023196;SL000232;Pottum_P1;;;20.5;;;;;;;;
+;;KGM_023192;SL000238;Willemspolder_P1-uit;;;70;;1465;879;;;;;
+;;KGM_023535;SL000240;Woerd, de_P1;;;6;;965;350;;;;;
+Schroefcentrifugaal;;KGM_000854;SL000242;Blokweer_P1;Pompvijzel;Ampere;20;39;730;0;01-01-1900;02-04-2011;2;;
+Schroefcentrifugaal;;KGM_000854;SL000242;Blokweer_P1;Pompvijzel;Toerental;20;39;730;0;02-04-2011;01-06-2015;2;;
+Schroefcentrifugaal;;KGM_000854;SL000242;Blokweer_P1;Pompvijzel;Ampere;20;39;730;0;01-06-2015;01-10-2016;2;;
+Schroefcentrifugaal;;KGM_000854;SL000242;Blokweer_P1;Pompvijzel;Toerental;20;39;730;0;01-10-2016;31-12-2099;2;;
+Schroefcentrifugaal;;KGM_000854;SL000243;Blokweer_P2;Pompvijzel;Ampere;20;39;730;0;01-01-1900;02-06-2010;2;;
+Schroefcentrifugaal;;KGM_000854;SL000243;Blokweer_P2;Pompvijzel;Toerental;20;39;730;0;02-06-2010;31-12-2099;2;;
+1;;KGM_000855;SL000245;Kortland_P;Pompvijzel;Bedrijfsstatus;14;18.4;60;0;01-01-1900;31-12-2099;2;;
+1;;KGM_000856;SL000246;Souburgh_P-uit;Dompelpomp;Bedrijfsstatus;4.02;11;1470;870;01-01-1900;07-02-2018;2;;
+1;;KGM_000856;SL000246;Souburgh_P-uit;Dompelpomp;Snelheid;4.02;11;1470;870;07-02-2018;27-05-2021;2;;
+;;KGM_000856;SL000246;Souburgh_P-uit;Dompelpomp;Toerental;4.02;11;1470;870;27-05-2021;31-12-2099;2;;
+1;;KGM_000873;SL000247;Oud-Alblas Zuidzijde_P;Pompvijzel;Bedrijfsstatus;150;137;25;0;01-01-1900;22-02-2013;2;;
+1;;KGM_000873;SL000247;Oud-Alblas Zuidzijde_P;Pompvijzel;Ampere;150;137;25;0;22-02-2013;31-12-2099;2;;
+Centrifugaalpomp;;KGM_000875;SL000248;Peilmolen_P;Pompvijzel;Toerental;10;20.5;725;10;01-01-1900;31-12-2099;2;;
+;;KGM_000874;SL000249;Ruigenhil_P;Dompelpomp;Bedrijfsstatus;2;;1440;;01-01-1900;15-04-2020;2;;
+;;KGM_000874;SL000249;Ruigenhil_P;Dompelpomp;Snelheid;2;;1440;;15-04-2020;31-12-2099;2;;
+1;;KGM_000857;SL000250;Grote Nes_P;Pompvijzel;Bedrijfsstatus;8;9;59;;01-01-1900;31-12-2099;2;;
+1;;KGM_000858;SL000251;Oud-Alblas Noordzijde_P;Pompvijzel;Ampere;57;95;34;;01-01-1900;31-12-2099;2;;
+1;;KGM_000849;SL000252;Wijngaarden_P;Pompvijzel;Bedrijfsstatus;45;28.5;38.6;;01-01-1900;28-08-2012;2;;
+1;;KGM_000849;SL000252;Wijngaarden_P;Pompvijzel;Ampere;45;28.5;38.6;;28-08-2012;20-07-2020;2;;
+1;;KGM_000849;SL000252;Wijngaarden_P;Pompvijzel;Bedrijfsstatus;45;28.5;38.6;;20-07-2020;31-12-2099;2;;
+1;;KGM_000866;SL000253;Bleskensgraaf Noordzijde_P1;Pompvijzel;Bedrijfsstatus;40;37.5;39;0;01-01-1900;04-09-2013;2;;
+Centrifugaalpomp;;KGM_000866;SL000253;Bleskensgraaf Noordzijde_P1;Pompvijzel;Ampere;27.5;108;740;300;04-09-2013;16-10-2020;2;;
+Centrifugaalpomp;;KGM_000866;SL000253;Bleskensgraaf Noordzijde_P1;Pompvijzel;Toerental;50;108;740;300;16-10-2020;31-12-2099;2;;
+1;;KGM_000865;SL000255;Bleskensgraaf Zuidzijde_P;Pompvijzel;Bedrijfsstatus;40;43;39;0;01-01-1900;11-09-2013;2;;
+Centrifugaalpomp;;KGM_000865;SL000255;Bleskensgraaf Zuidzijde_P;Pompvijzel;Ampere;27.5;128;740;300;11-09-2013;10-04-2021;2;;
+Centrifugaalpomp;;KGM_000865;SL000255;Bleskensgraaf Zuidzijde_P;Pompvijzel;Toerental;50;128;740;300;10-04-2021;31-12-2099;2;;
+1;;KGM_000868;SL000256;Brandwijk_P;Pompvijzel;Bedrijfsstatus;81;55;29.5;;01-01-1900;08-03-2013;2;;
+1;;KGM_000868;SL000256;Brandwijk_P;Pompvijzel;Ampere;81;55;29.5;;08-03-2013;31-12-2099;2;;
+1;;KGM_000861;SL000257;Zuidzijde Hofwegen_P;Pompvijzel;Bedrijfsstatus;35;30;35;;01-01-1900;22-11-2012;2;;
+1;;KGM_000861;SL000257;Zuidzijde Hofwegen_P;Pompvijzel;Ampere;35;30;35;;22-11-2012;22-11-2022;2;;
+1;;KGM_000861;SL000257;Zuidzijde Hofwegen_P;Pompvijzel;Snelheid;35;30;35;;22-11-2022;31-12-2099;2;;
+1;;KGM_000862;SL000258;Gijbeland_P;Pompvijzel;Bedrijfsstatus;60;52;35;20;01-01-1900;24-01-2018;2;;
+1;;KGM_000862;SL000258;Gijbeland_P;Pompvijzel;Toerental;60;52;35;20;24-01-2018;31-12-2099;2;;
+1;;KGM_000863;SL000259;Molenaarsgraaf_P;Pompvijzel;Bedrijfsstatus;220;;40;23;01-01-1900;10-06-2016;2;;
+1;;KGM_000863;SL000259;Molenaarsgraaf_P;Pompvijzel;Toerental;220;;40;23;10-06-2016;31-12-2099;2;;
+Centrifugaalpomp;;KGM_001476;SL000260;Broek en Hei_P1;Pompvijzel;Toerental;16.8;19.8;750;350;01-01-1900;31-12-2099;2;;
+1;;KGM_001477;SL000262;Klein Giessen_P3;Pompvijzel;Bedrijfsstatus;2.2;3.6;1400;;01-01-1900;24-01-2023;0;;
+1;;KGM_001477;SL000262;Klein Giessen_P3;Pompvijzel;Snelheid;2.2;3.6;1400;;24-01-2023;31-12-2099;0;;
+1;;KGM_000860;SL000264;Laag Blokland_P;Pompvijzel;Bedrijfsstatus;32;30;35.4;;01-01-1900;31-12-2099;2;;
+;;KGM_069615;SL000266;Papendrecht_P1;Pompvijzel;Bedrijfsstatus;6.7;;720;;01-01-1900;27-07-2021;2;;
+;;KGM_069615;SL000266;Papendrecht_P1;Pompvijzel;Snelheid;6.7;;720;;27-07-2021;31-12-2099;2;;
+1;;KGM_033719;SL000268;Sliedrecht Hoog_P-uit;Dompelpomp;Bedrijfsstatus;4.3;;;;01-01-1900;02-06-2021;2;;
+1;;KGM_033719;SL000268;Sliedrecht Hoog_P-uit;Dompelpomp;Snelheid;4.3;;;;02-06-2021;31-12-2099;2;;
+1;;KGM_000830;SL000269;Blommendaal_P1;Pompvijzel;Bedrijfsstatus;30;;1450;;01-01-1900;01-04-2020;2;;
+1;;KGM_000830;SL000269;Blommendaal_P1;Pompvijzel;Snelheid;30;;1450;;01-04-2020;31-12-2099;2;;
+;;KGM_000829;SL000270;Botersloot_P3;Pompvijzel;Bedrijfsstatus;20;;1460;;01-01-1900;14-01-2017;2;;
+;;KGM_000829;SL000270;Botersloot_P3;Pompvijzel;Snelheid;20;;1460;;14-01-2017;31-12-2099;2;;
+1;;KGM_000826;SL000271;Middelbroek_P;Pompvijzel;Bedrijfsstatus;170;134;26;;01-01-1900;24-10-2012;2;;
+1;;KGM_000826;SL000271;Middelbroek_P;Pompvijzel;Ampere;170;134;26;;24-10-2012;31-12-2099;2;;
+1;;KGM_000836;SL000272;Den Beemd_P;Pompvijzel;Bedrijfsstatus;55;61;32.5;;01-01-1900;12-11-2019;2;;
+1;;KGM_000836;SL000272;Den Beemd_P;Pompvijzel;Snelheid;55;61;32.5;;12-11-2019;31-12-2099;2;;
+1;;KGM_000831;SL000273;Noordzijde_P;Pompvijzel;Bedrijfsstatus;56;48;;;01-01-1900;17-04-2013;2;;
+1;;KGM_000831;SL000273;Noordzijde_P;Pompvijzel;Ampere;56;48;;;17-04-2013;31-12-2099;2;;
+1;;KGM_000834;SL000274;Groote Waard. de_P;Pompvijzel;Bedrijfsstatus;42;43;40;24;01-01-1900;28-11-2019;2;;
+1;;KGM_000834;SL000274;Groote Waard. de_P;Pompvijzel;Snelheid;42;43;40;24;28-11-2019;18-01-2021;2;;
+1;;KGM_000834;SL000274;Groote Waard. de_P;Pompvijzel;Toerental;42;43;40;24;18-01-2021;31-12-2099;2;;
+Centrifugaalpomp;;KGM_032801;SL000275;Lutjeswaard_P1;Pompvijzel;Toerental;10;3.9;57;;01-01-1900;02-04-2019;2;;
+Centrifugaalpomp;;KGM_032801;SL000275;Lutjeswaard_P1;Pompvijzel;Snelheid;10;3.9;57;;02-04-2019;31-12-2099;2;;
+1;;KGM_000839;SL000276;Land van de Zes Molens_P3;Pompvijzel;Bedrijfsstatus;160;137;42.0;25.0;01-01-1900;04-03-2017;2;;
+1;;KGM_000839;SL000276;Land van de Zes Molens_P3;Pompvijzel;Snelheid;160;137;42.0;25.0;04-03-2017;29-01-2023;2;;
+1;;KGM_000839;SL000276;Land van de Zes Molens_P3;Pompvijzel;Toerental;160;137;42.0;25.0;29-01-2023;31-12-2099;2;;
+1;;KGM_000844;SL000277;Banne van Gorinchem. de_P;Pompvijzel;Bedrijfsstatus;65;37.5;34;;01-01-1900;31-12-2099;2;;
+1;;KGM_000842;SL000278;Giessen Nieuwkerk_P;Pompvijzel;Bedrijfsstatus;75;50;33.5;;01-01-1900;08-05-2012;2;;
+1;;KGM_000842;SL000278;Giessen Nieuwkerk_P;Pompvijzel;Ampere;75;50;33.5;;08-05-2012;31-12-2099;2;;
+1;;KGM_000870;SL000279;Peursum_P;Pompvijzel;Bedrijfsstatus;35;40;37;;01-01-1900;05-09-2016;2;;
+1;;KGM_000870;SL000279;Peursum_P;Pompvijzel;Snelheid;35;40;37;;05-09-2016;31-12-2099;2;;
+1;;KGM_000837;SL000280;Over- en Nederslingeland_P;Pompvijzel;Bedrijfsstatus;50;45;35;;01-01-1900;06-12-2012;2;;
+1;;KGM_000837;SL000280;Over- en Nederslingeland_P;Pompvijzel;Ampere;50;45;35;;06-12-2012;31-12-2099;2;;
+1;;KGM_000833;SL000281;Nieuw Goudriaan_P;Pompvijzel;Bedrijfsstatus;50;43;;;01-01-1900;29-11-2012;2;;
+1;;KGM_000833;SL000281;Nieuw Goudriaan_P;Pompvijzel;Ampere;50;43;;;29-11-2012;31-12-2099;2;;
+1;;KGM_000828;SL000282;Oud Goudriaan_P;Pompvijzel;Bedrijfsstatus;30;30;196;;01-01-1900;25-08-2012;2;;
+1;;KGM_000828;SL000282;Oud Goudriaan_P;Pompvijzel;Ampere;30;30;196;;25-08-2012;31-12-2099;2;;
+1;;KGM_000825;SL000283;Langerak_P;Pompvijzel;Bedrijfsstatus;110;84;27;;01-01-1900;31-12-2099;2;;
+1;;KGM_000871;SL000284;Giessen Oude Bovenkerk_P;Pompvijzel;Bedrijfsstatus;50;60;35;;01-01-1900;14-09-2012;2;;
+Centrifugaalpomp;;KGM_000871;SL000284;Giessen Oude Bovenkerk_P;Pompvijzel;Ampere;50;92.5;740;300;14-09-2012;23-09-2020;2;;
+Centrifugaalpomp;;KGM_000871;SL000284;Giessen Oude Bovenkerk_P;Pompvijzel;Toerental;50;92.5;740;300;23-09-2020;31-12-2099;2;;
+1;;KGM_000869;SL000285;Ottoland_P;Pompvijzel;Bedrijfsstatus;50;43.5;37;;01-01-1900;29-01-2023;2;;
+1;;KGM_000869;SL000285;Ottoland_P;Pompvijzel;Snelheid;50;43.5;37;;29-01-2023;31-12-2099;2;;
+1;;KGM_000852;SL000286;Liesveld Graafland_P1;Pompvijzel;Bedrijfsstatus;80;125;22;11;01-01-1900;17-02-2016;2;;
+1;;KGM_000852;SL000286;Liesveld Graafland_P1;Pompvijzel;Toerental;157;125;22;11;17-02-2016;31-12-2099;2;;
+1;;KGM_000859;SL000290;Streefkerk_P;Pompvijzel;Bedrijfsstatus;150;144;25.5;;01-01-1900;28-01-2013;2;;
+1;;KGM_000859;SL000290;Streefkerk_P;Pompvijzel;Ampere;150;144;25.5;;28-01-2013;31-12-2099;2;;
+1;;KGM_000843;SL000291;Groote Haar_P;Pompvijzel;Bedrijfsstatus;30;23;38;;01-01-1900;25-01-2023;2;;
+1;;KGM_000843;SL000291;Groote Haar_P;Pompvijzel;Snelheid;30;23;38;;25-01-2023;31-12-2099;2;;
+Centrifugaalpomp;;KGM_067360;SL000293;Langerak Noord_P1;Pompvijzel;Bedrijfsstatus;8.5;10.5;735;;01-01-1900;24-07-2021;2;;
+Centrifugaalpomp;;KGM_067360;SL000293;Langerak Noord_P1;Pompvijzel;Snelheid;8.5;10.5;735;;24-07-2021;31-12-2099;2;;
+Centrifugaalpomp;;KGM_083534;SL000295;Puttenlanden_P;Pompvijzel;Toerental;4;;725;300;01-01-1900;31-12-2099;2;;
+;;KGM_000848;SL000302;Smit, J.U._P1;Pompvijzel;Bedrijfsstatus;420;;;;01-01-1900;31-12-2099;;;
+;;KGM_000848;SL000303;Smit, J.U._P2;Pompvijzel;Bedrijfsstatus;420;;;;01-01-1900;31-12-2099;;;
+;;KGM_000848;SL000304;Smit, J.U._P3;Pompvijzel;Bedrijfsstatus;335;;;;01-01-1900;31-12-2099;;;
+;;KGM_000850;SL000305;Kok, Ir. G.N. / Overwaard_P1;Pompvijzel;Bedrijfsstatus;500;;17.7;;01-01-1900;31-12-2099;;;
+;;KGM_000850;SL000306;Kok, Ir. G.N. / Overwaard_P2;Pompvijzel;Bedrijfsstatus;500;;17.7;;01-01-1900;31-12-2099;;;
+;;KGM_000850;SL000307;Kok, Ir. G.N. / Overwaard_P3;Pompvijzel;Bedrijfsstatus;500;;17.7;;01-01-1900;31-12-2099;;;
+;;KGM_032759;SL000308;Derde Bemalingstrap Overwaard_P11-uit;;;250;;;;01-01-1900;31-12-2099;;;
+;;KGM_032759;SL000309;Derde Bemalingstrap Overwaard_P5-uit;;;250;;;;01-01-1900;31-12-2099;;;
+;;KGM_032759;SL000310;Derde Bemalingstrap Overwaard_P6-uit;;;250;;;;01-01-1900;31-12-2099;;;
+;;KGM_032759;SL000311;Derde Bemalingstrap Overwaard_P7-uit;;;250;;;;01-01-1900;31-12-2099;;;
+;;KGM_032759;SL000312;Derde Bemalingstrap Overwaard_P8-uit;;;250;;;;01-01-1900;31-12-2099;;;
+;;KGM_032759;SL000313;Derde Bemalingstrap Overwaard_P9-uit;;;250;;;;01-01-1900;31-12-2099;;;
+Centrifugaalpomp;;KGM_067107;SL000323;Ameide, Broekseweg_P1;Pompvijzel;Frequentie;3.6;;1459;500;01-01-1900;31-12-2099;2;;
+;;KGM_045206;SL000325;Meerkerk Broekseweg_P1;Dompelpomp;Frequentie;2.33;3.3;1440;700;12-03-2015;27-01-2022;2;;
+;;KGM_045206;SL000325;Meerkerk Broekseweg_P1;Dompelpomp;Toerental;2.33;3.3;1440;700;27-01-2022;31-12-2099;2;;
+1;;KGM_000846;SL000329;Hardinxveld Zuid_P1-uit;Pompvijzel;Bedrijfsstatus;30;55;980;;01-01-1900;31-12-2099;2;;
+;;KGM_044486;SL000331;De Zouwe Kooiplas_P2011-uit;Dompelpomp;Toerental;1;;;;01-01-1900;31-12-2099;;;
+;;KGM_044486;SL000332;De Zouwe Kooiplas_P2021-in;Dompelpomp;Toerental;1;;;;01-01-1900;31-12-2099;;;
+;;KGM_044485;SL000334;Nieuwendijk Lage Boezem_P;Dompelpomp;Ampere;22;;2785;;01-01-1900;07-07-2022;;;
+;;KGM_044485;SL000334;Nieuwendijk Lage Boezem_P;Dompelpomp;Snelheid;22;;2785;;07-07-2022;31-12-2099;;;
+1;;KGM_000867;SL000336;Sliedrecht_P;Pompvijzel;Bedrijfsstatus;170;;;;01-01-1900;31-12-2099;2;;
+1;;KGM_032815;SL000337;Papendrecht Hoog_P1-uit;Dompelpomp;Bedrijfsstatus;9;;;;01-01-1900;31-12-2099;;;
+Centrifugaalpomp;;KGM_012062;SL000339;Schanspolder_P1-uit;Pompvijzel;Bedrijfsstatus;5;;1430;900;01-01-1900;23-01-2023;;;
+Centrifugaalpomp;;KGM_012062;SL000339;Schanspolder_P1-uit;Pompvijzel;Toerental;5;;1430;900;23-01-2023;31-12-2099;;;
+;;KGM_012062;SL000340;Schanspolder_P2-in;Dompelpomp;Bedrijfsstatus;1;;;;01-01-1900;31-12-2099;;;
+;;KGM_032664;SL000341;Beneden Stad. de_P;Dompelpomp;Bedrijfsstatus;0.5;;;;01-01-1900;18-02-2023;;;
+;;KGM_032664;SL000341;Beneden Stad. de_P;Dompelpomp;Snelheid;0.5;;;;18-02-2023;31-12-2099;;;
+;;KGM_061728;SL000342;BRW 22-9_P1;Dompelpomp;Snelheid;1;;;;01-01-1900;31-12-2099;;;
+;;KGM_000851;SL000344;Liesveld Achterland (verwijderd)_P;Pompvijzel;Bedrijfsstatus;60;;;;01-01-1900;31-12-2099;;;
+Centrifugaalpomp;;KGM_032819;SL000345;Peulen, de_P-in;Pompvijzel;Bedrijfsstatus;70;;970;580;01-01-1900;31-12-2099;2;;
+Centrifugaalpomp;;KGM_055447;SL000346;Merwebolder_P;Pompvijzel;Bedrijfsstatus;5;;;;01-01-1900;03-02-2020;;;
+Centrifugaalpomp;;KGM_055447;SL000346;Merwebolder_P;Pompvijzel;Snelheid;5;;;;03-02-2020;31-12-2099;;;
+;;KGM_065219;SL000347;Nieuwland Parc, Inlaat_P-in;;;;;2905;1475;;;;;
+;;KGM_065220;SL000348;Nieuwland Parc, UItlaat_P-uit;;;;;;;;;2;;
+;;KGM_033812;SL000349;Ringerstraat_P;Dompelpomp;Bedrijfsstatus;0.5;;;;01-01-1900;05-08-2020;;;
+;;KGM_033812;SL000349;Ringerstraat_P;Dompelpomp;Snelheid;0.5;;;;05-08-2020;31-12-2099;;;
+;;KGM_055448;SL000350;Waerthove_P-uit;Dompelpomp;Bedrijfsstatus;2.33;;;;01-01-1900;05-08-2020;;;
+;;KGM_055448;SL000350;Waerthove_P-uit;Dompelpomp;Snelheid;2.33;;;;05-08-2020;31-12-2099;;;
+;;KGM_033805;SL000351;Ameide_P-in;Dompelpomp;Toerental;18;30;965;580;01-01-1900;31-12-2099;;;
+;;KGM_062449;SL000352;Hardinxveld Nieuweweg_P1-uit;Dompelpomp;Toerental;7.58;;965;800;01-01-1900;31-12-2099;;;
+;;KGM_062449;SL000353;Hardinxveld Nieuweweg_P2-uit;Dompelpomp;Toerental;7.58;;965;800;01-01-1900;31-12-2099;;;
+;;KGM_054544;SL000354;Tiendweg-Zijdeweg_P;Pompvijzel;Toerental;6.65;;1465;880;01-01-1900;31-12-2099;;;
+;;KGM_000847;SL000355;Kolff, Mr. Dr. G._P1-uit-in;;;1200;;1800;;;;;;
+;;KGM_000847;SL000356;Kolff, Mr. Dr. G._P2-uit;;;1200;;1800;;;;;;
+;;KGM_000847;SL000357;Kolff, Mr. Dr. G._P3-uit;;;1200;;1800;;;;;;
+;;KGM_023203;SL000364;Waaij, de_P1;;;30;;;;;;;;
+;;KGM_023204;SL000373;Mars, de_P;;;7.5;;;;;;;;
+;;KGM_023207;SL000374;Maten, de_P;;;2.5;;;;;;;;
+;;KGM_023206;SL000377;Opheusden_P-in;;;20.5;;32.7;;;;;;
+;;KGM_023205;SL000378;Oude Rijn_P1;;Ampere;20;;960;575;01-01-1900;30-08-2016;;;
+;;KGM_023205;SL000378;Oude Rijn_P1;;Snelheid;20;;960;575;30-08-2016;11-01-2023;;;
+;;KGM_023205;SL000378;Oude Rijn_P1;;Toerental;20;;960;575;11-01-2023;31-12-2099;;;
+;;KGM_023209;SL000383;Zwartjes_P1-in;;;5;;;;;;;;
+;;KGM_031884;SL000391;Drumpt_P-in;;;6;;;;;;;;
+fSL000275;;KGM_074516;SL000396;Spoorsingel Tiel_P;;;;;720;430;;;;;
+;;KGM_047074;SL000400;Binnen Kievitswaard_P1-uit;;;7.22;;1408;1014;;;;;
+;;KGM_047072;SL000402;Happenhennip_P1-uit;;;19.13;;735;373;;;;;
+;;KGM_047075;SL000404;Kleine Zalm_P1-uit;;;5.76;;885;673;;;;;
+;;KGM_047078;SL000406;t Kooike_P1-uit;;;8.21;;1450;845;;;;;
+;;KGM_047073;SL000408;Middelste Kievitswaard_P1-uit;;;18.45;;708;359;;;;;
+;;KGM_047077;SL000410;Steenenmuur_P1-uit;;;32.62;;580;348;;;;;
+;;KGM_047066;SL000412;Steurgat_P1-uit;;;13.58;;708;431;;;;;
+;;KGM_047076;SL000414;Vogelenzang_P1-uit;;;15.42;;697;363;;;;;
+;;KGM_024096;SL000419;Hollandsch-Duitschgemaal_P1-uit;;;240;;290;;;;;;
+;;KGM_024096;SL000420;Hollandsch-Duitschgemaal_P2-uit;;;240;;290;;;;;;
+;;KGM_024096;SL000421;Hollandsch-Duitschgemaal_P3-uit;;;240;;290;;;;;;
+;;KGM_024096;SL000422;Hollandsch-Duitschgemaal_P4-uit;;;240;;290;;;;;;
+;;KGM_034191;SL000424;Hubertusweg_P;;;10;;;;;;;;
+;;KGM_023201;SL000429;Duisterestraat_P1-in;Schroefcentrifugaal;Bedrijfsstatus;60;;526;;01-01-1900;10-03-2016;;;
+;;KGM_023201;SL000429;Duisterestraat_P1-in;Schroefcentrifugaal;Ampere;60;;526;;10-03-2016;31-12-2099;;;
+;;KGM_023200;SL000440;Krakkedel_P-in;;;60;;735;365;;;;;
+;;KGM_072380;SL000445;Tuin van Elden_P;;;;;;;;;;;
+;;KGM_023297;SL000466;Gesperdensestraat_P1-uit;;;;;730;440;;;;;
+;;KGM_023297;SL000467;Gesperdensestraat_P3-uit;;;;;730;440;;;;;
+;;KGM_023210;SL000469;Hemmense Zandweg_P1-in;;;8;;;;;;;;
+;;KGM_032823;SL000484;Circulatiegemaal Schuytgraaf_P1;;;;;470;282;;;;;
+;;KGM_023211;SL000486;Weerbroek_P;;;9;;720;350;;;;;
+;;KGM_032701;SL000495;Bulkheuvel_P;;;6;;1000;;;;;;
+;;KGM_000908;SL000498;Ophemert_P1;;;2;;;;;;;;
+;;KGM_023815;SL000504;Wadenoijen_P1-in;;;81;;33;15;01-01-1900;31-12-2099;;;
+;;KGM_000910;SL000506;Weiweg_P;;;9;;;;;;;;
+;;KGM_041274;SL000514;Alphen_P;;;6;;;;;;;;
+;;KGM_024106;SL000515;Aspert, de_P;;Bedrijfsstatus;;;575;345;01-01-1900;28-01-2016;;;
+;;KGM_024106;SL000515;Aspert, de_P;;Toerental;;;575;345;28-01-2016;31-12-2099;;;
+;;KGM_024395;SL000523;Wely, J. van_P2;;;45;;582;350;;;;;
+;;KGM_024105;SL000528;Haasje, het_P;;;8;;1455;870;;;;;
+;;KGM_024099;SL000543;De Ruivert_P;;;4;;970;580;;;;;
+;;KGM_024107;SL000544;Scharenburg_P;;;10;;583;350;;;;;
+;;KGM_024396;SL000550;Willem Alexanderbrug_P1;;;12;;;;;;;;
+;;KGM_000876;SL000560;Altena_P1-uit;;;320;;192;;;;;;
+;;KGM_000876;SL000561;Altena_P2-uit;;;320;;192;;;;;;
+;;KGM_000876;SL000562;Altena_P3-uit;;;320;;192;;;;;;
+;;KGM_032668;SL000565;Beuningen, H.A. van_P1-in;;;480;;123;74;;;;;
+;;KGM_032668;SL000566;Beuningen, H.A. van_P2-uit;;;480;;123;74;;;;;
+;;KGM_000884;SL000570;Bruinekil_P1-uit;;;52.5;;750;;;;;;
+;;KGM_000884;SL000571;Bruinekil_P2-uit;;;52.5;;750;;;;;;
+;;KGM_000891;SL000573;Oostkil_P1-uit;;;88;;281;169;;;;;
+;;KGM_000891;SL000574;Oostkil_P2-uit;;;88;;281;169;;;;;
+;;KGM_032776;SL000578;Galg_P-in;;Bedrijfsstatus;4;;;;01-01-1900;03-07-2016;;;
+;;KGM_032776;SL000578;Galg_P-in;;Snelheid;4;;;;03-07-2016;31-12-2099;;;
+;;KGM_067320;SL000579;Startstraat_P1;;;20;;;;;;;;
+;;KGM_032764;SL000582;Drielandenpunt_P2-uit;;;24;;;;;;;;
+;;KGM_032820;SL000587;Prins Bernhardsluizen_P1-in;;;10;;710;426;;;;;
+;;KGM_033813;SL000590;Tolsteeg Tunnel_P1;Dompelpomp;Bedrijfsstatus;0.5;;;;01-01-1900;31-12-2099;;;
+;;KGM_032792;SL000595;Inundatiekanaal_P-uit;;;19;;585;350;;;;;
+;;KGM_011717;SL000598;Hondekooi_P1;;;7.5;;720;420;;;;;
+;;KGM_055747;SL000601;Loosdorp_P1;;Ampere;;;;;01-01-1900;07-11-2021;2;;
+;;KGM_055747;SL000601;Loosdorp_P1;;Toerental;;;1459;350;07-11-2021;31-12-2099;2;;
+;;KGM_089912;SL000604;Vianen Jachthaven (noodpomp)_P;;;;;;;;;;;
+;;KGM_0113672;SL000609;Hagoort Lagepand_P1-uit;;;210;;;;;;;;
+;;KGM_0113672;SL000610;Hagoort Lagepand_P2-uit;;;210;;;;;;;;
+;;KGM_000893;SL000611;Hagoort Hogepand_P3-uit;;;260;;;;;;;;
+1;;KGM_040713;SL000621;Baanhoek 1_P-uit;Pompvijzel;Toerental;0.4;;734;;01-01-1900;31-12-2099;;;
+1;;KGM_040714;SL000622;Baanhoek 2_P-uit;Pompvijzel;Toerental;0.4;;734;;01-01-1900;31-12-2099;;;
+;;KGM_000878;SL000625;Uiterwaarden_P1-uit;;;9;;;;;;;;
+;;KGM_000878;SL000626;Uiterwaarden_P2-in;;;3;;;;;;;;
+;;KGM_032838;SL000627;Wijk en Aalburg_P1-in;;;25;;;;;;;;
+;;KGM_032838;SL000628;Wijk en Aalburg_P2-in;;;25;;;;;;;;
+;;KGM_000901;SL000629;Buurmalsen_P1-uit;;;46;;335;;;;;;
+;;KGM_000901;SL000630;Buurmalsen_P2-in;;;40;;340;;;;;;
+;;KGM_043818;SL000635;Stadsgracht Tiel_P-in;;;;;990;;;;;;
+;;KGM_043406;SL000638;Circulatiegemaal Breekenhof_P2;;;5;;1400;;01-01-1900;31-05-2023;;;
+;;KGM_043406;SL000638;Circulatiegemaal Breekenhof_P2;;;5;;710;430;31-05-2023;31-12-2099;;;
+;;KGM_032787;SL000640;Huyenkamp_P;;;24;;;;;;;;
+;;KGM_023202;SL000641;Pannerling_P1-in;;;240;;;;;;;;
+;;KGM_023202;SL000642;Pannerling_P2-in;;;240;;;;;;;;
+;;KGM_032828;SL000644;Sillesstraat_P;;;9;;720;;;;;;
+;;KGM_032835;SL000645;Vredenburg_P;;;12.4;;;;;;;;
+;;KGM_034439;SL000646;Singel Eiland Laauwik_P1;;;;;;;;;;;
+;;KGM_034439;SL000647;Singel Eiland Laauwik_P2;;;;;;;;;;;
+;;KGM_052692;SL000648;K14 weefgewichtstraat_P;;;;;;;;;;;
+;;KGM_043585;SL000649;Circulatie HF Westeraam_P;;;;;;;;;;;
+1;;KGM_000845;SL000650;Hardinxveld Noord_P;Pompvijzel;Bedrijfsstatus;40;;;;01-01-1900;14-12-2012;2;;
+1;;KGM_000845;SL000650;Hardinxveld Noord_P;Pompvijzel;Ampere;40;15;;;14-12-2012;03-10-2022;2;;
+1;;KGM_000845;SL000650;Hardinxveld Noord_P;Pompvijzel;Snelheid;40;;;;03-10-2022;31-12-2099;2;;
+1;;KGM_000853;SL000651;Nieuw Lekkerland_P;Pompvijzel;Bedrijfsstatus;85;;;;01-01-1900;24-10-2012;2;;
+1;;KGM_000853;SL000651;Nieuw Lekkerland_P;Pompvijzel;Ampere;85;89;;;24-10-2012;31-12-2099;2;;
+;;KGM_000840;SL000653;Arkel_P1-uit;;Bedrijfsstatus;125;;206;;01-01-1900;15-05-2009;;;
+;;KGM_000840;SL000653;Arkel_P1-uit;;Frequentie;125;;;;15-05-2009;31-12-2099;;;
+;;KGM_000840;SL000654;Arkel_P2-uit;;Bedrijfsstatus;125;;206;;01-01-1900;08-09-2010;;;
+;;KGM_000840;SL000654;Arkel_P2-uit;;Frequentie;125;;;;08-09-2010;31-12-2099;;;
+;;KGM_000819;SL000655;Autena_P-uit;;;70;;;;;;;;
+;;KGM_000823;SL000656;Heicop_P-uit;Pompvijzel;Pompsnelheid;85;;;;01-01-1900;02-03-2014;;;
+;;KGM_000823;SL000656;Heicop_P-uit;Pompvijzel;Pompsnelheid;85;;295;;02-03-2014;31-12-2099;;;
+;;KGM_024458;SL000657;Hoef en Haag_P-in;;;50;;985;200;;;;;
+;;KGM_000841;SL000658;Kedichem_P-uit;;;70;;;;;;;;
+;;KGM_012111;SL000660;Middelkoop_P1-uit;;Bedrijfsstatus;80;;;;01-01-1900;15-04-2013;;;
+;;KGM_012111;SL000660;Middelkoop_P1-uit;;Toerental;80;;;;15-04-2013;31-12-2099;;;
+;;KGM_012111;SL000661;Middelkoop_P2-uit;;Bedrijfsstatus;80;;;;01-01-1900;15-04-2013;;;
+;;KGM_012111;SL000661;Middelkoop_P2-uit;;Toerental;80;;;;15-04-2013;31-12-2099;;;
+;;KGM_012110;SL000662;Lakerveld_P1-uit;Pompvijzel;Bedrijfsstatus;95;;422;;;;;;
+;;KGM_012110;SL000663;Lakerveld_P2-uit;Pompvijzel;Bedrijfsstatus;95;;422;;;;;;
+;;KGM_012136;SL000664;Boven-Huibert_P1;;Toerental;;;;;01-01-1900;14-09-2019;;;
+;;KGM_012136;SL000664;Boven-Huibert_P1;;Ampere;;;;;14-09-2019;07-06-2023;;;
+;;KGM_012136;SL000664;Boven-Huibert_P1;;Toerental;;;;;07-06-2023;31-12-2099;;;
+;;KGM_000822;SL000666;Lam, D.W. het_P1-uit;;Toerental;115;;;;01-01-1900;31-12-2099;;;
+;;KGM_000822;SL000667;Lam, D.W. het_P2-uit;;Toerental;115;;;;01-01-1900;31-12-2099;;;
+;;KGM_000905;SL000668;Laar, de_P1-uit;;;155;;179;;;;;;
+;;KGM_000905;SL000669;Laar, de_P2-uit;;;155;;179;;;;;;
+;;KGM_000905;SL000670;Laar, de_P3-uit;;;155;;179;;;;;;
+;;KGM_034436;SL000673;Vlek 20 K6_P1;;;;;;;;;;;
+;;KGM_034436;SL000674;Vlek 20 K6_P2;;;;;;;;;;;
+;;KGM_034368;SL000676;K2 Oosterhoutseplas_P1;;;;;;;;;;;
+;;KGM_034368;SL000677;K2 Oosterhoutseplas_P2;;;;;;;;;;;
+;;KGM_023197;SL000679;Drielsedijk_P1-uit;;;240;;;;;;;;
+;;KGM_023197;SL000680;Drielsedijk_P2-uit;;;240;;;;;;;;
+;;KGM_023197;SL000681;Drielsedijk_P3-uit;;;120;;;;;;;;
+;;KGM_024098;SL000682;Ufford, Quarles van_P2-uit;;;356;;250;;;;;;
+;;KGM_024098;SL000683;Ufford, Quarles van_P3-uit;;;356;;250;;;;;;
+;;KGM_024098;SL000684;Ufford, Quarles van_P4-uit;;;356;;250;;;;;;
+;;KGM_012139;SL000687;Nieuwe Horn_P1-uit;;;236;;210;;;;;;
+;;KGM_012139;SL000688;Nieuwe Horn_P2-uit;;;247;;210;;;;;;
+;;KGM_032662;SL000689;Baanbreker, de_P1-uit;;;250;;250;;;;;;
+;;KGM_032662;SL000690;Baanbreker, de_P2-uit;;;250;;250;;;;;;
+;;KGM_000880;SL000693;Poortweg_P1-uit;;;50;;;;;;;;
+;;KGM_000880;SL000694;Poortweg_P2-uit;;;50;;;;;;;;
+;;KGM_001238;SL000695;Oostersingel_P1;;;4;;;;;;;;
+;;KGM_000894;SL000697;Weidsteeg_P2;;;4;;;;;;;;
+;;KGM_068244;SL000700;Parijsch_P;;Toerental;;;1450;870;01-01-1900;31-12-2099;;;
+;;KGM_000835;SL000703;Schaaijk_P-uit;;Bedrijfsstatus;80;;270;189;01-01-1900;08-03-2018;;;
+;;KGM_000835;SL000703;Schaaijk_P-uit;;Toerental;80;;270;189;08-03-2018;31-12-2099;;;
+;;KGM_069220;SL000705;Neust, de_P1-in-uit;;;118.88;;372;225;;;;;
+;;KGM_069220;SL000706;Neust, de_P2-uit;;;142.13;;372;225;;;;;
+;;KGM_069220;SL000707;Neust, de_P3-uit;;;142.13;;372;225;;;;;
+;;KGM_000897;SL000712;Vretstrooi_P;;;75;173;585;385;;;;;
+;;KGM_042745;SL000717;Kom Lekdijk_P2-uit;;Bedrijfsstatus;;;965;740;01-01-1900;23-08-2019;;;
+;;KGM_042745;SL000717;Kom Lekdijk_P2-uit;;Snelheid;;;965;740;23-08-2019;31-12-2099;;;
+;;KGM_042745;SL000718;Kom Lekdijk_P1-in;;Bedrijfsstatus;;;965;740;01-01-1900;23-08-2019;;;
+;;KGM_042745;SL000718;Kom Lekdijk_P1-in;;Snelheid;;;965;740;23-08-2019;02-04-2023;;;
+;;KGM_042745;SL000718;Kom Lekdijk_P1-in;;Toerental;;;965;740;02-04-2023;31-12-2099;;;
+;;KGM_000818;SL000720;Bloemendaal_P1-uit;;Bedrijfsstatus;80.96;;575;327;01-01-1900;15-12-2016;;;
+;;KGM_000818;SL000720;Bloemendaal_P1-uit;;Toerental;80.96;;575;327;15-12-2016;31-12-2099;;;
+;;KGM_063021;SL000728;Winssense waarden_P;;;;;980;588;;;;;
+;;KGM_000900;SL000730;Tricht (verwijderd)_P1-uit;;;109;;;;;;;;
+;;KGM_000900;SL000731;Tricht (verwijderd)_P2-uit;;;109;;;;;;;;
+;;KGM_032842;SL000745;Zwanenwater (verwijderd)_P;;;4;;;;;;;;
+;;KST_043586;SL000746;HF Westeraam inlaat_P;;;;;;;;;;;
+;;KGM_043587;SL000747;HF Westeraam recirculatie_P1;;;;;;;;;;;
+;;KGM_058168;SL000748;Broekse Sluis, Heukelum_P2-uit;;;180;;230;;;;;;
+;;KGM_058168;SL000749;Broekse Sluis, Heukelum_P3-uit;;;180;;230;;;;;;
+;;KGM_058169;SL000750;Broekse Sluis, Spijk_P1-uit;;;150;;215;;;;;;
+;;KGM_043587;SL000758;HF Westeraam recirculatie_P2;;;;;;;;;;;

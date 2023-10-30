@@ -18,6 +18,11 @@ class BaseField:
     def __repr__(self):
         return f'{self.__class__.__name__}({self.value})'
 
+    def __eq__(self, other):
+        if all(pd.isna(i.value) for i in (self, other)):
+            return True
+        return self.value == other.value
+
     def validate(self):
         if self.regexp:
             self.parse()

@@ -20,6 +20,9 @@ class BaseDescriptor:
     def field(self, index: Index):
         return self.instance(self.owner_instance.df.loc[index, self])
 
+    def set_field(self, index: Index, value):
+        self.owner_instance.df.loc[index, self] = value
+
     def column(self):
         return self.owner_instance.df[self].apply(self.instance)
 

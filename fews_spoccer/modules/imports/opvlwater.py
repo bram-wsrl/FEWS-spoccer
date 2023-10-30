@@ -5,12 +5,17 @@ from .cgoo import CGOO
 
 
 class OpvlWaterModule:
+    sync_level = 'LIVE'
+
     def __init__(self, h2go_config, cgoo_config):
         self.h2go_config = h2go_config
         self.cgoo_config = cgoo_config
 
         self.cgoo = CGOO(**cgoo_config)
         self.cgoo.connect()
+
+    def pre(self, indexer):
+        return indexer.spoccer.hl.get_param_matches(indexer)
 
     def validate_h2go(self, indexer):
         for i, f in indexer.fields():
